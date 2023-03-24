@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>리스트</title>
+  </head>
+  <body>
+    <h1>리스트</h1>
+    <p>홈페이지에서 구조와 형태가 비슷한 연관되어있는 컨텐츠를 표기하는 방법</p>
+    <p>
+      연관된 컨텐츠 즉 리스트로 표현되는 컨텐츠사이에 순서의 영향이 있는 경우
+      ol태그를 부모태그로 사용한다.
+    </p>
+    <p>
+      li태그는 단독적으로 사용할 수 없다. 반드시 순서의 흐름을 고려하여 순서가
+      있다면 부모태그에 ol태그가 없다면 부모태그에 ul태그를 사용해야 한다.
+    </p>
+    <p>ol/ul태그의 자식태그로는 li태그만 사용할 수 있다.</p>
+    <p>
+      li태ㅡ 안에는 또 다른 문맥들이 형성될 수 있다. 그동안 배운 제목, 설명 태그
+      포함해서 여라가지 태그문맥이 li태그안에서 사용될 수 있다.
+    </p>
+    <hr />
+    <h2>odered list -ol</h2>
+    <h3>git 저장소 업데이트하는 순서</h3>
+    <ol>
+      <li>git add.</li>
+      <li>git commit -m "message"</li>
+      <li>git push origin master</li>
+    </ol>
+    <h3 style="color: aqua">라면 끓이는 방법</h3>
+    <ol>
+      <li>물을 끓인다</li>
+      <li>스프를 넣는다</li>
+      <li>면을넣는다</li>
+    </ol>
+    <hr />
+    <h2>unordered list -ul</h2>
+    <p>
+      연관되어있는 컨텐츠 즉 li태그들이 서로 순서의 영향이 없을 때 부모태그로
+      ul태그를 사용한다.
+    </p>
+    <h3>동물 TOP3</h3>
+    <ul>
+      <li>
+        <h5>고양이</h5>
+        <p>고양이 설명...</p>
+        <ul>
+          <li>코리안 숏헤어</li>
+          <li>아메리칸 숏헤어</li>
+          <li>러시안블루</li>
+        </ul>
+      </li>
+      <li>
+        <h5>강아지</h5>
+        <p>강아지 설명...</p>
+        <ul>
+          <li>진돗개</li>
+          <li>포메라니안</li>
+          <li>시츄</li>
+        </ul>
+      </li>
+      <li>
+        <h5>족제비</h5>
+        <p>족제비 설명...</p>
+      </li>
+      <li>강아지</li>
+      <li>고양이</li>
+      <li>족제비</li>
+    </ul>
+  </body>
+</html>
