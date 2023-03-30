@@ -17,7 +17,11 @@
     }
 
     a {
-      color: cornflowerblue;
+      color: blue;
+    }
+
+    table {
+      text-align: center;
     }
   </style>
 </head>
@@ -183,16 +187,16 @@
     <dt id="go4"><a href="#index">3.1</a>영화<a href="#">[편집]</a></dt>
     <hr>
     <dd>
-      <table border="1">
-        <caption>
+      <table border="1" cellspacing="0">
+        <caption style="background-color:cyan">
           Filmography
         </caption>
         <tr>
-          <th>개봉연도</th>
-          <th>제목</th>
-          <th>배역</th>
-          <th>관객수</th>
-          <th>비고</th>
+          <th bgcolor="cyan">개봉연도</th>
+          <th bgcolor="cyan">제목</th>
+          <th bgcolor="cyan">배역</th>
+          <th bgcolor="cyan">관객수</th>
+          <th bgcolor="cyan">비고</th>
         </tr>
         <tr>
           <td>2006년</td>
@@ -276,7 +280,106 @@
     <dt id="go5"><a href="#index">3.2</a>드라마<a href="#">[편집]</a></dt>
     <dd>
       <p>시청률은 최고 시청률을 기준</p>
-      <!-- 표 입력 예정 -->
+      <table style="background-color: #f5f5f5;" border="1" cellspacing="0">
+        <tr>
+          <th>방영 연도</th>
+          <th>방송사</th>
+          <th>제목</th>
+          <th>배역</th>
+          <th>활동</th>
+          <th>시청률</th>
+          <th rowspan="11"></th>
+        </tr>
+        <tr>
+          <td>2010</td>
+          <td rowspan="3"><a href="#">
+              <img style="width:30px" src="./img/sbs.svg" alt="SBS"></a>
+          </td>
+          <td><a href="#">세자매</a></td>
+          <td>김은군</td>
+          <td bgcolor="#cfcfcf">조연</td>
+          <td>-</td>
+        </tr>
+        <tr>
+          <td>2012년</td>
+          <td><a href="#">패션왕</a></td>
+          <td>정재혁</td>
+          <td rowspan="5" bgcolor="#d6c94d">주연</td>
+          <td>12.7%</td>
+        </tr>
+        <tr>
+          <td>2014년</td>
+          <td><a href="#">비밀의 문</a></td>
+          <td><a href="#">이선<br>정조</a></td>
+          <td>9.5%</td>
+        </tr>
+        <tr>
+          <td>2016년</td>
+          <td rowspan="2"><a href="#"><img style="width:30px" src="./img/tvn.svg" alt="tvN"></td>
+          <td><b><a href="#">시그널</a></b></td>
+          <td><b><a href="#">박혜영</a></b></td>
+          <td>13.4%</td>
+        </tr>
+        <tr>
+          <td>2017년</td>
+          <td><a href="#">내일 그대와</a></td>
+          <td><a href="#">유소준</a></td>
+          <td>3.9%</td>
+        </tr>
+        <tr>
+          <td>2018년</td>
+          <td rowspan="3"><a href="#"><img style="width:30px" src="./img/sbs.svg" alt="SBS"></td>
+          <td><b><a href="#">여우각시별</a></b></td>
+          <td><b><a href="#">이수연</a></b></td>
+          <td>10.0%</td>
+        </tr>
+        <tr>
+          <td>2020년</td>
+          <td><a href="#">스토브리그</a></td>
+          <td><a href="#">이제훈</a></td>
+          <td bgcolor="#eaa155">특별출연</td>
+          <td>-</td>
+        </tr>
+        <tr>
+          <td rowspan="2">2021년</td>
+          <td><b><a href="#">모범택시</a></b></td>
+          <td><b><a href="#">김도기</a></b></td>
+          <td rowspan="2" bgcolor="#d6c94d">주연</td>
+          <td>16.0%</td>
+        </tr>
+        <tr>
+          <td><a href="#"><img style="width:30px" src="./img/netflix.svg" alt="netflix"></td>
+          <td><a href="#">무브 투 헤븐: 나는 유품정리사입니다</a></td>
+          <td>조상구</td>
+          <td>-</td>
+        </tr>
+        <tr>
+          <td>2022년</td>
+          <td><a href="#"><img style="width:30px" src="./img/sbs.svg" alt="SBS"></td>
+          <td><a href="#">천원짜리 변호사</a></td>
+          <td>이제훈<a href="#"><sup>[14]</sup></a></td>
+          <td bgcolor="#eaa155">특별출연</td>
+          <td>-</td>
+        </tr>
+        <tr>
+          <td>2022년~2023년</td>
+          <td><a href="#"><img style="width:30px" src="./img/disney.svg" alt="Disney"></td>
+          <td><a href="#">카지노</a></td>
+          <td>장준</td>
+          <td bgcolor="#eaa155">특별출연</td>
+          <td>-</td>
+          <td></td>
+        </tr>
+        <tr>
+          <td>2023년</td>
+          <td><a href="#"><img style="width:30px" src="./img/sbs.svg" alt="SBS"></td>
+          <td><b><a href="#">모범택시2</a></b></td>
+          <td><b><a href="#">김도기</a></b></td>
+          <td bgcolor="#d6c94d">주연</td>
+          <td></td>
+          <td></td>
+        </tr>
+      </table>
     </dd>
     <dt id="go6"><a href="#index">6.</a>논란<a href="#">[편집]</a></dt>
     <dd>
