@@ -30,14 +30,23 @@
     textarea태그는 장문의 텍스트를 입력시킬 때 사용한다.
   </p>
   <hr>
+  <h1>사용되는 속성</h1>
+  <ul>
+    <li>value - 입력박스에 들어가는 실제 정보</li>
+    <li>disabled -선택한 입력박스는 비활성ㅇ </li>
+    <li>required - 선택한 입력박스의 실제정보를 반드시 입력시킬 때 사용</li>
+    <li>selected - 셀렉트박스에서 선택한 optio태그가 선택된상태로 보이게 할 때 사용</li>
+    <li>checked - 체크박스/라디오 버튼이 체크된 상태로 표현할 때
+    </li>
+  </ul>
   <form action="#" method="post">
     <fieldset>
       <legend>계정정보</legend>
       <label for="user_id">아이디:</label>
-      <input type="text" id="user_id" placeholder="아이디를 입력해주세요">
+      <input disabled type="text" id="user_id" placeholder="아이디를 입력해주세요">
       <br>
       <label for="user_pw">비밀번호:</label>
-      <input type="password" id="user_pw" placeholder="비밀번호를 입력해주세요">
+      <input required type="password" id="user_pw" placeholder="비밀번호를 입력해주세요">
       <br>
       <label for="user_pw2">비밀번호확인:</label>
       <input type="password" id="user_pw2" placeholder="비밀번호 확인">
@@ -45,14 +54,14 @@
     <fieldset>
       <legend>개인정보</legend>
       <label for="name">이름</label>
-      <input type="text" id="name" placeholder="신민혁">
+      <input type="text" id="name" required>
       <br>
       <label for="birth">생년월일</label>
       <input type="text" id="birth" placeholder="년">
       <select>
         <option>1</option>
         <option>2</option>
-        <option>3</option>
+        <option selected>3</option>
         <option>4</option>
         <option>5</option>
         <option>6</option>
@@ -65,7 +74,7 @@
       </select>
       <input type="number" placeholder="일"><br>
       <label>성별</label>
-      <input type="radio" id="woman" name="gen">
+      <input type="radio" id="woman" name="gen" checked>
       <label for="woman">여자</label>
       <input type="radio" id="men" name="gen">
       <label for="men">남자</label>
