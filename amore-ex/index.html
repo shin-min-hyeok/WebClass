@@ -7,12 +7,16 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Amore</title>
 </head>
+<!-- 이미지 텍스트 복사하기 이미지클릭후 f2 전체선택은 ctrl+a -->
 
 <body>
-  <div class="all">
+  <div id="container">
     <header>
       <div class="logo">
-        <h1><img src="./img/logo.gif" alt="AMORE로고"></h1>
+        <h1><a href="./index.html">
+            <img src="./img/logo.gif" alt="AMORE로고">
+          </a>
+        </h1>
       </div>
       <nav>
         <ul class="lnb">
@@ -49,94 +53,90 @@
       </nav>
     </header>
     <main>
-      <section>
+      <div class="mainBanner">
         <h2>Asian Beauty Creator</h2>
-      </section>
-      <section class="">
-        <dl>
+        <dl class="bannerTapMenu">
           <dt>
-            <a href="#">
-              <h3>채용뉴스</h3>
-            </a>
+            채용뉴스
+          </dt>
           <dd>
             <ul>
-              <li>[AMOREPACIFIC] 채용어플리케이션 및... <a href="#"><span>2011.04.22</span></a> </li>
-              <li>2011 상반기 AMOREPACIFIC 신입사원... <a href="#"><span>2011.04.21</span></a> </li>
-              <li>2011 AMOREPACIFIC 신입사원 수시채용... <a href="#"><span>2011.03.15</span></a> </li>
+              <li><a href="#">[AMOREPACIFIC] 채용어플리케이션 및...</a><span>2011.04.22</span></li>
+              <li><a href="#">2011 상반기 AMOREPACIFIC 신입사원...</a><span>2011.04.21</span></li>
+              <li><a href="#">2011 AMOREPACIFIC 신입사원 수시채용...</a><span>2011.03.15</span></li>
             </ul>
           </dd>
-          </dt>
           <dt>
-            <a href="#">
-              <h3>입사지원</h3>
-            </a>
+            입사지원
+          </dt>
           <dd>
             <ul>
-              <li>[경력]23년 경력채용 브랜드 디지털 마케팅... <a href="#"><span>2023.04.13</span></a></li>
-              <li>[경력]23년 ITSM관리 <a href="#"><span>2023.04.10</span></a></li>
-              <li>[경력]23년 경력채용_바이오센서 개발... <a href="#"><span>2023.04.07</span></a></li>
+              <li>
+                <a href="#">[경력]23년 경력채용 브랜드 디지털 마케팅...</a><span>2023.04.13</span>
+              </li>
+              <li>
+                <a href="#">[경력]23년 ITSM관리</a><span>2023.04.10</span>
+              </li>
+              <li>
+                <a href="#">[경력]23년 경력채용_바이오센서 개발...</a><span>2023.04.07</span>
+              </li>
             </ul>
           </dd>
-          </dt>
           <dt>
-            <a href="#">
-              <h3>채용공고</h3>
-            </a>
+            채용공고
+          </dt>
           <dd>
             <ul>
-              <li>2023 상반기 신입사원 수시채용(메이크업 제품개발) <a href="#"><span>2023.04.05</span></a></li>
-              <li>2023 상반기 AMOREPACIFIC (옴니채널영업) <a href="#"><span>2023.04.05</span></a></li>
-              <li>2023 상반기 신입사원 수시(인재개발) <a href="#"><span>2023.04.05</span></a></li>
+              <li><a href="#">2023 상반기 신입사원 수시채용(메이크업 제품개발)</a><span>2023.04.05</span></li>
+              <li><a href="#">2023 상반기 AMOREPACIFIC (옴니채널영업)</a><span>2023.04.05</span></li>
+              <li><a href="#">2023 상반기 신입사원 수시(인재개발)</a><span>2023.04.05</span></li>
             </ul>
           </dd>
-          </dt>
         </dl>
-      </section>
-      <section>
-        <h4>Quick Menu</h4>
-        <ol>
-          <li><a href="#">입사지원 ></a></li>
-          <li><a href="#">상시채용 ></a></li>
-          <li><a href="#">지원결과 ></a></li>
-          <li><a href="#">FAQ ></a></li>
-        </ol>
-      </section>
-      <section>
-        <dl>
-          <dt>인재상
-          <dd>
-            <img src="./img/img_person.jpg" alt="인재상">
-          </dd>
-          </dt>
-          <dt>복리후생
-          <dd>
-            <img src="./img/img_pay.jpg" alt="복리후생">
-          </dd>
-          </dt>
-        </dl>
-      </section>
-      <section>
-        <h4>선배와의 인터뷰 <span>WIth You</span></h4>
-        <p>
-          <img src="./img/img_interview.jpg" alt="선배와의 인터뷰">
-        </p>
-      </section>
+      </div>
+      <div class="cotents">
+        <article>
+          <h3>Quick Menu</h3>
+          <ol>
+            <li><a href="#">입사지원 ></a></li>
+            <li><a href="#">상시채용 ></a></li>
+            <li><a href="#">지원결과 ></a></li>
+            <li><a href="#">FAQ ></a></li>
+          </ol>
+        </article>
+        <article>
+          <dl>
+            <dt>인재상</dt>
+            <dd>
+              <a href="#"><img src="./img/img_person.jpg" alt="인재상"></a>
+            </dd>
+            <dt>복리후생</dt>
+            <dd>
+              <a href="#"><img src="./img/img_pay.jpg" alt="복리후생"></a>
+            </dd>
+          </dl>
+        </article>
+        <article>
+          <h3>선배와의 인터뷰 <span>WIth You</span></h3>
+          <p>
+            <a href="#"><img src="./img/img_interview.jpg" alt="선배와의 인터뷰"></a>
+          </p>
+        </article>
+      </div>
     </main>
     <footer>
-      <div class="f_Left">
-        <h4>
-          <label for="FAMILY" hidden>사이트버튼</label>
-          <select>
-            <option id="FAMILY">FAMILY SITE</option>
-            <option id="FAMILY">Person SITE</option>
-            <option id="FAMILY">Interview SITE</option>
-          </select>
-          <span><a href="#">개인정보취급방침</a></span>
-        </h4>
-      </div>
+      <section>
+        <label for="FAMILY" hidden>사이트버튼</label>
+        <select id="FAMILY">
+          <option>FAMILY SITE</option>
+          <option>Person SITE</option>
+          <option>Interview SITE</option>
+        </select>
+        <span><a href="#">개인정보취급방침</a></span>
+      </section>
       <div class="f_Rigth">
         <p>COPYRIGHT 2009 AMOREPACIFIC. ALL RIGHTS RESERVED</p>
-        <h3><img src="./img/logo.gif" alt="하단회사로고"></h3>
+        <h3><img src="./img/logo.gif" alt="COPYRIGHT 2009 AMOREPACIFIC. ALL RIGHTS RESERVED"></h3>
       </div>
     </footer>
   </div>
