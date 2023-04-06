@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>선택자연습</title>
+  <style>
+    .f30 {
+      font-size: 30px;
+    }
+
+    .f40 {
+      font-size: 40px;
+    }
+
+    .active {
+      color: red;
+    }
+
+    .hidden {
+      opacity: 0.2;
+    }
+
+    .f30.f40 {
+      font-size: 70px;
+    }
+  </style>
+</head>
+
+<body>
+  <ul>
+    <li class="f30">list1 - 글씨크기30</li>
+    <li class="f40 active">list2 - 글씨크기40/활성화스타일</li>
+    <li class="active">list3 - 활성화스타일</li>
+    <li class="hidden">list4 - 비활성화스타일-투명도20%</li>
+    <li class="f30 f40 active">list5 - 글씨크기70/활성화스타일</li>
+  </ul>
+</body>
+
+</html>

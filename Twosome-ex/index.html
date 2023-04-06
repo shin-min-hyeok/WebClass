@@ -5,14 +5,18 @@
   <meta charset="UTF-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>A TWOSOME PLACE</title>
+  <title>투썸플레이스</title>
 </head>
 
 <body>
-  <div class="wrap">
+  <div id="container">
     <header>
       <div class="logo">
-        <h1><a href="#"><img src="./img/logo_black.svg" alt="투썸플레이스 홈피이지로"></a></h1>
+        <h1>
+          <a href="#">
+            <img src="./img/logo_black.svg" alt="투썸플레이스 로고">
+          </a>
+        </h1>
       </div>
       <nav class="gnb">
         <ul>
@@ -61,7 +65,6 @@
           </ul>
         </li>
         </ul>
-        </li>
         <a href="#">
           <li>가맹점 창업안내
             <ul>
@@ -94,181 +97,229 @@
         </a>
         </ul>
       </nav>
-      <nav class="langList">
-        <a href="#">English</a>
-      </nav>
-      <nav class="button">
-        <a href="#"><img src="./img/ico_24_allmenu_black.svg" alt=""></a>
-      </nav>
+      <div class="lng">
+        <ul>
+          <li>
+            <a href="#">English</a>
+          </li>
+        </ul>
+      </div>
+      <div class="btnMenu">
+        <a href="#"><img src="./img/ico_24_allmenu_black.svg" alt="전체메뉴 버튼"></a>
+      </div>
     </header>
     <main>
-      <div class="toptext">
-        <ol>
-          <li>홈</li>
-          <li>메뉴이야기</li>
-        </ol>
-      </div>
-      <div class="maintext">
-        <h1>커피이야기</h1>
-      </div>
-      <div class="mediumText">
-        <dl>
-          <dt>TWOSOME COFFEE STORY</dt>
-          <dd>내 취향이 담긴 커피, 투썸플레이스에는 내 취향을 담아 섬세하게 만든 나만의 커피가 있습니다.</dd>
-        </dl>
-        <p>투썸플레이스 큐그레이더(Q-Grader)는 좋은 산지의 신선한 원두만을 선별해 각각 다른 개성의 세가지 블렌드를 제공합니다. 원두 타입별 최적의 밸런스를 맞춘 로스팅 포인트, 최상의 에스프레소
-          추출 기술이 더해져 투썸플레이스만의 커피가 완성됩니다.</p>
-      </div>
-      <div class="mediumTextImg">
-        <figure>
+      <div class="story">
+        <p class="sitepath">
+          <a href="#">홈</a>&middot; <a href="#">메뉴이야기</a>
+        </p>
+        <h2>커피이야기</h2>
+        <section class="txtFrame">
+          <h2>TWOSOME<br>COFFEE STORY</h2>
+          <h3>
+            내 취향이 담긴 커피, 투썸플레이스에는 내 취향을 담아 섬세하게 만든 나만의 커피가 있습니다.
+          </h3>
+          <p>투썸플레이스 큐그레이더(Q-Grader)는 좋은 산지의 신선한 원두만을 선별해 각각 다른 개성의 세가지 블렌드를 제공합니다. 원두 타입별 최적의 밸런스를 맞춘 로스팅 포인트, 최상의 에스프레소
+            추출 기술이 더해져 투썸플레이스만의 커피가 완성됩니다.</p>
+        </section>
+        <figure class="imgFrame">
           <img src="./img/img_p_coffeestory.jpg" alt="커피이야기의 커피사진">
         </figure>
       </div>
-      <div class="blendTitle">
-        <h3>투썸의 특별한 블렌드</h3>
-      </div>
       <div class="blend">
+        <h3>투썸의 특별한 블렌드</h3>
         <ul>
           <li>
-            <img src="./img/ico_64_coffee_black.svg" alt="블랙원두">
-            <h4>BLACK GROUND</h4>
-            <P>DAKR ROAST</P>
-            <dl>
-              <dt>블랙그라운드</dt>
-              <dd>묵직하고 스모키한 첫인상과 입안 가득 꽉 차는 바디감,
-                다크초콜릿의 달콤쌉싸름한 여운이 매력적인 다크 로스팅 블렌드
-              </dd>
-            </dl>
-            <p>Dark Roast</p>
+            <h5>
+              <img src="./img/ico_64_coffee_black.svg" alt="블랙원두">
+              <b>BLACK GROUND</b>
+              <span>DAKR ROAST</span>
+            </h5>
+            <h6>블랙그라운드</h6>
+            <p>묵직하고 스모키한 첫인상과 입안 가득 꽉 차는 바디감,
+              다크초콜릿의 달콤쌉싸름한 여운이 매력적인 다크 로스팅 블렌드</p>
+            <h6>Dark Roast</h6>
             <ul>
               <li>Full-Body</li>
               <li>Nutty</li>
               <li>Chocolaty</li>
             </ul>
-            <ul>
-              <li>산미</li>
-              <li>바디</li>
-            </ul>
             <dl>
-              <dt>Origin</dt>
-              <dd>콜롬비아,브라질,에티오피아,과테말라</dd>
-            </dl>
-          </li>
-          <li>
-            <img src="./img/ico_64_coffee_aroma.svg" alt="아로마원두">
-            <h4>AROMA NOTE</h4>
-            <P>MEDIUM ROAST</P>
-            <dl>
-              <dt>아로마노트</dt>
-              <dd>잘 익은 과일향,플로럴한 아로마에 부드럽고 밀도 있는 단맛과 은은한 산미의 밸런스가 좋은 미디엄 로스팅 블렌드
+              <dt>산미</dt>
+              <dd>
+                <ul>
+                  <li class="active">1</li>
+                  <li class="active">2</li>
+                  <li>3</li>
+                  <li>4</li>
+                  <li>5</li>
+                </ul>
+              </dd>
+              <dt>바디</dt>
+              <dd>
+                <ul>
+                  <li class="active">1</li>
+                  <li class="active">2</li>
+                  <li class="active">3</li>
+                  <li class="active">4</li>
+                  <li class="active">5</li>
+                </ul>
               </dd>
             </dl>
-            <p>Medium Roast</p>
+            <h6>Origin</h6>
+            <p>콜롬비아,브라질,에티오피아,과테말라</p>
+          </li>
+          <li>
+            <h5>
+              <img src="./img/ico_64_coffee_aroma.svg" alt="아로마원두">
+              <b>AROMA NOTE</b>
+              <span>MEDIUM ROAST</span>
+            </h5>
+            <h6>아로마노트</h6>
+            <p>잘 익은 과일향,플로럴한 아로마에 부드럽고 밀도 있는 단맛과 은은한 산미의 밸런스가 좋은 미디엄 로스팅 블렌드</p>
+            <h6>Medium Roast</h6>
             <ul>
               <li>Berry-like</li>
               <li>Juicy</li>
               <li>Floral</li>
             </ul>
-            <ul>
-              <li>산미</li>
-              <li>바디</li>
-            </ul>
             <dl>
-              <dt>Origin</dt>
-              <dd>에티오피아(Natural),과테말라</dd>
-            </dl>
-          </li>
-          <li>
-            <img src="./img/ico_64_coffee_swp.svg" alt="swp.디카페인">
-            <h4>SWP.DECAF</h4>
-            <P>DARK ROAST</P>
-            <dl>
-              <dt>SWP.디카페인</dt>
-              <dd>친환경방식의 스위스 워터 프로세스로 카페인을 제거하고 견과류의 고소한 풍미는 그대로 남긴 다크 로스팅 블렌드
+              <dt>산미</dt>
+              <dd>
+                <ul>
+                  <li class="active">1</li>
+                  <li class="active">2</li>
+                  <li class="active">3</li>
+                  <li class="active">4</li>
+                  <li>5</li>
+                </ul>
+              </dd>
+              <dt>바디</dt>
+              <dd>
+                <ul>
+                  <li class="active">1</li>
+                  <li class="active">2</li>
+                  <li class="active">3</li>
+                  <li>4</li>
+                  <li>5</li>
+                </ul>
               </dd>
             </dl>
-            <p>Dark Roast</p>
-            <ul>
-              <li>Rich</li>
-              <li>Sweet</li>
-              <li>Well-Balanced</li>
-            </ul>
-            <ul>
-              <li>산미</li>
-              <li>바디</li>
-            </ul>
-            <dl>
-              <dt>Origin</dt>
-              <dd>콜룸비아,브라질</dd>
-            </dl>
+            <h6>Origin</h6>
+            <p>에티오피아(Natural),과테말라</p>
+          </li>
+          <h5>
+            <img src="./img/ico_64_coffee_swp.svg" alt="디카페인">
+            <b>SWP.DECAF</b>
+            <span>DARK ROAST</span>
+          </h5>
+          <h6>SWP.디카페인</h6>
+          <p>친환경방식의 스위스 워터 프로세스로 카페인을 제거하고 견과류의 고소한 풍미는 그대로 남긴 다크 로스팅 블렌드</p>
+          <h6>Dark Roast</h6>
+          <ul>
+            <li>Rich</li>
+            <li>Sweet</li>
+            <li>well-Balanced</li>
+          </ul>
+          <dl>
+            <dt>산미</dt>
+            <dd>
+              <ul>
+                <li class="active">1</li>
+                <li class="active">2</li>
+                <li class="active">3</li>
+                <li>4</li>
+                <li>5</li>
+              </ul>
+            </dd>
+            <dt>바디</dt>
+            <dd>
+              <ul>
+                <li class="active">1</li>
+                <li class="active">2</li>
+                <li class="active">3</li>
+                <li class="active">4</li>
+                <li>5</li>
+              </ul>
+            </dd>
+          </dl>
+          <h6>Origin</h6>
+          <p>콜룸비아,브라질</p>
           </li>
         </ul>
       </div>
-      <div class="coffeMeun">
-        <div class="meunTitle">
-          <h3>시그니처 커피&음료</h3>
-        </div>
+      <div class="sig">
+        <h3>시그니처 커피&음료</h3>
         <ul>
           <li>
-            <img src="./img/img_t_menu01@3x.png" alt="스페니쉬 연유 라떼">
+            <figure>
+              <img src="./img/img_t_menu01@3x.png" alt="스페니쉬 연유 라떼">
+              <span>espreso</span>
+            </figure>
+            <h4>스페니쉬 연유 라떼</h4>
+            <p>panish Condensd Millk Cafe Latte</p>
+            <p>평화로운 유럽 초원의 감성을 담은 부드럽고 달콤한 스페니쉬 연유라떼</p>
             <dl>
-              <dt>스페니쉬 연유 라떼</dt>
-              <dd>Spanish Condensd Millk Cafe Latte</dd>
+              <dt>스페니쉬 라떼:</dt>
+              <dd>야외 활동이 많은 스페인 목동들이 피곤함을 해소하기 위해 즐겨 마시던 커피</dd>
             </dl>
-            <p>평화로운 유럽 초원의 감성을 담은 부드럽고 달콤한 스페니쉬 연유라떼
-            </p>
-            <p>스페니쉬 라떼:야외 활동이 많은 스페인 목동들이 피곤함을 해소하기 위해 즐겨 마시던 커피</p>
           </li>
           <li>
-            <img src="./img/img_t_menu02@3x.png" alt="롱블랙">
+            <figure>
+              <img src="./img/img_t_menu02@3x.png" alt="롱블랙">
+              <span>espreso</span>
+            </figure>
+            <h4>롱블랙</h4>
+            <p>Long Black</p>
+            <p>에스프레소보다 짧게 추출한 리스트레이또샷을 넣어 깊은 풍미와 풍부한 크레미를 느낄 수 있는 매력적인 커피</p>
             <dl>
-              <dt>롱블랙</dt>
-              <dd>Long Black</dd>
+              <dt>롱블랙:</dt>
+              <dd>호주와 뉴질랜드를 시작으로 영국 등 유럽에서 즐기는 커피로 아메리카노보다 진한 풍미로 즐기는 커피</dd>
             </dl>
-            <p>에스프레소보다 짧게 추출한 리스트레이또샷을 넣어 깊은 풍미와 풍부한 크레미를 느낄 수 있는 매력적인 커피
-            </p>
-            <p>롱블랙:호주와 뉴질랜드를 시작으로 영국 등 유럽에서 즐기는 커피로 아메리카노보다 진한 풍미로 즐기는 커피</p>
           </li>
           <li>
-            <img src="./img/img_t_menu03@3x.png" alt="허니 레몬티">
-            <dl>
-              <dt>허니 레몬티</dt>
-              <dd>Honey Lemon Tea</dd>
-            </dl>
-            <p>진한 TWG프렌치 얼그레이의 향과 달콤한 꿀, 상큼한 레몬이 녹아든 향긋한티
-            </p>
+            <figure>
+              <img src="./img/img_t_menu03@3x.png" alt="허니 레몬티">
+              <span>espreso</span>
+            </figure>
+            <h4>허니 레몬티</h4>
+            <p>Honey Lemon Tea</p>
+            <p>진한 TWG프렌치 얼그레이의 향과 달콤한 꿀, 상큼한 레몬이 녹아든 향긋한티</p>
           </li>
           <li>
-            <img src="./img/img_t_menu04@3x.png" alt="스트로베리 피치 프라페">
-            <dl>
-              <dt>스트로베리 피치 프라페</dt>
-              <dd>Strawberry Peach Frappe</dd>
-            </dl>
-            <p>딸기와 복숭아의 상큼함이 조화롭게 어우러져 달콤하고 시원하게 즐길 수 있는 과일 프라페
-            </p>
+            <figure>
+              <img src="./img/img_t_menu04@3x.png" alt="스트로베리 피치 프라페">
+              <span>espreso</span>
+            </figure>
+            <h4>스트로베리 피치 프라페</h4>
+            <p>Strawberry Peach Frappe</p>
+            <p>딸기와 복숭아의 상큼함이 조화롭게 어우러져 달콤하고 시원하게 즐길 수 있는 과일 프라페</p>
           </li>
         </ul>
       </div>
-  </div>
-  </main>
-  <footer>
-    <div class="fMenu">
-      <section>
-        <ul>
-          <li><a href="#">기업 및 단체구매안내</a></li>
-          <li><a href="#">가맹상담신청</a></li>
-          <li><a href="#">사이버신문고</a></li>
-        </ul>
-        <dl>
-          <dt>Address</dt>
-          <dd>서울특별시 중구 을지로 170,8층(을지로4가,을지트윈타워)투썸플레이스(주)</dd>
-          <dt>Customer Center</dt>
-          <dd>고객센터: <a href="#">1577-4410</a> 팩스:02-2058-6777</dd>
-        </dl>
-      </section>
-    </div>
-    <div class="fLOW">
-      <section>
+    </main>
+    <footer>
+      <div class="fTop">
+        <section class="fTop_left">
+          <ul>
+            <li><a href="#">기업 및 단체구매안내</a></li>
+            <li><a href="#">가맹상담신청</a></li>
+            <li><a href="#">사이버신문고</a></li>
+          </ul>
+        </section>
+        <section class="fTop_right">
+          <h5>Address</h5>
+          <address>서울특별시 중구 을지로 170,8층(을지로4가,을지트윈타워)투썸플레이스(주)</address>
+          <h5>Customer Center</h5>
+          <dl>
+            <dt>고색센터:</dt>
+            <dd>1577-4410</dd>
+            <dt>팩스:</dt>
+            <dd>02-2058-6777</dd>
+          </dl>
+        </section>
+      </div>
+      <div class="fBottom">
         <ul>
           <li><a href="#">이용약관</a></li>
           <li><a href="#">개인정보처리방침</a></li>
@@ -277,43 +328,26 @@
           <li><a href="#">법적고지</a></li>
           <li><a href="#">사업자정보확인</a></li>
         </ul>
-      </section>
-      <div class="address">
-        <section>
-          <address>
-            대푠이사 : 이영상 ㅣ 개인정보보호책임자 : 정병구ㅣ 사업자등록번호 : 404-86-01054 ㅣ통신판매없종신고증 : 제 2018-서울중구-0353호 ㅣ 대표이메일 :
-            helpmaster@towsome.co.kr
-          </address>
-        </section>
-        <section>
-          <div class="copy">
-            <p>Copyright ⓒ2021 A TWOSOME PLACE Co.,LTD. ALL Rights Reserved.</p>
-          </div>
-      </div>
-      </section>
-    </div>
-    <div class="snsmenu">
-      <section>
+        <dl>
+          <dt>대표이사:</dt>
+          <dd>이영상</dd>
+          <dt>개인정보보호책임자:</dt>
+          <dd>정병구</dd>
+          <dt>사업자등록번호:</dt>
+          <dd>404-86-01054</dd>
+          <dt>통신판매없종신고증:</dt>
+          <dd>제 2018-서울중구-0353호</dd>
+          <dt>대표이메일:</dt>
+          <dd>helpmaster@towsome.co.kr</dd>
+        </dl>
+        <p class="copy">Copyright ⓒ2021 A TWOSOME PLACE Co.,LTD. ALL Rights Reserved.</p>
         <ul>
-          <a href="#">
-            <li>
-              <img src="./img/ico_foot_sns_facebook.svg" alt="페이스북 바로가기">
-            </li>
-          </a>
-          <a href="#">
-            <li>
-              <img src="./img/ico_foot_sns_insta.svg" alt="인스타 바로가기">
-            </li>
-          </a>
-          <a href="#">
-            <li>
-              <img src="./img/ico_foot_sns_youtube.svg" alt="유튜브 바로가기">
-            </li>
-          </a>
+          <li><a href="#" target="_blank"><img src="./img/ico_foot_sns_facebook.svg" alt="페이스북 링크"></a></li>
+          <li><a href="#" target="_blank"><img src="./img/ico_foot_sns_insta.svg" alt="인스타 링크"></a></li>
+          <li><a href="#" target="_blank"><img src="./img/ico_foot_sns_youtube.svg" alt="유튜브링크"></a></li>
         </ul>
-      </section>
-    </div>
-  </footer>
+      </div>
+    </footer>
   </div>
 </body>
 
