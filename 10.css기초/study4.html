@@ -7,7 +7,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>관계선택자</title>
   <style>
-    div p {
+    div.box p {
       color: red;
     }
 
@@ -21,6 +21,43 @@
 
     .b+li {
       text-decoration: underline;
+    }
+
+    [for] {
+      color: green;
+    }
+
+    [checked]+label {
+      font-weight: bold;
+      color: red;
+    }
+
+    [class="box"] {
+      border: 1px solid red;
+    }
+
+    input[type="text"] {
+      background-color: red;
+      color: white;
+    }
+
+    /* ()숫자를넣어 그 n번째 줄만 스타일을 적용함 */
+    ol>li:nth-of-type(9) {
+      color: lime;
+      background: black;
+    }
+
+    /* 언제나 마지막을 태그 */
+    ol>li:last-of-type {
+      color: red;
+    }
+
+    /* (2n)이렇게 넣으면 짝수번태그를 선택
+      (2n+1)이건 2로 나누고 1을더했을때 나머지 태그
+      (3n)3의배수번째태그 선택 */
+    ol>li:nth-of-type(2n+1) {
+      border: 2px solid gold;
+      color: blue;
     }
   </style>
 </head>
@@ -57,8 +94,40 @@
         <li>list5</li>
         <li>list6</li>
       </ul>
-      <p class="b">선택자부분에서 +를 사용하면 앞에 선택된 태그의 다음형제 하나만 선탹한ㄷ.</p>
+      <p class="b">선택자부분에서 +를 사용하면 앞에 선택된 태그의 다음형제 하나만 선택한다.</p>
       <p>선택자부분에서 ~을 사용하면 앞에 선택된 태그의 다음형제 여러개를 선택한다.</p>
+    </div>
+    <div class="bol">
+      <h2>속성선택자</h2>
+      <p>태그가 갖고있는 속성을 사용하여 선택자를 구성할 수 있다.</p>
+      <form action="#">
+        <label for="userName">이름</label>
+        <input type="text" id="userName">
+        <lable for="userPW">비밀번호</lable>
+        <input type="password" id="userPW">
+        <input type="checkbox" checked id="autoLogin">
+        <label for="autoLogin">자동로그인</label>
+      </form>
+    </div>
+    <div class="box">
+      <h2>순번석택자</h2>
+      <p>태그가 갖고있는 순서를 이용하여 선택할 수 있다.</p>
+      <p>태그명:nth-of-type() 괄호안에는 수식/절대값을 입력하여 선택할 수 있다.</p>
+      <p>태그명:last-of-type/태그명:first-or-type 을 통해 마지막과 첫번쨰를 선택할 수 있다.</p>
+      <!-- li{list$}을 입력하면 순번이 매겨짐 -->
+      <ol>
+        <li>list1</li>
+        <li>list2</li>
+        <li>list3</li>
+        <li>list4</li>
+        <li>list5</li>
+        <li>list6</li>
+        <li>list7</li>
+        <li>list8</li>
+        <li>list9</li>
+        <li>list10</li>
+      </ol>
+      li{list$}
     </div>
   </div>
 
