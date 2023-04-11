@@ -109,4 +109,5 @@ uppercase(대문자로변형)/lowercase(소문자)/capitalize(앞글자만 대�
   /* 축약형 표현 시 필요한 개별속성만 입력해도 되나 font 의 축약형 표현에서는 최소 font-size/font-family가 명시되어있어야 한다. */
   /* 축양형 표현은 띄어쓰기로 값을 구분. (경우에 따라서 /사용해서 구분할 떄가 있음)*/
   border: 1px solid red;
+  /* font : (font style)(font weight)(font size)/(font height) (font-faily)*/
 }
