@@ -1,0 +1,45 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+
+@font-face {
+  font-family: pulmuone;
+  src: url(../ex2/PulmuoneLOHASBold.woff);
+}
+
+/* common-style(상속스타일) */
+html {
+  font-size: 20px;
+  font-family: 'Noto Sans KR', sans-serif;
+}
+
+/* layout (크기, 배치) */
+.container {
+  border: 1px solid red;
+  margin: 0 auto;
+  width: 900px;
+}
+
+/* detail */
+.container h2 {
+  font-weight: 600;
+  margin-bottom: 35px;
+  margin-top: 40px;
+  font-size: 22px;
+}
+
+.container p {
+  margin-bottom: 35px;
+}
+
+.container .mb100 {
+  margin-bottom: 100px;
+}
+
+.container .sign {
+  margin: 70px 0 35px;
+  /* margin-top: 70px;
+  margin-bottom: 35px; */
+  font-family: pulmuone;
+}
