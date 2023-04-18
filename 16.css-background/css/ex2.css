@@ -1,6 +1,33 @@
+/* reset */
 * {
   margin: 0;
   padding: 0;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-size: inherit;
+  font-weight: normal;
+}
+
+a {
+  text-decoration: none;
+  color: inherit;
+}
+
+strog,
+b {
+  font-weight: normal;
+}
+
+i,
+em,
+address {
+  font-style: noraml;
 }
 
 @font-face {
@@ -16,9 +43,8 @@ html {
 
 /* layout (크기, 배치) */
 .container {
-  border: 1px solid red;
   margin: 0 auto;
-  width: 900px;
+  width: 980px;
 }
 
 /* detail */

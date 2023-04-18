@@ -25,7 +25,7 @@ a {
   color: inherit
 }
 
-/* 2. common - stylek */
+/* 2. common - style (상속스타일) */
 
 
 body {
@@ -38,10 +38,10 @@ body {
 .container {
   width: 900px;
   margin: 0 auto;
-  background: url(../ex1/cosmo/images/dream.jpg) no-repeat 100% 100%;
+  background: url(../ex1/img/dream.jpg) no-repeat 100% 100%;
 }
 
-/* 4. detail\(글씨크기,글씨색,마진,패틱ㅇ) */
+/* 4. detail\(글씨크기,글씨색,마진,패딩) */
 .container>h1 {
   margin-bottom: 10px;
   font-size: 50px;
