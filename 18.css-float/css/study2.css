@@ -1,0 +1,26 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+
+.box {
+  border: 1px solid red;
+  width: 800px;
+  margin: 0 auto;
+}
+
+.box:after {
+  content: "";
+  display: block;
+  clear: both;
+}
+
+.box img {
+  float: left;
+  width: 50%;
+  border: 5px solid blue;
+  margin-right: 20px;
+  margin-bottom: 20px;
+  margin-left: 20px;
+  margin-top: 20px;
+}

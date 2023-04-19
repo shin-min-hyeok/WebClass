@@ -19,19 +19,23 @@
       border: 1px solid black;
       display: inline-block;
       padding: 6px 40px;
+      transition: all 0.5s ease 0s;
     }
 
     span:hover {
+      padding: 6px 150px;
       background: #000000;
       color: #ffffff;
     }
 
     span:active {
+      padding: 6px 150px;
       background: lime;
     }
 
     .parent:before {
       content: "첫번째 가상의 자식 태그";
+      border: 1px solid red;
     }
 
     /* parent클래스의 첫번째 자식을 css에서 만든다. */
