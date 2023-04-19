@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>float</title>
+  <link rel="stylesheet" href="./css/study1.css">
+</head>
+
+<body>
+  <h1>float</h1>
+  <p>블록 태그들을 나란히 배치하는데 목적이 있다.</p>
+  <p>두웅두웅~~~ 띄워서 부모의 컨텐트박스안에서 왼쪽 혹은 오른쪽으로 배치하는 방법(left/right)</p>
+  <p>두웅~~~~ 뜰때 문서의 흐름에서 제외된다 -> (부모태그입장에서 집나간 자식으로 간주된다.)</p>
+
+  <hr>
+  <h1>clear</h1>
+  <p>
+    float를 해제할 때 사용하는 속성 - clear속성이 적용된 태그는 앞서만들어진 형제태그 중에서 float가 되어있는 태그의 중에 가장 아래까지 내려와있는 floating태그 바로 밑에 배치가 된다. 이
+    때, clear속성이 지정된 태그가 배치가 되면서 부모태그는 height:auto이기 떄문에 clear속성이 지정된 태그가 있는 곳까지 높이를 자동으로 늘린다.
+  </p>
+
+  <div class="parent">
+    <div class="a">A</div>
+    <div class="b">B</div>
+    <div class="c">C</div>
+    <!-- <section class="clear">clearBox</section> -->
+  </div>
+  <p class="nextP">Lorem ipsum dolor sit amet consectetur adipisicing elit. Repellat nihil, aut sit, eveniet alias quis
+    voluptates
+    tempora veritatis illo nobis iure velit dolorem corporis ipsum, voluptatibus eos aperiam minima. Laboriosam.</p>
+</body>
+
+</html>

@@ -1,0 +1,71 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+
+.box1 {
+  border: 1px solid red;
+  /* margin-left: 50px;
+  margin-right: 50px;
+  margin-top: 100px;
+  margin-bottom: 100px; */
+  margin: 50px 100px;
+}
+
+.box2 {
+  border: 1px solid blue;
+  /* margin-top: 50px;
+  margin-bottom: 100px;
+  margin-left: 200px;
+  margin-right: 200p;
+  3가지는 상 좌우 하 */
+  margin: 50px 200px 100px;
+}
+
+.box3 {
+  border: 1px solid brown;
+  /* margin-top: 50px;
+  margin-right: 100px;
+  margin-bottom: 150px;
+  margin-left: 200px;
+  4가지는 상>우>하>좌 */
+  margin: 50px 100px 150px 200px;
+}
+
+.box4 {
+  border: 10px solid black;
+  margin-bottom: 100px;
+}
+
+.box5 {
+  border: 10px solid gold;
+  margin-top: 50px;
+}
+
+.box6 {
+  border: 10px solid pink;
+  display: inline-block;
+  width: 400px;
+  margin-right: 50px;
+}
+
+.box7 {
+  border: 10px solid skyblue;
+  display: inline-block;
+  width: 400px;
+  margin-left: 50px;
+}
+
+.line1 {
+  font-size: 5rem;
+  border: 1px solid red;
+  margin-left: 100px;
+  margin-right: 100px;
+  margin-top: 200px;
+  padding-left: 100px;
+  padding-right: 100px;
+}
+
+b {
+  border: 1px solid black;
+}

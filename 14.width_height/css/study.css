@@ -1,0 +1,70 @@
+* {
+  margin: 0;
+  padding: 0%;
+}
+
+.parent {
+  width: 800px;
+  border: 1px solid red;
+  margin: 0 auto;
+}
+
+.parent>p {
+  border: 5px solid black;
+  padding: 0 50px;
+}
+
+.parent2 {
+  width: 800px;
+  border: 1px solid red;
+  margin: 0 auto;
+}
+
+.parent2>p {
+  width: 800px;
+  border: 5px solid black;
+  padding: 0 50px;
+}
+
+.box1 {
+  border: 5px solid red;
+  width: 50%;
+
+}
+
+.parent3 {
+  border: 5px solid blue;
+  width: 80%;
+  margin: 0 auto;
+}
+
+.parent3>p {
+  border: 1px solid red;
+  width: 50%;
+}
+
+.parent4 {
+  border: 1px solid black;
+  width: 1000px;
+  margin: 0 auto;
+}
+
+.parent4>p {
+  border: 10px solid red;
+  width: 30vw;
+}
+
+.parent4>p+p {
+  width: 50vh;
+}
+
+.box2 {
+  border: 5px solid red;
+  width: 200px;
+  height: 300px;
+}
+
+.box3 {
+  border: 5px solid blue;
+  width: 200px;
+}
