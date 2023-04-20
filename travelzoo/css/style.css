@@ -1,0 +1,204 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-size: inherit;
+  font-weight: normal;
+}
+
+b,
+strong {
+  font-weight: normal;
+}
+
+i,
+em,
+address {
+  font-style: normal;
+}
+
+a {
+  color: inherit;
+  text-decoration: none;
+}
+
+ul,
+ol {
+  list-style: none;
+}
+
+/* common */
+html {
+  font-size: 12px;
+  font-family: 'Noto Sans KR', sans-serif;
+}
+
+/* layout(대략적인 레이아웃: 큰영역 -> 작은영역) */
+.container {
+  /* border: 1px solid red; */
+  width: 820PX;
+  margin: 0 auto;
+}
+
+header {
+  border-bottom: 3px solid blue;
+  margin-bottom: 16px;
+}
+
+main {
+  /* border: 1px solid orange; */
+  margin-bottom: 50px;
+}
+
+footer {}
+
+/* detail */
+
+/*~~~~~~~~~~~~~~~~~~~~~~~~~header~~~~~~~~~~~~~~~~~~~~~~~~ */
+header {
+  padding-top: 12px;
+  padding-bottom: 5px;
+}
+
+header h1 {
+  margin-bottom: 5px;
+}
+
+header p {
+  font-style: italic;
+  color: gray;
+}
+
+/***************************main****************************** */
+main h3 {
+  font-size: 2rem;
+  font-weight: bold;
+}
+
+main form {
+  /* border: 1px solid red; */
+  background: #eee;
+  /* 16진수 색상 표현법에서 똑같은 문자가 6개가 반복된다면 3자리로 줄여서 표현할 수 있다. */
+  padding: 5px;
+  margin-bottom: 10px;
+}
+
+main form * {
+  vertical-align: middle;
+}
+
+.nation {
+  /* border: 1px solid green; */
+  /* display: flex; */
+}
+
+.nation>section {
+  /* border: 1px solid red; */
+  box-sizing: border-box;
+  float: left;
+  /* float를 사용하여 공중에 띄우게 되면 암묵적으로 display형태는 inline-block으로 변한다. */
+  width: calc((100% - 40px)/3);
+  margin-right: 20px;
+}
+
+.nation>section:last-of-type {
+  margin-right: 0;
+}
+
+.nation:after {
+  content: "";
+  display: block;
+  clear: both;
+}
+
+.nation>section>h4 {
+  border-bottom: 1px solid #ccc;
+  padding-bottom: 4px;
+  margin-bottom: 7px;
+}
+
+.nation>section>ul {}
+
+.nation>section>ul>li {
+  border: 1px solid red;
+  margin-bottom: 20px;
+  border: 1px solid red;
+}
+
+.nation>section>ul>li:last-of-type {
+  margin-bottom: 0;
+}
+
+.nation>section>ul>li>img {
+  float: left;
+  margin-right: 10px;
+}
+
+/*************************footer***************************/
+footer {
+  background: #eee;
+  /* 16진수 색상 표현법에서 똑같은 문자가 6개가 반복된다면 3자리로 줄여서 표현할 수 있다. */
+  padding: 5px;
+  margin-bottom: 10px;
+}
+
+.fLeft {
+  float: left;
+  /* border: 1px solid red; */
+}
+
+.fRight {
+  float: right;
+  /* border: 1px solid red; */
+}
+
+footer:after {
+  content: "";
+  display: block;
+  clear: both;
+}
+
+footer dl>* {
+  float: left;
+  margin-right: 10px;
+}
+
+footer dl>dt {
+  font-weight: bold;
+}
+
+footer dl>dd {
+  color: navy;
+}
+
+footer dl>dd:nth-of-type(3),
+footer dl>dd:nth-of-type(4) {
+  border-left: 1px solid #ccc;
+  padding-left: 10px;
+}
+
+footer dl:after {
+  content: "";
+  display: block;
+  clear: both;
+}
+
+.copy {
+  margin-top: 15px;
+  color: gray;
+}
+
+.bcf {
+  color: blue;
+}
+
+.fRight>* {
+  vertical-align: middle;
+}
