@@ -50,6 +50,7 @@ html {
 header {
   border-bottom: 3px solid blue;
   margin-bottom: 16px;
+
 }
 
 main {
@@ -140,6 +141,11 @@ main form * {
   float: left;
   margin-right: 10px;
 }
+.nation:after {
+  content: "";
+  display: block;
+  clear: both;
+}
 
 /*************************footer***************************/
 footer {
@@ -165,7 +171,7 @@ footer:after {
   clear: both;
 }
 
-footer dl>* {
+footer ul>* {
   float: left;
   margin-right: 10px;
 }

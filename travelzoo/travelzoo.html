@@ -6,122 +6,170 @@
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>travelzoo</title>
-  <link rel="stylesheet" href="./travelzoo.css">
+  <link rel="stylesheet" href="./css/travelzoo.css">
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@100;300;400;500;700;900&display=swap"
     rel="stylesheet">
 
 </head>
-<div class="container">
-  <header class="head">
-    <div class="img">
-      <img src="./images/logo.gif" alt="TRAVELZOO">
-    </div>
-    <p>
-      The Deal Experts. Over 21 million Subscribers Worldwide.
-    </p>
-    <h1>Select Your Site</h1>
-    <div class="check">
-      <input type="checkbox" id="checked">
-      <label for="checked">
-        Make this selection my default Travelzoo site and skip this page in the future.
-      </label>
-    </div>
+<div class="wrap">
+  <header>
+    <h1> <a href="#"><img src="./images/logo.gif" alt="Travelzoo"></a></h1>
+    <p>The Deal Experts. Over 21 million Subscribers Worldwide. </p>
   </header>
-  <main class="main">
-    <div class="Asia">
-      <ul>
-        <h3 class="Asia1">Asia Pacific</h3>
-        <li><img src="./images/a.jpg" alt="호주">
-          <p>Australia
-            <a href="#">www.travelzoo.com.au</a>
-          </p>
-        </li>
-        <li><img src="./images/ca.jpg" alt="중국">
-          <p>中国
-            <a href="#">cn.travelzoo.comv
-          </p>
-        </li>
-        <li><img src="./images/hong.jpg" alt="홍콩">
-          <p>香港特區
-            <a href="#">www.travelzoo.com.hk</a>
-          </p>
-        </li>
-        <li><img src="./images/j.jpg" alt="일본">
-          <p>日本
-            <a href="#">www.travelzoo.co.jp</a>
-          </p>
-        </li>
-        <li>台灣<br>
-          <a href="#">www.travelzoo.com.tw</a>
-        </li>
-        <li>Asia in English<br>
-          <a href="#">www.travelzoo.com/ap</a>
-        </li>
-      </ul>
-    </div>
-    <div class="Americas">
-      <ul>
-        <h3 class="Americas1">Americas</h3>
-        <li><img src="./images/canada.jpg" alt="캐나다">
-          <p>
-            Canada
-            <a href="#">www.travelzoo.ca</a>
-          </p>
-        </li>
-        <li><img src="./images/usa.jpg" alt="U.S.A">
-          <p>
-            U.S.A.
-            <a href="#">www.travelzoo.comv</a>
-          </p>
-        </li>
-      </ul>
-    </div>
-    <div class="Europe">
-      <ul>
-        <h3 class="Europe1">Europe</h3>
-        <li><img src="./images/germany.jpg" alt="독일">
-          <p>
-            Deutschland
-            <a href="#">www.travelzoo.de</a>
-          </p>
-        </li>
-        <li><img src="./images/canada.jpg" alt="캐나다">
-          <p>
-            España
-            <a href="#">www.travelzoo.comv</a>
-          </p>
-        </li>
-        <li><img src="./images/fanace.jpg" alt="프랑스">
-          <p>
-            France
-            <a href="#">www.travelzoo.fr</a>
-          </p>
-        </li>
-        <li><img src="./images/unitied.jpg" alt="영국">
-          <p>
-            United Kingdom
-            <a href="#">www.travelzoo.co.uk</a>
-          </p>
-        </li>
-      </ul>
+  <main>
+    <h2>Select Your Site</h2>
+    <form>
+      <input type="checkbox" id="checked">
+      <label for="checked">Make this selection my default Travelzoo site and skip this page in the future.</label>
+    </form>
+    <div class="container">
+      <section>
+        <h3>Asia Pacific</h3>
+        <ul>
+          <li>
+            <div class="imgFrame">
+              <img src="./images/a.jpg" alt="Australia">
+            </div>
+            <div class="textFrame">
+              <h5>Australia</h5>
+              <a href="#">www.travelzoo.com.au
+              </a>
+            </div>
+          </li>
+          <li>
+            <div class="imgFrame">
+              <img src="./images/ca.jpg" alt="China">
+            </div>
+            <div class="textFrame">
+              <h5>中国</h5>
+              <a href="#">cn.travelzoo.com
+              </a>
+            </div>
+          </li>
+          <li>
+            <div class="imgFrame">
+              <img src="./images/hong.jpg" alt="Hong Kong SAR">
+            </div>
+            <div class="textFrame">
+              <h5>香港特區</h5>
+              <a href="#">www.travelzoo.com.hk
+              </a>
+            </div>
+          </li>
+          <li>
+            <div class="imgFrame">
+              <img src="./images/j.jpg" alt="Japan">
+            </div>
+            <div class="textFrame">
+              <h5>日本</h5>
+              <a href="#">www.travelzoo.co.jp
+              </a>
+            </div>
+          </li>
+          <li>
+            <div class="textFrame">
+              <h5>台灣</h5>
+              <a href="#">www.travelzoo.com.tw
+              </a>
+            </div>
+          </li>
+          <li>
+            <div class="textFrame">
+              <h5>Asia in English</h5>
+              <a href="#">www.travelzoo.com/ap
+              </a>
+            </div>
+          </li>
+        </ul>
+      </section>
+      <section>
+        <h3>Americas</h3>
+        <ul>
+          <li>
+            <div class="imgFrame">
+              <img src="./images/canada.jpg" alt="Canada">
+            </div>
+            <div class="textFrame">
+              <h5>Canada</h5>
+              <a href="#">www.travelzoo.ca
+              </a>
+            </div>
+          </li>
+          <li>
+            <div class="imgFrame">
+              <img src="./images/usa.jpg" alt="U.S.A.">
+            </div>
+            <div class="textFrame">
+              <h5>U.S.A.</h5>
+              <a href="#">www.travelzoo.com
+              </a>
+            </div>
+          </li>
+        </ul>
+      </section>
+      <section>
+        <h3>Europe</h3>
+        <ul>
+          <li>
+            <div class="imgFrame">
+              <img src="./images/germany.jpg" alt="Deutschland">
+            </div>
+            <div class="textFrame">
+              <h5>Deutschland</h5>
+              <a href="#">www.travelzoo.de
+              </a>
+            </div>
+          </li>
+          <li>
+            <div class="imgFrame">
+              <img src="./images/spain.jpg" alt="España">
+            </div>
+            <div class="textFrame">
+              <h5>España</h5>
+              <a href="#">www.travelzoo.es
+              </a>
+            </div>
+          </li>
+          <li>
+            <div class="imgFrame">
+              <img src="./images/fanace.jpg" alt="France">
+            </div>
+            <div class="textFrame">
+              <h5>France</h5>
+              <a href="#">www.travelzoo.fr
+              </a>
+            </div>
+          </li>
+          <li>
+            <div class="imgFrame">
+              <img src="./images/unitied.jpg" alt="United Kingdom">
+            </div>
+            <div class="textFrame">
+              <h5>United Kingdom</h5>
+              <a href="#">www.travelzoo.co.uk
+              </a>
+            </div>
+          </li>
+        </ul>
+      </section>
     </div>
   </main>
-  <footer class="foot">
-    <div class="foot_L">
+  <footer>
+    <div class="Lfoot">
       <dl>
-        <dt><span>Follow us:</span></dt>
-        <dd><a href="#"><img src="./images/icon_facebook_12x12.gif" alt="페이스북으로 바로가기"> Facebook</a> </dd>
-        <dd><a href="#"><img src="./images/icon_twitter_12x12.gif" alt="트위터로 바로가기">Twitter</a> |</dd>
-        <dd><a href="#">Privacy Policy</a> |</dd>
-        <dd><a href="#">Disclaimer</a> </dd>
-        <p class="copy">©2011 Travelzoo Inc. - All Rights Reserved. </p>
+        <dt>Follow Us:</dt>
+        <dd><a href="#"><img src="./images/icon_facebook_12x12.gif" alt="페이스북">Facebook</a></dd>
+        <dd><a href="#"><img src="./images/icon_twitter_12x12.gif" alt="트위터">Twitter</a></dd>
+        <dd><a href="#">Privacy Policy</a></dd>
+        <dd><a href="#">Disclaimer</a></dd>
       </dl>
+      <p class="copy">©2011 Travelzoo Inc. - All Rights Reserved. </p>
     </div>
-    <div class="foot_R">
-      <h1><a href="#"><img src="./images/logo_fly_footer_compact.gif" alt="fly회사홈페이지"></a></h1>
-      <p>Find <a href="#">cheap flights</a></p>
+    <div class="Rfoot">
+      <img src="./images/logo_fly_footer_compact.gif" alt="FLY.COM">
+      <span>Find <b class="bcf">cheap flights</span>
     </div>
   </footer>
 </div>
