@@ -1,0 +1,186 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+
+ul,
+ol {
+  list-style: none;
+}
+
+h1~h6 {
+  font-size: inherit;
+  font-weight: normal;
+}
+
+address,
+em,
+i {
+  font-style: normal;
+}
+
+strong,
+b {
+  font-weight: normal;
+}
+
+a {
+  text-decoration: none;
+  color: inherit
+}
+
+/*`````````````````` common `````````````````````*/
+html {
+  font-size: 12px;
+  font-family: 'Noto Sans KR', sans-serif;
+}
+
+/*~~~~~~~~~~~~~~~~layout~~~~~~~~~~~~~~~~~~~~~~*/
+.all {
+  width: 920px;
+  margin: 0 auto;
+  margin-bottom: 33px;
+}
+
+/* border: 1px solid red; */
+
+footer {
+  margin: 0 auto;
+  border: 1px solid blue;
+  background: #f0f0f0;
+}
+
+.innerFooter {
+  border: 1px solid lime;
+  width: 920px;
+  margin: 0 auto;
+}
+
+/* !!!!!!!!!!!!!!!!!!header!!!!!!!!!!!!!!!!!*/
+header {
+  border: 1px solid red;
+  display: flex;
+  justify-content: space-between;
+}
+
+.logo {
+  border: 1px solid red;
+}
+
+nav {
+  /* border: 1px solid red; */
+}
+
+.gnb {
+  display: flex;
+  border: 1px solid red;
+}
+
+.lnb {
+  display: flex;
+  /* border: 1px solid red; */
+  justify-content: flex-end;
+  margin-bottom: 30px;
+}
+
+.lnb>li {
+  /* border: 1px solid blue; */
+  color: #fff;
+  background: #333;
+  text-transform: uppercase;
+  font-size: 0.9rem;
+  padding: 2px 8px;
+
+}
+
+.lnb>li:first-of-type {
+  padding-left: 16px;
+}
+
+.lnb>li:last-of-type {
+  padding-right: 16px;
+}
+
+
+.gnb>li {
+  border: 1px solid blue;
+  padding: 10px 16px;
+  font-size: 1.2rem;
+  font-weight: bold;
+  color: #333;
+}
+
+/*~~~~~~~~~~~~~~~~main~~~~~~~~~~~~~~~~~~ */
+.contents {
+  /* border: 1px solid red; */
+  display: flex;
+  justify-content: space-between;
+}
+
+.contents>section {
+  border: 1px solid blue;
+  width: calc((100% - 40px)/3);
+  justify-content: space-between;
+}
+
+.contents>section>h2 {
+  border-bottom: 1px solid #ccc;
+  display: flex;
+  /* justify-content: space-between; */
+}
+
+.noticeList {
+  /* border: 1px solid red; */
+}
+
+.noticeList>li {
+  /* border: 1px solid red; */
+  margin-bottom: 3px;
+}
+
+.noticeList>li:last-of-type {
+  margin-bottom: 0;
+}
+
+.noticeList>li>a {
+  /* border: 1px solid blue; */
+  display: block;
+}
+
+.noticeList>li>a>span {
+  float: right;
+}
+
+.quickList {
+  display: flex;
+}
+
+/* ~~~~~~~~~~~~footer~~~~~~~~~~~~~~~~~ */
+.innerFooter {
+  display: flex;
+  padding: 20px 0;
+  justify-content: space-between;
+}
+
+.fRight {
+  border: 1px solid red;
+}
+
+.fLeft {
+  border: 1px solid red;
+}
+
+.footMenu {
+  border: 1px solid lime;
+  display: flex;
+  margin-bottom: 8px;
+}
+
+.footMenu>li {
+  border: 1px solid aqua;
+  margin-right: 20px;
+}
+
+.footMenu>li:last-of-type {
+  margin-right: 0;
+}

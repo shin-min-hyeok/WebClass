@@ -13,23 +13,22 @@
   text-transform: uppercase;
   flex-direction: row;
   justify-content: flex-start;
-  align-items: flex-start;
+  align-items: center;
   /* flex-wrap: wrap; */
   /* align-content: center; */
 }
 
 .box>div {
-  /* flex-basis: 100px; */
-  /* flex-grow: 1; */
-  /* flex-shrink: 1; */
+  /* flex-basis: 100px;
+  flex-shrink: 1;
+  flex-grow: 1; */
   flex: 1;
-  /* flex-basis: 0%;
-  flex-grow: 1;
-  flex-shrink: 1; */
+  /* 축양형 표현 */
 }
 
 .box .a {
   background-color: red;
+  /* flex-shrink: 2; */
   /* flex-grow: 2; */
   /* flex-shrink: 2; */
   /* order: 0;
