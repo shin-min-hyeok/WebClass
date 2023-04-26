@@ -28,7 +28,7 @@
 .menu {
   border: 1px solid red;
   width: 600px;
-  height: 100px;
+  height: 300px;
   flex: 1;
   display: flex;
 }
@@ -37,13 +37,15 @@
   display: flex;
   justify-content: center;
   align-items: center;
+
   border: 1px solid black;
   flex: 1;
-  transition: all 0.5s ease 0s;
+  transition: all 2s ease 0s;
 }
 
 .menu>li:hover {
   background: black;
   color: white;
+  transform: rotate(360deg) scale(0.5) translateZ(50px);
   flex: 2;
 }

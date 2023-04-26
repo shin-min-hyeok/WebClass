@@ -21,8 +21,11 @@ figure img {
   object-fit: cover;
   object-position: 0% 0%;
   transition: all 1s ease 0s;
+
 }
 
 figure:hover img {
   object-position: 100% 50%;
+  /* transform-origin: 30% 30%; */
+  /* transform: translate(-50px, 50px); */
 }

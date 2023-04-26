@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Posigion</title>
+  <link rel="stylesheet" href="./css/study.css">
+</head>
+<h1>position</h1>
+<p>일반적이 레이아웃이 아닌 특수한 경우에 자주사용되는 레이아웃 방식</p>
+
+<body>
+  <ul>
+    <li>relative</li>
+    <li>absolute</li>
+    <li>fixd</li>
+  </ul>
+
+  <hr>
+
+  <h2>position:relative</h2>
+  <ul>
+    <li>현재 태그ㅏ 배치된 공간을 기준으로 이동하는 방법(left/right/top/bottom)사용</li>
+    <li>(left:100px) -> 태그의 왼쪽 테두리 면에서 안쪽으로 100픽셀 떨어진 곳으로 태그가 이동</li>
+    <li>position:relatvie 속성을 사용해서 태그가 이동하는 경우 원래배치되어 있었던 공간으 그대로 차지하며, 다른 곳을 이동한다 해도 다른태그의 배치에 영향을 미치지 않는다.</li>
+  </ul>
+  <div class="boxA">
+    Lorem ipsum, dolor sit amet consectetur adipisicing elit. Obcaecati sed facilis ipsum ipsam quisquam nulla pariatur
+    eum enim voluptate? Esse magni aliquid labore laborum fuga sint! Tenetur commodi omnis debitis.
+    eum enim voluptate? Esse magni aliquid labore laborum fuga sint! Tenetur commodi omnis debitis.
+  </div>
+  <p class="nextP">next ptag</p>
+
+  <hr>
+
+  <h2>position:absolute</h2>
+  <p>positon:absolute가 적용된 태그는 자신을 포함하는 상위태그 중에서 가장~~~ 가까운 position이 적용된(css상에서 position속성을 사용한 태그) 태그의 영역을 기준으로 배치된다.(이
+    떄body태그는 기본적으로 position상태가 항시 적용이 되어있다.)</p>
+  <p>position:aboslute가 적용된 태그는 공중에 띄워져서 배치되기 때문에, 다른태그의 레이아웃에 영향을 미치지 않는다.</p>
+  <div class="parent">
+    <div class="boxB">
+      It's a B-box
+    </div>
+  </div>
+  <p class="nextP">next ptag</p>
+
+  <hr>
+
+  <h2>position:fixed</h2>
+  <p>position:fixed가 설정된 태그는 absolute와 다 똑같은데 하나만 다르다(언제나 기준이 화면(view-port)이다.)</p>
+  <div class="boxC">It's fixed-box Cbox</div>
+</body>
+
+</html>
