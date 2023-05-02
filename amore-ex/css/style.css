@@ -20,8 +20,8 @@ body {
 }
 
 .top {
-  background: url(../img/bg_body.jpg) repeat-x;
-  object-fit: cover;
+  background: url(../img/bg_body.jpg) no-repeat;
+  background-size: cover;
   width: 100%;
   height: 100%;
 }
@@ -144,9 +144,11 @@ nav {
   /* overflow: hidden; */
 }
 
-main dt:hover {
+/* main dt:hover {
   color: rgb(42 54 126);
-}
+  display: block;
+  height: 100%;
+} */
 
 main dt:hover+dd {
   color: rgb(42 54 126);
@@ -281,14 +283,14 @@ article>h3 {
 }
 
 .Menu3 {
-  border: 1px solid red;
+  /* border: 1px solid red; */
 }
 
 /* ---------footer-------- */
 
 footer {
   padding: 20px 0;
-  border: 1px solid red;
+  /* border: 1px solid red; */
 }
 
 .f_Left {
