@@ -304,17 +304,15 @@ main {
 .culture {
   margin-top: 100px;
   margin-bottom: 150px;
-  box-sizing: border-box;
 }
 
 .culture img {
-  width: calc((1440px - 10px)/5);
+  width: calc(1440px/4);
 }
 
 .culture>ul {
   display: flex;
   overflow: hidden;
-  height: 576px;
 }
 
 .culture>ul>li {
@@ -324,41 +322,89 @@ main {
 }
 
 .culture>ul>li img {
-  filter: grayscale(0.8);
-  height: 576px;
+  width: 100%;
+  height: 100%;
+  filter: grayscale(0.8)brightness(0.7);
+  transition: all 1s ease 0s;
 }
 
-.culture>ul>li img:hover {
-  transition: all 1s ease 0s;
-  overflow: hidden;
+.culture>ul>li:hover img {
   transform: scale(1.2);
-  filter: grayscale(0);
+  filter: grayscale(0)brightness(1);
 }
 
 .culture>ul>li div {
   /* border: 1px solid blue; */
   position: absolute;
   left: 50%;
-  top: 75%;
+  top: 70%;
   transform: translateX(-50%);
   text-align: center;
-  font-weight: bold;
   color: white;
 }
 
+.box>h3 {
+  font-size: 2rem;
+  margin-bottom: 10px;
+  transition: all 0.5s ease 0s;
+}
+
+.culture>ul>li:hover div>h3 {
+  transform: translateY(-60%);
+}
+
+.box>p {
+  padding-top: 20px;
+  /* position: relative; */
+  transition: all 0.5s ease 0s;
+  opacity: 0;
+}
+
+.culture>ul>li:hover p {
+  opacity: 1;
+}
+
+.box>p:after {
+  content: "";
+  position: absolute;
+  left: 50%;
+  transform: translateX(-50%);
+  top: 60%;
+  width: 30px;
+  height: 1px;
+  background: #fff;
+}
+
 .notice {
+  margin-bottom: 200px;
+}
+
+.notice .img {
+  overflow: hidden;
+  height: 190px;
+}
+
+.notice img {
   /* border: 1px solid red; */
-  margin-bottom: 150px;
+  transition: all 1s ease 0s;
+  box-sizing: border-box;
+  width: 100%;
+}
+
+.notice img:hover {
+  transform: scale(1.2);
 }
 
 .notice>ul {
   display: flex;
-  overflow: hidden;
+  /* border: 1px solid red; */
 }
 
 .notice>ul>li {
+  border: 1px solid red;
+  width: calc((100% - 30px)/4);
+  flex: 1;
   margin-right: 10px;
-  overflow: hidden;
 }
 
 .notice>ul>li * {
@@ -370,26 +416,8 @@ main {
 }
 
 .notice h3 {
-  font-weight: bold;
   font-size: 1.2rem;
-}
-
-.notice img {
-  width: calc((1440px - 40px)/4);
-  border: 1px solid red;
-
-}
-
-.notice>ul>li img {
-  overflow: hidden;
-  height: 198px;
-}
-
-.notice>ul>li img:hover {
-  transition: all 1s ease 0s;
-  overflow: hidden;
-  height: 198px;
-  transform: scale(1.05);
+  font-weight: bold;
 }
 
 footer {
