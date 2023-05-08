@@ -26,7 +26,7 @@ ul {
   height: 100%;
   object-fit: cover;
   filter: grayscale(1)brightness(0.7);
-  transition: all 1s ease 0s;
+  transition: all 0.6s ease 0s;
 }
 
 .conList>li:hover img {
@@ -34,14 +34,14 @@ ul {
   transform: scale(1.2);
 }
 
-/* .box {
+.box {
   position: absolute;
   left: 50%;
   transform: translateX(-50%);
   top: 70%;
   text-align: center;
   color: #fff;
-} */
+}
 
 .box>h3 {
   font-size: 2rem;
@@ -49,18 +49,18 @@ ul {
   transition: all 0.5s ease 0s;
 }
 
-.culture>ul>li:hover div>h3 {
+.conList>li:hover h3 {
   transform: translateY(-30px);
 }
 
 .box>p {
   padding-top: 20px;
-  /* position: relative; */
+  position: relative;
   transition: all 0.4 ease 0s;
   opacity: 0;
 }
 
-.culture>ul>li:hover div>p {
+.conList>li:hover p {
   opacity: 1;
 }
 
