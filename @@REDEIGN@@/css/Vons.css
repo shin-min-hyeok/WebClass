@@ -1,0 +1,62 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+
+a {
+  text-decoration: none;
+  color: inherit;
+}
+
+ul,
+ol {
+  list-style: none;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-size: inherit;
+  font-weight: 400;
+}
+
+em,
+i,
+address {
+  font-style: normal;
+}
+
+strong,
+b {
+  font-weight: 400;
+}
+
+/* START PAGE */
+.startWrap {
+  width: 1920px;
+  height: 960px;
+}
+
+header {
+  position: absolute;
+  top: 10%;
+  left: 5%;
+  z-index: 2;
+}
+
+main section>h2:after {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: calc(1920px/2);
+  height: 100%;
+  background: rgba(128, 128, 128, 0.1);
+}
+
+.startBanner {
+  display: flex;
+}
