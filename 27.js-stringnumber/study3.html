@@ -14,22 +14,39 @@
   <h1>변수</h1>
   <p>변할 가능성이 있는 수</p>
   <p>자바스크립트의 작은 데이터를 저장할 수 있는 메모리 공간</p>
+  <p>변수를 사용하기전에 변수를 미리 선언하여야 사용할 수 있다. (자바스크립트는 위에서 아래 왼쪽에서 오른쪽 순으로 해석하기 때문)</p>
   <script>
     let a;   // 변수를 선언(생성)
     a = 10;   // 변수를 초기화
     //alert(a);
     let b = 20; //변수를 선언과 동시에 초기화
     b = 30;
-    alert(b + a);
-    let name = prompt("이름을 입력해주세요.");
-    document.write("<h1>" + name + "님 환영합니다.</h1>")
-    document.write("<p>" + name + "님 오들도 즐거운 하루 되세요.</p>")
+    // alert(b + a);
+    // let name = prompt("이름을 입력해주세요.");
+    // document.write("<h1>" + name + "님 환영합니다.</h1>")
+    // document.write("<p>" + name + "님 오들도 즐거운 하루 되세요.</p>")
 
   //   let d = 80;
   //   alert(d + 10 + 1)
   //   alert(d + 1000 + 10)
   //   alert(d + 233 + 21 + 1)
   // </script>
+  <h2>변수의 종류</h2>
+  <p>변수는 크게 3종류가 있다.</p>
+  <ul>
+    <li>let - 동일한 변수명을 허용하지 않는다.</li>
+    <li>var - 동일한 변수명을 허용한다.</li>
+    <li>const - 변수를 초기화한 이후 다른 값으로 대체하지 못하게 만든 상수형 변수이다.</li>
+  </ul>
+  <script>
+    // const num1 = 30;
+    // alert(num1)
+    alert(num1)
+    let num1 = 30;
+
+
+
+  </script>
 </body>
 
 </html>

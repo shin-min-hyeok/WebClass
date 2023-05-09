@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>참 거짓테이터 - boolean</title>
+</head>
+
+<body>
+  <h1>boolean</h1>
+  <p>참 거짓의 값을 가지고 있는 데이터 형태</p>
+  <h2>비교를 통한 참거짓</h2>
+  <p>부등식의 비교를 통하여 참거짓의 결과를 나ㅏ낼 수 있다.</p>
+  <p>!는 부정의 의미로(not)상황을 역전시킨다.</p>
+  <script>
+    // alert(3 < 2)
+    // alert(10 >= 10)  // 10은 10보다 크거나 같다.
+    // alert(10 <= 10)  // 10은 10보다 작거나 같다.
+    // alert(10 == 10)  // 10은 10과 같다.
+    // alert(10 != 10)  // 10은 10과 같지않다.
+  </script>
+  <h2>사실의 근거에 대한 참거짓</h2>
+  <p>무언가가 있다면 true / 없다면 false</p>
+  <h3>false로 간주되는 경우</h3>
+  <ul>
+    <li>숫자데이터인데 0인 경우</li>
+    <li>문자데이터인데 빈문자인 경우</li>
+    <li>변수메모리는 있는데 초기화를 하지 않는경우의 변수</li>
+  </ul>
+  <script>
+    // 0 false로 간주
+    alert(0)
+    // 1 true로 간주
+    // "" false로 간주
+    // "test" true로 간주
+    // let a;  false로 간주
+  </script>
+</body>
+
+</html>
