@@ -7,6 +7,24 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>비만도예제</title>
 </head>
+<!-- // let height = Number(prompt("키를 입력해주세요"))
+// let weight = Number(prompt("몸무게를 입력해주세요"))
+// let bmi = (weight / ((height / 100) * (height / 100)))
+// let bmi = weight / Math.pow((height / 100), 2)
+// let bmikh = (bmi > 25 ? "비만" : bmi >= 23 && bmi <= 24.9 ? "과체중" : bmi >= 18.5 && bmi < 22.9 ? "정상" : "저체중")
+// let c;
+
+
+// if (bmi > 25) {
+//   c = "비만"
+// } else if (bmi >= 23 && bmi <= 24.9) {
+//   c = "과체중"
+// } else if (bmi >= 18.5 && bmi < 22.9) {
+//   c = "정상"
+// } else c = "저체중"
+//if문은 변수에 저장할 수 없다.
+
+// document.write(`당신의 키는 ${height}센티미터이고 몸무게는 ${weight}kg입니다 bmi수치는 ${bmi}이며 ${c}입니다.`) -->
 
 <body>
   <h1>퀴즈</h1>
@@ -26,35 +44,21 @@
   완성예시) 당신의 키는 170센티미터이고 몸무게는 70kg입니다 bmi수치는 24.2이며 과체중입니다.
 </pre>
 
-  <!-- // let weight = 90;
-    // if (weight > 100) {
-    //   alert("비만")
-    // } else if (weight > 80) {
-    //   alert("과체중")
-    // } else if (weight > 60) {
-    //   alert("정상")
-    // } else {
-    //   alert("저체중")
-    // } -->
   <script>
     let height = Number(prompt("키를 입력해주세요"))
     let weight = Number(prompt("몸무게를 입력해주세요"))
-    // let bmi = (weight / ((height / 100) * (height / 100)))
     let bmi = weight / Math.pow((height / 100), 2)
-    // let bmikh = (bmi > 25 ? "비만" : bmi >= 23 && bmi <= 24.9 ? "과체중" : bmi >= 18.5 && bmi < 22.9 ? "정상" : "저체중")
-    let c;
+    let bmihw;
 
+    if (bmi >= 25) {
+      bmihw = "비만"
+    } else if (bmi >= 23 && bmi >= 24.9) {
+      bmihw = "과체중"
+    } else if (bmi >= 18.5 && bmi <= 22.9) {
+      bmihw = "정상"
+    } else bmihw = "저체중"
 
-    if (bmi > 25) {
-      c = "비만"
-    } else if (bmi >= 23 && bmi <= 24.9) {
-      c = "과체중"
-    } else if (bmi >= 18.5 && bmi < 22.9) {
-      c = "정상"
-    } else c = "저체중"
-    //if문은 변수에 저장할 수 없다.
-
-    document.write(`당신의 키는 ${height}센티미터이고 몸무게는 ${weight}kg입니다 bmi수치는 ${bmi}이며 ${c}입니다.`)
+    document.write(`당신의 키는 ${height}센티미터이고 몸무게는 ${weight}kg입니다 bmi수치는 ${bmi}이며 ${bmihw}입니다.`)
   </script>
 </body>
 
