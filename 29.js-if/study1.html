@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>if-조건문</title>
+</head>
+
+<body>
+  <h1>조건문</h1>
+  <p>조건에 따라 실행하는 구문</p>
+  <p>기본형태 - if(조건boolean){실행할 소스코드}</p>
+  <p>괄호안에 조건의 결과가 참 인경우 중괄호안에 소스코드를 실행</p>
+  <h2>if(조건){소스코드}else{소스코드2}</h2>
+  <p>조건이 참이라면 소스코드1을 해석하고 그렇지않다면 소스코드2를 해석한다.</p>
+  <p>else구문은 선택적으로 사용할 수 있으며 앞에서 제시한 경우의 정반대의 경우를
+    내포하고있다.
+  </p>
+
+  <h2>if(조건){소스코드1}else if(조건2){소스코드2}else{소스코드3}</h2>
+  <p>만약 조건1이 참이라면 소스코드1을 실행 그렇지않다면 만약 조건2가 참이라면
+    소스코드2를 실행 그렇지않다면 소스코드3을 실행
+  </p>
+  <p>순차적으로 조건을 비교해나가면서 한번이라도 조건을 만족하면 다음경우를
+    해석하지않는다.
+  </p>
+  <script>
+    // if (10 > 5) { alert("참") }
+    // if (!0) { alert("참") }
+
+    // let age = Number(prompt("나이를 입력해주세요"))
+    // if (age >= 20) {
+    //   alert("입장가능합니다.")
+    // } else {
+    //   alert("입장못해유")
+    // }
+
+    // 아이디가: green 이고 비밀번호가: 1004
+    // 아이디와 비밀번호를 정상적으로 입력했다면, 알림창으로 로그인되었습니다.
+    // 그렇지않다면 계정정보 맞지않습니다. 라고 나탈날 수 있도록
+    // if문을 사용하여 소스코드를 만들어보세요.
+
+    // let id = prompt("아이디를 입력해주세요")
+    // let pw = Number(prompt("비밀번호를 입력해주세요"))
+
+    // if (id == "green" && pw == "1004") { alert("로그인되었습니다.") } else { alert("계정정보가 맞지않습니다.") }
+
+
+    // let weight = 90;
+    // if (weight > 100) {
+    //   alert("비만")
+    // } else if (weight > 80) {
+    //   alert("과체중")
+    // } else if (weight > 60) {
+    //   alert("정상")
+    // } else {
+    //   alert("저체중")
+    // }
+
+
+  </script>
+</body>
+
+</html>
