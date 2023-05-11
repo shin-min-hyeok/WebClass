@@ -6,6 +6,7 @@
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>비만도예제</title>
+  <link rel="stylesheet" href="./css/ex1.css">
 </head>
 <!-- // let height = Number(prompt("키를 입력해주세요"))
 // let weight = Number(prompt("몸무게를 입력해주세요"))
@@ -44,7 +45,9 @@
   완성예시) 당신의 키는 170센티미터이고 몸무게는 70kg입니다 bmi수치는 24.2이며 과체중입니다.
 </pre>
 
+
   <script>
+    let name = prompt("이름을 입력해주세요")
     let height = Number(prompt("키를 입력해주세요"))
     let weight = Number(prompt("몸무게를 입력해주세요"))
     let bmi = weight / Math.pow((height / 100), 2)
@@ -59,6 +62,25 @@
     } else bmihw = "저체중"
 
     document.write(`당신의 키는 ${height}센티미터이고 몸무게는 ${weight}kg입니다 bmi수치는 ${bmi}이며 ${bmihw}입니다.`)
+    document.write(`<table class="gradeStyle">
+    <caption>${name} 님의 비만도 검사결과</caption>
+    <tr>
+      <th>신장</th>
+      <td>${height}</td>
+    </tr>
+    <tr>
+      <th>체중</th>
+      <td> ${weight}</td>
+    </tr>
+    <tr>
+      <th>bmih</th>
+      <td>${bmi}</td>
+    </tr>
+    <tr>
+      <th>결과</th>
+      <td>${bmihw}</td>
+    </tr>
+  </table>`)
   </script>
 </body>
 
