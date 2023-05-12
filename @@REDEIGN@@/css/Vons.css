@@ -64,6 +64,7 @@ body {
 .main_Wrap {}
 
 .headerSub {
+  margin: 0 auto;
   width: 1260px;
 }
 
@@ -81,15 +82,22 @@ body {
 }
 
 .innerHeader {
-  width: 1260px;
+  width: 1920px;
   margin: 0 auto;
-  border: 1px solid aqua;
+    background: rgba(12, 38, 71, 0.9);
+      position: absolute;
+      top: 0;
+      left: 0;
 }
 
 header {
   border: 1px solid red;
+  width: 1260px;
+    height: 130px;
+    margin: 0 auto;
   display: flex;
   justify-content: space-between;
+  align-items: center;
 }
 
 .gnb {
@@ -99,11 +107,21 @@ header {
 .gnb>ul {
   display: flex;
 }
+.gnb>ul>li {
+  padding-left: 70px;
+  color: #fff;
+  font-size: 1.3rem;
+  font-weight: bold;
+}
 
+.gnb>ul>li>ul {
+  display: none;
+}
 .lnb {
   border: 1px solid blue;
 }
 
 .lnb>ul {
   display: flex;
+  
 }
