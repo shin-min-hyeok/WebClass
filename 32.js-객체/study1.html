@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>객체</title>
+</head>
+
+<body>
+  <h1>객체 - object</h1>
+  <p>자바스크립트에서 사물을 나타낼 때 객체표현를 사용한다.</p>
+  <p>객체는 ,(콤마)를 사용해서 프로퍼티를 입력할 수 있다.</p>
+  <p>그리고 각각의 프로퍼티는 :(콜론)을 사용하여 key:value 형태로 구성한다.</p>
+  <p>여기서 key값을 통해서 value의 값을 가져올 수 있으며, key는 객체안에 소속된 변수의
+    형태로 만들어진다.
+  </p>
+  <p>기본형태 -> {key1:value1,key2:value2}</p>
+  <p>그리고 객체의 key값에 저장되는 value는 문자,숫자,참거짓,배열,객체 등 모든
+    데이터형태가 저장될 수 있다.
+  </p>
+
+  <script>      //{name = key  "정현진" =value propety안에 key 와 value로 이루어짐}
+    let person1 = {
+      name: "정현진",
+      age: 38,
+      gender: "남자",
+      married: false
+    }
+    let person2 = [
+      "정현진",
+      38,
+      "남자",
+      false
+    ]
+
+    // alert(person1["name"])
+    // alert(person1.name)
+    // alert(person1.age)
+    // alert(person1.gender)
+    // alert(person1.married)
+
+    person3 = {
+      name: "정현진",
+      scoreArray: [
+        100,
+        90,
+        80
+      ],
+      scoreObj: {
+        ko: {
+          semester1: 100,
+          semester2: 98
+        },
+        en: {
+          semester1: 90,
+          semester2: 95
+        },
+        ma: {
+          semester1: 100,
+          semester2: 96
+        }
+      }
+    }
+    person3.scoreArray[1] // 90
+    // person3.scoreObj.ma // 80
+    // alert(person3.scoreObj.en.semester1)  // 90
+    let b = {
+      name: "정현진",
+      age: 37
+    }
+    b.name = "정민진"
+    // alert(b.name)
+    let c = [0, 2, 4]
+    c[2] = 6
+    c[1] = b.name
+    alert(c)
+  </script>
+</body>
+
+</html>
