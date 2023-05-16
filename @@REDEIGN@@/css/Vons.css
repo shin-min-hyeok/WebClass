@@ -102,7 +102,7 @@ header {
 .logoArea {
   /* border: 1px solid red; */
   width: 300px;
-  height: 50px;
+  height: 60px;
 }
 .logoArea img {
   /* border: 1px solid blue; */
@@ -112,14 +112,33 @@ header {
   display: flex;
 }
 .gnb > ul > li {
-  /* border: 1px solid red; */
+  border: 1px solid red;
   /* padding-left: 90px; */
   margin-right: 80px;
   color: #fff;
   font-size: 1.3rem;
   font-weight: 500;
   position: relative;
-  transition: all 1s ease 0s;
+  transition: all 0.5s ease 0s;
+}
+
+}
+.gnb > ul > li:after{
+  content: "";
+  width: 20px;
+  height: 20px;
+  border-radius: 10px;
+  background: #ffffff50;
+  border: 0.5px solid #b38e61;
+  position: absolute;
+  top: 50px;
+  left:50%;
+  transform: translateX(-50%);
+  opacity: 0;
+  transition: all 0.5s ease 0s;
+}
+.gnb > ul > li:hover:after{
+  opacity: 1;
 }
 .gnb > ul > li:nth-of-type(4) {
   margin-right: 0;
@@ -128,16 +147,18 @@ header {
 .gnb > ul > li > ul {
   display: none;
   position: absolute;
-  top: 70px;
-  left: 0;
+  top: 80px;
+  left: -10px;
   white-space: nowrap;
 }
 
 .gnb > ul > li > ul > li {
   margin-bottom: 20px;
+  background: #0c2647;
+  border: 1px solid red;
 }
 
-.gnb > ul > li:hover > ul {
+.gnb > ul > li:hover > ul{
   display: block;
 }
 .lnb > ul {
@@ -157,36 +178,46 @@ header {
 .lnb > ul > li:nth-of-type(1) {
   margin-left: 0;
 }
-/* -----------main----------------- */
-main {
-  width: 1920px;
+/* ---------------------------main------------------------------ */
+.mainBanner{
+  width: 100%;
+  height: 1080px;
+  margin: 0 auto;
+  position: relative;
+  overflow: hidden;
 }
 
 .MainSlide {
+  width: 300%;
+  height: 100%;
   display: flex;
-  margin-bottom: 200px;
+  transition: all 0.5s ease 0s;
 }
-.MainSlide > li {
+.MainSlide  li{
+  border: 1px solid red;
+  object-fit: contain;
+  flex: 1;
 }
 
 .MenuArea {
-  /* border: 1px solid red; */
+  margin-top: 200px;
+  position: relative;
 }
 .MenuText {
   /* border: 1px solid red; */
   width: 1260px;
   margin: 0 auto;
   text-align: center;
-  position: relative;
 }
 .MenuText::after {
   content: "";
   background: url(../img/메인페이지/텍스트img/메인페이지특수문자.png) no-repeat;
-  width: 100%;
-  height: 100%;
+  width: 40px;
+  height: 40px;
   position: absolute;
-  top: -50%;
+  top: -30px;
   left: 50%;
+  transform: translateX(-50%);
 }
 .MenuText > dl dt {
   font-weight: bold;
@@ -201,22 +232,26 @@ main {
 .MenuSlide2 {
   /* border: 1px solid red; */
   width: 1260px;
+  height: 390px;
   margin: 0 auto;
   display: flex;
   margin-bottom: 200px;
   justify-content: space-between;
+  overflow: hidden;
+  position: relative;
 }
-
 .MenuSlide2 > li {
+  width: 600%;
+  height: 390px;
+  transition: all 0.5s ease 0s;
   position: relative;
   margin-right: 23px;
 }
+.MenuSlide2 > li img{
+  object-fit: cover;
+}
 .MenuSlide2 > li:last-of-type {
   margin-right: 0;
-}
-.MenuSlide2 > li:nth-of-type(5),
-.MenuSlide2 > li:nth-of-type(6) {
-  opacity: 0;
 }
 .MenuSlide2 .MenuEX{
   position: absolute;
@@ -251,6 +286,9 @@ main {
   /* border: 1px solid red; */
   position: relative;
 }
+.BrandEX>li>img:nth-of-type(1){
+  z-index: 10;
+}
 .BrandEX ::after {
   content: "";
   position: absolute;
@@ -259,7 +297,7 @@ main {
   background: url(../img/메인페이지/텍스트img/WITHME.png) no-repeat;
   width: 60%;
   height: 30%;
-  opacity: 0.2;
+  opacity: 0.15;
   z-index: 1;
 }
 .BrandEX > li {
@@ -275,7 +313,7 @@ main {
   font-size: 1.2rem;
 }
 .BrandEX > li > dl b {
-  color: red;
+  color: rgb(206, 56, 56);
   font-size: 3.3rem;
   font-weight: bold;
 }
@@ -285,6 +323,9 @@ main {
   border-bottom: 0.5px solid #ac854d;
   padding-bottom: 40px;
   width: 100%;
+}
+.BrandEX h4{
+  font-family: notoSans;
 }
 .BrandEX > li {
   width: calc(1260px / 3);
@@ -315,31 +356,38 @@ main {
   display: flex;
   justify-content: space-between;
   overflow: hidden;
-    height: 487px;
+  height: 487px;
   }
   
-  .SupArea>ul>li {
-    position: relative;
-    overflow: hidden;
+.SupArea>ul>li {
+  position: relative;
+  overflow: hidden;
   }
   
-  .SupArea>ul>li img {
-    height: 487px;
-    transition: all 0.7s ease 0s;
+.SupArea>ul>li img {
+  height: 487px;
+  object-fit: cover;
+  filter: grayscale(1)brightness(0.7);
+  transition: all 0.7s ease 0s;
   }
-  
-  .SupArea .supText {
-    position: absolute;
-    top: 70%;
-    left: 50%;
-    transform: translate(-50%, 50%);
-    color: #fff;
-    font-weight: bold;
-    font-size: 1.3rem;
-  }
-  
+
   .SupArea>ul>li:hover img {
-    transform: scale(1.2);
+  transform: scale(1.2);
+  filter: grayscale(0)brightness(1);
+  }
+.SupArea .supText {
+  position: absolute;
+  bottom: 15%;
+  left: 50%;
+  transform: translate(-50%, 50%);
+  color: #fff;
+  font-weight: bold;
+  font-size: 1.3rem;
+  opacity: 0;
+  }
+
+  .SupArea>ul>li:hover .supText{
+  opacity: 1;
   }
 .conArea {
   position: relative;
@@ -357,7 +405,7 @@ main {
 }
 .conText {
   position: absolute;
-  top: 15%;
+  top: 12%;
   left: 50%;
   transform: translate(-50%, 50%);
   text-align: center;
@@ -365,8 +413,10 @@ main {
   z-index: 10;
 }
 .conText > p {
-  font-size: 1.2rem;
+  font-size: 1.3rem;
   margin-bottom: 5px;
+  color: black;
+  font-weight: 600;
 }
 .conText > h4 {
   font-size: 2rem;
@@ -374,7 +424,7 @@ main {
 }
 .mainFixedBar {
   width: 1920px;
-  background: #ac854d;
+  background: #342f2f;
   height: 60px;
   position: fixed;
   bottom: 0;
@@ -382,7 +432,6 @@ main {
   z-index: 20;
 }
 .mainFixedBar ul {
-  /* border: 1px solid red; */
   width: 1260px;
   height: 100%;
   display: flex;
@@ -391,7 +440,6 @@ main {
   margin: 0 auto;
 }
 .mainFixedBar ul > li {
-  /* border: 1px solid blue; */
   display: flex;
   color: #fff;
 }
@@ -399,7 +447,7 @@ main {
   margin-right: 50px;
 }
 .mainFixedBar ul > li > h5 > b {
-  color: black;
+  color: #ac854d;
   font-weight: bold;
 }
 .mainFixedBar ul > li h5 {
@@ -410,7 +458,7 @@ main {
   background: black;
   padding: 5px 20px;
 }
-/* ------------footer--------------- */
+/* -----------------------------footer---------------------------- */
 footer {
   width: 100%;
   height: 400px;
