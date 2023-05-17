@@ -33,8 +33,10 @@ strong,
 b {
   font-weight: 400;
 }
-
-/*--------SNS FIXED ---------- */
+html{
+  box-sizing: border-box;
+}
+/*--------SNS COMMON FIXED ---------- */
 .sns > ul {
   position: fixed;
   right: 50px;
@@ -42,43 +44,32 @@ b {
   text-align: center;
   z-index: 1000;
 }
-
 .sns > ul > li:nth-of-type(1) img {
   width: 100px;
 }
-
 .sns > ul > li:nth-of-type(2) img {
   width: 90px;
   margin-bottom: 5px;
 }
-
 .sns > ul > li:nth-of-type(3) img {
   width: 85px;
 }
-
-/*------------------ MAIN PAGE--Header------------------- */
-.main_Wrap {
-  box-sizing: border-box;
-}
-
+/*------------------ MAIN PAGE COOMON HEADER------------------- */
 .headerSub {
   margin: 0 auto;
   width: 1260px;
 }
-
 .headerSub > ul {
   /* border: 1px solid red; */
   display: flex;
   justify-content: flex-end;
 }
-
 .headerSub > ul > li {
   color: rgb(150, 150, 150);
   margin-left: 20px;
   font-size: 1rem;
   font-weight: 800;
 }
-
 .innerHeader {
   width: 100%;
   margin: 0 auto;
@@ -87,7 +78,6 @@ b {
   top: 0;
   left: 0;
 }
-
 header {
   /* border: 1px solid red; */
   width: 1260px;
@@ -98,7 +88,6 @@ header {
   align-items: center;
   font-family: netFont;
 }
-
 .logoArea {
   /* border: 1px solid red; */
   width: 300px;
@@ -121,8 +110,6 @@ header {
   position: relative;
   transition: all 0.5s ease 0s;
 }
-
-}
 .gnb > ul > li:after{
   content: "";
   width: 20px;
@@ -143,7 +130,6 @@ header {
 .gnb > ul > li:nth-of-type(4) {
   margin-right: 0;
 }
-
 .gnb > ul > li > ul {
   display: none;
   position: absolute;
@@ -151,13 +137,11 @@ header {
   left: -10px;
   white-space: nowrap;
 }
-
 .gnb > ul > li > ul > li {
   margin-bottom: 20px;
   background: #0c2647;
   border: 1px solid red;
 }
-
 .gnb > ul > li:hover > ul{
   display: block;
 }
@@ -178,7 +162,7 @@ header {
 .lnb > ul > li:nth-of-type(1) {
   margin-left: 0;
 }
-/* ---------------------------main------------------------------ */
+/* ---------------------------MAIN PAGE MAIN---------------------------- */
 .mainBanner{
   width: 100%;
   height: 1080px;
@@ -186,19 +170,17 @@ header {
   position: relative;
   overflow: hidden;
 }
-
 .MainSlide {
   width: 300%;
   height: 100%;
   display: flex;
   transition: all 0.5s ease 0s;
 }
-.MainSlide  li{
+.MainSlide li{
   border: 1px solid red;
   object-fit: contain;
   flex: 1;
 }
-
 .MenuArea {
   margin-top: 200px;
   position: relative;
@@ -341,7 +323,6 @@ header {
   padding-bottom: 5px;
   font-weight: bold;
 }
-
 .BrandEX .line:hover {
   border-bottom: 0.5px solid #ac854d;
 }
@@ -351,27 +332,23 @@ header {
   margin-bottom: 200px;
   overflow: hidden;
 }
-
 .SupArea > ul {
   display: flex;
   justify-content: space-between;
   overflow: hidden;
   height: 487px;
   }
-  
 .SupArea>ul>li {
   position: relative;
   overflow: hidden;
   }
-  
 .SupArea>ul>li img {
   height: 487px;
   object-fit: cover;
   filter: grayscale(1)brightness(0.7);
   transition: all 0.7s ease 0s;
   }
-
-  .SupArea>ul>li:hover img {
+.SupArea>ul>li:hover img {
   transform: scale(1.2);
   filter: grayscale(0)brightness(1);
   }
@@ -385,8 +362,7 @@ header {
   font-size: 1.3rem;
   opacity: 0;
   }
-
-  .SupArea>ul>li:hover .supText{
+.SupArea>ul>li:hover .supText{
   opacity: 1;
   }
 .conArea {
@@ -422,16 +398,113 @@ header {
   font-size: 2rem;
   font-family: netFont;
 }
-.mainFixedBar {
+/*-----------------SUB PAGE 1--MAIN----------------------------- */
+.subBanner{
+  width: 100%;
+  margin-bottom: -4px;
+}
+.subBanner>figure img{
+  height: 384px;
+  object-fit: contain;
+  /* position: relative; */
+}
+.subMenuBar{
+  width: 100%;
+  border-bottom: 0.5px solid #534741;
+  margin-bottom: 80px;
+}
+.subMenuBar>ul{
+  display: flex;
+  width: 1260px;
+  margin: 0 auto;
+  justify-content: space-around;
+}
+.subMenuBar>ul>li{
+  /* border: 1px solid red; */
+  padding: 20px 50px;
+  font-weight: bold;
+  color: #534741;
+  font-family: netFont;
+  flex-grow: 1;
+  text-align: center;
+}
+.subMenuBar>ul>li:nth-of-type(1){
+  background: #898989;
+}
+.SMenuEX{
+  width: 1260px;
+  margin: 0 auto;
+  /* border: 1px solid red; */
+  text-align: center;
+}
+.SMenuEX>h2{
+  /* border: 1px solid blue; */
+  font-family: netFont;
+  font-weight: bold;
+  font-size: 2.3rem;
+  color:#534741;
+  margin-bottom: 70px;
+  /* border-bottom: 0.5px solid #ad8253; */
+  position: relative;
+  border-radius: 5px;
+}
+.SMenuEX>h2::after{
+  content: "";
+  width: 60px;
+  height: 1px;
+  position: absolute;
+  bottom: -50%;
+  left: 50%;
+  transform: translateX(-50%);
+  background: #ad8253;
+
+}
+.SMenuEX>p{
+  font-weight: 800;
+  color:#534741;
+  font-family: notoSans;
+}
+.SMList{
+  /* border: 1px solid red; */
+  width: 1260px;
+  margin: 200px auto;
+}
+.SMList>ul{
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+.SMList>ul>li{
+  /* border: 1px solid red; */
+  flex-grow: 1;
+  flex: 1;
+  height: 300px;
+  object-fit: contain;
+  margin-bottom: 220px;
+}
+.SMList>ul>li img{
+  width:  299px;
+  height: 300px;
+}
+
+
+/*-----------------SUB PAGE 1--MAIN----------------------------- */
+
+/*-----------------SUB PAGE 2--MAIN----------------------------- */
+/*-----------------SUB PAGE 2--MAIN----------------------------- */
+/*-----------------SUB PAGE 3--MAIN----------------------------- */
+/*-----------------SUB PAGE 3--MAIN----------------------------- */
+/* --------------COMMON FIXED BAR-------------------- */
+.FixedBar {
   width: 1920px;
-  background: #342f2f;
+  background: #605656;
   height: 60px;
   position: fixed;
   bottom: 0;
   left: 0;
   z-index: 20;
 }
-.mainFixedBar ul {
+.FixedBar ul {
   width: 1260px;
   height: 100%;
   display: flex;
@@ -439,26 +512,28 @@ header {
   align-items: center;
   margin: 0 auto;
 }
-.mainFixedBar ul > li {
+.FixedBar ul > li {
   display: flex;
   color: #fff;
 }
-.mainFixedBar ul > li h5 {
+.FixedBar ul > li h5 {
   margin-right: 50px;
 }
-.mainFixedBar ul > li > h5 > b {
+.FixedBar ul > li > h5 > b {
   color: #ac854d;
   font-weight: bold;
 }
-.mainFixedBar ul > li h5 {
+.FixedBar ul > li h5 {
   font-size: 1.3rem;
   font-family: netFont;
 }
-.mainFixedBar ul > li p {
+.FixedBar ul > li p {
   background: black;
   padding: 5px 20px;
 }
-/* -----------------------------footer---------------------------- */
+/* --------------COMMON FIXED BAR-------------------- */
+
+/* -----------------------COMMON FOOTER--------------------------- */
 footer {
   width: 100%;
   height: 400px;
