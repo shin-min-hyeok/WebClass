@@ -464,7 +464,6 @@ header {
   font-family: notoSans;
 }
 .SMList {
-  border: 1px solid red;
   width: 1260px;
   margin: 150px auto;
   text-align: center;
@@ -505,15 +504,14 @@ header {
   color: #5c35127c;
 }
 .SMList .ListText > ul {
-  /* border: 1px solid blue; */
   display: flex;
   justify-content: center;
   align-items: center;
+  padding-bottom: 10px;
 }
 .SMList .ListText > ul > li {
-  /* border: 1px solid red; */
   margin-top: 15px;
-  margin-right: 18px;
+  margin-right: 12px;
   font-size: 14px;
   color: #fff;
   font-family: netFont;
@@ -539,7 +537,6 @@ header {
   font-weight: bold;
 }
 .SMListNum > ol {
-  border: 1px solid red;
   margin: 0 auto;
   width: 1260px;
   display: flex;
@@ -550,14 +547,12 @@ header {
   position: relative;
 }
 .SMListNum > ol > li {
-  /* border: 1px solid red; */
-  margin-right: 30px;
-  font-size: 1.7rem;
+  margin-right: 16px;
+  font-size: 16px;
   font-weight: bold;
   height: 40px;
   padding: 0 10px;
-  text-align: center;
-  transform: translateX(20px);
+  transform: translateX(50px);
 }
 .SMListNum > ol::after {
   content: "";
@@ -568,9 +563,100 @@ header {
   top: 4px;
   left: 33%;
 }
-/*-----------------SUB PAGE 1--MAIN----------------------------- */
-
 /*-----------------SUB PAGE 2--MAIN----------------------------- */
+.sub2_Banner{
+  width: 100%;
+  margin-bottom: -4px;
+}
+.sub2_Banner>figure img{
+  width: 1920px;
+  height: 384px;
+}
+.sub2_MenuBar {
+  width: 100%;
+  border-bottom: 0.5px solid #534741;
+  margin-bottom: 150px;
+}
+.sub2_MenuBar > ul {
+  display: flex;
+  width: 1260px;
+  margin: 0 auto;
+  justify-content: space-around;
+}
+.sub2_MenuBar > ul > li {
+  /* border: 1px solid red; */
+  padding: 20px 50px;
+  font-weight: bold;
+  color: #534741;
+  font-family: netFont;
+  flex-grow: 1;
+  text-align: center;
+}
+.sub2_MenuBar > ul > li:nth-of-type(1) {
+  background: #898989;
+}
+.S2_MenuEX{
+  text-align: center;
+  width: 1260px;
+  /* border: 1px solid red; */
+  margin: 0 auto;
+}
+.S2_MenuEX .MenuEX >h3 {
+  font-weight: bold;
+  font-size: 2.5rem;
+  font-family: netFont;
+}
+.S2_MenuEX .MenuEX >p{
+  margin-top: 40px;
+  font-size: 1rem;
+  font-weight: 600;
+  color:#947452;
+  font-family: notoSans;
+}
+.S2_MenuEX .MenuEX2{
+  margin-top: 100px;
+  /* border: 1px solid blue; */
+  position: relative;
+  z-index: 20;
+  margin-bottom: 100px;
+}
+.S2_MenuEX .MenuEX2>h2{
+  font-weight: bold;
+  font-size: 5rem;
+  line-height: 70px;
+  margin-bottom: 40px;
+}
+.S2_MenuEX .MenuEX2 >h3{
+  font-size: 1.5rem;
+  font-weight: 700;
+  line-height: 30px;
+  margin-bottom: 40px;
+}
+.S2_MenuEX .MenuEX2 >h3>span{
+  color: rgb(215, 15, 15);
+}
+.S2_MenuEX .MenuEX2 >p{
+  font-weight: bold;
+  font-size: rem;
+  font-family: notoSans;
+}
+.S2_MenuEX .MenuEX_img{
+  position: absolute;
+  top: 65%;
+  left: 350px;
+}
+.S2_MenuEX .MenuEX_img>ul{
+  display: flex;
+  justify-content: space-between;
+}
+.S2_MenuEX .MenuEX_img>ul>li{
+  width: calc(1260px/2);
+  padding-top: 50px;
+}
+.S2_MenuEX .MenuEX_img>ul>li img{
+  /* border: 1px solid red; */
+  width: 600px;
+}
 /*-----------------SUB PAGE 2--MAIN----------------------------- */
 /*-----------------SUB PAGE 3--MAIN----------------------------- */
 /*-----------------SUB PAGE 3--MAIN----------------------------- */
