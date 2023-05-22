@@ -33,10 +33,7 @@ strong,
 b {
   font-weight: 400;
 }
-html {
-  box-sizing: border-box;
-  width: 100%;
-}
+
 /*--------SNS COMMON FIXED ---------- */
 .sns > ul {
   position: fixed;
@@ -56,6 +53,9 @@ html {
   width: 85px;
 }
 /*------------------ MAIN PAGE COOMON HEADER------------------- */
+body{
+  box-sizing: border-box;
+}
 .headerSub {
   margin: 0 auto;
   width: 1260px;
@@ -74,10 +74,11 @@ html {
 .innerHeader {
   width: 100%;
   margin: 0 auto;
-  background: rgba(12, 38, 71, 0.9);
-  position: absolute;
-  top: 0;
+  background: rgba(12, 38, 71, 0.85);
+  position: fixed;
   left: 0;
+  top: 0;
+  z-index: 1000;
 }
 header {
   /* border: 1px solid red; */
@@ -94,58 +95,50 @@ header {
   width: 300px;
   height: 60px;
 }
-.logoArea img {
-  /* border: 1px solid blue; */
-  width: 100%;
-}
 .gnb > ul {
+  /* border: 1px solid red; */
   display: flex;
 }
 .gnb > ul > li {
-  border: 1px solid red;
+  /* border: 1px solid red; */
   /* padding-left: 90px; */
-  margin-right: 80px;
+  margin-right:100px;
   color: #fff;
   font-size: 1.3rem;
   font-weight: 500;
   position: relative;
-  transition: all 0.5s ease 0s;
-}
-.gnb > ul > li:after {
-  content: "";
-  width: 20px;
-  height: 20px;
-  border-radius: 10px;
-  background: #ffffff50;
-  border: 0.5px solid #b38e61;
-  position: absolute;
-  top: 50px;
-  left: 50%;
-  transform: translateX(-50%);
-  opacity: 0;
-  transition: all 0.5s ease 0s;
-}
-.gnb > ul > li:hover:after {
-  opacity: 1;
+  transition: all 3s ease 0s;
 }
 .gnb > ul > li:nth-of-type(4) {
   margin-right: 0;
 }
 .gnb > ul > li > ul {
+  /* text-align: ssssssssssssssssssssssssss; */
   display: none;
   position: absolute;
-  top: 80px;
-  left: -10px;
+  top: 62px;
+  left: 0;
+  transform: translateX(-25);
   white-space: nowrap;
-}
-.gnb > ul > li > ul > li {
-  margin-bottom: 20px;
-  background: #0c2647;
-  border: 1px solid red;
+  /* transition: all 1.5s ease 0s; */
+  /* border: 1px solid blue; */
+  background: rgba(12, 38, 71, 0.85);
+  color: #fff;
+  transition: all 1.5s ease 0s;
 }
 .gnb > ul > li:hover > ul {
   display: block;
+  opacity: 1;
+  transition: all 1.5s ease 0s;
 }
+.gnb > ul > li > ul > li {
+  width: 133px;
+  padding-top: 10px;
+  padding-left: 10px;
+  margin-bottom: 20px;
+  /* border: 1px solid red; */
+}
+
 .lnb > ul {
   display: flex;
 }
@@ -573,6 +566,11 @@ header {
   width: 1920px;
   height: 384px;
 }
+.sub2_Banner.sub2_BannerT{
+  position: absolute;
+  top: 50%;
+  left: 50%;
+}
 .sub2_MenuBar {
   width: 100%;
   border-bottom: 0.5px solid #534741;
@@ -620,6 +618,7 @@ header {
   position: relative;
   z-index: 20;
   margin-bottom: 100px;
+  /* border: 1px solid red; */
 }
 .S2_MenuEX .MenuEX2 > h2 {
   font-weight: bold;
@@ -628,6 +627,7 @@ header {
   margin-bottom: 40px;
 }
 .S2_MenuEX .MenuEX2 > h3 {
+
   font-size: 1.8rem;
   font-weight: 700;
   line-height: 30px;
@@ -643,8 +643,8 @@ header {
 }
 .S2_MenuEX .MenuEX_img {
   position: absolute;
-  top: 65%;
-  left: 300px;
+  top: 60%;
+  left: 15%;
 }
 .S2_MenuEX .MenuEX_img > ul {
   display: flex;
@@ -845,7 +845,7 @@ main {
 .sub3_Banner > figure p {
   position: absolute;
   left: 50%;
-  bottom: 80%;
+  bottom: 70%;
   color: #fff;
   font-size: bold;
   font-size: 2rem;
