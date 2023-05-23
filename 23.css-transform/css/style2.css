@@ -1,0 +1,84 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  margin-bottom: 500px;
+}
+
+.boxa {
+  border: 1px solid red;
+  width: 200px;
+  height: 200px;
+  margin: 50px auto;
+}
+
+@keyframes minRotate {
+  0% {
+    transform: rotate(0deg);
+  }
+
+  25% {
+    border-radius: 50%;
+  }
+
+  50% {
+    background: red;
+  }
+
+  100% {
+    transform: rotate(360deg);
+  }
+}
+
+.boxa {
+  /* animation-name: minRotate;
+  animation-duration: 1s;
+  animation-timing-function: linear;
+  animation-delay: 0s;
+  animation-iteration-count: infinite;
+  animation-direction: normal; */
+  animation: minRotate 5s linear 0s infinite;
+}
+
+.boxb {
+  width: 400px;
+  height: 400px;
+  background: blue;
+  animation: minbox 4s linear 0s infinite;
+  transition: all 0.5s ease 0s;
+}
+
+.boxb:hover {
+  background: red;
+  /* animation-play-state: paused; */
+  /* 마우스를 올렸을 때 애니메이션이 일시정지 됨 */
+  border-radius: 50%;
+}
+
+@keyframes minbox {
+  0% {
+    transform: translate(0, 0);
+  }
+
+  25% {
+    transform: translate(100%, 0%);
+  }
+
+  50% {
+    transform: translate(100%, 100%);
+  }
+
+  75% {
+    transform: translate(0%, 100%);
+  }
+
+  100% {
+    transform: translate(0%, 0%);
+  }
+}
+
+.spantag:hover {
+  transform: rotate(90deg);
+}

@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>background</title>
+  <link rel="stylesheet" href="./css/study1.css">
+</head>
+
+<body>
+  <h1>background</h1>
+  <p>태그의 공간에 배경색 또는 배경이미지를 나타낼 때 사용하는 css속성</p>
+  <hr>
+  <ul>
+    <li>background-color(transparent) ->배경색상을 입력할 때 사용하는 속성</li>
+    <li>background-image(none) ->배경이미지를 입력할 때 사용하는 속성</li>
+    <li>background-repeat(repeat) ->입력된 배경이미지의 가로세로반복속성을 제어하는 속성</li>
+    <li>background-position(0 0) ->입력된 배경이미지의 위치를 x/y축값으로 제어하는 속성</li>
+    <li>background-size(auto auto) -> 배경이미지의 가로세로사이즈를 지정하는 속성</li>
+    <li>background-blend-mode -> 배경색 또는 이미지들의 혼합옵션을 지정하는 속성</li>
+    <li>background-attachment(scroll) -> 배경이미지의 붙임값을 지정하는 속성</li>
+  </ul>
+  <div class="box">
+    <h2>title</h2>
+    <p> Lorem ipsum, dolor sit amet consectetur adipisicing elit. Consectetur officia, soluta quia similique facilis et
+      aliquam minima rem pariatur obcaecati excepturi id, molestias molestiae quisquam illum perspiciatis impedit
+      eligendi rerum?
+    </p>
+  </div>
+  <div class="box2">
+    <h2>background-position</h2>
+    <p>background-position속성은 기존 좌상단을 (0,0)좌표로 생각 했을 때 좌포체계에 따라서 픽셀단위로 수치를 입력하여 배경이미지를 변경시키는 방법이 있다. 하지마 그런 방법만 통해서
+      배경이미지를 선택한 영역의 가로기준 중앙 세로기준 중앙에 배치하려고 하면 계산하는 과정이 복잡하기 때문에 키워드 방식으로도 배경이미지를 배치할 수
+      있다.(left/right/top/botoom/center)
+    </p>
+    <p>키워드 입력 방식으로만 배경이미지의 위치를 변경하기에는 표현에 제약이 많이 따르기 때문에 %단위를 사용해서도 배경이미지를 배치할 수 있다. 이 때, 좀 더 세부적인 위치변경을 하기위해서 calc()라는
+      css상의 계산기를 활용할 수 있다.</p>
+    <p>calc() 괄호안에는 +(더하기).-(빼기).*(곱하기)./(나누기)기호를 통해 계산을 할 수 있다.
+      이 때 더하기와 빼기는 부호 앞뒤로 반드시 띄어쓰기를해서 표현해야 하며, 곱셈 나눗셈은 띄어스기를 하지않아도 된다.
+    </p>
+  </div>
+  <div class="box3">
+    <h2>background-size</h2>
+    <p>background-size:(가로사이즈) (세로사이즈) 속성을 통해서 배경이미지의 가로와 세로사이즈를 지정할 수 있다.</p>
+    <p>이 때, 가로사이즈를 픽셀이 아닌 %를 사용할 수 있다.</p>
+    <p>그리고, auto라는 키워드를 통해서 원본이미지가 갖고있는 비율계산을 자동으로 적용해줄 수 있다.</p>
+    <ul>
+      <li>cover -> 원본이미지의 가로세로 비율을 유지하면서 선택한 태그의 공간을 빈틈없이 가득 메꾸는 방식(이 때, 배경이미지가 잘려나가도 신경쓰지 않는 방식)</li>
+      <li>contain -> 원본이미지의 가로세로 비율을 유지하면서 선택한 태그의 공간을 최대한 가늑 메꾸는 방식(이 때, 배경이미지가 절대 잘려나가지 않는선에서 사이즈를 조절하는 방식)</li>
+    </ul>
+  </div>
+  <div class="box4"></div>
+  <div class="box5">
+    <h2>그라데이션 배경</h2>
+  </div>
+  <div class="box6">
+
+  </div>
+</body>
+
+</html>

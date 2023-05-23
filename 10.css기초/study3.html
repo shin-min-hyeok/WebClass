@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>클래스와 아이디를 사용한 선택자 구성</title>
+  <style>
+    .a {
+      color: red;
+    }
+
+    /* a라는 클래스가 있는 모든 태그들을 선택 */
+    h1.a {
+      color: blue;
+    }
+
+    /* h1태그 중에서 a클래스가 포함되어있는 h1태그들을 선택 */
+    p#a {
+      color: green;
+    }
+
+    /* p태그 중에서 아이디가 a인 태그를 선택 */
+    /* p{p태그전체}
+    p#a{p태그안에 id가 a인속성 선택}
+    p.b{p태그중 class가 b인속성 선택}
+    .b{class가 b인속성 선택}
+    #a{id가 a인속성 선택}
+    #a.b{id가 a이고 class가 b인속성 선택}
+    .b#a{class가 b이고 id가 a인속성 선택}
+    p#a.b{p태그중 id가 a이고 class가 b인속성 선택}
+    p.b#a{p태그중 class가 b고 id가 a인속성 선택} */
+  </style>
+</head>
+
+<body>
+  <h1 class="a">아이디,클래스이름(식별자 코드)를 사용한 선택자 구성</h1>
+  <p id="a" class="b c d">태그에 부여한 이름을 통해 선택자를 구성할 수 있다.</p>
+  <p class="a">태그명을 사용하여 선택자부분에 표현할 수 있다.</p>
+  <p class="a">클래스는 접근자(.)을 사용하여 선택자부분에 표현할 수 있다.</p>
+  <p>아이디는 접근자(#)을 사용하여 선택자부분에 표현할 수 있다.</p>
+  <p>선택자 부분에서 선택된 태그는 기본적으로 복수형태이다.</p>
+  <p>태그의 클래스명은 2개이상 여러개를 사용할 수 있으며, 띄어쓰기를 사용하여 클래스를 추가한다.</p>
+</body>
+
+</html>
