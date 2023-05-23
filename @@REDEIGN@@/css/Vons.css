@@ -9,7 +9,8 @@ a {
 }
 
 ul,
-ol {
+ol,
+li {
   list-style: none;
 }
 
@@ -33,9 +34,7 @@ strong,
 b {
   font-weight: 400;
 }
-.cotensWrap{
-  box-sizing: border-box;
-}
+
 /*--------SNS COMMON FIXED ---------- */
 .sns > ul {
   position: fixed;
@@ -55,7 +54,7 @@ b {
   width: 85px;
 }
 /*------------------ MAIN PAGE COOMON HEADER------------------- */
-.cotensWrap{
+.contensWrap {
   box-sizing: border-box;
 }
 .headerSub {
@@ -93,45 +92,39 @@ header {
   font-family: netFont;
 }
 .logoArea {
-  /* border: 1px solid red; */
+  border: 1px solid red;
   width: 300px;
   height: 60px;
+  line-height: 60px;
 }
 .gnb > ul {
   /* border: 1px solid red; */
   display: flex;
 }
 .gnb > ul > li {
-  /* border: 1px solid red; */
-  /* padding-left: 90px; */
-  margin-right:100px;
+  border: 1px solid red;
+  margin-right: 70px;
   color: #fff;
-  font-size: 1.3rem;
+  font-size: 1.4rem;
   font-weight: 500;
   position: relative;
-  transition: all 3s ease 0s;
 }
 .gnb > ul > li:nth-of-type(4) {
   margin-right: 0;
 }
 .gnb > ul > li > ul {
-  /* text-align: ssssssssssssssssssssssssss; */
   display: none;
   position: absolute;
   top: 62px;
   left: 0;
   transform: translateX(-25);
   white-space: nowrap;
-  /* transition: all 1.5s ease 0s; */
-  /* border: 1px solid blue; */
   background: rgba(12, 38, 71, 0.85);
   color: #fff;
-  transition: all 1.5s ease 0s;
 }
 .gnb > ul > li:hover > ul {
   display: block;
   opacity: 1;
-  transition: all 1.5s ease 0s;
 }
 .gnb > ul > li > ul > li {
   width: 133px;
@@ -145,15 +138,17 @@ header {
   display: flex;
 }
 .lnb > ul > li {
-  margin-left: 20px;
-  width: 70px;
+  margin-left: 18px;
+  width: 60px;
   height: 23px;
   color: #fff;
   background: #434343;
-  border-radius: 7px;
+  border-radius: 8px;
   padding: 3px 0;
   text-align: center;
-  font-size: 15px;
+  font-size: 14px;
+  font-family: netFont;
+  line-height: 23px;
 }
 .lnb > ul > li:nth-of-type(1) {
   margin-left: 0;
@@ -176,19 +171,74 @@ header {
   flex: 1;
   position: relative;
 }
-.MainSlide li:after{
+.MainSlide li:after {
   content: "";
   position: absolute;
   width: 100%;
   height: 100%;
-  left: 0;top:0;
-  background: #43434328;
+  left: 0;
+  top: 0;
+  background: #4343433a;
 }
-.MainSlide li img{
+.MainSlide li img {
   max-width: 100%;
   width: 100%;
   height: 100%;
   object-fit: cover;
+}
+.MainSlide > li .slideEx {
+  position: absolute;
+  left: 5%;
+  top: 20%;
+  z-index: 5;
+}
+.MainSlide > li .slideEx img {
+  object-fit: cover;
+  width: 220px;
+  height: 100px;
+  margin-bottom: 10px;
+}
+.MainSlide > li .slideEx h2 {
+  font-size: 6rem;
+  font-family: netFont;
+  font-weight: bold;
+  color: #fff;
+  text-transform: uppercase;
+  line-height: 90px;
+}
+.MainSlide > li .slideTxt {
+  /* border: 1px solid red; */
+  position: absolute;
+  bottom: 9%;
+  left: 55%;
+  transform: translateX(-50%);
+  width: 1280px;
+  margin: 0 auto;
+  font-size: 2rem;
+  font-weight: bold;
+  color: #ffffff;
+  font-family: netFont;
+  z-index: 5;
+}
+.slideBtn {
+  /* border: 1px solid lime; */
+  display: flex;
+  position: absolute;
+  left: 50%;
+  bottom: 10%;
+  transform: translateX(-50%);
+  z-index: 5;
+}
+.slideBtn > li {
+  background: #a2a2a2d1;
+  font-size: 0;
+  width: 30px;
+  height: 30px;
+  border-radius: 50%;
+  margin-right: 15px;
+}
+.slideBtn > li.on {
+  background: #b38e61;
 }
 .MenuArea {
   margin-top: 200px;
@@ -581,7 +631,7 @@ header {
   width: 1920px;
   height: 384px;
 }
-.sub2_Banner.sub2_BannerT{
+.sub2_Banner.sub2_BannerT {
   position: absolute;
   top: 50%;
   left: 50%;
@@ -642,7 +692,6 @@ header {
   margin-bottom: 40px;
 }
 .S2_MenuEX .MenuEX2 > h3 {
-
   font-size: 1.8rem;
   font-weight: 700;
   line-height: 30px;
