@@ -47,7 +47,6 @@ html {
 }
 
 /* layout */
-#container {}
 
 .top {
   /* border: 1px solid red; */
@@ -66,11 +65,6 @@ header {
   justify-content: space-between;
   align-items: center;
 }
-
-header>* {
-  /* border: 1px solid red; */
-}
-
 .lnb {
   display: flex;
   justify-content: flex-end;
@@ -192,17 +186,18 @@ header>* {
   /* background: url(../img/bg_service.gif) no-repeat 0 4; */
   /* line-height: 163%; */
 }
-
+.bannerTapMenu >dt{
+  cursor: pointer;
+}
 .tapMenu {
-  /* border: 1px solid lime; */
   width: 190px;
   height: 110px;
   position: relative;
+  cursor: pointer;
 }
 
 .tapMenu>dt {
   float: left;
-  /* border: 1px solid red; */
   height: 24px;
   display: flex;
   align-items: center;
@@ -217,7 +212,6 @@ header>* {
 
 .tapMenu>dd {
   position: absolute;
-  /* border: 1px solid blue; */
   left: 0;
   top: 30px;
   width: 100%;
