@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>배열데이터형태 -array</title>
+</head>
+
+<body>
+  <h1>배열 - array</h1>
+  <p>연관된 데이터들을 모아놓은 집합</p>
+  <p>배열안에는 콤마로 구분하여 원소를 여러개를 입력할 수 있다.</p>
+  <p>이 때 배열안에 들어가는 원소들은 데이터형태로 자유롭게 들어갈 수 있다.</p>
+  <p>배열은 입력된 순서에 다라 원소들에게 순번이 만들어지며, 배열안의 원소를 선택할 때 순번을 []인덱스를
+    통해 입력할 수 있다.
+  </p>
+  <script>
+    // let nickname = "멀뚱"
+    // let nicknam2 = "안쥐"
+    // let nicknam3 = "현새우"
+    // let nickname = ["멀뚱", "안쥐", "현새우"]
+    // console.log(nickname)
+    //          [    0       1     2     3      4   ] 하나요소 불러오면 왼쪽부터 0~ 순으로 진행
+    // let like1 = ["문상훈", "남자", 180, false, "INTP"]
+    // let like2 = ["박명수", "남자", 172, true, "없음"]
+    // let like3 = ["배수지", "여자", 168, false, "INFP/ENFP"]
+    // alert(like1[3])
+  </script>
+  <h1>배열의 응용</h1>
+  <p>배열의 원소로 또다른 배열이 들어갈 수 있다.</p>
+  <p>배열안의 원소를 하나씩 탐색하는데 주로 반복문이 많이 사용된다.</p>
+
+  <script>
+    let character = [
+      "배수지",
+      "대한민국",
+      [168, "AB형", 250],
+      ["무등초등학교", "광주문화중학교", "전남여자고등학교", "서울공연예술고등학교"],
+      "무종교"
+    ]
+    document.write(character[0])
+    document.write(character[1])
+    document.write(character[2][0])
+    document.write(character[2][1])
+    document.write(character[2][2])
+
+    document.write(character[3][0])
+    document.write(character[3][1])
+    document.write(character[3][2])
+    document.write(character[3][3])
+    document.write(character[4])
+
+    let fruits = ["바나나", "수박", "키위", "멜론", "귤", "사과"]
+    document.write("<ul>")
+    for (let i = 0; i < fruits.length; i++) {
+      document.write(`<li>${fruits[i]}</li>`)
+    }
+    document.write("</ul>")
+    // document.write(fruits[0])
+    // document.write(fruits[1])
+    // document.write(fruits[2])
+    // document.write(fruits[3])
+    // document.write(fruits[4])
+
+    [1, 2, 3].length
+    "ggg"
+    12
+    true
+  </script>
+</body>
+
+</html>

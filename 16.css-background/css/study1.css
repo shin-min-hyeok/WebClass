@@ -1,0 +1,75 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+
+.box {
+  margin: 0 auto;
+  border: 1px solid rgb(255, 0, 0);
+  background-color: cyan;
+  width: 800px;
+  height: 600px;
+  padding: 40px;
+  /* background-image: url(../img/animal-gdd1514713_640.jpg);
+  background-repeat: no-repeat;
+  background-position-x: 100px;
+  background-position-y: 100px;
+  background-position: 100px 100px; */
+  background: pink url(../img/animal-gdd1514713_640.jpg) no-repeat 100px 100px;
+}
+
+.box2 {
+  width: 1000px;
+  height: 800px;
+  border: 1px solid blue;
+  margin: 0 auto;
+  /* background: url(../img/animal-gdd1514713_640.jpg) no-repeat right 0; */
+  background: url(../img/animal-gdd1514713_640.jpg) no-repeat calc(100% - 100px) calc(100% - 50px);
+}
+
+.box2>h2 {
+  border: 1px solid red;
+  width: calc(50% + 50px);
+}
+
+.box3 {
+  width: 800PX;
+  height: 800px;
+  border: 1px solid black;
+  margin: 0 auto;
+  background: url(../img/animal-gdd1514713_640.jpg) no-repeat 0 0;
+  background-size: contain;
+}
+
+.box4 {
+  border: 10px solid red;
+  height: 100vh;
+  /* background-image: url(../img//animal-gdd1514713_640.jpg), url(../img//animal-gdd1514713_640.jpg);
+  background-repeat: no-repeat, no-repeat;
+  background-position: 0 0, 100% 100%; */
+  background: url(../img//animal-gdd1514713_640.jpg) no-repeat 0 0, url(../img//animal-gdd1514713_640.jpg) no-repeat 100% 100%;
+  /* 배경은, (콤마)를 통해서 2개이상 넣어줄 수 있다. */
+}
+
+.box5 {
+  border: 10px solid blue;
+  width: 30vw;
+  height: 30vw;
+  margin: 0 auto;
+  /* background-image: linear-gradient(0deg, red, blue); */
+  /* background-position: 100px 100px; */
+  /* background-repeat-no repeat */
+  /* background-size: 100px 100px; */
+  background-image: radial-gradient(red, blue);
+}
+
+.box6 {
+  width: 100%;
+  height: 500px;
+  border: 10px solid green;
+  margin: 0 auto;
+  /* background-color: red; */
+  background-image: linear-gradient(45deg, red, blue), url(../img/animal-gdd1514713_640.jpg);
+  background-blend-mode: exclusion;
+  background-attachment: scroll;
+}

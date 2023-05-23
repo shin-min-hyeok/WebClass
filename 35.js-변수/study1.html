@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>변수</title>
+</head>
+<body>
+  <h1>변수</h1>
+  <p>변수는 크게 지역변수와 전역변수로 나뉜다.</p>
+  <h2>지역변수</h2>
+  <p>지역변수는 특정지역에서 생성된 변수이며 특정지역안에서만 접근이 가능하다.</p>
+  <h2>전역변수</h2>
+  <p>전역변수는 전체지역에서 생성된 변수이며 모든지역에서 접근이 가능하다.</p>
+  <p>tip)번수는 안에서 밖으로는 접근이 가능하지만밖에서 안으로는 접근이 불가능하다</p>
+  <script>
+    let a= 100; // 전역변수
+    let person = {name:"정현진",age:38}
+    // alert(person.name)
+    function showName(){
+      let a = 200
+      alert(a)
+    }
+    showName()
+  </script>
+</body>
+</html>

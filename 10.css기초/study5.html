@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>선택자의 우선순위</title>
+  <link rel="stylesheet" href="./css/study5.css">
+</head>
+
+<body>
+  <h1>선택자의 우선순위</h1>
+  <p>태그를 선택하는 선택자부분은 우선순위 점수라는 개념이 있으며, 이우선순위점수가 높을수록 최종스타일오 반영된다.</p>
+  <ul>
+    <li>태그명으로 선택 - 우선순위 1점</li>
+    <li>클래스명으로 선택 - 우선순위 10점</li>
+    <li>아이디명으로 선택 - 우선순위 100점</li>
+    <li>인라인스타일방식 - 우선순위 1000점</li>
+    <li>css에서 !important를 사용하면 무조건 스타일을 적용하게 된다(단, 남용해선 안된다.)</li>
+  </ul>
+  <p>선택자의 우선순위 점수는 합산된다.</p>
+  <div class="box">
+    <h2 style="color: black;" class=" title title2" id="a">우선순위점수</h2>
+  </div>
+</body>
+
+
+</html>
