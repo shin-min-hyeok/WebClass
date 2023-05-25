@@ -1,198 +1,48 @@
-/* reset */
-* {
-  margin: 0;
-  padding: 0;
-}
-
-a {
-  text-decoration: none;
-  color: inherit;
-}
-
-ul,
-ol {
-  list-style: none;
-}
-
-h1,
-h2,
-h3,
-h4,
-h5,
-h6 {
-  font-size: inherit;
-  font-weight: 400;
-}
-
-em,
-i,
-address {
-  font-style: normal;
-}
-
-strong,
-b {
-  font-weight: 400;
-}
-
-/* common */
-html {
-  font-family: 'Noto Sans KR', sans-serif;
-  font-size: 14px;
-}
-
-.blankStyle:after {
-  content: "";
-  width: 10px;
-  height: 10px;
-  display: inline-block;
-  /* border: 1px solid red !important; */
-  margin-left: 4px;
-  background: url(../img/icn_header_new_win.svg) no-repeat 50% 50%;
-}
-
-@media (max-width:768px){}
-@media (min-width:769px){
-  
-}
-
-/* layout */
+@media (max-width:768px){
+   /* layout */
 .contents_wrap {
   box-sizing: border-box;
 }
-
-header {
-  /* border: 10px solid red; */
+.pc{display: none;}
+header.mo{
+  border: 1px solid red;
   position: fixed;
   left: 0;
   top: 0;
   width: 100%;
-  color: #fff;
+  height: 54px;
   z-index: 1000;
-  height: 70px;
-  transition: all 0.5s ease 0s;
-  overflow: hidden;
 }
-
-header::after {
-  content: "";
-  position: absolute;
-  left: 0;
-  top: 70px;
-  width: 100%;
-  height: 1px;
-  background-color: #ddd;
-}
-
-header:hover {
-  background: #fff;
-  color: #000;
-  height: 300px;
-}
-/* header */
-
-.innerHeader {
-  width: 1440px;
+.innerHeader{
+  width: 88%;
   margin: 0 auto;
+  border: 1px solid lime;
   display: flex;
-  height: 70px;
+  height: 100%;
   justify-content: space-between;
   align-items: center;
 }
-
-.logoArea {
-  width: 160px;
+.btnMoMenu{
+  border: 1px solid red;
+  width: 6.4vw;
+  height: 6.4vw;
 }
-
-.logoArea img {
+.btnMenuLang{
+  border: 1px solid red;
+  display: 6.4vw;
+  height: 6.4vw;
+}
+.btnMenuLang img{
   width: 100%;
-  display: none;
+  height: 100%;
+  object-fit: contain;
 }
-
-.logoArea a {
-  display: block;
-  width: 160px;
-  height: 26px;
-  background: url("../img/cm_bi_white.svg") no-repeat 50% 50%;
-  background-size: contain;
+.moLogo{
+  width: 31.47vw;
+  max-width: 230px;
 }
-
-header:hover .logoArea a {
-  background: url("../img/cm_bi_black.svg") no-repeat 50% 50%;
-  background-size: contain;
-}
-
-.langList {
-  width: 160px;
-}
-
-.langList>ul {
-  display: flex;
-  justify-content: space-between;
-}
-
-.langList>ul>li {
-  flex: 1;
-  text-align: center;
-  position: relative;
-}
-
-.langList>ul>li:after {
-  content: "";
-  position: absolute;
-  right: 0;
-  top: calc(50% - 5px);
-  width: 1px;
-  height: 10px;
-  background: #fff;
-}
-
-.langList>ul>li:last-of-type:after {
-  display: none;
-}
-
-.gnb {
-  width: 800px;
-}
-
-.gnb>ul {
-  display: flex;
-  height: 70px;
-}
-
-.gnb>ul>li {
-  flex: 1;
-  text-align: center;
-  position: relative;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-}
-
-.gnb>ul>li>a {
-  font-weight: bold;
-  font-size: 1.1rem;
-}
-
-.gnb>ul>li>ul {
-  position: absolute;
-  top: 70px;
-  left: 0;
+.moLogo a img {
   width: 100%;
-  padding-top: 20px;
-  color: #777;
-}
-
-.gnb>ul>li>ul>li {
-  margin-bottom: 10px;
-}
-
-.gnb>ul>li>ul>li:hover {
-  color: #000;
-}
-
-.gnb>ul>li>ul>li:last-of-type {
-  margin-bottom: 0;
 }
 
 /*-------------------main------------------*/
@@ -207,7 +57,7 @@ main {
   /* border: 5px solid aqua; */
   position: relative;
 }
-
+  
 .videoBanner:after {
   content: "";
   position: absolute;
@@ -530,4 +380,5 @@ main {
 }
 .snsMenu img {
   width: 50px;
+}
 }

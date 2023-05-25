@@ -1,0 +1,12 @@
+@keyframes Textin-out{
+  to{
+    opacity: 0;
+    opacity: 1;
+    left: -200px;
+  }
+  from{
+    opacity: 1;
+    opacity: 0;
+    transform: translateX(200px);
+  }
+}

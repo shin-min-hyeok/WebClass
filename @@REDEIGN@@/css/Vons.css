@@ -82,6 +82,7 @@ b {
   top: 0;
   z-index: 1000;
   transition: all 0.5s ease 0s;
+  border: 1px solid red;
 }
 .innerHeader:after{
   content: "";
@@ -96,7 +97,7 @@ b {
 }
 .innerHeader:hover{
   background: rgba(12, 38, 71, 0.85);
-  height: 420px;
+  height: 410px;
 }
 
 .innerHeader:hover:after{
@@ -158,6 +159,7 @@ header {
   margin-right: 30px;
   transition: all 0.1s ease 0s;
   cursor: pointer;
+  font-size: 18px;
 }
 .gnb > ul > li > ul > li:hover{
   color: #434343;
@@ -183,7 +185,7 @@ header {
 }
 /* ---------------------------MAIN PAGE MAIN---------------------------- */
 .MainBanner {
-  width: 1920px;
+  width: 100%;
   height: 900px;
   margin: 0 auto;
   /* border: 10px solid red; */
@@ -508,11 +510,20 @@ header {
 .subBanner {
   width: 100%;
   margin-bottom: -4px;
+  position: relative;
 }
 .subBanner > figure img {
   height: 384px;
   object-fit: contain;
-  /* position: relative; */
+}
+.subBanner > figure h1:after{
+  content: "";
+  background: #43434315;
+  width: 100%;
+  height: 384px;
+  position: absolute;
+  left: 0;
+  top: 0;
 }
 .subMenuBar {
   width: 100%;
@@ -647,27 +658,38 @@ header {
   width: 1260px;
   display: flex;
   justify-content: center;
+  align-items: center;
   height: 40px;
   margin-bottom: 70px;
-  text-align: center;
   position: relative;
 }
 .SMListNum > ol > li {
-  margin-right: 16px;
-  font-size: 16px;
+  margin-right: 10px;
+  font-size: 20px;
   font-weight: bold;
-  height: 40px;
+  height: 30px;
   padding: 0 10px;
-  transform: translateX(50px);
+  text-align: center;
+}
+.SMListNum > ol > li:last-of-type:after{
+  content: "";
+  background: url(../img/서브페이지1/FONT/화살표\ 오른쪽.png) no-repeat;
+  background-size: contain;
+  width: 25px;
+  height: 25px;
+  position: absolute;
+  top: 8px;
+  right: 480px;
 }
 .SMListNum > ol::after {
   content: "";
-  background: url(../img/서브페이지1/FONT/화살표.png) no-repeat;
-  width: 20px;
-  height: 40px;
+  background: url(../img/서브페이지1/FONT/화살표\ 왼쪽_1.png) no-repeat;
+  background-size: contain;
+  width: 25px;
+  height: 25px;
   position: absolute;
-  top: 4px;
-  left: 33%;
+  top: 8px;
+  left: 480px;
 }
 /*-----------------SUB PAGE 2------------------------------ */
 .sub2_Banner {

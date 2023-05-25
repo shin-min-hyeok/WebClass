@@ -8,7 +8,8 @@
   <title>MAIN-PAGE</title>
   <link rel="stylesheet" href="./css/Vons.css">
   <link rel="stylesheet" href="./css/font.css">
-  <script src="./js/Vons.js"></script>
+  <link rel="stylesheet"href="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.css"/>
+  <script src="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.js"></script>
 </head>
 <!-- CONTENTS WIDTH: 1260PX -->
 <!-- width: 1920px  height: 969px -->
@@ -78,9 +79,9 @@
       </header>
     </div>
     <main>
-      <div class="MainBanner">
-        <ul class="MainSlide">
-          <li>
+      <div class="MainBanner swiper">
+        <ul class="MainSlide swiper-wrapper">
+          <li class="swiper-sliede">
             <img src="./img/메인페이지/메인배너치킨1.jpg" alt="갈비치킨">
             <div class="slideEx">
               <img src="./img/메인페이지/텍스트img/BestImg.png" alt="인기메뉴">
@@ -91,7 +92,7 @@
                 불맛으로 업그레이드된 악마의 유혹! 더 강력해진 단짠맛을 경험해 보세요!</h3>
             </div>
           </li>
-          <li>
+          <li class="swiper-sliede">
             <img src="./img/메인페이지/메인배너치킨2.jpg" alt="블랙페퍼치킨">
             <div class="slideEx">
               <img src="./img/메인페이지/텍스트img/BestImg.png" alt="인기메뉴">
@@ -102,7 +103,7 @@
                 KCAL(칼로리)도 꽉 잡고 손님들 마음까지 꽉 사로잡은 블랙페퍼치킨 경험해 보세요! </h3>
             </div>
           </li>
-          <li>
+          <li class="swiper-sliede">
             <img src="./img/메인페이지/메인배너치킨3.jpg" alt="스테이크치킨">
             <div class="slideEx">
               <img src="./img/메인페이지/텍스트img/BestImg.png" alt="인기메뉴">
@@ -112,7 +113,7 @@
               <h3>닭의 넓적다리살과 매콤 달콤한 스테이크 소스의 조화 본스치킨이 새롭게 선사하는 신메뉴의 스테이크 치킨을 한번 맛보세요</h3>
             </div>
           </li>
-          <li>
+          <li class="swiper-sliede">
             <img src="./img/메인페이지/메인배너치킨4.jpg" alt="양념치킨">
             <div class="slideEx">
               <img src="./img/메인페이지/텍스트img/BestImg.png" alt="인기메뉴">
@@ -124,15 +125,8 @@
           </li>
         </ul>
         <div class="pagiNation">
-          <li class="on">1</li>
-          <li>2</li>
-          <li>3</li>
-          <li>4</li>
         </div>
-        <div class="contorler">
-          <a href="#"><</a>
-          <a href="#">></a>
-        </div>
+
       </div>
       <div class="MenuArea">
         <div class="MenuText">

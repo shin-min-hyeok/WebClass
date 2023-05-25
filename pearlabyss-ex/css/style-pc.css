@@ -1,62 +1,5 @@
-/* reset */
-* {
-  margin: 0;
-  padding: 0;
-}
-
-a {
-  text-decoration: none;
-  color: inherit;
-}
-
-ul,
-ol {
-  list-style: none;
-}
-
-h1,
-h2,
-h3,
-h4,
-h5,
-h6 {
-  font-size: inherit;
-  font-weight: 400;
-}
-
-em,
-i,
-address {
-  font-style: normal;
-}
-
-strong,
-b {
-  font-weight: 400;
-}
-
-/* common */
-html {
-  font-family: 'Noto Sans KR', sans-serif;
-  font-size: 14px;
-}
-
-.blankStyle:after {
-  content: "";
-  width: 10px;
-  height: 10px;
-  display: inline-block;
-  /* border: 1px solid red !important; */
-  margin-left: 4px;
-  background: url(../img/icn_header_new_win.svg) no-repeat 50% 50%;
-}
-
-@media (max-width:768px){}
 @media (min-width:769px){
-  
-}
-
-/* layout */
+  /* layout */
 .contents_wrap {
   box-sizing: border-box;
 }
@@ -530,4 +473,6 @@ main {
 }
 .snsMenu img {
   width: 50px;
+}
+.mo{display: none;}
 }
