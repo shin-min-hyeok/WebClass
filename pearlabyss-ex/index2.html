@@ -1,306 +1,360 @@
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
-  <meta charset="UTF-8">
-  <meta http-equiv="X-UA-Compatible" content="IE=edge">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>검은사막2</title>
-  <link rel="stylesheet" href="./css/style2.css">
-  <link rel="stylesheet" href="./css/style-pc.css">
-  <link rel="stylesheet" href="./css/syle-mo.css">
-  <link rel="preconnect" href="https://fonts.googleapis.com">
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@100;300;400;500;700;900&display=swap"
-    rel="stylesheet">
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pearl Abyss</title>
+    <!-- responsive css -->
+    <link rel="stylesheet" href="./css/style.css">
+    <link rel="stylesheet" href="./css/style-pc.css">
+    <link rel="stylesheet" href="./css/style-mo.css">
+    <!-- google font -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@100;300;400;500;700;900&display=swap" rel="stylesheet">
+    <!-- swiper JS -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.css"/>
+    <script src="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.js"></script>
+    <script src="./js/common.js"></script>
 </head>
-
 <body>
-  <div class="contents_wrap">
-    <header class="pc">
-      <div class="innerHeader">
-        <div class="logoArea">
-          <h1><a href="#"><img src="./img/cm_bi_white.svg" alt="펄 어비스 화이트 로고"></a></h1>
-        </div>
-        <nav class="gnb">
-          <ul>
-            <li><a href="#">소개</a>
-              <ul>
-                <li><a href="#">펄어비스 소개</a></li>
-                <li><a href="#">연구소</a></li>
-                <li class="blankStyle"><a href="#">CCP</a></li>
-              </ul>
-            </li>
-            <li><a href="#">게임</a>
-              <ul>
-                <li><a href="#">검은사막</a></li>
-                <li><a href="#">검은사막 모바일</a></li>
-                <li><a href="#">붉은사막</a></li>
-                <li><a href="#">도깨비</a></li>
-                <li><a href="#">플랜 8</a></li>
-              </ul>
-            </li>
-            <li><a href="#">미디어</a>
-              <ul>
-                <li><a href="#">보도자료</a></li>
-                <li><a href="#">미디어 행사</a></li>
-              </ul>
-            </li>
-            <li><a href="#">문화</a>
-              <ul>
-                <li><a href="#">기업문화</a></li>
-                <li><a href="#">복지</a></li>
-                <li><a href="#">펄어비스 소식</a></li>
-              </ul>
-            </li>
-            <li><a href="#">채용</a>
-              <ul>
-                <li><a href="#">채용소개</a></li>
-                <li><a href="#">지원하기</a></li>
-              </ul>
-            </li>
-            <li><a href="#">투자정보</a>
-              <ul>
-                <li><a href="#">기업지배구조</a></li>
-                <li><a href="#">주가정보</a></li>
-                <li><a href="#">재무정도</a></li>
-                <li><a href="#">공시.공고</a></li>
-                <li><a href="#">IR 자료</a></li>
-                <li><a href="#">지속가능경영</a></li>
-              </ul>
-            </li>
-          </ul>
-        </nav>
-        <nav class="langList">
-          <ul>
-            <li><a href="#">KOR</a></li>
-            <li><a href="#">ENG</a></li>
-            <li><a href="#">JPN</a></li>
-          </ul>
-        </nav>
-      </div>
-    </header>
-    <header class="mo">
-      <div class="innerHeader">
-        <div class="btnMoMenu">
-          <span></span>
-          <span></span>
-          <span></span>
-        </div>
-        <h1 class="moLogo"><a href="#"><img src="./img/cm_bi_white.svg" alt="검은사막로고"></a></h1>
-        <a href="#" class="btnMenuLang"><img src="./img/m_icn_lang.svg" alt="언어선택메뉴버튼"></a>
-      </div>
-    </header>
-    <main>
-      <div class="videoBanner">
-        <video autoplay muted loop>
-          <source src="./video/kor_landing_loop.webm" type="video/webm">
-          <source src="./video/kor_landing_loop.mp4" type="video/mp4">
-        </video>
-        <div class="flotingTxt">
-          <h2><img src="./img/blackdesert_logo_kr.png" alt="검은사막"></h2>
-          <a href="#">자세히보기</a>
-        </div>
-      </div>
-      <div class="mainSection">
-        <h3>NEWS</h3>
-        <div class="news">
-          <ul>
-            <li>
-              <a href="#">
-                <h4>'사냥은 이제 그만' 펄어비스 검은사막 새로운 플레이 지금이 기회</h4>
-                <p class="date">2023.03.29</p>
-                <p>펄어비스(대표 허진영)의 검은사막이 공헌도 업데이트를 통해 신규 및 복귀 ...</p>
-              </a>
-            </li>
-            <li>
-              <a href="#">
-                <h4>펄어비스 검은사막 모바일, 신규 클래스 '이구니우스' 업데이트</h4>
-                <p class="date">2023.03.27</p>
-                <p>펄어비스(대표 허진영)가 검은사막 모바일 신규 클래스 '어그니우스'를...</p>
-              </a>
-            </li>
-            <li>
-              <a href="#">
-                <h4>펄어비스,검은사막 서비스 3,000일 감사 의미 담아 모험가 이름으로 3,000만원 기부</h4>
-                <p class="date">2023.03.15</p>
-                <p>펄어비스(대표 허진영)의 검은사\막 서비스 3,000일에 감사의 의미를 뜻깊게...</p>
-              </a>
-            </li>
-          </ul>
-        </div>
-        <div class="culture">
-          <ul>
-            <li>
-              <a href="#">
-                <img src="./img/main_category_company.jpg" alt="펄어비스 우리의 비전과 가치">
-                <div class="box">
-                  <h3>펄어비스</h3>
-                  <p>우리의 비전과 가치</p>
-                </div>
-              </a>
-            </li>
-            <li>
-              <a href="#">
-                <img src="./img/main_category_lab.jpg" alt="연구소 한계를 뛰어넘는 곳">
-                <div class="box">
-                  <h3>연구소</h3>
-                  <p>한계를 뛰어넘는 곳</p>
-                </div>
-              </a>
-            </li>
-            <li>
-              <a href="#">
-                <img src="./img/main_category_culture.jpg" alt="게임 잊지 못할 모험">
-                <div class="box">
-                  <h3>게임</h3>
-                  <p>잊지 못할 모험</p>
-                </div>
-              </a>
-            </li>
-            <li>
-              <a href="#">
-                <img src="./img/main_category_in.jpg" alt="문화 파괴적인 창조자">
-                <div class="box">
-                  <h3>문화</h3>
-                  <p>파괴적인 창조자</p>
-                </div>
-              </a>
-            </li>
-            <li>
-              <a href="#">
-                <img src="./img/main_category_news.jpg" alt="소식 생생한 펄어비스 이야기">
-                <div class="box">
-                  <h3>소식</h3>
-                  <p>생생한 펄어비스 이야기</p>
-                </div>
-              </a>
-            </li>
-          </ul>
-        </div>
-        <div class="notice">
-          <ul>
-            <li>
-              <a href="#">
-                <div class="img">
-                  <img src="./img/0PSNSAWVASI6ID1620230308203856645.400x225.jpg" alt="펄어비스 로고">
-                </div>
-                <p>펄어비스 소식</p>
-                <h3>[펄어비스 뮤직]'어비스 원:마그누스' 사운드 트랙 업데이트!</h3>
-              </a>
-            </li>
-            <li>
-              <a href="#">
-                <div class="img">
-                  <img src="./img/GKVBUEZWU7S6FF2F20230112181952165.400x225.jpg" alt="해커톤 대회">
-                </div>
-                <p>펄어비스 소식</p>
-                <h3>코딩의 가능성을 코딩하다! 펑어비스 청소년 해커톤 대회 '딩가딩 프로젝트'</h3>
-              </a>
-            </li>
-            <li>
-              <a href="#">
-                <div class="img">
-                  <img src="./img/ZIO6LF39FHJ8CVB720221221120248542.400x225.jpg" alt="칼페온 연회 이미지">
-                </div>
-                <p>펄어비스 소식</p>
-                <h3>유저와 진심어린 소통, 전세게 이용자가 함께 한 '칼페온 연회' 현장</h3>
-              </a>
-            </li>
-            <li>
-              <a href="#">
-                <div class="img">
-                  <img src="./img/OXOYK6N73E3003HN20221027102013038.400x225.jpg" alt="자라섬 재즈 페스티벌 이미지">
-                </div>
-                <p>펄어비스 소식</p>
-                <h3>자라섬 재즈 페스티벌에서 펼쳐진 특별한 만남, '재즈 인 검은사막'</h3>
-              </a>
-            </li>
-          </ul>
-        </div>
-    </main>
-    <footer>
-      <div class="footMenu1">
-        <div class="footMtext">
-          <ul>
-            <li><a href="#">소개</a>
-              <ul>
-                <li><a href="#">펄어비스 소개</a></li>
-                <li><a href="#">연구소</a></li>
-                <li class="blankStyle"><a href="#">CCP</a></li>
-              </ul>
-            </li>
-            <li><a href="#">게임</a>
-              <ul>
-                <li><a href="#">검은사막</a></li>
-                <li><a href="#">검은사막 모바일</a></li>
-                <li><a href="#">붉은사막</a></li>
-                <li><a href="#">도깨비</a></li>
-                <li><a href="#">플랜 8</a></li>
-              </ul>
-            </li>
-            <li><a href="#">미디어</a>
-              <ul>
-                <li><a href="#">보도자료</a></li>
-                <li><a href="#">미디어 행사</a></li>
-              </ul>
-            </li>
-            <li><a href="#">문화</a>
-              <ul>
-                <li><a href="#">기업문화</a></li>
-                <li><a href="#">복지</a></li>
-                <li><a href="#">펄어비스 소식</a></li>
-              </ul>
-            </li>
-            <li><a href="#">채용</a>
-              <ul>
-                <li><a href="#">채용소개</a></li>
-                <li><a href="#">지원하기</a></li>
-              </ul>
-            </li>
-            <li><a href="#">투자정보</a>
-              <ul>
-                <li><a href="#">기업지배구조</a></li>
-                <li><a href="#">주가정보</a></li>
-                <li><a href="#">재무정도</a></li>
-                <li><a href="#">공시&middot;공고</a></li>
-                <li><a href="#">IR 자료</a></li>
-                <li><a href="#">지속가능경영</a></li>
-              </ul>
-            </li>
-          </ul>
-        </div>
-      </div>
-      <div class="footMenu2">
-        <div class="footMtext2">
-          <ul>
-            <li><a href="#">광고/제휴 문의</a></li>
-            <li><a href="#">기업윤리 신고센터</a></li>
-            <li class="blue"><a href="#">개인정보 처리방침</a></li>
-            <li class="blankStyle"><a href="#">펄어비스 스토어</a></li>
-            <li class="blankStyle"><a href="#">게임 고객센터</a></li>
-          </ul>
-        </div>
-      </div>
-      <div class="coInfo">
-        <div class="coInfo2">
-          <section class="footLogo">
-            <h1><a href="#"><img src="./img/cm_bi_black.svg" alt="펄어비스 로고"></a></h1>
-            <p class="copy">&copy; Pearl Abyss Corp. All Rights Reserved</p>
-          </section>
-          <section class="snsMenu">
-            <ul>
-              <li><a href="#"><img src="./img/icn_footer_facebook_round.svg" alt="페이스북 바로가기"></a></li>
-              <li><a href="#"><img src="./img/icn_footer_youtube_round.svg" alt="유튜브 바로가기"></a></li>
-              <li><a href="#"><img src="./img/icn_footer_linkedin_round.svg" alt="링크로 가기"></a></li>
+    <nav class="moMenu">
+        <div class="blackcover"></div>
+        <div class="moGnb">
+            <h1 class="logoMo"><a href="#"><img src="./img/cm_bi_black.svg" alt="펄어비스 검정로고"></a></h1>
+            <ul class="mobileMenuList">
+                <li>
+                    <a href="#">소개</a>
+                    <ul>
+                        <li><a href="#">펄어비스 소개</a></li>
+                        <li><a href="#">연구소</a></li>
+                        <li class="blankStyle"><a href="#">CCP</a></li>
+                    </ul>
+                </li>
+                <li><a href="#">게임</a>
+                    <ul>
+                        <li><a href="#">검은사막</a></li>
+                        <li><a href="#">검은사막 모바일</a></li>
+                        <li><a href="#">붉은사막</a></li>
+                        <li><a href="#">도깨비</a></li>
+                        <li><a href="#">플랜 8</a></li>
+                    </ul>
+                </li>
+                <li><a href="#">미디어</a>
+                    <ul>
+                        <li><a href="#">보도자료</a></li>
+                        <li><a href="#">미디어 행사</a></li>
+                    </ul>
+                </li>
+                <li><a href="#">문화</a>
+                    <ul>
+                        <li><a href="#">기업문화</a></li>
+                        <li><a href="#">복지</a></li>
+                        <li><a href="#">펄어비스 소식</a></li>
+                    </ul>
+                </li>
+                <li><a href="#">채용</a>
+                    <ul>
+                        <li><a href="#">채용소개</a></li>
+                        <li><a href="#">지원하기</a></li>
+                    </ul>
+                </li>
+                <li><a href="#">투자정보</a>
+                    <ul>
+                        <li><a href="#">기업지배구조</a></li>
+                        <li><a href="#">주가정보</a></li>
+                        <li><a href="#">재무정보</a></li>
+                        <li><a href="#">공시.공고</a></li>
+                        <li><a href="#">IR자료</a></li>
+                        <li><a href="#">지속가능경영</a></li>
+                    </ul>
+                </li>
             </ul>
-          </section>
         </div>
-      </div>
-    </footer>
-  </div>
-
-  </div>
+    </nav>
+    <div class="contents_wrap">
+        <header class="pc">
+            <div class="innerHeader">
+                <div class="logoArea">
+                    <h1>
+                        <a href="#">
+                            <img src="./img/cm_bi_black.svg" alt="펄 어비스 화이트 로고">
+                        </a>
+                    </h1>
+                </div>
+                <nav class="gnb">
+                    <ul>
+                        <li><a href="#">소개</a>
+                            <ul>
+                                <li><a href="#">펄어비스 소개</a></li>
+                                <li><a href="#">연구소</a></li>
+                                <li class="blankStyle"><a href="#">CCP</a></li>
+                            </ul>
+                        </li>
+                        <li><a href="#">게임</a>
+                            <ul>
+                                <li><a href="#">검은사막</a></li>
+                                <li><a href="#">검은사막 모바일</a></li>
+                                <li><a href="#">붉은사막</a></li>
+                                <li><a href="#">도깨비</a></li>
+                                <li><a href="#">플랜 8</a></li>
+                            </ul>
+                        </li>
+                        <li><a href="#">미디어</a>
+                            <ul>
+                                <li><a href="#">보도자료</a></li>
+                                <li><a href="#">미디어 행사</a></li>
+                            </ul>
+                        </li>
+                        <li><a href="#">문화</a>
+                            <ul>
+                                <li><a href="#">기업문화</a></li>
+                                <li><a href="#">복지</a></li>
+                                <li><a href="#">펄어비스 소식</a></li>
+                            </ul>
+                        </li>
+                        <li><a href="#">채용</a>
+                            <ul>
+                                <li><a href="#">채용소개</a></li>
+                                <li><a href="#">지원하기</a></li>
+                            </ul>
+                        </li>
+                        <li><a href="#">투자정보</a>
+                            <ul>
+                                <li><a href="#">기업지배구조</a></li>
+                                <li><a href="#">주가정보</a></li>
+                                <li><a href="#">재무정보</a></li>
+                                <li><a href="#">공시.공고</a></li>
+                                <li><a href="#">IR자료</a></li>
+                                <li><a href="#">지속가능경영</a></li>
+                            </ul>
+                        </li>
+                    </ul>
+                </nav>
+                <nav class="langList">
+                    <ul>
+                        <li><a href="#">KOR</a></li>
+                        <li><a href="#">ENG</a></li>
+                        <li><a href="#">JPN</a></li>
+                    </ul>
+                </nav>
+            </div>
+        </header>
+        <header class="mo">
+            <div class="innerHeader">
+                <div class="btnMoMenu">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </div>
+                <h1 class="moLogo"><a href="#"><img src="./img/cm_bi_white.svg" alt="검은사막 로고"></a></h1>
+                <a href="#" class="btnMenuLang"><img src="./img/m_icn_lang.svg" alt="언어선택메뉴버튼"></a>
+            </div>
+        </header>
+        <main>
+            <div class="videoBanner">
+                <video autoplay muted loop>
+                    <source src="./video/kor_landing_loop.webm" type="video/webm">
+                    <source src="./video/kor_landing_loop.mp4" type="video/mp4">
+                </video>
+                <div class="flotingTxt">
+                    <h2><img src="./img/blackdesert_logo_kr.png" alt="검은사막"></h2>
+                    <a href="#">자세히보기</a>
+                </div>
+            </div>
+            <div class="news">
+                <h3>NEWS</h3>
+                <div class="news_station swiper">
+                    <ul class="swiper-wrapper">
+                        <li class="swiper-slide">
+                            <a href="#">
+                                <h4>펄어비스 검은사막 신규 대륙 '아침의 나라' 오늘 출시</h4>
+                                <p class="date">2023.03.29</p>
+                                <p>펄어비스(대표 허진영)가 검은사막 조선 배경의 신규 대륙 '아침의 나라'를...</p>
+                            </a>
+                        </li>
+                        <li class="swiper-slide">
+                            <a href="#">
+                                <h4>펄어비스 검은사막 '아침의 나라' <개발자 코멘터리> 영상 공개</h4>
+                                <p class="date">2023.03.27</p>
+                                <p>펄어비스(대표 허진영)가 검은사막 신규 지역 '아침의 나라'의 출시를...</p>
+                            </a>
+                        </li>
+                        <li class="swiper-slide">
+                            <a href="#">
+                                <h4>'사냥은 이제 그만' 펄어비스 검은사막 새로운 플레이 지금이 기회</h4>
+                                <p class="date">2023.03.15</p>
+                                <p>펄어비스(대표 허진영)의 검은사막이 공헌도 업데이트를 통해 신규 및 복귀...</p>
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+                <div class="swiper-pagination"></div>
+            </div>
+            <div class="culture">
+                <ul>
+                    <li>
+                        <a href="#">
+                            <img src="./img/main_category_company.jpg" alt="펄어비스 우리의 비전과 가치">
+                            <div class="floatingBox">
+                                <h4>펄 어비스</h4>
+                                <p>우리의 비전과 가치</p>
+                            </div>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#">
+                            <img src="./img/main_category_lab.jpg" alt="연구소 한계를 뛰어 넘는 곳">
+                            <div class="floatingBox">
+                                <h4>연구소</h4>
+                                <p>한계를 뛰어 넘는 곳</p>
+                            </div>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#">
+                            <img src="./img/main_category_culture.jpg" alt="게임 잊지 못할 모험">
+                            <div class="floatingBox">
+                                <h4>게임</h4>
+                                <p>잊지 못할 모험</p>
+                            </div>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#">
+                            <img src="./img/main_category_in.jpg" alt="문화 파괴적인 창조자">
+                            <div class="floatingBox">
+                                <h4>문화</h4>
+                                <p>파괴적인 창조자</p>
+                            </div>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#">
+                            <img src="./img/main_category_news.jpg" alt="생생한 펄어비스 이야기">
+                            <div class="floatingBox">
+                                <h4>소식</h4>
+                                <p>생생한 펄어비스 이야기</p>
+                            </div>
+                        </a>
+                    </li>
+                </ul>
+            </div>
+            <div class="notice">
+                <ul>
+                    <li>
+                        <a href="#">
+                            <figure>
+                                <img src="./img/0PSNSAWVASI6ID1620230308203856645.400x225.jpg" alt="[펄어비스 뮤직] ‘어비스 원: 마그누스’ 사운드 트랙 업데이트!">
+                            </figure>
+                            <p>펄어비스 소식</p>
+                            <h4>[펄어비스 뮤직] ‘어비스 원: 마그누스’ 사운드 트랙 업데이트!</h4>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#">
+                            <figure>
+                                <img src="./img/GKVBUEZWU7S6FF2F20230112181952165.400x225.jpg" alt="코딩의 가능성을 코딩하다! 펄어비스 청소년 해커톤 대회 '딩가딩 프로젝트'">
+                            </figure>
+                            <p>펄어비스 소식</p>
+                            <h4>코딩의 가능성을 코딩하다! 펄어비스 청소년 해커톤 대회 '딩가딩 프로젝트'</h4>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#">
+                            <figure>
+                                <img src="./img/ZIO6LF39FHJ8CVB720221221120248542.400x225.jpg" alt="유저와 진심어린 소통, 전세계 이용자가 함께 한 ‘칼페온 연회’ 현장">
+                            </figure>
+                            <p>펄어비스 소식</p>
+                            <h4>유저와 진심어린 소통, 전세계 이용자가 함께 한 ‘칼페온 연회’ 현장</h4>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#">
+                            <figure>
+                                <img src="./img/OXOYK6N73E3003HN20221027102013038.400x225.jpg" alt="자라섬 재즈 페스티벌에서 펼쳐진 특별한 만남, '재즈 인 검은사막'">
+                            </figure>
+                            <p>펄어비스 소식</p>
+                            <h4>자라섬 재즈 페스티벌에서 펼쳐진 특별한 만남, '재즈 인 검은사막'</h4>
+                        </a>
+                    </li>
+                </ul>
+            </div>
+        </main>
+        <footer>
+            <div class="footMenu1">
+                <ul>
+                    <li><a href="#">소개</a>
+                        <ul>
+                            <li><a href="#">펄어비스 소개</a></li>
+                            <li><a href="#">연구소</a></li>
+                            <li class="blankStyle"><a href="#">CCP</a></li>
+                        </ul>
+                    </li>
+                    <li><a href="#">게임</a>
+                        <ul>
+                            <li><a href="#">검은사막</a></li>
+                            <li><a href="#">검은사막 모바일</a></li>
+                            <li><a href="#">붉은사막</a></li>
+                            <li><a href="#">도깨비</a></li>
+                            <li><a href="#">플랜 8</a></li>
+                        </ul>
+                    </li>
+                    <li><a href="#">미디어</a>
+                        <ul>
+                            <li><a href="#">보도자료</a></li>
+                            <li><a href="#">미디어 행사</a></li>
+                        </ul>
+                    </li>
+                    <li><a href="#">문화</a>
+                        <ul>
+                            <li><a href="#">기업문화</a></li>
+                            <li><a href="#">복지</a></li>
+                            <li><a href="#">펄어비스 소식</a></li>
+                        </ul>
+                    </li>
+                    <li><a href="#">채용</a>
+                        <ul>
+                            <li><a href="#">채용소개</a></li>
+                            <li><a href="#">지원하기</a></li>
+                        </ul>
+                    </li>
+                    <li><a href="#">투자정보</a>
+                        <ul>
+                            <li><a href="#">기업지배구조</a></li>
+                            <li><a href="#">주가정보</a></li>
+                            <li><a href="#">재무정보</a></li>
+                            <li><a href="#">공시&middot;공고</a></li>
+                            <li><a href="#">IR자료</a></li>
+                            <li><a href="#">지속가능경영</a></li>
+                        </ul>
+                    </li>
+                </ul>
+            </div>
+            <div class="footMenu2">
+                <ul>
+                    <li><a href="#">광고/제휴 문의</a></li>
+                    <li><a href="#">기업윤리 신고센터</a></li>
+                    <li class="blue"><a href="#">개인정보 처리방침</a></li>
+                    <li class="blankStyle"><a href="#">펄어비스 스토어</a></li>
+                    <li class="blankStyle"><a href="#">게임 고객센터</a></li>
+                </ul>
+            </div>
+            <div class="coInfo">
+                <section class="footLogo">
+                    <h1><a href="#"><img src="./img/cm_bi_black.svg" alt="펄어비스 로고"></a></h1>
+                    <p class="copy">&copy; Pearl Abyss Corp. All Rights Reserved.</p>
+                </section>
+                <section class="snsMenu">
+                    <ul>
+                        <li><a href="#"><img src="./img/icn_footer_facebook_round.svg" alt="facebook"></a></li>
+                        <li><a href="#"><img src="./img/icn_footer_youtube_round.svg" alt="youtube"></a></li>
+                        <li><a href="#"><img src="./img/icn_footer_linkedin_round.svg" alt="insta"></a></li>
+                    </ul>
+                </section>
+            </div>
+        </footer>
+    </div>    
 </body>
-
 </html>
