@@ -1,0 +1,56 @@
+h1 {
+  color: red;
+}
+
+h2#a {
+  color: blue !important;
+}
+
+h2 {
+  color: red !important;
+}
+
+h2#a.title.title2 {
+  color: blue;
+}
+
+h2#a.title {
+  color: red;
+}
+
+h2#a {
+  color: blue;
+}
+
+#a {
+  color: red;
+}
+
+body div.box>h2.title {
+  color: blue;
+}
+
+div.box>h2.title {
+  color: red;
+}
+
+div>h2.title {
+  color: blue;
+}
+
+h2.title {
+  color: red;
+}
+
+.title {
+  color: black;
+}
+
+h2 {
+  color: blue;
+  text-decoration: underline;
+}
+
+h2 {
+  color: green;
+}

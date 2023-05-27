@@ -1,0 +1,6 @@
+@media (min-width:768px) and (max-width:1023px){
+  /* 화면의 너비가 최소 768픽셀 이상이고 최대 1023픽셀 미만인 경우 적용될 스타일 */
+  .frame{
+    background: blue;
+  }
+}

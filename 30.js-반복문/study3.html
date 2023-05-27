@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>for 반복문</title>
+</head>
+
+<body>
+  <h1>for반복문</h1>
+  <p>반복문에 필요한 요소를 다 갖춘 형태</p>
+  <p>기본형태 - for(반복변수;조건식;증감식){반복소스코드}</p>
+
+  <script>
+    // for 반복문을 사용하여 구구단을 2단부터 9단까지 보여주는 자바스크림트를 만들어 보시오.
+    //각각의 2단 3단 구구단들은 ul태그로 구성되어야 함
+    //반복문의 중첩을 사용해야함.
+    // let a = 0;
+    // while (a < 3) {
+    //   a++;
+    //   let b = 0;
+    //   while (b < 2) {
+    //     b++;
+    //     document.write(`a의 값은 ${a}이고 b의 값은 ${b}이다<br>`)
+    //   }
+    // }
+    for (let a = 2; a <= 9; a++) {
+      document.write(`<ul>`)
+      for (let b = 1; b <= 9; b++) {
+        document.write(`<li>${a}x${b}=${b * a}</li>`)
+      }
+      document.write('</ul>')
+    }
+  </script>
+</body>
+
+</html>
