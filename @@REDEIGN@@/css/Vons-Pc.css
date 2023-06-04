@@ -1,4 +1,85 @@
-@media (min-width:769px){
+@media (min-width: 769px) {
+  * {
+    margin: 0;
+    padding: 0;
+  }
+
+  a {
+    text-decoration: none;
+    color: inherit;
+  }
+
+  ul,
+  ol,
+  li {
+    list-style: none;
+  }
+
+  h1,
+  h2,
+  h3,
+  h4,
+  h5,
+  h6 {
+    font-size: inherit;
+    font-weight: 400;
+  }
+
+  em,
+  i,
+  address {
+    font-style: normal;
+  }
+
+  strong,
+  b {
+    font-weight: 400;
+  }
+
+  .mo {
+    display: none;
+  }
+  .moMenus {
+    display: none;
+  }
+  .mainMo {
+    display: none;
+  }
+  .MoContents {
+    display: none;
+  }
+  .moMenu_gnb {
+    display: none;
+  }
+  .Mo_sub1MenuList {
+    display: none;
+  }
+  .mo_Foot {
+    display: none;
+  }
+  /*--------SNS COMMON FIXED ---------- */
+  .sns > ul {
+    position: fixed;
+    right: 50px;
+    bottom: 10%;
+    text-align: center;
+    z-index: 1000;
+    animation: IconMotion 3.5s infinite ease-in-out;
+  }
+  .sns > ul > li img {
+    width: 50px;
+    margin-bottom: 20px;
+  }
+  .sns > ul > li:nth-of-type(1) img {
+    animation-delay: 0.4s;
+  }
+  .sns > ul > li:nth-of-type(2) img {
+    animation-delay: 0.6s;
+  }
+  .sns > ul > li:nth-of-type(3) img {
+    animation-delay: 0.8s;
+    /*----------------------------------------------------- */
+  }
   .contensWrap {
     box-sizing: border-box;
   }
@@ -227,7 +308,8 @@
   }
   .MenuText::after {
     content: "";
-    background: url(../img/메인페이지/텍스트img/메인페이지특수문자.png) no-repeat;
+    background: url(../img/메인페이지/텍스트img/메인페이지특수문자.png)
+      no-repeat;
     width: 50px;
     height: 50px;
     position: absolute;
@@ -452,20 +534,20 @@
     height: 384px;
     object-fit: cover;
   }
-  .subBanner .subBTxt{
+  .subBanner .subBTxt {
     /* border: 1px solid red; */
     position: absolute;
-    top:40%;
+    top: 40%;
     left: 17%;
   }
-  .subBanner .subBTxt>h2{
+  .subBanner .subBTxt > h2 {
     margin-bottom: 25px;
     font-size: 2.5rem;
     font-weight: bold;
     color: #fff;
     font-family: netFont;
   }
-  .subBanner .subBTxt>p{
+  .subBanner .subBTxt > p {
     font-size: 1.5rem;
     font-family: notoSans;
     font-weight: bold;
@@ -504,9 +586,9 @@
     background: #ac854db2;
     /* color: #fff; */
   }
-  .subMenuBar > ul > li:hover{
+  .subMenuBar > ul > li:hover {
     background: #ac854db2;
-    color:black;
+    color: black;
   }
   .SMenuEX {
     width: 1260px;
@@ -553,8 +635,7 @@
     justify-content: space-between;
     position: relative;
   }
-  .SMList > ul
-  .SMList > ul > li {
+  .SMList > ul .SMList > ul > li {
     height: 300px;
     margin-bottom: 220px;
     position: relative;
@@ -570,47 +651,47 @@
     margin-top: 15px;
     position: relative;
   }
-  .SMList > ul > li:nth-of-type(2)>dl>dt:after{
+  .SMList > ul > li:nth-of-type(2) > dl > dt:after {
     content: "";
     background: url(../img/서브페이지1/FONT/베스트이미지.png) no-repeat;
     width: 100%;
-    height:100%;
+    height: 100%;
     position: absolute;
     top: 6px;
     left: 69%;
   }
-  .SMList > ul > li:nth-of-type(3)>dl>dt:after{
+  .SMList > ul > li:nth-of-type(3) > dl > dt:after {
     content: "";
     background: url(../img/서브페이지1/FONT/뉴\ 이미지.png) no-repeat;
     width: 100%;
-    height:100%;
+    height: 100%;
     position: absolute;
     top: 10px;
     left: 68%;
   }
-  .SMList > ul > li:nth-of-type(5)>dl>dt:after{
+  .SMList > ul > li:nth-of-type(5) > dl > dt:after {
     content: "";
     background: url(../img/서브페이지1/FONT/베스트이미지.png) no-repeat;
     width: 100%;
-    height:100%;
+    height: 100%;
     position: absolute;
     top: 7px;
     left: 68%;
   }
-  .SMList > ul > li:nth-of-type(7)>dl>dt:after{
+  .SMList > ul > li:nth-of-type(7) > dl > dt:after {
     content: "";
     background: url(../img/서브페이지1/FONT/베스트이미지.png) no-repeat;
     width: 100%;
-    height:100%;
+    height: 100%;
     position: absolute;
     top: 7px;
     left: 77%;
   }
-  .SMList > ul > li:nth-of-type(8)>dl>dt:after{
+  .SMList > ul > li:nth-of-type(8) > dl > dt:after {
     content: "";
     background: url(../img/서브페이지1/FONT/뉴\ 이미지.png) no-repeat;
     width: 100%;
-    height:100%;
+    height: 100%;
     position: absolute;
     top: 10px;
     left: 68%;
@@ -705,12 +786,12 @@
     margin-bottom: -4px;
     position: relative;
   }
-  .sub2_Banner .sub2BTxt{
+  .sub2_Banner .sub2BTxt {
     position: absolute;
     top: 45%;
     left: 17%;
   }
-  .sub2_Banner .sub2BTxt>h2{
+  .sub2_Banner .sub2BTxt > h2 {
     margin-bottom: 25px;
     font-size: 2.5rem;
     font-family: netFont;
@@ -726,14 +807,14 @@
     left: 0;
     top: 0;
   }
-  .sub2_Banner .sub2BTxt>P{
+  .sub2_Banner .sub2BTxt > P {
     font-weight: bold;
     font-size: 1.6rem;
-    color: #FFF;
+    color: #fff;
     font-family: notoSans;
   }
   .sub2_Banner > figure img {
-    width: 1920px;
+    width: 100%;
     height: 384px;
   }
   .sub2_Banner.sub2_BannerT {
@@ -761,7 +842,7 @@
     flex-grow: 1;
     text-align: center;
   }
-  .sub2_MenuBar > ul > li:hover{
+  .sub2_MenuBar > ul > li:hover {
     background: #ac854db2;
     color: #000000;
   }
@@ -829,8 +910,10 @@
     width: 600px;
   }
   .S2_MenuList {
+    padding: 50px 0;
     margin: 250px 0 200px 0;
     width: 100%;
+    position: relative;
   }
   .S2_MenuList > ul {
     margin: 0 auto;
@@ -838,13 +921,11 @@
     display: flex;
     justify-content: center;
     text-align: center;
-    /* border: 1px solid red; */
-    position: relative;
   }
-  .S2_MenuList > ul::after {
+  .S2_MenuList::after {
     content: "";
-    width: 1920px;
-    height: 500px;
+    width: 100%;
+    height: 600px;
     top: -10px;
     background: #43434314;
     position: absolute;
@@ -854,10 +935,10 @@
     margin-right: 20px;
     position: relative;
   }
-  .S2_MenuList>ul>li>img{
+  .S2_MenuList > ul > li > img {
     margin-bottom: 20px;
   }
-  .S2_MenuList > ul > li:nth-of-type(1)::after{
+  .S2_MenuList > ul > li:nth-of-type(1)::after {
     content: "";
     background: url(../img/서브페이지2/서브2-1.png) no-repeat;
     width: 100%;
@@ -866,7 +947,7 @@
     top: 60%;
     left: 26%;
   }
-  .S2_MenuList > ul > li:nth-of-type(2)::after{
+  .S2_MenuList > ul > li:nth-of-type(2)::after {
     content: "";
     background: url(../img/서브페이지2/서브2-2.png) no-repeat;
     width: 100%;
@@ -875,7 +956,7 @@
     top: 60%;
     left: 26%;
   }
-  .S2_MenuList > ul > li:nth-of-type(3)::after{
+  .S2_MenuList > ul > li:nth-of-type(3)::after {
     content: "";
     background: url(../img/서브페이지2/서브2-3.png) no-repeat;
     width: 50%;
@@ -892,7 +973,6 @@
     margin-right: 0;
   }
   .S2_MenuList .S2_listFont > h4 {
-    
     font-weight: bold;
     font-size: 1.8rem;
     color: #36240bc9;
@@ -906,19 +986,18 @@
     font-size: 15px;
     line-height: 25px;
   }
-  
+
   .S2_BIarea {
     width: 100%;
   }
   .S2_BIarea .BI_logo {
-    /* border: 1px solid red; */
     width: 1260px;
     margin: 0 auto;
     margin-bottom: 70px;
   }
   .S2_BIarea .BI_logo > h4 {
     text-align: center;
-    font-size: 3rem;
+    font-size: 3.5rem;
     font-weight: bold;
     font-family: netFont;
     border-bottom: 0.5px solid black;
@@ -929,29 +1008,27 @@
     justify-content: space-evenly;
   }
   .Master_Logo {
-    /* border: 1px solid red; */
     width: 500px;
   }
   .Master_Logo > img {
-    width: 100px;
-    padding-left: 50px;
+    width: 120px;
+    padding-left: 180px;
   }
   .Master_Logo > h4 {
     font-weight: bold;
     font-family: netFont;
-    font-size: 1.3rem;
+    font-size: 1.5rem;
     margin: 20px 0;
     text-align: left;
   }
   .Master_Logo > p {
     text-align: left;
     font-family: notoSans;
-    font-weight: 700;
+    font-weight: bold;
   }
   .Master_txt {
-    /* border: 1px solid red; */
     text-align: center;
-    width: 450px;
+    width: 500px;
   }
   .Master_txt > h1 {
     font-weight: bold;
@@ -963,12 +1040,13 @@
     text-align: left;
     font-weight: bold;
     margin: 15px 0;
-    font-size: 1.5rem;
+    font-size: 1.7rem;
   }
   .Master_txt > dl > dd {
     text-align: left;
     padding-bottom: 10px;
     font-weight: bold;
+    font-size: 1.2rem;
   }
   .Master_txt > dl > dd > span {
     float: right;
@@ -983,22 +1061,20 @@
   }
   .BI_color > h4 {
     font-weight: bold;
-    font-size: 1.2rem;
-    margin-bottom: 10px;
+    font-size: 1.3rem;
+    margin-bottom: 15px;
   }
   .BI_color > ul {
     display: flex;
     justify-content: space-between;
   }
   .BI_color > ul > li > .txtBox {
-    /* border: 1px solid red; */
     width: 400px;
     height: 250px;
-    background: yellow;
-    font-size: 3rem;
+    font-size: 3.5rem;
     font-family: netFont;
     text-align: center;
-    margin-bottom: 15px;
+    margin-bottom: 20px;
     position: relative;
   }
   .BI_color h1 {
@@ -1022,16 +1098,17 @@
   }
   .BI_color dl > dt {
     font-weight: bold;
-    font-size: 1.2rem;
+    font-size: 1.5rem;
     margin-bottom: 20px;
   }
   .BI_color dl > dd {
     margin-bottom: 10px;
     font-weight: bold;
+    font-size: 1.2rem;
   }
   .BI_color dl > dd > span {
     float: right;
-    color: #434343;
+    color: #686868;
   }
   /*-----------------SUB PAGE 3------------------------------- */
   main {
@@ -1132,7 +1209,7 @@
     font-size: 1.2rem;
     /* font-family: netFont; */
   }
-  
+
   .sub3_Support .Sup_Step2 > ul {
     display: flex;
     justify-content: space-between;
@@ -1214,7 +1291,7 @@
     padding: 5px 20px;
   }
   /* --------------COMMON FIXED BAR-------------------- */
-  
+
   /* -----------------------COMMON FOOTER--------------------------- */
   footer {
     width: 100%;
@@ -1265,6 +1342,4 @@
   footer .f_Info address dd {
     margin-right: 20px;
   }
-  
-  
 }

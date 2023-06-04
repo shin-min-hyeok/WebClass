@@ -6,11 +6,14 @@
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>SUB PAGE-2</title>
-  <link rel="stylesheet" href="./css/Vons.css">
-  <!-- <link rel="stylesheet" href="./css/Vons-mo.css">
-  <link rel="stylesheet" href="./css/Vons-Pc.css"> -->
+
+  <!-- <link rel="stylesheet" href="./css/Vons.css"> -->
+  <link rel="stylesheet" href="./css/Vons-mo.css">
+  <link rel="stylesheet" href="./css/Vons-Pc.css">
   <link rel="stylesheet" href="./css/font.css">
   <link rel="stylesheet" href="./css/Animaition.css">
+  <script src="./js/jquery-3.7.0.min.js"></script>
+  <script src="./js/Vons.js"></script>
 </head>
 
 <body>
@@ -21,43 +24,81 @@
       <li><a href="#"><img src="./img/메인페이지/텍스트img/유튜브아이콘.png" alt="유튜브"></a></li>
     </ul>
   </div>
-  <div class="cotensWrap">
+  <nav class="moMenus">
+    <div class="blackcover"></div>
+    <div class="moGnb">
+      <h1 class="logoMo"><a href="#"><img src="./img/메인페이지/텍스트img/로고닭닭닭.png" alt="본스로고"></a></h1>
+      <ul class="moMenuList">
+        <li><a href="#"><img src="./moimg/메뉴소개.png" alt="메뉴소개">메뉴소개</a></li>
+        <li><a href="#"><img src="./moimg/브랜드소개.png" alt="브랜드소개"> 브랜드소개</a></li>
+        <li><a href="#"><img src="./moimg/상품권.png" alt="상품권구매"> 상품권구매</a></li>
+        <li><a href="#"><img src="./moimg/매장.png" alt="매장찾기"> 매장찾기</a></li>
+        <li><a href="#"><img src="./moimg/이벤트.png" alt="이벤트"> 이벤트</a></li>
+        <li><a href="#"><img src="./moimg/주문내역.png" alt="주문내역확인"> 주문내역 확인</a></li>
+      </ul>
+      <div class="callNum">
+        <h2>
+          <img src="./moimg/전화아이콘.png" alt="전화모양아이콘">
+          <p>전화주문 <br> <span class="number">1599-9992</span></p>
+        </h2>
+      </div>
+      <div class="moMenuInfo">
+        <article class="InfoTxt">
+          <h3><a href="#">이용약관 개인정보 처리방침</a></h3>
+          <p class="copy">COPYRIGHT © 2023 VONS CHICKEN. ALL RIGHTS RESERVED</p>
+        </article>
+      </div>
+    </div>
+  </nav>
+  <div class="contensWrap">
+    <header class="mo">
+      <div class="Mo_innerHeader">
+        <div class="btnMenu">
+          <span></span>
+          <span></span>
+          <span></span>
+        </div>
+        <h1 class="sub2_headerTxt">브랜드소개</h1>
+        <a href="#" class="btnMenuCart"><img src="./moimg/장바구니.png" alt="언어선택메뉴버튼"></a>
+      </div>
+    </header>
     <div class="innerHeader">
-      <div class="headerSub">
+      <div class="headerSub pc">
         <ul>
           <li><a href="#">로그인</a></li>
           <li><a href="#">회원가입</a></li>
         </ul>
       </div>
-      <header>
+      <header class="pc">
         <div class="logoArea">
-          <h1><img src="./img/메인페이지/텍스트img/로고닭닭닭.png" alt="본스홈페이지로"></h1>
+          <h1><a href="http://127.0.0.1:5500/@@REDEIGN@@/VonsMain.html"><img src="./img/메인페이지/텍스트img/로고닭닭닭.png"
+                alt="본스홈페이지로"></a></h1>
         </div>
         <nav class="gnb">
           <ul>
-            <li><a href="#">브랜드</a>
+            <li><a href="http://127.0.0.1:5500/@@REDEIGN@@/VonsSub2.html">브랜드</a>
               <ul>
-                <li><a href="#">본스치킨소개</a></li>
+                <li><a href="http://127.0.0.1:5500/@@REDEIGN@@/VonsSub2.html">본스치킨소개</a></li>
                 <li><a href="#">인사말</a></li>
                 <li><a href="#">본스치킨연혁</a></li>
                 <li><a href="#">인테리어</a></li>
                 <li><a href="#">오시는길</a></li>
               </ul>
             </li>
-            <li><a href="#">메뉴소개</a>
+            <li><a href="http://127.0.0.1:5500/@@REDEIGN@@/VonsSub1.html">메뉴소개</a>
               <ul>
-                <li><a href="#">전체메뉴</a></li>
+                <li><a href="http://127.0.0.1:5500/@@REDEIGN@@/VonsSub1.html">전체메뉴</a></li>
                 <li><a href="#">치킨메뉴</a></li>
                 <li><a href="#">사이드메뉴</a></li>
                 <li><a href="#">시리즈메뉴</a></li>
               </ul>
             </li>
-            <li><a href="#">창업안내</a>
+            <li><a href="http://127.0.0.1:5500/@@REDEIGN@@/VonsSub3.html">창업안내</a>
               <ul>
-                <li>창업포인트</li>
-                <li>창업절차</li>
-                <li>상담신청</li>
-                <li>창업문의</li>
+                <li><a href="#">창업포인트</a></li>
+                <li><a href="#">창업절차</a></li>
+                <li><a href="#">상담신청</a></li>
+                <li><a href="#">창업문의</a></li>
               </ul>
             </li>
             <li><a href="#">매장찾기</a>
@@ -76,9 +117,8 @@
         </nav>
       </header>
     </div>
-    </header>
     <main>
-      <div class="sub2_Banner">
+      <div class="sub2_Banner pc">
         <figure>
           <h1><img src="./img/서브페이지2/서브2배너.png" alt="블랙페퍼치킨"></h1>
           <div class="sub2BTxt">
@@ -87,7 +127,7 @@
           </div>
         </figure>
       </div>
-      <div class="sub2_MenuBar">
+      <div class="sub2_MenuBar pc">
         <ul>
           <li><a href="#"> 본스치킨소개</a></li>
           <li><a href="#"> 본스치킨연혁</a></li>
@@ -97,7 +137,7 @@
         </ul>
       </div>
       <div class="S2_MenuEX">
-        <div class="MenuEX">
+        <div class="MenuEX pc">
           <h3>오븐도 후라이드도 맛있는 본스치킨</h3>
           <p>내 가족이 즐겁게 즐길 수 있는 가장 맛있는 웰빙치킨 입니다.</p>
         </div>
@@ -106,14 +146,17 @@
           <h3><span>프리미엄</span> 전용유를 사용해 <br> 더더욱 맛있는 <span>웰빙치킨</span></h3>
           <p>본스치킨은 고객님들께 건강하고 맛있는 웰빙치킨을 제공하기위해 <br> 항상 품질 관리에 최선을 다하고 있습니다.</p>
         </div>
-        <div class="MenuEX_img">
+        <div class="MenuEX_img pc">
           <ul>
             <li><img src="./img/서브페이지2/Asset 9.png" alt="닭다리"></li>
             <li><img src="./img/서브페이지2/서브(2)닭다리이미지1.png" alt="닭다리 3개"></li>
           </ul>
         </div>
       </div>
-      <div class="S2_MenuList">
+      <div class="S2_MoMenuList">
+
+      </div>
+      <div class="S2_MenuList pc">
         <ul>
           <li><img src="./img/서브페이지2/서브페이지2 닭이미지.png" alt="생닭">
             <div class="S2_listFont">
@@ -160,7 +203,7 @@
             </div>
           </section>
         </div>
-        <div class="BI_color">
+        <div class="BI_color pc">
           <h4>전용색상</h4>
           <ul>
             <li>
@@ -199,7 +242,7 @@
           </ul>
         </div>
       </div>
-      <div class="FixedBar">
+      <div class="FixedBar pc">
         <ul>
           <li>
             <h5><b>대표번호</b> 1599-9992</h5>
@@ -212,7 +255,28 @@
         </ul>
       </div>
     </main>
-    <footer>
+    <footer class="mo_Foot">
+      <div class="mo_Fgnb">
+        <ul>
+          <li><a href="#"><img src="./moimg/홈.png" alt="홈으로"></a>
+            <p>홈</p>
+          </li>
+          <li><a href="#"><img src="./moimg/전체메뉴.png" alt="전체메뉴"></a>
+            <p>전체메뉴</p>
+          </li>
+          <li><a href="#"><img src="./moimg/매장찾기.png" alt="매장찾기"></a>
+            <p>매장찾기</p>
+          </li>
+          <li><a href="#"><img src="./moimg/배달현황.png" alt="배달현황"></a>
+            <p>배달현황</p>
+          </li>
+          <li><a href="#"><img src="./moimg/고객센터.png" alt="고객센터"></a>
+            <p>고객센터</p>
+          </li>
+        </ul>
+      </div>
+    </footer>
+    <footer class="pc">
       <article>
         <div class="f_Left">
           <h1><a href="#"><img src="./img/메인페이지/텍스트img/하단로고.png" alt="하단로고"></a></h1>

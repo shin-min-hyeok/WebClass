@@ -13,6 +13,14 @@ window.onload = function () {
       delay: 2300,
     },
     speed: 1000,
+    breakpoints: {
+      280: {
+        slidesPerView: 1,
+      },
+      768: {
+        slidesPerView: 1,
+      },
+    },
   });
   let MenuSlide = new Swiper(".MenuSlide", {
     loop: true, // 반복
@@ -20,5 +28,13 @@ window.onload = function () {
     spaceBetween: 30,
     slidesPerView: 3,
     autoplay: true,
+    breakpoints: {
+      280: {
+        slidesPerView: 2,
+      },
+      768: {
+        slidesPerView: 3,
+      },
+    },
   });
 };
