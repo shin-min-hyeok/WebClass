@@ -57,10 +57,13 @@
   .mo_Foot {
     display: none;
   }
-  .S2_MoMenuList{
+  .S2_MoMenuList {
     display: none;
   }
-  .sub3_Mobanner{
+  .sub3_Mobanner {
+    display: none;
+  }
+  .sub3_MoSupport {
     display: none;
   }
   /*--------SNS COMMON FIXED ---------- */
