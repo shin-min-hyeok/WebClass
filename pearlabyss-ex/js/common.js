@@ -2,7 +2,8 @@ window.onload = function(){
 
   let newsSlider = new Swiper(".news_station",{
     pagination: {
-      el: '.swiper-pagination',
+      el: '.news_pagination',
+      clickable: true,
     },
     breakpoints:{
       280:{
@@ -13,9 +14,10 @@ window.onload = function(){
       }
     }
   });
-  let noticeSlieder = new Swiper(".notice",{
+  let noticeSlieder = new Swiper(".notice_station",{
     pagination: {
-      el: '.swiper-pagination',
+      el: '.notice_pagination',
+      clickable: true,
     },
     breakpoints:{
       280:{
@@ -23,10 +25,13 @@ window.onload = function(){
       },
       768:{
         slidesPerView : 4,
+        spaceBetween : 20
       }
     }
   });
 }
+
+
 
 
 //객체-> 어떤사물을 표현하기 위해

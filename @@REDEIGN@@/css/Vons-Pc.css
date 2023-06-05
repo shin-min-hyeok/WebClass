@@ -57,6 +57,12 @@
   .mo_Foot {
     display: none;
   }
+  .S2_MoMenuList{
+    display: none;
+  }
+  .sub3_Mobanner{
+    display: none;
+  }
   /*--------SNS COMMON FIXED ---------- */
   .sns > ul {
     position: fixed;
@@ -399,7 +405,7 @@
     background: url(../img/메인페이지/텍스트img/WITHME.png) no-repeat;
     width: 60%;
     height: 30%;
-    opacity: 0.12;
+    opacity: 0.15;
     z-index: 1;
   }
   .BrandEX > li {

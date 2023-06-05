@@ -4,7 +4,8 @@ $(document).ready(function () {
   //1. 버튼을 클릭하면
   //2. textFrame클래스 태그가 선택되서 글씨가 파란색이 되도록
 
-  $(".btn1").click(function () {
+  $(".btn1").click(function (e) {
+    e.preventDefault() // 선택한 태그가 갖는 기본기능을 억제함.
     // 버튼1클래스를 클릭했을 때 실행되는 소스코드
     $(".textFrame").css("color", "blue");
   });

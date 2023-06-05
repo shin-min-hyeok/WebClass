@@ -279,8 +279,7 @@
   .notice {
     width: 90%;
     position: relative;
-  }
-  .notice > ul > li {
+    margin: 0 auto;
   }
   .notice li figure {
     height: 190px;
@@ -297,10 +296,15 @@
   .notice li h4 {
     font-size: 15px;
     font-weight: bold;
+    white-space: nowrap;
   }
-  .notice .swiper-pagination {
-    /* border: 1px solid red; */
+  .notice .notice_pagination{
+    position: relative;
+    margin-top: 30px;
   }
+  span.swiper-pagination-bullet-active {
+    background: black;
+}
   footer {
     margin-top: 200px;
   }
