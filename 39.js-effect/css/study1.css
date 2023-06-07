@@ -36,10 +36,9 @@ nav{
 nav.on{
   transform: translateX(0%)
 }
-.gnb{
-}
+.gnb{}
 .gnb ul {
-  background: rgba(144, 238, 144, 0.475) ;
+  background: aqua;
 }
 .gnb>li{
   height: 50px;
@@ -52,6 +51,34 @@ nav.on{
   height: 50px;
   box-sizing: border-box;
   align-items: center;
+  justify-content: space-between;
+}
+.depi{
+  width: 20px;
+  height: 20px;
+  position: relative;
+  transition: all 0.5s ease 0s;
+}
+.depi::before{
+  content: "";
+  background: black;
+  width: 20px;
+  height: 1px ;
+  position: absolute;
+  left: 0;
+  top: 9px;
+}
+.depi::after{
+  content: "";
+  position: absolute;
+  left: 9px;
+  top: 0;
+  width: 1px;
+  height: 20px;
+  background:black;
+}
+.gnb>li.on .depi:after{
+  display: none;
 }
 .gnb ul>li{
   height: 50px;

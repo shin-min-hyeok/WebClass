@@ -1,0 +1,9 @@
+.box{
+  border: 1px solid red;
+  width: 200px;
+  height: 200px;
+}
+.wrap>div{
+  height: 1000px;
+  border: 1px solid black;
+}
