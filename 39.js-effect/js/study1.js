@@ -26,7 +26,7 @@ $(document).ready(function () {
       $(this).css("height", (li2dep + 1) * 50 + "px");
       $(this).addClass("on");
     }
-  
+
     // $(".gnb>li").css("height","50px")
 
     // //여러개의 리스트 중 내가 클릭한 리스트가 포함하고있는 2뎁스 ul태그의 자식 li 태그의 개수를 구해서 그 개수에 비레한 만큼의 값으로 클릭한 리스트의 높이를 지정
@@ -37,7 +37,7 @@ $(document).ready(function () {
     // $(this).css("height",(li2depth+1)*50+"px")
   });
 
-  $(".gnb ul").click(function(){
-    return false
-  })
+  $(".gnb ul").click(function () {
+    return false;
+  });
 });

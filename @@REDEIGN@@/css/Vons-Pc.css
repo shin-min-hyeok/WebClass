@@ -66,6 +66,9 @@
   .sub3_MoSupport {
     display: none;
   }
+  .sub3_MoText {
+    display: none;
+  }
   /*--------SNS COMMON FIXED ---------- */
   .sns > ul {
     position: fixed;
@@ -1127,6 +1130,7 @@
     width: 100%;
   }
   .sub3_Banner > figure img {
+    width: 100%;
     height: 395px;
     margin-bottom: 100px;
   }

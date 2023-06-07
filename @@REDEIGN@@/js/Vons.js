@@ -39,16 +39,22 @@ window.onload = function () {
   });
 };
 
-$(document).ready(function(){
-
-$(".btnMenu").click(function(){
-  if($(".moMenus").hasClass("show") ==false){
-    $(".moMenus").addClass("show");
-  }else{
-    $(".blackcover").removeClass("show")
-    $(".moMenus").removeClass("show")
-  }
-
-})
-
-})
+$(document).ready(function () {
+  $(".btnMenu").click(function () {
+    if ($(".moMenus").hasClass("show") == false) {
+      $(".moMenus").addClass("show");
+    } else {
+      $(".moMenus").removeClass("show");
+    }
+  });
+  $(".CtnMenu").click(function () {
+    if ($(".moMenus").hasClass("show") == true) {
+      $(".moMenus").removeClass("show");
+    }
+  });
+  $(".blackcover").click(function () {
+    if ($(".moMenus").hasClass("show") == true) {
+      $(".moMenus").removeClass("show");
+    }
+  });
+});
