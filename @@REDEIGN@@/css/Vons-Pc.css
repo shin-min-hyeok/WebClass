@@ -312,11 +312,12 @@
     background: #806239;
   }
   .MenuText {
-    /* border: 1px solid red; */
+    border: 1px solid red;
     width: 1260px;
     margin: 0 auto;
     text-align: center;
     position: relative;
+    
   }
   .MenuText::after {
     content: "";
@@ -327,7 +328,13 @@
     position: absolute;
     top: -40px;
     left: 50%;
-    transform: translateX(-50%);
+    transform: translateY(100px);
+    transition: all 1s ease 0s;
+    opacity: 0;
+  }
+  .MenuArea.on .MenuText::after{
+    opacity: 1;
+    transform: translateY(0px);
   }
   .MenuText > dl dt {
     font-weight: bold;
@@ -411,8 +418,14 @@
     background: url(../img/메인페이지/텍스트img/WITHME.png) no-repeat;
     width: 60%;
     height: 30%;
-    opacity: 0.15;
-    z-index: 1;
+    opacity: 0.5;
+    z-index: 0;
+    transition: all 1.2s ease 0s;
+    transform: translateX(-120%);
+  }
+  .BrandEX.on ::after{
+    opacity: 0.2;
+    transform: translateX(0%);
   }
   .BrandEX > li {
     display: flex;
@@ -450,6 +463,21 @@
   .BrandEX > li:nth-child(1) {
     margin-left: 0;
   }
+  .BrandEX > li:nth-child(2){
+    opacity: 0;
+    transform: translateX(400px);
+    transition: all 1.2s ease 0s;
+  }
+  .BrandEX > li:nth-child(3){
+    transform: translateX(400px);
+    opacity: 0;
+    transition: all 1.2s ease 0.2s;
+  }
+  .BrandEX.on > li:nth-child(2),
+  .BrandEX.on > li:nth-child(3){
+    opacity: 1;
+    transform: translateX(0px);
+  } 
   .BrandEX > li > img {
     height: 100%;
   }
@@ -647,14 +675,17 @@
     justify-content: space-between;
     position: relative;
   }
-  .SMList > ul .SMList > ul > li {
-    height: 300px;
-    margin-bottom: 220px;
-    position: relative;
+  .SMList > ul > li {
+    overflow: hidden;
+  }
   }
   .SMList > ul > li img {
     width: 299px;
     height: 300px;
+    transition: all 0.5s ease 0s;
+  }
+  .SMList > ul > li img:hover{
+    transform: scale(1.1);
   }
   .SMList > ul > li > dl > dt {
     font-size: 1.8rem;

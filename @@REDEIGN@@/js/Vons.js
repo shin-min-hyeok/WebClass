@@ -57,4 +57,5 @@ $(document).ready(function () {
       $(".moMenus").removeClass("show");
     }
   });
+
 });

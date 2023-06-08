@@ -45,7 +45,7 @@
     box-sizing: border-box;
   }
   header.mo {
-    width: 100%;
+    width: 100vw;
     height: 60px;
     position: fixed;
     background: rgba(12, 38, 71, 1);
@@ -71,7 +71,7 @@
   }
   .btnMenu > span {
     width: 90%;
-    height: 1.5px;
+    height: 2px;
     background: #fff;
     display: block;
     margin: 2.2px 0;
@@ -409,7 +409,7 @@
   }
   .MenuSlide2 .MenuEX > p {
     font-weight: bold;
-    font-size: 1.1rem;
+    font-size: 1rem;
     color: #fff;
   }
   .MoContents {
@@ -517,13 +517,15 @@
   }
   /*--------------------------------SUB PAGE 1------------------------------- */
   .moMenu_gnb {
+    border: 1px solid red;
     margin-top: 60px;
-    width: 100%;
+    width: 100vw;
     height: 40px;
     background: #e2e2e2;
   }
   .moMenu_gnb > ul {
     height: 100%;
+    width: 100%;
     display: flex;
     align-items: center;
   }
@@ -555,6 +557,43 @@
     display: flex;
     align-items: center;
     border-bottom: 0.5px solid rgb(128, 127, 127);
+    position: relative;
+  }
+  .Mo_sub1MenuList > ul li:nth-of-type(3):after{
+    content: "";
+    background: url(../moimg/모바일베스트.png) no-repeat;
+    position: absolute;
+    top: 31%;
+    left: 54%;
+    width: 100%;
+    height: 100%;
+  }
+  .Mo_sub1MenuList > ul li:nth-of-type(4):after{
+    content: "";
+    background: url(../moimg/모바일베스트.png) no-repeat;
+    position: absolute;
+    top: 31%;
+    left: 54%;
+    width: 100%;
+    height: 100%;
+  }
+  .Mo_sub1MenuList > ul li:nth-of-type(6):after{
+    content: "";
+    background: url(../moimg/모바일\ 뉴.png) no-repeat;
+    position: absolute;
+    top: 33%;
+    left: 61%;
+    width: 100%;
+    height: 100%;
+  }
+  .Mo_sub1MenuList > ul li:nth-of-type(7):after{
+    content: "";
+    background: url(../moimg/모바일\ 뉴.png) no-repeat;
+    position: absolute;
+    top: 34%;
+    left: 54%;
+    width: 100%;
+    height: 100%;
   }
   .Mo_sub1MenuList .Mo_MenuTxt {
     text-align: left;
@@ -598,6 +637,7 @@
     font-family: netFont;
   }
   .S2_MenuEX .MenuEX2 > h3 {
+    border: 1px solid red;
     font-size: 1.2rem;
     font-weight: bold;
     line-height: 25px;

@@ -32,6 +32,7 @@ header.sma{
 }
 .logo{
   text-transform: uppercase;
+  font-weight: bold;
 font-size: 40px;
 }
 .gnb{
