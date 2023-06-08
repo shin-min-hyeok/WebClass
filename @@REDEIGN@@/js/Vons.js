@@ -58,4 +58,10 @@ $(document).ready(function () {
     }
   });
 
+  $(".pcH").mouseover(function () {
+    $(".pcH").addClass("on");
+  });
+  $(".pcH").mouseout(function () {
+    $(".pcH").removeClass("on");
+  });
 });
