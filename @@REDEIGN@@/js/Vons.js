@@ -58,10 +58,23 @@ $(document).ready(function () {
     }
   });
 
-  $(".pcH").mouseover(function () {
-    $(".pcH").addClass("on");
+  $(".innerHeader").mouseover(function () {
+    $(".innerHeader").addClass("on");
   });
-  $(".pcH").mouseout(function () {
-    $(".pcH").removeClass("on");
+  $(".innerHeader").mouseout(function () {
+    $(".innerHeader").removeClass("on");
   });
+    
+  $(window).scroll(function(){
+    let winst = $(window).scrollTop() 
+    let winHeight = $(window).height()*0.55
+
+    $(".mltr,.mrtl").each(function(){
+      if(winst+winHeight>$(this).offset().top){
+        $(this).addClass("on")
+      }else{
+        $(this).removeClass("on")
+      }
+    })
+  })
 });

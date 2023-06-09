@@ -623,30 +623,29 @@
     font-weight: bold;
   }
   /*-----------------SUB PAGE 2------------------------------ */
-  .S2_MenuEX .MenuEX2 {
+  .MoMenuEX2 {
     width: 90%;
-    margin: 80px auto;
+    margin: 90px auto;
     position: relative;
     text-align: center;
   }
-  .S2_MenuEX .MenuEX2 > h2 {
+  .MoMenuEX2 > h2 {
     font-weight: bold;
     font-size: 4rem;
     line-height: 60px;
     margin-bottom: 40px;
     font-family: netFont;
   }
-  .S2_MenuEX .MenuEX2 > h3 {
-    border: 1px solid red;
+  .MoMenuEX2 > h3 {
     font-size: 1.2rem;
     font-weight: bold;
     line-height: 25px;
     margin-bottom: 40px;
   }
-  .S2_MenuEX .MenuEX2 > h3 > span {
+  .MoMenuEX2 > h3 > span {
     color: rgb(211, 33, 33);
   }
-  .S2_MenuEX .MenuEX2 > p {
+  .MoMenuEX2> p {
     font-weight: bold;
     font-size: 0.9rem;
     color: black;
@@ -715,72 +714,66 @@
     font-weight: bold;
   }
   .S2_BIarea {
-    width: 90%;
+    width: 100;
     margin: 0 auto;
+    border: 1px solid red;
   }
-  .S2_BIarea .BI_logo {
+  .MoBI_logo {
     margin: 0 auto;
     margin-bottom: 5px;
   }
-  .S2_BIarea .BI_logo > h4 {
-    text-align: center;
-    font-size: 2.2rem;
-    font-weight: bold;
-    font-family: netFont;
-    border-bottom: 0.5px solid black;
-    margin-bottom: 70px;
-  }
-  .S2_BIarea section {
+  
+  .MoMaster_Logo>section {
     display: flex;
     justify-content: space-between;
+    width: 90%;
   }
-  .Master_Logo {
-    width: 50%;
+  .MoMaster_Logo {
+    width: 60%;
     margin-right: 20px;
   }
-  .Master_Logo > img {
+  .MoMaster_Logo > img {
     padding-left: 60px;
     width: 70px;
   }
-  .Master_Logo > h4 {
+  .MoMaster_Logo > h4 {
     font-weight: bold;
     font-family: netFont;
     font-size: 1rem;
     margin: 15px 0;
     text-align: left;
   }
-  .Master_Logo > p {
+  .MoMaster_Logo > p {
     text-align: left;
     font-size: 0.8rem;
-
     font-weight: bold;
   }
-  .Master_txt {
+  .MoMaster_txt {
     text-align: center;
     display: flex;
     flex-direction: column;
     justify-content: space-evenly;
     width: 50%;
   }
-  .Master_txt > h1 {
+  .MoMaster_txt> h1 {
     font-weight: bold;
     font-size: 2rem;
     font-family: netFont;
     color: #806239;
   }
-  .Master_txt > dl > dt {
+  .MoMaster_txt > dl > dt {
     text-align: left;
     font-weight: bold;
     margin: 15px 0;
     font-size: 1rem;
   }
-  .Master_txt > dl > dd {
+  .MoMaster_txt > dl > dd {
     text-align: left;
     padding-bottom: 10px;
     font-weight: bold;
     font-size: 0.9rem;
   }
-  .Master_txt > dl > dd > span {
+  .MoMaster_txt > dl > dd > span {
     float: right;
     color: #434343;
   }

@@ -1,0 +1,33 @@
+*{margin: 0;padding: 0;}
+.wrap{
+  width: 1000px;
+  margin: 0 auto;
+}
+.wrap>section{
+  font-size: 2.5rem;
+  padding: 20vh 0;
+}
+.wrap>section h1{
+  margin-bottom: 30px;
+}
+.mrtl{
+  transform: translateX(300px)scale(1.2)rotate(360deg);
+  opacity: 0;
+  transition: all 1s ease 0s;
+}
+.mrtl.on{
+  transform: translateX(0px);
+  opacity: 1;
+}
+.mltr{
+  transform: translateX(-200px);
+  opacity: 0;
+  transition: all 1s ease 0s;
+}
+.mltr.on{
+  transform: translateX(0px);
+  opacity: 1;
+}
+li{
+  margin: 50px 0;
+}

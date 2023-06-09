@@ -60,6 +60,12 @@
   .S2_MoMenuList {
     display: none;
   }
+  .MoMenuEX2{
+    display:none
+  }
+  .MoBI_logo{
+    display: none;
+  }
   .sub3_Mobanner {
     display: none;
   }
@@ -1341,21 +1347,21 @@ main {
 footer {
   width: 100%;
   background: #0c2647;
-}
+  }
 footer > article {
   margin: 0 auto;
   width: 1360px;
   display: flex;
   align-items: center;
-}
+  }
 footer .f_Left {
   /* border: 1px solid red; */
   margin-right: 30px;
   height: 150px;
-}
+  }
 footer .f_Right {
   padding-bottom: 60px;
-}
+  }
 footer .f_Gnb > ul {
   display: flex;
   padding-top: 50px;
@@ -1363,29 +1369,29 @@ footer .f_Gnb > ul {
   justify-content: space-between;
   border-bottom: 0.4px solid rgba(128, 128, 128, 0.574);
   margin-bottom: 30px;
-}
+  }
 footer .f_Gnb > ul > li {
   margin-right: 30px;
   color: #fff;
   font-weight: bold;
   font-size: 1.2rem;
   /* transition: all 2s ease 0s; */
-}
-footer .f_Gnb > ul > li :hover {
+  }
+  footer .f_Gnb > ul > li :hover {
   color: rgba(128, 128, 128, 0.574);
-}
-footer .f_Info {
+  }
+  footer .f_Info {
   color: #898989;
-}
-footer .f_Info > p {
+  }
+  footer .f_Info > p {
   margin-bottom: 10px;
-}
-footer .f_Info address {
+  }
+  footer .f_Info address {
   display: flex;
   margin-bottom: 10px;
-}
-footer .f_Info address dd {
+  }
+  footer .f_Info address dd {
   margin-right: 20px;
-}
+  }
 }
 
