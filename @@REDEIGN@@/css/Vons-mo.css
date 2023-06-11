@@ -229,21 +229,21 @@
     margin-bottom: 45px;
   }
   .callNum h2 {
-    /* border: 1px solid red; */
-    width: 80%;
-    height: 100%;
     margin: 0 auto;
+    width: 90%;
     display: flex;
     align-items: center;
     padding-left: 20px;
   }
-  .callNum h2 img {
-    height: 6vh;
-    margin-right: 15px;
+  .callNum h2 > a {
+    margin-right: 20px;
   }
-  .callNum h2 p {
+  .callNum h2 > a img {
+    width: 50px;
+  }
+  .callNum p {
     color: #fff;
-    font-size: 1.2rem;
+    font-size: 1.3rem;
     font-family: netFont;
   }
   .moMenuInfo {
@@ -559,7 +559,7 @@
     border-bottom: 0.5px solid rgb(128, 127, 127);
     position: relative;
   }
-  .Mo_sub1MenuList > ul li:nth-of-type(3):after{
+  .Mo_sub1MenuList > ul li:nth-of-type(3):after {
     content: "";
     background: url(../moimg/모바일베스트.png) no-repeat;
     position: absolute;
@@ -568,7 +568,7 @@
     width: 100%;
     height: 100%;
   }
-  .Mo_sub1MenuList > ul li:nth-of-type(4):after{
+  .Mo_sub1MenuList > ul li:nth-of-type(4):after {
     content: "";
     background: url(../moimg/모바일베스트.png) no-repeat;
     position: absolute;
@@ -577,7 +577,7 @@
     width: 100%;
     height: 100%;
   }
-  .Mo_sub1MenuList > ul li:nth-of-type(6):after{
+  .Mo_sub1MenuList > ul li:nth-of-type(6):after {
     content: "";
     background: url(../moimg/모바일\ 뉴.png) no-repeat;
     position: absolute;
@@ -586,7 +586,7 @@
     width: 100%;
     height: 100%;
   }
-  .Mo_sub1MenuList > ul li:nth-of-type(7):after{
+  .Mo_sub1MenuList > ul li:nth-of-type(7):after {
     content: "";
     background: url(../moimg/모바일\ 뉴.png) no-repeat;
     position: absolute;
@@ -645,7 +645,7 @@
   .MoMenuEX2 > h3 > span {
     color: rgb(211, 33, 33);
   }
-  .MoMenuEX2> p {
+  .MoMenuEX2 > p {
     font-weight: bold;
     font-size: 0.9rem;
     color: black;
@@ -653,7 +653,7 @@
   .S2_MoMenuList {
     width: 100%;
     background: #f2f0f0;
-    margin-bottom: 80px;
+    margin-bottom: 40px;
   }
   .S2_MoMenuList > ul > li img {
     width: 120px;
@@ -714,34 +714,38 @@
     font-weight: bold;
   }
   .S2_BIarea {
-    width: 100;
-    margin: 0 auto;
-    border: 1px solid red;
+    width: 100%;
+    padding-top: 20px;
+    box-sizing: border-box;
   }
   .MoBI_logo {
+    width: 90%;
     margin: 0 auto;
     margin-bottom: 5px;
   }
-  
-  .MoMaster_Logo>section {
-    display: flex;
-    justify-content: space-between;
-    width: 90%;
+  .MoBI_logo > h4 {
+    width: 100%;
+    margin: 40px auto;
+    text-align: center;
+    font-size: 2rem;
+    font-weight: bold;
+    font-family: netFont;
+    border-bottom: 1px solid #806239;
+    padding-bottom: 8px;
   }
   .MoMaster_Logo {
-    width: 60%;
-    margin-right: 20px;
+    margin: 30px auto;
+    width: 90%;
   }
   .MoMaster_Logo > img {
-    padding-left: 60px;
-    width: 70px;
+    padding-left: 40%;
+    width: 90px;
   }
   .MoMaster_Logo > h4 {
     font-weight: bold;
     font-family: netFont;
     font-size: 1rem;
     margin: 15px 0;
-    text-align: left;
   }
   .MoMaster_Logo > p {
     text-align: left;
@@ -749,23 +753,23 @@
     font-weight: bold;
   }
   .MoMaster_txt {
+    margin: 0 auto;
     text-align: center;
-    display: flex;
-    flex-direction: column;
-    justify-content: space-evenly;
-    width: 50%;
+    width: 90%;
+    padding-bottom: 40px;
   }
-  .MoMaster_txt> h1 {
+  .MoMaster_txt > h1 {
     font-weight: bold;
-    font-size: 2rem;
+    font-size: 3rem;
     font-family: netFont;
     color: #806239;
+    margin-bottom: 20px;
   }
   .MoMaster_txt > dl > dt {
     text-align: left;
     font-weight: bold;
     margin: 15px 0;
-    font-size: 1rem;
+    font-size: 1.2rem;
   }
   .MoMaster_txt > dl > dd {
     text-align: left;
@@ -775,65 +779,7 @@
   }
   .MoMaster_txt > dl > dd > span {
     float: right;
-    color: #434343;
-  }
-  .S2_BIarea {
-    padding-bottom: 60px;
-  }
-  .S2_BIarea .BI_color {
-    width: 1260px;
-    margin: 0 auto;
-  }
-  .BI_color > h4 {
-    font-weight: bold;
-    font-size: 1.3rem;
-    margin-bottom: 15px;
-  }
-  .BI_color > ul {
-    display: flex;
-    justify-content: space-between;
-  }
-  .BI_color > ul > li > .txtBox {
-    width: 400px;
-    height: 250px;
-    font-size: 3.5rem;
-    font-family: netFont;
-    text-align: center;
-    margin-bottom: 20px;
-    position: relative;
-  }
-  .BI_color h1 {
-    position: absolute;
-    left: 50%;
-    top: 50%;
-    transform: translate(-50%, -50%);
-  }
-  .BI_color > ul > li > .txtBox:nth-of-type(1) {
-    background: #16477c;
-    color: #806239;
-  }
-  .BI_color > ul > li:nth-of-type(2) > .txtBox {
-    background: #fff;
-    color: #16477c;
-    border: 1px solid black;
-  }
-  .BI_color > ul > li:nth-of-type(3) > .txtBox {
-    background: #000000;
-    color: #fff;
-  }
-  .BI_color dl > dt {
-    font-weight: bold;
-    font-size: 1.5rem;
-    margin-bottom: 20px;
-  }
-  .BI_color dl > dd {
-    margin-bottom: 10px;
-    font-weight: bold;
-    font-size: 1.2rem;
-  }
-  .BI_color dl > dd > span {
-    float: right;
-    color: #686868;
+    color: #757575;
   }
   /*-----------------SUB PAGE 3------------------------------- */
   main {

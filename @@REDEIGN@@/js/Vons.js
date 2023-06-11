@@ -64,17 +64,17 @@ $(document).ready(function () {
   $(".innerHeader").mouseout(function () {
     $(".innerHeader").removeClass("on");
   });
-    
-  $(window).scroll(function(){
-    let winst = $(window).scrollTop() 
-    let winHeight = $(window).height()*0.55
 
-    $(".mltr,.mrtl").each(function(){
-      if(winst+winHeight>$(this).offset().top){
-        $(this).addClass("on")
-      }else{
-        $(this).removeClass("on")
+  $(window).scroll(function () {
+    let winst = $(window).scrollTop();
+    let winHeight = $(window).height() * 0.65;
+
+    $(".mltr,.mltr2,.mltr3,.mrtl,.mrtl2,.mrtl3,.mftt ").each(function () {
+      if (winst + winHeight > $(this).offset().top) {
+        $(this).addClass("on");
+      } else {
+        $(this).removeClass("on");
       }
-    })
-  })
+    });
+  });
 });

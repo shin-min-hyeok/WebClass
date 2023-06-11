@@ -1,10 +1,20 @@
-*{margin: 0; padding: 0;}
-ul{list-style: none;}
-a{text-decoration: none;color: inherit;}
-img{max-width: 100%;}
+* {
+  margin: 0;
+  padding: 0;
+}
+ul {
+  list-style: none;
+}
+a {
+  text-decoration: none;
+  color: inherit;
+}
+img {
+  max-width: 100%;
+}
 
 /* slide layou */
-.station{
+.station {
   width: 1000px;
   height: 600px;
   overflow: hidden;
@@ -12,31 +22,31 @@ img{max-width: 100%;}
   margin: 0 auto;
   border: 5px solid lime;
 }
-.train{
+.train {
   width: 500%;
   height: 100%;
   display: flex;
   transition: all 1s ease 0s;
 }
-.train>li{
+.train > li {
   width: 20%;
   height: 100%;
 }
-.train>li img{
+.train > li img {
   width: 100%;
   height: 100%;
   object-fit: cover;
 }
-.controler{
+.controler {
   position: absolute;
   left: 50%;
   top: 50%;
-  transform: translate(-50%,-50%);
+  transform: translate(-50%, -50%);
   width: 90%;
   display: flex;
   justify-content: space-between;
 }
-.controler>a{
+.controler > a {
   padding: 10px;
   cursor: pointer;
   background-color: #fff;
