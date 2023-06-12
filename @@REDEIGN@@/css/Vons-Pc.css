@@ -670,7 +670,6 @@
     flex-grow: 1;
     text-align: center;
   }
-  }
   .subMenuBar > ul > li:hover {
     background: #ac854db2;
     color: black;
@@ -713,17 +712,16 @@
     position: relative;
   }
   .SMList > ul {
+    border: 1px solid red;
     width: 1260px;
     margin: 150px auto;
     display: flex;
     flex-wrap: wrap;
     justify-content: space-between;
     position: relative;
-    overflow: hidden;
   }
-  .SMList >ul>li figure{
+  .SMList > ul > li figure {
     overflow: hidden;
-    height: 290px;
   }
   .SMList > ul > li img {
     width: 299px;
@@ -874,7 +872,7 @@
   /*-----------------SUB PAGE 2------------------------------ */
   .sub2_Banner {
     width: 100%;
-    
+
     margin-bottom: -4px;
     position: relative;
   }
