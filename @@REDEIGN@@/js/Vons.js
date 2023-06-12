@@ -52,22 +52,16 @@ $(document).ready(function () {
       $(".moMenus").removeClass("show");
     }
   });
+
   $(".blackcover").click(function () {
     if ($(".moMenus").hasClass("show") == true) {
       $(".moMenus").removeClass("show");
     }
   });
 
-  $(".innerHeader").mouseover(function () {
-    $(".innerHeader").addClass("on");
-  });
-  $(".innerHeader").mouseout(function () {
-    $(".innerHeader").removeClass("on");
-  });
-
   $(window).scroll(function () {
     let winst = $(window).scrollTop();
-    let winHeight = $(window).height() * 0.65;
+    let winHeight = $(window).height() * 0.55;
 
     $(".mltr,.mltr2,.mltr3,.mrtl,.mrtl2,.mrtl3,.mftt ").each(function () {
       if (winst + winHeight > $(this).offset().top) {

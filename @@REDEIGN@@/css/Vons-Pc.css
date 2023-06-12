@@ -347,7 +347,7 @@
     font-size: 3.7rem;
   }
   .mltr {
-    transform: translateX(-800px);
+    transform: translateX(-300px);
     opacity: 0;
     transition: all 1.5s ease 0.1s;
   }
@@ -362,7 +362,7 @@
     font-weight: 400;
   }
   .mrtl {
-    transform: translateX(900px);
+    transform: translateX(300px);
     opacity: 0;
     transition: all 1.5s ease 0s;
   }
@@ -452,7 +452,7 @@
     justify-content: space-between;
   }
   .mrtl2 {
-    transform: translateX(900px);
+    transform: translateX(300px);
     opacity: 0;
     transition: all 1.2s ease 0s;
   }
@@ -461,7 +461,7 @@
     opacity: 1;
   }
   .mrtl3 {
-    transform: translateX(900px);
+    transform: translateX(300px);
     opacity: 0;
     transition: all 1.2s ease 0.2s;
   }
@@ -470,7 +470,7 @@
     opacity: 1;
   }
   .mltr2 {
-    transform: translateX(-800px);
+    transform: translateX(-300px);
     opacity: 0;
     transition: all 1.5s ease 0.2s;
   }
@@ -479,7 +479,7 @@
     opacity: 1;
   }
   .mltr3 {
-    transform: translateX(-900px);
+    transform: translateX(-300px);
     opacity: 0;
     transition: all 1.5s ease 0.3s;
   }
@@ -509,7 +509,7 @@
   }
   .mftt {
     transform: translateY(100px);
-    transition: all 1.5s ease 0.3s;
+    transition: all 1s ease 0.3s;
     opacity: 0;
   }
   .mftt.on {
@@ -719,16 +719,20 @@
     flex-wrap: wrap;
     justify-content: space-between;
     position: relative;
-  }
-  .SMList > ul > li {
     overflow: hidden;
+  }
+  .SMList >ul>li figure{
+    overflow: hidden;
+    height: 290px;
   }
   .SMList > ul > li img {
     width: 299px;
     height: 300px;
     transition: all 0.5s ease 0s;
+    overflow: hidden;
   }
   .SMList > ul > li img:hover {
+    transform-origin: center center;
     transform: scale(1.1);
   }
   .SMList > ul > li > dl > dt {
@@ -870,6 +874,7 @@
   /*-----------------SUB PAGE 2------------------------------ */
   .sub2_Banner {
     width: 100%;
+    
     margin-bottom: -4px;
     position: relative;
   }
@@ -982,7 +987,7 @@
   .S2_MenuEX .MenuEX_img {
     position: absolute;
     top: 60%;
-    left: 15%;
+    left: 17%;
   }
   .S2_MenuEX .MenuEX_img > ul {
     display: flex;
@@ -1140,7 +1145,7 @@
     color: #434343;
   }
   .S2_BIarea {
-    padding-bottom: 100px;
+    padding-bottom: 60px;
   }
   .S2_BIarea .BI_color {
     width: 1260px;
@@ -1206,8 +1211,8 @@
   }
   .sub3_Banner > figure img {
     width: 100%;
-    height: 395px;
-    margin-bottom: 100px;
+    height: 420px;
+    margin-bottom: 200px;
   }
   .sub3_Banner > figure p {
     position: absolute;
@@ -1321,7 +1326,7 @@
     font-weight: bold;
     padding: 15px;
     margin-bottom: 15px;
-    font-size: rem;
+    font-size: 2rem;
     font-family: netFont;
     position: relative;
   }

@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>seInterval()/setTimeout()</title>
+</head>
+<body>
+  <h1>setTimeout(동작,일정시간)</h1>
+  <p>자바스크립트 함수로서 일정시간 후에 특정동작을 실행시켜주는 함수</p>
+  <p>setTimeout()함수는 실행됨과 동시에 일정시간 뒤에 동작할 예약을 멈출 수 있는 타이머를 리턴한다.</p>
+  <script>
+    let timer1 = setTimeout(function(){
+      // 일정시간 후에 작동될 동작
+    alert("TEST")
+    },3000)
+    clearTimeout(timer1)
+  </script>
+
+  <h1>setInterval(동작,일정시간)</h1>
+  <p>일정시간마다 특정동작을 실행해주는 함수</p>
+  <script>
+    let second = 0;
+    setInterval(function(){
+      second++
+      console.log(second+"초 지났습니다.")
+    },1000)
+  </script>
+</body>
+</html>

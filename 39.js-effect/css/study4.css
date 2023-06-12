@@ -11,7 +11,7 @@
   margin-bottom: 30px;
 }
 .mrtl{
-  transform: translateX(300px)scale(1.2)rotate(360deg);
+  transform: translateX(300px);
   opacity: 0;
   transition: all 1s ease 0s;
 }
@@ -28,6 +28,27 @@
   transform: translateX(0px);
   opacity: 1;
 }
+.mttb{
+  transform: translateY(-50px);
+  opacity: 0;
+  transition: all 0.5s ease 0s;
+}
+.mttb.on{
+  transform: translateY(0);
+  opacity: 1;
+}
+.mbtt{
+  transform: translateY(50px);
+  opacity: 0;
+  transition: all 0.5s ease 0s;
+}
+.mbtt.on{
+  transform: translateY(0);
+  opacity: 1;
+}
+
+
+
 li{
   margin: 50px 0;
 }

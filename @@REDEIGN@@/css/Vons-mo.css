@@ -197,7 +197,6 @@
     margin-bottom: 50px;
   }
   .moMenuList li {
-    /* border: 1px solid red; */
     padding: 20px;
     font-size: 1.3rem;
     font-weight: bold;
@@ -266,7 +265,6 @@
   /* ----------------MAIN---------------------------- */
   main {
     position: relative;
-    box-sizing: border-box;
   }
   .MainBanner {
     margin-top: 60px;
@@ -397,19 +395,19 @@
     font-size: 1.2rem;
     color: #fff;
     width: 100%;
-    padding-bottom: 15px;
+    padding-bottom: 10px;
   }
   .MenuSlide2 .MenuEX > h3::after {
     content: "";
     position: absolute;
-    bottom: 38px;
+    bottom: 31px;
     left: 10px;
     border: 0.1px solid #fff;
     width: 150px;
   }
   .MenuSlide2 .MenuEX > p {
     font-weight: bold;
-    font-size: 1rem;
+    font-size: 0.9rem;
     color: #fff;
   }
   .MoContents {
@@ -440,7 +438,7 @@
   }
   .MCTxt1 h2 {
     font-weight: bold;
-    font-size: 1.3rem;
+    font-size: 1.25rem;
     margin-bottom: 5px;
     font-family: netFont;
   }
@@ -454,8 +452,7 @@
     width: calc((100% / 3) * 2);
   }
   .MCTxt2 {
-    padding: 8px 0px 0px 5px;
-    margin-right: 100px;
+    margin-right: 90px;
   }
   .MCTxt2 h2 {
     font-weight: bold;
@@ -517,20 +514,19 @@
   }
   /*--------------------------------SUB PAGE 1------------------------------- */
   .moMenu_gnb {
-    border: 1px solid red;
     margin-top: 60px;
-    width: 100vw;
+    width: 100%;
     height: 40px;
     background: #e2e2e2;
   }
   .moMenu_gnb > ul {
-    height: 100%;
-    width: 100%;
+    height: 90%;
     display: flex;
     align-items: center;
   }
   .moMenu_gnb > ul > li {
     height: 100%;
+    width: 100%;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -540,60 +536,54 @@
     font-size: 0.9rem;
     color: #565555;
   }
-  .moMenu_gnb > ul > li:nth-of-type(1) {
-    border-bottom: 2px solid black;
-    color: black;
-  }
-  .Mo_sub1MenuList {
-    margin-top: 20px;
-  }
   .Mo_sub1MenuList > ul > li h2 img {
-    width: 150px;
+    width: 30vw;
+    object-fit: cover;
   }
   .Mo_sub1MenuList > ul li {
     padding: 20px 20px;
     height: 25vh;
-    width: 100%;
+    width: 90%;
     display: flex;
     align-items: center;
     border-bottom: 0.5px solid rgb(128, 127, 127);
     position: relative;
   }
-  .Mo_sub1MenuList > ul li:nth-of-type(3):after {
+  .Mo_sub1MenuList > ul li:nth-of-type(3) h4:after {
     content: "";
     background: url(../moimg/모바일베스트.png) no-repeat;
     position: absolute;
-    top: 31%;
-    left: 54%;
-    width: 100%;
-    height: 100%;
+    top: 27%;
+    left: 59%;
+    width: 10%;
+    height: 10%;
   }
-  .Mo_sub1MenuList > ul li:nth-of-type(4):after {
+  .Mo_sub1MenuList > ul li:nth-of-type(4) h4:after {
     content: "";
     background: url(../moimg/모바일베스트.png) no-repeat;
     position: absolute;
-    top: 31%;
-    left: 54%;
-    width: 100%;
-    height: 100%;
+    top: 27%;
+    left: 59%;
+    width: 10%;
+    height: 10%;
   }
-  .Mo_sub1MenuList > ul li:nth-of-type(6):after {
+  .Mo_sub1MenuList > ul li:nth-of-type(6) h4:after {
     content: "";
     background: url(../moimg/모바일\ 뉴.png) no-repeat;
     position: absolute;
-    top: 33%;
-    left: 61%;
-    width: 100%;
-    height: 100%;
+    top: 29%;
+    left: 68%;
+    width: 10%;
+    height: 10%;
   }
-  .Mo_sub1MenuList > ul li:nth-of-type(7):after {
+  .Mo_sub1MenuList > ul li:nth-of-type(7) h4:after {
     content: "";
     background: url(../moimg/모바일\ 뉴.png) no-repeat;
     position: absolute;
-    top: 34%;
-    left: 54%;
-    width: 100%;
-    height: 100%;
+    top: 29%;
+    left: 59%;
+    width: 10%;
+    height: 10%;
   }
   .Mo_sub1MenuList .Mo_MenuTxt {
     text-align: left;
@@ -713,15 +703,9 @@
     font-size: 0.9rem;
     font-weight: bold;
   }
-  .S2_BIarea {
-    width: 100%;
-    padding-top: 20px;
-    box-sizing: border-box;
-  }
   .MoBI_logo {
     width: 90%;
     margin: 0 auto;
-    margin-bottom: 5px;
   }
   .MoBI_logo > h4 {
     width: 100%;
@@ -734,18 +718,18 @@
     padding-bottom: 8px;
   }
   .MoMaster_Logo {
-    margin: 30px auto;
-    width: 90%;
+    width: 45%;
   }
   .MoMaster_Logo > img {
-    padding-left: 40%;
+    padding-left: 30%;
     width: 90px;
+    margin-bottom: 10px;
   }
   .MoMaster_Logo > h4 {
     font-weight: bold;
     font-family: netFont;
     font-size: 1rem;
-    margin: 15px 0;
+    margin-bottom: 30px;
   }
   .MoMaster_Logo > p {
     text-align: left;
@@ -753,14 +737,12 @@
     font-weight: bold;
   }
   .MoMaster_txt {
-    margin: 0 auto;
     text-align: center;
-    width: 90%;
-    padding-bottom: 40px;
+    width: 45%;
   }
   .MoMaster_txt > h1 {
     font-weight: bold;
-    font-size: 3rem;
+    font-size: 2.8rem;
     font-family: netFont;
     color: #806239;
     margin-bottom: 20px;
@@ -768,23 +750,20 @@
   .MoMaster_txt > dl > dt {
     text-align: left;
     font-weight: bold;
-    margin: 15px 0;
     font-size: 1.2rem;
+    margin-bottom: 22px;
   }
   .MoMaster_txt > dl > dd {
     text-align: left;
-    padding-bottom: 10px;
+    padding-bottom: 15px;
     font-weight: bold;
     font-size: 0.9rem;
   }
   .MoMaster_txt > dl > dd > span {
     float: right;
-    color: #757575;
+    color: #272727;
   }
   /*-----------------SUB PAGE 3------------------------------- */
-  main {
-    width: 100%;
-  }
   .sub3_Mobanner figure > h1 img {
     width: 100%;
     height: 360px;
