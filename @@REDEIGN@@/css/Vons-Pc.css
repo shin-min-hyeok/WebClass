@@ -35,7 +35,9 @@
   b {
     font-weight: 400;
   }
-
+  img{
+    max-width: 100%;
+  }
   .mo {
     display: none;
   }
@@ -96,8 +98,117 @@
   }
   .sns > ul > li:nth-of-type(3) img {
     animation-delay: 0.8s;
-    /*----------------------------------------------------- */
   }
+    /*----------------------------------------------------- */
+  .startWrap{
+    width: 100%;
+    height: 100%;
+  }
+  .stContents{
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    cursor: pointer;
+    position: relative;
+    overflow: hidden;
+  }
+  .startLogo{
+    position: absolute;
+    top: 80px;
+    left: 80px;
+    z-index: 1000;
+    animation: IconMotion 3.5s infinite ease-in-out;
+  }
+  .startLogo h1 img{
+    width: 400px;
+    height: 90px;
+    transition: all 1s ease 0s;
+  }
+  .stContents{
+    text-transform: uppercase;
+    font-family: netFont;
+  }
+  .stContents .stConL{
+    width: 50%;
+    height: 100vh;
+    transition: all 1s ease 0s;
+    position: relative;
+  }
+  .stTXT{
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%,-50%);
+    text-align: center;
+  }
+  .stConL h2>img{
+    width: 100%;
+    height: 100vh;
+    object-fit: cover;
+  }
+  .stConL .stTXT h1{
+    font-size: 3.5rem;
+    color: #fff;
+    margin-bottom: 40px;
+  }
+  .stConL .stTXT p{
+    width: 50%;
+    margin: 0 auto;
+    text-align: center;
+    font-size: 1.2rem;
+    font-weight: bold;
+    color: #fff;
+    border: 1px solid #fff;
+    padding: 10px 20px;
+    border-radius: 10px;
+    transition: all 0.7s ease 0s;
+  }
+  .stConL .stTXT p:hover{
+    background: #fff;
+    color: #806239;
+  }
+  .stConR{
+    background: #0c2647;
+  }
+  .stConR h2{
+    overflow: hidden;
+  }
+  .stConR .stTXT h1{
+    font-size: 3.5rem;
+    color: #fff;
+    margin-bottom: 40px;
+  }
+  .stConR .stTXT p{
+    width: 50%;
+    margin: 0 auto;
+    text-align: center;
+    font-size: 1.2rem;
+    font-weight: bold;
+    color: #0c2647;
+    background: #fff;
+    padding: 10px 0;
+    border-radius: 10px;
+    transition: all 0.7s ease 0s;
+  }
+  .stConR .stTXT p:hover{
+    border: 1px solid #fff;
+    background: none;
+    color: #fff;
+  }
+  .stContents .stConR{
+    width: 50%;
+    height: 100vh;
+    transition: all 0.9s ease 0s;
+    position: relative;
+  }
+  .stContents .stConR:hover{
+    width: 60%;
+  }
+  }
+  .stContents .stConL:hover{
+    width: 70%;
+  }
+    /* START PAGE */
   .contensWrap {
     box-sizing: border-box;
   }
@@ -230,7 +341,7 @@
   /* ---------------------------MAIN PAGE MAIN---------------------------- */
   .MainBanner {
     width: 100%;
-    height: 910px;
+    height: 95vh;
     margin: 0 auto;
     /* border: 10px solid red; */
     /* overflow: hidden; */
@@ -667,8 +778,9 @@
     font-weight: bold;
     color: #534741;
     font-family: netFont;
-    flex-grow: 1;
+    flex: 1;
     text-align: center;
+    transition: all 0.7s ease 0s;
   }
   .subMenuBar > ul > li:hover {
     background: #ac854db2;
@@ -722,6 +834,7 @@
   }
   .SMList > ul > li figure {
     overflow: hidden;
+    position: relative;
   }
   .SMList > ul > li img {
     width: 299px;
@@ -931,6 +1044,7 @@
     font-family: netFont;
     flex-grow: 1;
     text-align: center;
+    transition: all 0.7s ease 0s;
   }
   .sub2_MenuBar > ul > li:hover {
     background: #ac854db2;
@@ -985,7 +1099,7 @@
   .S2_MenuEX .MenuEX_img {
     position: absolute;
     top: 60%;
-    left: 17%;
+    left: 20%;
   }
   .S2_MenuEX .MenuEX_img > ul {
     display: flex;
@@ -1364,6 +1478,7 @@
   }
   .FixedBar ul > li {
     display: flex;
+    align-items: center;
     color: #fff;
   }
   .FixedBar ul > li h5 {
@@ -1371,21 +1486,26 @@
   }
   .FixedBar ul > li > h5 > b {
     color: #ac854d;
+    margin-right: 5px;
     font-weight: bold;
   }
   .FixedBar ul > li h5 {
-    font-size: 1.3rem;
+    font-size: 1.4rem;
     font-family: netFont;
   }
   .FixedBar ul > li p {
     background: black;
-    padding: 5px 20px;
+    font-size: 1.1rem;
+    border-radius: 8px;
+    padding: 6px 20px;
+    font-family: notoSans;
   }
   /* --------------COMMON FIXED BAR-------------------- */
 
   /* -----------------------COMMON FOOTER--------------------------- */
   footer {
     width: 100%;
+    height:300px;
     background: #0c2647;
   }
   footer > article {

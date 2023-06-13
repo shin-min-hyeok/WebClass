@@ -4,9 +4,10 @@ $(document).ready(function () {
   // train클래스 너비를 변경 => train클래스의 너비를 불러와서 perView로 나눈 후 결과를 다시 적용
   let stationWidth
   let trainWidth
-
+  
+  let winWidth = $(window).width()
   if($(window).width()>=1024){
-      perView = 2.5
+      perView = 1
       stationWidth = $(".station").width()
       trainWidth = stationWidth * 5 / perView
       $(".train").width(trainWidth)
@@ -16,7 +17,7 @@ $(document).ready(function () {
       trainWidth = stationWidth * 5 / perView
       $(".train").width(trainWidth)
   }else{
-      perView = 1
+      perView = 3
       stationWidth = $(".station").width()
       trainWidth = stationWidth * 5 / perView
       $(".train").width(trainWidth)
@@ -26,7 +27,7 @@ $(document).ready(function () {
     let winWidth = $(window).width()
     if(winWidth>=1024){
       console.log("pc사이즈입니다")
-      perView = 2.5
+      perView = 1
       stationWidth = $(".station").width()
       trainWidth = stationWidth * 5 / perView
       $(".train").width(trainWidth)
@@ -38,7 +39,7 @@ $(document).ready(function () {
       $(".train").width(trainWidth)
     }else{
       console.log("모바일사이즈입니다.")
-      perView = 1
+      perView = 3
       stationWidth = $(".station").width()
       trainWidth = stationWidth * 5 / perView
       $(".train").width(trainWidth)
@@ -63,6 +64,24 @@ $(document).ready(function () {
     }
     moveSlider(count);
   });
+
+  // 자동슬라이드기능
+  let timer = setInterval(function(){
+    count++;
+    if (count > 4) {count = 0};
+    moveSlider(count);
+  },2000)
+
+  $(".station").mouseover(function(){
+    clearInterval(timer)
+  })
+  $(".station").mouseout(function(){
+    timer = setInterval(function(){
+      count++;
+      if (count > 4) {count = 0};
+      moveSlider(count);
+    },2000)
+  })
 });
 
 
