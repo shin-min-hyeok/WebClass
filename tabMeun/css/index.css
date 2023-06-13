@@ -11,7 +11,7 @@ a {
   color: inherit;
 }
 
-.tabMenu {
+/* .tabMenu {
   border: 1px solid;
   width: 600px;
   margin: 0 auto;
@@ -37,4 +37,32 @@ a {
 .tabDes > ul > li {
   transition: all 1s ease 0s;
   padding: 15px;
+} */
+
+.tabMenu {
+  border: 1px solid red;
+  width: 800px;
+  margin: 0 auto;
+}
+.tabTit {
+  display: flex;
+}
+.tabTit > li {
+  flex: 1;
+  height: 50px;
+  border: 1px solid red;
+  cursor: pointer;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  transition: all 0.7s ease 0s;
+}
+.tabTit > li.on {
+  background: blue;
+  color: #000;
+  font-weight: bold;
+  font-size: 1.2rem;
+}
+.tabDes {
+  padding: 14px;
 }

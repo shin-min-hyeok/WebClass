@@ -35,7 +35,7 @@
   b {
     font-weight: 400;
   }
-  img{
+  img {
     max-width: 100%;
   }
   .mo {
@@ -99,12 +99,13 @@
   .sns > ul > li:nth-of-type(3) img {
     animation-delay: 0.8s;
   }
-    /*----------------------------------------------------- */
-  .startWrap{
+  /*----------------------------------------------------- */
+  .startWrap {
     width: 100%;
     height: 100%;
+    overflow: hidden;
   }
-  .stContents{
+  .stContents {
     width: 100%;
     height: 100vh;
     display: flex;
@@ -112,46 +113,46 @@
     position: relative;
     overflow: hidden;
   }
-  .startLogo{
+  .startLogo {
     position: absolute;
     top: 80px;
     left: 80px;
     z-index: 1000;
     animation: IconMotion 3.5s infinite ease-in-out;
   }
-  .startLogo h1 img{
+  .startLogo h1 img {
     width: 400px;
     height: 90px;
     transition: all 1s ease 0s;
   }
-  .stContents{
+  .stContents {
     text-transform: uppercase;
     font-family: netFont;
   }
-  .stContents .stConL{
+  .stContents .stConL {
     width: 50%;
     height: 100vh;
     transition: all 1s ease 0s;
     position: relative;
   }
-  .stTXT{
+  .stTXT {
     position: absolute;
     left: 50%;
     top: 50%;
-    transform: translate(-50%,-50%);
+    transform: translate(-50%, -50%);
     text-align: center;
   }
-  .stConL h2>img{
+  .stConL h2 > img {
     width: 100%;
     height: 100vh;
     object-fit: cover;
   }
-  .stConL .stTXT h1{
+  .stConL .stTXT h1 {
     font-size: 3.5rem;
     color: #fff;
     margin-bottom: 40px;
   }
-  .stConL .stTXT p{
+  .stConL .stTXT p {
     width: 50%;
     margin: 0 auto;
     text-align: center;
@@ -163,22 +164,22 @@
     border-radius: 10px;
     transition: all 0.7s ease 0s;
   }
-  .stConL .stTXT p:hover{
+  .stConL .stTXT p:hover {
     background: #fff;
     color: #806239;
   }
-  .stConR{
+  .stConR {
     background: #0c2647;
   }
-  .stConR h2{
+  .stConR h2 {
     overflow: hidden;
   }
-  .stConR .stTXT h1{
+  .stConR .stTXT h1 {
     font-size: 3.5rem;
     color: #fff;
     margin-bottom: 40px;
   }
-  .stConR .stTXT p{
+  .stConR .stTXT p {
     width: 50%;
     margin: 0 auto;
     text-align: center;
@@ -190,25 +191,24 @@
     border-radius: 10px;
     transition: all 0.7s ease 0s;
   }
-  .stConR .stTXT p:hover{
+  .stConR .stTXT p:hover {
     border: 1px solid #fff;
     background: none;
     color: #fff;
   }
-  .stContents .stConR{
+  .stContents .stConR {
     width: 50%;
     height: 100vh;
     transition: all 0.9s ease 0s;
     position: relative;
   }
-  .stContents .stConR:hover{
+  .stContents .stConR:hover {
     width: 60%;
   }
-  }
-  .stContents .stConL:hover{
+  .stContents .stConL:hover {
     width: 70%;
   }
-    /* START PAGE */
+  /* START PAGE */
   .contensWrap {
     box-sizing: border-box;
   }
@@ -620,10 +620,19 @@
   }
   .mftt {
     transform: translateY(100px);
-    transition: all 1s ease 0.3s;
+    transition: all 1s ease 0.2s;
     opacity: 0;
   }
   .mftt.on {
+    transform: translateY(0px);
+    opacity: 1;
+  }
+  .mftt2 {
+    transform: translateY(150px);
+    transition: all 1s ease 0.3s;
+    opacity: 0;
+  }
+  .mftt2.on {
     transform: translateY(0px);
     opacity: 1;
   }
@@ -730,7 +739,7 @@
     position: relative;
   }
   .subBanner > figure img {
-    height: 384px;
+    height: 460px;
     object-fit: cover;
   }
   .subBanner .subBTxt {
@@ -754,9 +763,9 @@
   }
   .subBanner > figure h1:after {
     content: "";
-    background: #43434319;
+    background: #43434342;
     width: 100%;
-    height: 384px;
+    height: 460px;
     position: absolute;
     left: 0;
     top: 0;
@@ -985,7 +994,7 @@
   /*-----------------SUB PAGE 2------------------------------ */
   .sub2_Banner {
     width: 100%;
-
+    height: 460px;
     margin-bottom: -4px;
     position: relative;
   }
@@ -1005,7 +1014,7 @@
     content: "";
     background: #43434337;
     width: 100%;
-    height: 384px;
+    height: 460px;
     position: absolute;
     left: 0;
     top: 0;
@@ -1505,7 +1514,7 @@
   /* -----------------------COMMON FOOTER--------------------------- */
   footer {
     width: 100%;
-    height:300px;
+    height: 300px;
     background: #0c2647;
   }
   footer > article {

@@ -63,12 +63,14 @@ $(document).ready(function () {
     let winst = $(window).scrollTop();
     let winHeight = $(window).height() * 0.55;
 
-    $(".mltr,.mltr2,.mltr3,.mrtl,.mrtl2,.mrtl3,.mftt ").each(function () {
-      if (winst + winHeight > $(this).offset().top) {
-        $(this).addClass("on");
-      } else {
-        $(this).removeClass("on");
+    $(".mltr,.mltr2,.mltr3,.mrtl,.mrtl2,.mrtl3,.mftt,.mftt2 ").each(
+      function () {
+        if (winst + winHeight > $(this).offset().top) {
+          $(this).addClass("on");
+        } else {
+          $(this).removeClass("on");
+        }
       }
-    });
+    );
   });
 });
