@@ -305,95 +305,103 @@
   span.swiper-pagination-bullet-active {
     background: black;
 }
+  /* footer */
+
   footer {
-    margin-top: 200px;
+    margin-top: 100px;
   }
   .footMenu1 {
     border-top: 1px solid #ebebeb;
-    padding-top: 70px;
-    margin-bottom: 50px;
+    padding-top: 30px;
   }
   .footMenu1 > ul {
-    border: 1px solid red;
-    width: 1120px;
+    width: 90%;
     margin: 0 auto;
-    display: flex;
   }
   .footMenu1 > ul > li {
-    border: 1px solid blue;
-    width: calc(100% / 6);
+    overflow: hidden;
+    height: 50px;
   }
   .footMenu1 > ul > li > a {
     font-weight: bold;
     font-size: 1.12rem;
+    display: flex;
+    height: 50px;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0 5px;
+  }
+  .footMenu1 > ul > li> a:after{
+    content: "";
+    width: 24px;
+    height: 24px;
+    background: url(../img/icn_cm_plus.svg) no-repeat 50% 50%;
+    background-size: contain;
+    transition: all 0.5s ease 0s;
+  }
+  .footMenu1 > ul > li.on> a:after{
+    transform: rotate(45deg);
   }
   .footMenu1 > ul > li > ul {
-    margin-top: 18px;
-    border: 1px solid red;
     color: #9a9a9a;
     font-size: 1rem;
   }
   .footMenu1 > ul > li > ul > li {
-    margin-bottom: 14px;
-  }
-  .footMenu1 > ul > li > ul > li:hover {
-    color: #000;
-  }
-  .footMenu1 > ul > li > ul > li:last-of-type {
-    margin-bottom: 0;
+    height: 35px;
+    display: flex;
+    align-items: center;
   }
   .footMenu2 {
-    border-bottom: 1px solid #ebebeb;
     padding-bottom: 75px;
   }
   .footMenu2 > ul {
-    border: 1px solid blue;
-    width: 1120px;
+    width: 90%;
     margin: 0 auto;
-    display: flex;
   }
   .footMenu2 > ul > li {
-    border: 1px solid red;
-    width: calc(100% / 6);
+    height: 50px;
     font-weight: bold;
     font-size: 1.12rem;
+    display: flex;
+    align-items: center;
+  }
+  .footMenu2 > ul > li > a {
+    padding: 0 5px;
   }
   .footMenu2 > ul > li.blue {
     color: #3774da;
   }
   .coInfo {
-    width: 1440px;
+    width: 100%;
     margin: 0 auto;
-    border: 1px solid red;
     display: flex;
+    flex-direction: column-reverse;
     justify-content: space-between;
+    align-items: center;
     padding: 26px 0;
   }
-  .coInfo:before {
-    content: "";
-    width: 138px;
-    border: 1px solid blue;
-  }
   .footLogo {
-    display: flex;
-    border: 1px solid red;
-    align-items: center;
+    /* border: 1px solid red; */
+    text-align: center;
+    padding: 10px 0 ;
   }
   .copy {
     color: #9a9a9a;
-    margin-left: 36px;
+    margin-top: 5px;
   }
   .snsMenu {
-    width: 138px;
-    border: 1px solid red;
+    width: 100%;
+    border-top: 1px solid #ebebeb;
+    border-bottom: 1px solid #ebebeb;
+    padding: 10px 0;
   }
   .snsMenu > ul {
     display: flex;
-    justify-content: space-between;
+    justify-content: center;
   }
   .snsMenu > ul > li {
-    border: 1px solid red;
     width: 38px;
+    margin: 0 5px;
   }
   .snsMenu > ul > li img {
     width: 100%;

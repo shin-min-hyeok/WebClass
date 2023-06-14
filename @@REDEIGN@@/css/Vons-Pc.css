@@ -100,6 +100,8 @@
     animation-delay: 0.8s;
   }
   /*----------------------------------------------------- */
+
+  /* START PAGE */
   .startWrap {
     width: 100%;
     height: 100%;
@@ -208,7 +210,7 @@
   .stContents .stConL:hover {
     width: 70%;
   }
-  /* START PAGE */
+  /* -------------------------------------------------------------------------------------- */
   .contensWrap {
     box-sizing: border-box;
   }
@@ -217,15 +219,28 @@
     width: 1260px;
   }
   .headerSub > ul {
-    /* border: 1px solid red; */
     display: flex;
     justify-content: flex-end;
   }
   .headerSub > ul > li {
     color: rgb(150, 150, 150);
+    margin-top: 8px;
     margin-left: 20px;
     font-size: 1rem;
     font-weight: 800;
+    position: relative;
+  }
+  .headerSub > ul > li::after{
+    content: "";
+    width: 1px;
+    height: 13px;
+    background:rgb(150, 150, 150);
+    position: absolute;
+    top: 20%;
+    left: 56px;
+  }
+  .headerSub > ul > li:last-of-type:after{
+    display: none;
   }
   .headerSub > ul > li:hover {
     color: #fff;
@@ -273,7 +288,7 @@
     justify-content: space-between;
     align-items: center;
     font-family: netFont;
-    margin-top: 10px;
+    margin-top: 5 px;
   }
   .logoArea {
     width: 350px;
@@ -338,15 +353,16 @@
   .lnb > ul > li:nth-of-type(1) {
     margin-left: 0;
   }
-  /* ---------------------------MAIN PAGE MAIN---------------------------- */
+  /* ------------------------------MAIN PAGE MAIN------------------------------- */
   .MainBanner {
     width: 100%;
     height: 95vh;
     margin: 0 auto;
-    /* border: 10px solid red; */
-    /* overflow: hidden; */
     position: relative;
     margin-bottom: 150px;
+  }
+  .MainBanner:hover{
+    cursor: url(../img/메인페이지/텍스트img/마우스커서\ 이미지.png) 30 30, auto;
   }
   .MainSlide {
     width: 400%;
@@ -438,24 +454,22 @@
     text-align: center;
     position: relative;
   }
-  .MenuText::after {
-    content: "";
-    background: url(../img/메인페이지/텍스트img/메인페이지특수문자.png)
-      no-repeat;
-    width: 50px;
-    height: 50px;
-    position: absolute;
-    top: -40px;
-    left: 50%;
-    transform: translateX(-50%);
-    transition: all 1s ease 0s;
-    opacity: 1;
-  }
-
   .MenuText > dl dt {
     font-weight: bold;
     font-family: netFont;
     font-size: 3.7rem;
+    position: relative;
+  }
+  .MenuText::after {
+    content: "";
+    background: url(../img/메인페이지/텍스트img/메인페이지특수문자.png)
+      no-repeat;
+    width: 35px;
+    height: 35px;
+    position: absolute;
+    top: -40px;
+    left: 50%;
+    transform: translateX(-50%);
   }
   .mltr {
     transform: translateX(-300px);
@@ -482,25 +496,25 @@
     opacity: 1;
   }
   .MenuSlide {
-    width: 50%;
-    height: 100%;
+    width:60%;
+    height: 700px;
     position: relative;
     margin-bottom: 200px;
   }
+  .MenuSlide{
+    cursor: url(../img/메인페이지/텍스트img/마우스커서\ 이미지.png) 30 30, auto;
+  }
   .MenuSlide2 {
-    /* border: 1px solid red; */
     width: 600%;
     height: 100%;
-    transition: all 1s ease 0s;
   }
   .MenuSlide2 > li {
     position: relative;
   }
   .MenuSlide2 > li img {
-    border: 1px solid red;
     object-fit: cover;
     width: 100%;
-    height: 540px;
+    height: 100%;
     border-radius: 20px;
   }
   .MenuSlide2 .MenuEX {
@@ -516,20 +530,34 @@
     color: #fff;
     width: 100%;
     padding-bottom: 8px;
+    transition: all 0.8s ease-out 0.6s;
+    transform: translateY(-100px);
+    opacity: 0.1;
   }
-  .MenuSlide2 .MenuEX > h3::after {
+  .MenuSlide .MenuSlide2>li.swiper-slide-active h3{
+    transform: translateY(0px);
+    opacity: 1;
+  }
+  .MenuSlide .MenuSlide2>li.swiper-slide-active h3:after{
     content: "";
     position: absolute;
-    bottom: 50px;
-    left: 10px;
+    bottom: 0;
+    left: 0;
     border: 0.1px solid #fff;
-    width: 300px;
+    width: 100%; 
   }
   .MenuSlide2 .MenuEX > p {
     font-weight: bold;
     font-size: 1.5rem;
     color: #fff;
     padding-top: 8px;
+    transition: all 0.8s ease-out 0.6s;
+    transform: translateY(100px);
+    opacity: 0.1;
+  }
+  .MenuSlide .MenuSlide2>li.swiper-slide-active p{
+    transform: translateY(0px);
+    opacity: 1;
   }
   .BrandArea {
     width: 1260px;
@@ -601,10 +629,12 @@
   .BrandEX > li > dl dt {
     font-weight: bold;
     margin-bottom: 10px;
+    font-family: notoSans;
   }
   .BrandEX > li > dl dd {
     font-weight: bold;
     font-size: 1.4rem;
+    font-family: netFont;
   }
   .BrandEX > li > dl b {
     color: rgb(169, 45, 45);
@@ -613,7 +643,7 @@
     font-weight: bold;
   }
   .BrandEX h3 {
-    /* font-family: netFont; */
+    font-family: notoSans;
     font-weight: bold;
     font-size: 1.2rem;
     padding-bottom: 40px;
@@ -703,6 +733,7 @@
   }
   .conArea img {
     object-fit: cover;
+    height: 100%;
     width: 100%;
   }
   .conArea > h2::after {
@@ -833,7 +864,6 @@
     position: relative;
   }
   .SMList > ul {
-    border: 1px solid red;
     width: 1260px;
     margin: 150px auto;
     display: flex;
@@ -1027,7 +1057,7 @@
   }
   .sub2_Banner > figure img {
     width: 100%;
-    height: 384px;
+    height: 460px;
   }
   .sub2_Banner.sub2_BannerT {
     position: absolute;
@@ -1062,8 +1092,8 @@
   .S2_MenuEX {
     text-align: center;
     width: 1260px;
-    /* border: 1px solid red; */
     margin: 0 auto;
+    position: relative;
   }
   .S2_MenuEX .MenuEX > h3 {
     font-weight: bold;
@@ -1079,16 +1109,15 @@
   }
   .S2_MenuEX .MenuEX2 {
     margin-top: 100px;
-    /* border: 1px solid blue; */
     position: relative;
     z-index: 20;
     margin-bottom: 100px;
-    /* border: 1px solid red; */
   }
   .S2_MenuEX .MenuEX2 > h2 {
     font-weight: bold;
     font-size: 7rem;
-    line-height: 85px;
+    font-family: netFont;
+    line-height: 100px;
     margin-bottom: 40px;
   }
   .S2_MenuEX .MenuEX2 > h3 {
@@ -1107,8 +1136,8 @@
   }
   .S2_MenuEX .MenuEX_img {
     position: absolute;
-    top: 60%;
-    left: 20%;
+    top: 10%;
+    left: 0%;
   }
   .S2_MenuEX .MenuEX_img > ul {
     display: flex;
@@ -1119,7 +1148,6 @@
     padding-top: 70px;
   }
   .S2_MenuEX .MenuEX_img > ul > li img {
-    /* border: 1px solid red; */
     width: 600px;
   }
   .S2_MenuList {
@@ -1199,7 +1227,6 @@
     font-size: 15px;
     line-height: 25px;
   }
-
   .S2_BIarea {
     width: 100%;
   }
@@ -1218,14 +1245,13 @@
   }
   .S2_BIarea section {
     display: flex;
-    justify-content: space-evenly;
+    justify-content: space-between;
   }
   .Master_Logo {
     width: 500px;
   }
   .Master_Logo > img {
     width: 120px;
-    padding-left: 180px;
   }
   .Master_Logo > h4 {
     font-weight: bold;
@@ -1246,6 +1272,7 @@
   .Master_txt > h1 {
     font-weight: bold;
     font-size: 3.5rem;
+    text-align: left;
     font-family: netFont;
     color: #806239;
   }
@@ -1360,7 +1387,7 @@
   .sub3_Text > p {
     text-align: center;
     font-weight: bold;
-    /* font-family: notoSans; */
+    font-family: notoSans;
     margin-bottom: 120px;
   }
   .sub3_Support {
@@ -1376,6 +1403,7 @@
   .sub3_Support > p {
     margin-bottom: 40px;
     font-weight: bold;
+    font-family: notoSans;
     font-size: 1.2rem;
   }
   .sub3_Support .Sup_Step > ul {
@@ -1384,7 +1412,7 @@
     justify-content: space-between;
   }
   .sub3_Support .Sup_Step > ul > li {
-    /* border: 1px solid red; */
+
     background: #efefef;
     width: calc((100% - 100px) / 3);
     height: 350px;
@@ -1396,7 +1424,7 @@
   .sub3_Support .Sup_Step > ul > li > ul > li {
     padding-bottom: 15px;
     font-weight: bold;
-    font-family: netFont;
+    font-family: notoSans;
   }
   .Sup_Step h4 {
     font-weight: bold;
@@ -1405,7 +1433,6 @@
     font-size: 2rem;
     font-family: netFont;
     position: relative;
-    /* border: 1px solid red; */
   }
   .Sup_Step h4::after {
     content: "";
@@ -1421,7 +1448,7 @@
     color: rgb(115, 183, 14);
     font-weight: bold;
     font-size: 1.2rem;
-    /* font-family: netFont; */
+    font-family: netFont;
   }
 
   .sub3_Support .Sup_Step2 > ul {
@@ -1441,7 +1468,7 @@
   .sub3_Support .Sup_Step2 > ul > li > ul > li {
     margin-bottom: 15px;
     font-weight: bold;
-    font-family: netFont;
+    font-family: notoSans;
   }
   .Sup_Step2 h4 {
     font-weight: bold;
@@ -1464,6 +1491,7 @@
     margin-bottom: 15px;
     color: rgb(115, 183, 14);
     font-weight: bold;
+    font-family: netFont;
     font-size: 1.2rem;
   }
   /*-----------------SUB PAGE 3------------------------------- */
@@ -1554,12 +1582,17 @@
   }
   footer .f_Info > p {
     margin-bottom: 10px;
+    font-size: 1.2rem;
+    font-family: notoSans;
   }
   footer .f_Info address {
     display: flex;
+    font-size: 1.1rem;
     margin-bottom: 10px;
+    font-family: notoSans;
   }
   footer .f_Info address dd {
     margin-right: 20px;
+    font-family: notoSans;
   }
 }

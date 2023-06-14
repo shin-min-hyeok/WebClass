@@ -1,4 +1,5 @@
 window.onload = function () {
+
   let MainBanner = new Swiper(".MainBanner", {
     loop: true, // 반복
     direction: "horizontal", // 세로방향  가로(horizontal)
@@ -22,12 +23,29 @@ window.onload = function () {
       },
     },
   });
-  let MenuSlide = new Swiper(".MenuSlide", {
-    loop: true, // 반복
-    direction: "horizontal", // 세로방향  가로(horizontal)
-    spaceBetween: 30,
+  //메인페이지 자동슬라이드
+
+  var Meunslide = new Swiper(".MenuSlide", {
+    effect: "coverflow",
+    loop: true,
+    grabCursor: true,
+    centeredSlides: true,
+    slidesPerView: "auto",
     slidesPerView: 3,
-    autoplay: true,
+    coverflowEffect: {
+      rotate: 50,
+      stretch:0,
+      depth: 250,
+      modifier: 1,
+      slideShadows: true,
+    },
+    autoplay: {
+      delay: 2000,
+    },
+    speed:1000,
+    pagination: {
+      el: ".swiper-pagination",
+    },
     breakpoints: {
       280: {
         slidesPerView: 2,
@@ -38,6 +56,7 @@ window.onload = function () {
     },
   });
 };
+//메인페이지 메뉴 슬라이드 커버슬라이드
 
 $(document).ready(function () {
   $(".btnMenu").click(function () {
@@ -58,6 +77,7 @@ $(document).ready(function () {
       $(".moMenus").removeClass("show");
     }
   });
+//  모바일 메뉴 버튼 이벤트
 
   $(window).scroll(function () {
     let winst = $(window).scrollTop();
@@ -73,4 +93,6 @@ $(document).ready(function () {
       }
     );
   });
+// 스크롤 이벤트
+
 });

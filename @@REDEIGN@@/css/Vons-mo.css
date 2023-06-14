@@ -45,7 +45,7 @@
     box-sizing: border-box;
   }
   header.mo {
-    width: 100vw;
+    width: 100%;
     height: 60px;
     position: fixed;
     background: rgba(12, 38, 71, 1);
@@ -412,7 +412,6 @@
   }
   .MoContents {
     width: 90%;
-    /* border: 1px solid red; */
     margin: 0 auto;
     margin-bottom: 30px;
   }
@@ -421,7 +420,7 @@
   }
   .MC1 > ul {
     display: flex;
-    justify-content: space-between;
+    /* justify-content: space-between; */
   }
   .MC1 > ul > li {
     display: flex;
@@ -430,15 +429,21 @@
   .MCBorder {
     border: 2px solid black;
     border-radius: 10px;
-    width: calc(100% / 3);
-    margin-right: 15px;
+    margin-right: 10px;
+    width: calc(90%/3);
+  }
+  .MCBorder a >img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
   }
   .MCTxt1 {
     padding: 5px 0px 5px 5px;
   }
+
   .MCTxt1 h2 {
     font-weight: bold;
-    font-size: 1.25rem;
+    font-size: 1.2rem;
     margin-bottom: 5px;
     font-family: netFont;
   }
@@ -447,16 +452,25 @@
     font-weight: 600;
   }
   .MCBorder2 {
+    display: flex;
+    justify-content: space-between;
     border: 2px solid black;
     border-radius: 10px;
-    width: calc((100% / 3) * 2);
+    flex: 2;
+    padding: 5px 5px;
+  }
+  .MCBorder2 a >img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
   }
   .MCTxt2 {
-    margin-right: 90px;
+    margin-right: 60px;
+    padding: 5px 0px 5px 5px;
   }
   .MCTxt2 h2 {
     font-weight: bold;
-    font-size: 1.3rem;
+    font-size: 1.2rem;
     font-family: netFont;
     margin-bottom: 10px;
   }
@@ -467,7 +481,7 @@
   }
   .MC2 > ul {
     display: flex;
-    /* justify-content: space-between; */
+    justify-content: space-between;
   }
   .MC2 > ul > li {
     display: flex;
@@ -485,7 +499,7 @@
   }
   .MCTxt3 h2 {
     font-weight: bold;
-    font-size: 1.3rem;
+    font-size: 1.2rem;
     margin-bottom: 10px;
     font-family: netFont;
   }
@@ -503,7 +517,7 @@
   }
   .MCTxt4 h2 {
     font-weight: bold;
-    font-size: 1.3rem;
+    font-size: 1.2rem;
     font-family: netFont;
     margin-bottom: 10px;
   }
@@ -533,7 +547,7 @@
     flex: 1;
     font-weight: 600;
     font-family: netFont;
-    font-size: 0.9rem;
+    font-size: 0.85rem;
     color: #565555;
   }
   .Mo_sub1MenuList > ul > li h2 img {
@@ -548,42 +562,6 @@
     align-items: center;
     border-bottom: 0.5px solid rgb(128, 127, 127);
     position: relative;
-  }
-  .Mo_sub1MenuList > ul li:nth-of-type(3) h4:after {
-    content: "";
-    background: url(../moimg/모바일베스트.png) no-repeat;
-    position: absolute;
-    top: 27%;
-    left: 59%;
-    width: 10%;
-    height: 10%;
-  }
-  .Mo_sub1MenuList > ul li:nth-of-type(4) h4:after {
-    content: "";
-    background: url(../moimg/모바일베스트.png) no-repeat;
-    position: absolute;
-    top: 27%;
-    left: 59%;
-    width: 10%;
-    height: 10%;
-  }
-  .Mo_sub1MenuList > ul li:nth-of-type(6) h4:after {
-    content: "";
-    background: url(../moimg/모바일\ 뉴.png) no-repeat;
-    position: absolute;
-    top: 29%;
-    left: 68%;
-    width: 10%;
-    height: 10%;
-  }
-  .Mo_sub1MenuList > ul li:nth-of-type(7) h4:after {
-    content: "";
-    background: url(../moimg/모바일\ 뉴.png) no-repeat;
-    position: absolute;
-    top: 29%;
-    left: 59%;
-    width: 10%;
-    height: 10%;
   }
   .Mo_sub1MenuList .Mo_MenuTxt {
     text-align: left;
@@ -636,18 +614,22 @@
     color: rgb(211, 33, 33);
   }
   .MoMenuEX2 > p {
+    width: 90%;
+    margin: 0 auto;
     font-weight: bold;
     font-size: 0.9rem;
     color: black;
   }
   .S2_MoMenuList {
     width: 100%;
+    height: 300px;
     background: #f2f0f0;
     margin-bottom: 40px;
   }
   .S2_MoMenuList > ul > li img {
     width: 120px;
     margin-bottom: 20px;
+    object-fit: cover;
   }
   .S2_MoMenuList > ul {
     width: 90%;
@@ -658,7 +640,7 @@
   .S2_MoMenuList > ul > li {
     position: relative;
     flex: 1;
-    margin-right: 15px;
+    margin-right: 10px;
     margin-top: 15px;
   }
   .S2_MoMenuList > ul > li:last-of-type {
@@ -666,46 +648,23 @@
   }
   .S2_MoMenuList .S2_MolistFont h4 {
     font-weight: bold;
-    font-size: 1.12rem;
+    font-size: 1rem;
     margin-bottom: 20px;
     color: #806239;
-  }
-  .S2_MoMenuList > ul > li:nth-of-type(1):after {
-    content: "";
-    background: url(../moimg/서브페이지2/Asset\ 51.png) no-repeat;
-    width: 100%;
-    height: 100%;
-    position: absolute;
-    left: 30%;
-    top: 43%;
-  }
-  .S2_MoMenuList > ul > li:nth-of-type(2):after {
-    content: "";
-    background: url(../moimg/서브페이지2/Asset\ 52.png) no-repeat;
-    width: 100%;
-    height: 100%;
-    position: absolute;
-    left: 30%;
-    top: 43%;
-  }
-  .S2_MoMenuList > ul > li:nth-of-type(3):after {
-    content: "";
-    background: url(../moimg/서브페이지2/Asset\ 54.png) no-repeat;
-    width: 100%;
-    height: 100%;
-    position: absolute;
-    left: 30%;
-    top: 44%;
   }
   .S2_MoMenuList .S2_MolistFont p {
     text-align: center;
     font-family: notoSans;
-    font-size: 0.9rem;
+    font-size: 0.8rem;
     font-weight: bold;
   }
   .MoBI_logo {
     width: 90%;
-    margin: 0 auto;
+    margin: 20px auto;
+  }
+  .MoBI_logo section {
+    display: flex;
+    justify-content: space-between;
   }
   .MoBI_logo > h4 {
     width: 100%;
@@ -718,46 +677,48 @@
     padding-bottom: 8px;
   }
   .MoMaster_Logo {
-    width: 45%;
+    width: 50%;
+    margin-right: 5px;
   }
   .MoMaster_Logo > img {
-    padding-left: 30%;
+    padding-left: 20%;
     width: 90px;
-    margin-bottom: 10px;
+    margin-bottom: 18px;
   }
   .MoMaster_Logo > h4 {
     font-weight: bold;
     font-family: netFont;
-    font-size: 1rem;
-    margin-bottom: 30px;
+    font-size: 0.9rem;
+    margin-bottom: 15px;
   }
   .MoMaster_Logo > p {
     text-align: left;
-    font-size: 0.8rem;
+    font-size: 0.7rem;
     font-weight: bold;
+    line-height: 20px;
   }
   .MoMaster_txt {
     text-align: center;
-    width: 45%;
+    width: 50%;
   }
   .MoMaster_txt > h1 {
     font-weight: bold;
-    font-size: 2.8rem;
+    font-size: 3rem;
     font-family: netFont;
     color: #806239;
-    margin-bottom: 20px;
+    margin-bottom: 25px;
   }
   .MoMaster_txt > dl > dt {
     text-align: left;
     font-weight: bold;
-    font-size: 1.2rem;
-    margin-bottom: 22px;
+    font-size: 1.1rem;
+    margin-bottom: 12px;
   }
   .MoMaster_txt > dl > dd {
     text-align: left;
     padding-bottom: 15px;
     font-weight: bold;
-    font-size: 0.9rem;
+    font-size: 0.8rem;
   }
   .MoMaster_txt > dl > dd > span {
     float: right;
@@ -803,30 +764,49 @@
   .sub3_MoSupport h3::after {
     content: "";
     background: url(../moimg/서브페이지3/Asset\ 46.png) no-repeat;
-    width: 100%;
-    height: 110%;
+    width: 90%;
+    height: 100px;
     position: absolute;
-    left: -2px;
-    top: -25px;
-    opacity: 0.5;
+    left: 10px;
+    top: -20px;
+    opacity: 0.4;
+  }
+  .sub3_MoSupport{
+    width: 100%;
+  }
+  .sub3_MoSupport h3{
+    padding-left: 20px;
   }
   .sub3_MoSupport p {
-    font-size: 1.1rem;
+    font-size: 1rem;
     font-weight: bold;
+    font-family: notoSans;
     margin-bottom: 20px;
+    padding-left: 20px;
   }
   .Sup_MoStep1 {
-    margin-bottom: 50px;
+    width: 90%;
+    height: 150px;
+    margin: 0 auto;
+    margin-bottom: 20px;
   }
   .Sup_MoStep1 > ul {
+    width: 100%;
+    height: 100%;
+    margin: 0 auto;
     display: flex;
     justify-content: space-between;
+    margin-bottom: 20px;
   }
   .Sup_MoStep1 > ul > li {
-    width: calc(90% / 3);
+    flex: 1;
+    margin-right: 10px;
     background: #f0f0f0;
     padding: 5px;
     border-radius: 10px;
+  }
+  .Sup_MoStep1 > ul > li:last-of-type{
+    margin-right: 0;
   }
   .Sup_MoStep1 > ul > li > h4 {
     font-weight: bold;
@@ -849,19 +829,30 @@
     font-weight: bold;
     font-size: 0.68rem;
     margin-bottom: 8px;
+    font-family: notoSans;
   }
   .Sup_MoStep2 {
-    margin-bottom: 50px;
+    padding-bottom: 20px;
+    width: 90%;
+    height: 150px;
+    margin: 0 auto;
   }
   .Sup_MoStep2 > ul {
+    width: 100%;
+    height: 100%;
+    margin: 0 auto;
     display: flex;
     justify-content: space-between;
   }
   .Sup_MoStep2 > ul > li {
-    width: calc(90% / 3);
+    flex: 1;
+    margin-right: 10px;
     background: #f0f0f0;
     padding: 5px;
     border-radius: 10px;
+  }
+  .Sup_MoStep2 > ul > li:last-of-type{
+    margin-right: 0;
   }
   .Sup_MoStep2 > ul > li > h4 {
     font-weight: bold;
@@ -877,13 +868,62 @@
   }
   .Sup_MoStep2 > ul > li > ul h5 {
     font-weight: bold;
+    font-size: 13px;
     color: rgb(206, 33, 33);
     margin-bottom: 10px;
   }
   .Sup_MoStep2 > ul > li > ul li {
     font-weight: bold;
-    font-size: 0.68rem;
-    margin-bottom: 8px;
+    font-size: 10px;
+    margin-bottom: 10px;
+    font-family: notoSans;
+  }
+  .Sup_MoStep3{
+    padding-bottom: 20px;
+    width: 90%;
+    height: 150px;
+    margin: 0 auto;
+  }
+  .Sup_MoStep3 > ul {
+    width: 100%;
+    height: 100%;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-between;
+  }
+  .Sup_MoStep3 > ul > li {
+    flex: 1;
+    margin-right: 10px;
+    background: #f0f0f0;
+    padding: 5px;
+    border-radius: 10px;
+  }
+  .Sup_MoStep3 > ul > li:last-of-type{
+    margin-right: 0;
+  }
+  .Sup_MoStep3 > ul > li > h4 {
+    font-weight: bold;
+    font-family: netFont;
+    font-size: 1.1rem;
+    padding-bottom: 5px;
+    border-bottom: 1px solid #806239;
+    margin-bottom: 10px;
+  }
+  .Sup_MoStep3 > ul > li > ul {
+    font-size: 0.85rem;
+    font-family: netFont;
+  }
+  .Sup_MoStep3 > ul > li > ul h5 {
+    font-weight: bold;
+    font-size: 13px;
+    color: rgb(206, 33, 33);
+    margin-bottom: 10px;
+  }
+  .Sup_MoStep3 > ul > li > ul li {
+    font-weight: bold;
+    font-size: 10px;
+    margin-bottom: 10px;
+    font-family: notoSans;
   }
   /*-----------------SUB PAGE 3------------------------------- */
   /* -----------------------COMMON MO-FOOTER--------------------------- */
