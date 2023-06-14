@@ -230,16 +230,16 @@
     font-weight: 800;
     position: relative;
   }
-  .headerSub > ul > li::after{
+  .headerSub > ul > li::after {
     content: "";
     width: 1px;
     height: 13px;
-    background:rgb(150, 150, 150);
+    background: rgb(150, 150, 150);
     position: absolute;
     top: 20%;
     left: 56px;
   }
-  .headerSub > ul > li:last-of-type:after{
+  .headerSub > ul > li:last-of-type:after {
     display: none;
   }
   .headerSub > ul > li:hover {
@@ -361,7 +361,7 @@
     position: relative;
     margin-bottom: 150px;
   }
-  .MainBanner:hover{
+  .MainBanner:hover {
     cursor: url(../img/메인페이지/텍스트img/마우스커서\ 이미지.png) 30 30, auto;
   }
   .MainSlide {
@@ -496,12 +496,12 @@
     opacity: 1;
   }
   .MenuSlide {
-    width:60%;
+    width: 60%;
     height: 700px;
     position: relative;
     margin-bottom: 200px;
   }
-  .MenuSlide{
+  .MenuSlide {
     cursor: url(../img/메인페이지/텍스트img/마우스커서\ 이미지.png) 30 30, auto;
   }
   .MenuSlide2 {
@@ -534,17 +534,17 @@
     transform: translateY(-100px);
     opacity: 0.1;
   }
-  .MenuSlide .MenuSlide2>li.swiper-slide-active h3{
+  .MenuSlide .MenuSlide2 > li.swiper-slide-active h3 {
     transform: translateY(0px);
     opacity: 1;
   }
-  .MenuSlide .MenuSlide2>li.swiper-slide-active h3:after{
+  .MenuSlide .MenuSlide2 > li.swiper-slide-active h3:after {
     content: "";
     position: absolute;
     bottom: 0;
     left: 0;
     border: 0.1px solid #fff;
-    width: 100%; 
+    width: 100%;
   }
   .MenuSlide2 .MenuEX > p {
     font-weight: bold;
@@ -555,7 +555,7 @@
     transform: translateY(100px);
     opacity: 0.1;
   }
-  .MenuSlide .MenuSlide2>li.swiper-slide-active p{
+  .MenuSlide .MenuSlide2 > li.swiper-slide-active p {
     transform: translateY(0px);
     opacity: 1;
   }
@@ -1140,6 +1140,7 @@
     left: 0%;
   }
   .S2_MenuEX .MenuEX_img > ul {
+    width: 100%;
     display: flex;
     justify-content: space-between;
   }
@@ -1412,7 +1413,6 @@
     justify-content: space-between;
   }
   .sub3_Support .Sup_Step > ul > li {
-
     background: #efefef;
     width: calc((100% - 100px) / 3);
     height: 350px;

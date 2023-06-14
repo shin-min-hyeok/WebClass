@@ -89,7 +89,7 @@
     min-width: 290px;
     height: 100%;
     /* overflow: auto; */
-    transform: translateX(-100%);
+    transform: translateX(0);
     transition: all 0.5s ease 0.1s;
   }
   .moMenu.show .moGnb {
@@ -98,7 +98,6 @@
   .logoMo {
     width: 31.47vw;
     max-width: 230px;
-    border: 1px solid red;
     margin: 0 auto;
     margin-top: 22px;
     margin-bottom: 42px;
@@ -298,13 +297,13 @@
     font-weight: bold;
     white-space: nowrap;
   }
-  .notice .notice_pagination{
+  .notice .notice_pagination {
     position: relative;
     margin-top: 30px;
   }
   span.swiper-pagination-bullet-active {
     background: black;
-}
+  }
   /* footer */
 
   footer {
@@ -331,7 +330,7 @@
     justify-content: space-between;
     padding: 0 5px;
   }
-  .footMenu1 > ul > li> a:after{
+  .footMenu1 > ul > li > a:after {
     content: "";
     width: 24px;
     height: 24px;
@@ -339,7 +338,7 @@
     background-size: contain;
     transition: all 0.5s ease 0s;
   }
-  .footMenu1 > ul > li.on> a:after{
+  .footMenu1 > ul > li.on > a:after {
     transform: rotate(45deg);
   }
   .footMenu1 > ul > li > ul {
@@ -383,7 +382,7 @@
   .footLogo {
     /* border: 1px solid red; */
     text-align: center;
-    padding: 10px 0 ;
+    padding: 10px 0;
   }
   .copy {
     color: #9a9a9a;
