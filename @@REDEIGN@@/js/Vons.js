@@ -76,7 +76,7 @@ $(document).ready(function () {
       $(".moMenus").removeClass("show");
     }
   });
-  //  모바일 메뉴 버튼 이벤트
+  //  모바일 메뉴 클릭 이벤트
 
   $(".moMenuList>li").click(function (e) {
     e.preventDefault();
@@ -94,6 +94,7 @@ $(document).ready(function () {
   $(".moMenuList ul").click(function () {
     return false;
   });
+  // 모바일 아코디언 이벤트
 
   $(window).scroll(function () {
     let winst = $(window).scrollTop();

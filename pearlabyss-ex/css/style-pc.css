@@ -157,6 +157,7 @@ main{position:relative;}
   padding:0 30px;
   box-sizing: border-box;
 }
+
 .news ul>li:first-of-type{
   padding-left:0;
 }
@@ -170,9 +171,8 @@ main{position:relative;}
   margin-bottom:16px;
 }
 .news .swiper-pagination{
-  position: relative;
-  border:  1px solid red;
-  margin-top: 27px;
+  position:relative;
+  border:1px solid red;
 }
 .date{
   font-size:10px;
@@ -182,15 +182,18 @@ main{position:relative;}
 
 /* culture */
 .culture{
+  border:1px solid red;
   width:1440px;
   margin:0 auto;
   margin-bottom:160px;
 }
 .culture>ul{
+  border:1px solid blue;
   height:574px;
   display:flex;
 }
 .culture>ul>li{
+  border:1px solid lime;
   flex:1;
   position:relative;
   overflow: hidden;
@@ -222,6 +225,7 @@ main{position:relative;}
   font-size: 22px;
   font-weight: bold;
   margin-bottom:18px;
+  border:1px solid red;
   transform:translateY(20px);
   transition:all 0.5s ease 0s;
 }
@@ -248,6 +252,7 @@ main{position:relative;}
   background:#fff;
 }
 .notice{
+  border:1px solid red;
   width:1440px;
   margin:0 auto;
 }
@@ -257,9 +262,11 @@ main{position:relative;}
 }
 .notice>ul>li{
   width:calc((100% - 60px)/4);
+  border:1px solid red;
 }
 .notice li figure{
   height:190px;
+  border:1px solid orange;
   overflow: hidden;
 }
 .notice li figure img{
@@ -287,11 +294,13 @@ footer{margin-top:200px;}
   margin-bottom:50px;
 }
 .footMenu1>ul{
+  border:1px solid red;
   width:1120px;
   margin:0 auto;
   display:flex;
 }
 .footMenu1>ul>li{
+  border:1px solid blue;
   width:calc(100%/6);
 }
 .footMenu1>ul>li>a{
@@ -300,6 +309,7 @@ footer{margin-top:200px;}
 }
 .footMenu1>ul>li>ul{
   margin-top:18px;
+  border:1px solid red;
   color:#9a9a9a;
   font-size: 1rem;
 }
@@ -317,11 +327,13 @@ footer{margin-top:200px;}
   padding-bottom:75px;
 }
 .footMenu2>ul{
+  border:1px solid blue;
   width:1120px;
   margin:0 auto;
   display: flex;
 }
 .footMenu2>ul>li{
+  border:1px solid red;
   width:calc(100%/6);
   font-weight:bold;
   font-size:1.12rem;
@@ -332,6 +344,7 @@ footer{margin-top:200px;}
 .coInfo{
   width:1440px;
   margin:0 auto;
+  border:1px solid red;
   display:flex;
   justify-content: space-between;
   padding:26px 0;
@@ -339,9 +352,11 @@ footer{margin-top:200px;}
 .coInfo:before{
   content:"";
   width:138px;
+  border:1px solid blue;
 }
 .footLogo{
   display:flex;
+  border:1px solid red;
   align-items: center;
 }
 .copy{
@@ -350,12 +365,14 @@ footer{margin-top:200px;}
 }
 .snsMenu{
   width:138px;
+  border:1px solid red;
 }
 .snsMenu>ul{
   display:flex;
   justify-content: space-between;
 }
 .snsMenu>ul>li{
+  border:1px solid red;
   width:38px;
 }
 .snsMenu>ul>li img{

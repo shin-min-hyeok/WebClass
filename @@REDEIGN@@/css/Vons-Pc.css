@@ -288,17 +288,27 @@
     justify-content: space-between;
     align-items: center;
     font-family: netFont;
-    margin-top: 5 px;
+    margin-top: 5px;
   }
   .logoArea {
-    width: 350px;
+    width: 350px; 
+    position: relative;
   }
   .logoArea > h1 img {
     width: 100%;
+    display: none;
   }
-  header.on .logoArea > h1 img {
-    background: url(../img/메인페이지/텍스트img/Asset\ 1.png) no-repeat 50% 50%;
-    background-size: cover;
+  .logoArea a{
+    display: block;
+    width: 350px;
+    height: 60px;
+    background: url(../img/메인페이지/텍스트img/로고닭금색.png) no-repeat 50% 50%;
+    background-size: contain;
+    transition: all 0.7s ease 0s;
+  }
+  .innerHeader:hover .logoArea a{
+    background: url(../img/메인페이지/텍스트img/로고닭흰색.png) no-repeat 50% 50%;
+    background-size: contain;
   }
   .gnb > ul {
     display: flex;
@@ -501,9 +511,6 @@
     position: relative;
     margin-bottom: 200px;
   }
-  .MenuSlide {
-    cursor: url(../img/메인페이지/텍스트img/마우스커서\ 이미지.png) 30 30, auto;
-  }
   .MenuSlide2 {
     width: 600%;
     height: 100%;
@@ -515,7 +522,7 @@
     object-fit: cover;
     width: 100%;
     height: 100%;
-    border-radius: 20px;
+    border-radius: 10px;
   }
   .MenuSlide2 .MenuEX {
     padding: 10px;
@@ -543,7 +550,7 @@
     position: absolute;
     bottom: 0;
     left: 0;
-    border: 0.1px solid #fff;
+    border: 1px solid #fff;
     width: 100%;
   }
   .MenuSlide2 .MenuEX > p {
