@@ -1,4 +1,4 @@
-$(document).ready(function () {
+ $(document).ready(function () {
   let count = 0;
   let perView;
   // train클래스 너비를 변경 => train클래스의 너비를 불러와서 perView로 나눈 후 결과를 다시 적용
