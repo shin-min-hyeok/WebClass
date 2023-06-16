@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>표</title>
+  <style>
+  </style>
+</head>
+
+<body>
+  <h1>표 - table</h1>
+  <p>table태그를 구성하면 보이지 않는 표공간이 생성된다.</p>
+  <p>table태그안에서 컨텐츠를 입력하는 방법은 가로행(row)을 먼저 만들고 행 안에
+    왼쪽부터 셀들을 입력하면 된다.
+  </p>
+  <p>이때, 입력하는 셀들이 일반 내용셀이라면 td태그를 사용하고 제목셀이라면
+    th태그를 사용한다.
+  </p>
+  <hr>
+  <h2>셀 병합</h2>
+  <p>병합이 시작되는 셀을 찾아서 가로병합(colspan)/세로병합(rowspan)속성을
+    사용한다. 이 때, 속성에 적용되는 값은 병합하는 셀의 개수를 숫자로 입력한다.
+    그리고 병합이 되어져서 사라지는 셀은 태그를 지워준다.
+  </p>
+  <p>tip)병합되기 전 모습의 표를 먼저 완성한 후 최종적으로 병합을 한다.</p>
+  <hr>
+  <table border="1">
+    <caption>대표출근시간</caption>
+    <tr>
+      <td></td>
+      <th>월</th>
+      <th>화</th>
+      <th>수</th>
+      <th>목</th>
+      <th>금</th>
+    </tr>
+    <tr>
+      <th>오전</th>
+      <td>휴무</td>
+      <td colspan="3">출근</td>
+      <td rowspan="2">휴무</td>
+    </tr>
+    <tr>
+      <th>오후</th>
+      <td colspan="2">출근</td>
+      <td colspan="2">휴무</td>
+    </tr>
+  </table>
+</body>
+
+</html>

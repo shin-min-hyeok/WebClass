@@ -1,0 +1,68 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+ul,
+ol {
+  list-style: none;
+}
+a {
+  text-decoration: none;
+  color: inherit;
+}
+
+/* .tabMenu {
+  border: 1px solid;
+  width: 600px;
+  margin: 0 auto;
+}
+.tabTit {
+  border: 1px solid red;
+  display: flex;
+}
+.tabTit > li {
+  flex: 1;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  cursor: pointer;
+  height: 60px;
+  transition: all 1s ease 0s;
+}
+.tabTit > li.on {
+  background: lightcoral;
+  color: lime;
+  font-weight: bold;
+}
+.tabDes > ul > li {
+  transition: all 1s ease 0s;
+  padding: 15px;
+} */
+
+.tabMenu {
+  border: 1px solid red;
+  width: 800px;
+  margin: 0 auto;
+}
+.tabTit {
+  display: flex;
+}
+.tabTit > li {
+  flex: 1;
+  height: 50px;
+  border: 1px solid red;
+  cursor: pointer;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  transition: all 0.7s ease 0s;
+}
+.tabTit > li.on {
+  background: blue;
+  color: #000;
+  font-weight: bold;
+  font-size: 1.2rem;
+}
+.tabDes {
+  padding: 14px;
+}
