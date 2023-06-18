@@ -1,0 +1,287 @@
+/* reset */
+* {
+  margin: 0;
+  padding: 0;
+}
+a {
+  text-decoration: none;
+  color: inherit;
+}
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-size: inherit;
+  font-weight: normal;
+}
+ul,
+ol {
+  list-style: none;
+}
+img {
+  max-width: 100%;
+}
+strong,
+b {
+  font-weight: normal;
+}
+i,
+em,
+address {
+  font-style: normal;
+}
+
+/*
+메인색 : #9f0cbf
+ 
+*/
+/* layout */
+
+.wrap {
+  width: 100%;
+  display: flex;
+}
+header {
+  width: 200px;
+}
+main {
+  width: calc(100% - 200px);
+}
+.box {
+  height: 200px;
+  display: flex;
+}
+.box {
+  margin-right: 10px;
+}
+.txtbox {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  padding-left: 20px;
+}
+.contents {
+  height: 250px;
+}
+footer {
+  height: 100px;
+}
+
+/* header */
+
+.logo {
+  margin-bottom: 20px;
+}
+.gnb {
+  position: relative;
+  z-index: 10;
+  /* position :relative를 해서 z-index값을 높여서 이미지 슬라이드보다 앞쪽에 배치되도록  */
+}
+.gnb > li {
+  height: 50px;
+  transition: all 0.5s ease 0s;
+  position: relative;
+}
+
+.gnb > li > a {
+  display: flex;
+  height: 50px;
+  text-align: center;
+  align-items: center;
+  justify-content: center;
+}
+.gnb > li > ul {
+  transition: all 0.5s ease 0s;
+  overflow: hidden;
+  position: absolute;
+  left: 200px;
+  top: 0;
+  width: 0%;
+  height: 100%;
+  border: 1px solid red;
+  display: flex;
+  background: #ccc;
+  opacity: 0;
+}
+.gnb:hover ul {
+  width: 500%;
+  opacity: 1;
+}
+.gnb > li > ul > li {
+  width: 20%;
+  border: 1px solid blue;
+  text-align: center;
+  line-height: 50px;
+  color: #000;
+}
+.gnb li:hover {
+  background: #000;
+  color: #fff;
+}
+
+/* station */
+
+/* 세로형 슬라이드 */
+.station {
+  width: 100%;
+  height: 400px;
+  overflow: hidden;
+}
+
+/* 가로형 슬라이드 */
+.station {
+  width: 100%;
+  height: 300px;
+  overflow: hidden;
+  position: relative;
+}
+.train {
+  width: 300%;
+  height: 100%;
+  display: flex;
+  transition: all 1s ease 0s;
+}
+.train > li {
+  width: 100%;
+  height: 100%;
+}
+.train > li img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.snsList {
+  position: absolute;
+  right: 0;
+  top: 0;
+  border: 1px solid red;
+}
+.snsList > li {
+  margin-bottom: 10px;
+}
+.snsList > li:last-of-type {
+  margin-bottom: 0;
+}
+
+.contents {
+  display: flex;
+}
+.contents > section {
+  flex: 1;
+  position: relative;
+}
+.contents > section > img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.tabMenu {
+  width: 100%;
+  height: 100%;
+  position: relative;
+  display: flex;
+}
+.tabMenu > dt {
+  height: 50px;
+  padding: 0 20px;
+  line-height: 50px;
+}
+.tabMenu > dt.on {
+  border-bottom: 3px solid black;
+}
+
+.tabMenu > dd {
+  position: absolute;
+  left: 0;
+  top: 50px;
+  width: 100%;
+  height: 150px;
+  padding: 20px 10px;
+  box-sizing: border-box;
+  display: none;
+}
+.tabMenu > dd.on {
+  display: block;
+}
+.noticeList > li {
+  display: flex;
+  justify-content: space-between;
+  padding: 2px 0;
+}
+.galleryList {
+  display: flex;
+  justify-content: space-between;
+}
+.contents > section > h2 {
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
+  padding: 10px 30px;
+  background: #9f0cbf;
+  color: #fff;
+}
+footer {
+  display: flex;
+  justify-content: space-between;
+  background: #000;
+  color: #fff;
+  align-items: center;
+}
+
+/* 팝업 */
+.popup {
+  border: 1px solid black;
+  position: fixed;
+  left: 200px;
+  top: 200px;
+  width: 500px;
+  padding: 20px;
+  padding-bottom: 50px;
+  background: #fff;
+  z-index: 100;
+  display: none;
+}
+.popup.on {
+  display: block;
+}
+.popup > h2 {
+  font-weight: bold;
+  margin-bottom: 10px;
+  font-size: 1.5em;
+}
+.btnPopupClose {
+  position: absolute;
+  right: 10px;
+  bottom: 10px;
+  padding: 3px 10px;
+  border: 1px solid black;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.footLogo {
+  width: 200px;
+}
+.footRight {
+  padding-left: 20px;
+  width: calc(100% - 200px);
+  box-sizing: border-box;
+}
+.footmenu {
+  display: flex;
+}
+.footmenu > li {
+  padding: 0 10px;
+  border-right: 1px solid #fff;
+}
+.footmenu > li:last-of-type {
+  border-right: none;
+}
+.footmenu > li:first-of-type {
+  padding-left: 0;
+}

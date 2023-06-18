@@ -1,0 +1,102 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+ul,
+ol {
+  list-style: none;
+}
+a {
+  text-decoration: none;
+  color: inherit;
+}
+img {
+  max-width: 100%;
+  vertical-align: top;
+}
+
+/* layout */
+.main {
+  width: 100%;
+  height: 100%;
+  background: lightslategray;
+  display: flex;
+}
+header {
+  width: 200px;
+  height: calc(100% - 120px);
+}
+.contents {
+  width: 400px;
+  height: calc(100% - 120px);
+  background: lightcoral;
+}
+.slider {
+  width: calc(100% - 600px);
+  height: calc(100% - 120px);
+  background: lightpink;
+}
+footer {
+  width: 100%;
+  height: 120px;
+  background: lightskyblue;
+}
+/* header */
+header {
+}
+.logo {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: 35px 0;
+  padding-bottom: 20px;
+  border-bottom: 2px dotted black;
+}
+.gnb {
+  background: #ff5656;
+  color: #fff;
+}
+.gnb > li {
+  height: 50px;
+  position: relative;
+  z-index: 100;
+}
+.gnb > li:hover > ul {
+  height: 200px;
+}
+.gnb > li > a {
+  display: flex;
+  width: 100%;
+  height: 100%;
+  align-items: center;
+  justify-content: center;
+}
+.gnb > li > a:hover {
+  background: #333;
+  color: pink;
+}
+.gnb > li > ul {
+  width: 100%;
+  height: 0px;
+  position: absolute;
+  left: 200px;
+  top: 0;
+  overflow: hidden;
+  transition: all 0.5s ease 0s;
+}
+.gnb > li > ul > li {
+  width: 100%;
+  height: 50px;
+  background: #ff5656;
+}
+.gnb > li > ul > li > a {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.gnb > li > ul > li > a:hover {
+  background: #fea0a9;
+}
