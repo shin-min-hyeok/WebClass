@@ -100,3 +100,61 @@ header {
 .gnb > li > ul > li > a:hover {
   background: #fea0a9;
 }
+.banner{
+  position: relative;
+}
+.bannerTxt{
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%,-50%);
+  display: flex;
+}
+.bannerTxt h2{
+  margin-right: 20px;
+  color: lightpink;
+  font-weight: bold;
+  font-size: 1.7rem;
+}
+.bannerTxt a{
+  padding: 2px;
+  display: flex;
+  align-items: center;
+  background:rgba(255, 182, 193, 0.436);
+  border-radius: 7px;
+  color: #fff;
+}
+.notice{
+  background: #fff;
+  padding: 20px;
+  padding-bottom: 70px;
+}
+.notice dt{
+  background: #ff5656;
+  padding: 8px;
+  color: #fff;
+  font-weight: bold;
+  margin-bottom: 10px;
+}
+.notice dt span{
+  float: right;
+}
+.notice ul>li{
+  margin-bottom: 10px;
+  padding-left: 10px;
+  position: relative;
+}
+.notice ul>li:before{
+  content: "";
+  display: block;
+  width: 6px;
+  height: 6px;
+  border-radius: 5px;
+  position: absolute;
+  left: 0px;
+  top: 10px;
+  background: #ff5656;
+}
+.notice ul>li span{
+  float: right;
+}

@@ -198,3 +198,16 @@ nav {
   cursor: pointer;
   padding: 3px 10px;
 }
+
+
+
+
+
+
+
+.gnb{}
+.gnb>li{}
+.gnb>li>a{}
+.gnb>li>ul{}
+.gnb>li>ul>li{}
+.gnb>li>ul>li>a{}
