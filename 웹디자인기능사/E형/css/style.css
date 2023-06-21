@@ -1,0 +1,160 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+ul,
+ol {
+  list-style: none;
+}
+a {
+  text-decoration: none;
+  color: inherit;
+}
+img {
+  max-width: 100%;
+  vertical-align: top;
+}
+
+/* layout */
+.main {
+  width: 100%;
+  height: 100%;
+  background: lightslategray;
+  display: flex;
+}
+header {
+  width: 200px;
+  height: calc(100% - 120px);
+}
+.contents {
+  width: 400px;
+  height: calc(100% - 120px);
+  background: lightcoral;
+}
+.slider {
+  width: calc(100% - 600px);
+  height: calc(100% - 120px);
+  background: lightpink;
+}
+footer {
+  width: 100%;
+  height: 120px;
+  background: lightskyblue;
+}
+/* header */
+header {
+}
+.logo {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: 35px 0;
+  padding-bottom: 20px;
+  border-bottom: 2px dotted black;
+}
+.gnb {
+  background: #ff5656;
+  color: #fff;
+}
+.gnb > li {
+  height: 50px;
+  position: relative;
+  z-index: 100;
+}
+.gnb > li:hover > ul {
+  height: 200px;
+}
+.gnb > li > a {
+  display: flex;
+  width: 100%;
+  height: 100%;
+  align-items: center;
+  justify-content: center;
+}
+.gnb > li > a:hover {
+  background: #333;
+  color: pink;
+}
+.gnb > li > ul {
+  width: 100%;
+  height: 0px;
+  position: absolute;
+  left: 200px;
+  top: 0;
+  overflow: hidden;
+  transition: all 0.5s ease 0s;
+}
+.gnb > li > ul > li {
+  width: 100%;
+  height: 50px;
+  background: #ff5656;
+}
+.gnb > li > ul > li > a {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.gnb > li > ul > li > a:hover {
+  background: #fea0a9;
+}
+.banner{
+  position: relative;
+}
+.bannerTxt{
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%,-50%);
+  display: flex;
+}
+.bannerTxt h2{
+  margin-right: 20px;
+  color: lightpink;
+  font-weight: bold;
+  font-size: 1.7rem;
+}
+.bannerTxt a{
+  padding: 2px;
+  display: flex;
+  align-items: center;
+  background:rgba(255, 182, 193, 0.436);
+  border-radius: 7px;
+  color: #fff;
+}
+.notice{
+  background: #fff;
+  padding: 20px;
+  padding-bottom: 70px;
+}
+.notice dt{
+  background: #ff5656;
+  padding: 8px;
+  color: #fff;
+  font-weight: bold;
+  margin-bottom: 10px;
+}
+.notice dt span{
+  float: right;
+}
+.notice ul>li{
+  margin-bottom: 10px;
+  padding-left: 10px;
+  position: relative;
+}
+.notice ul>li:before{
+  content: "";
+  display: block;
+  width: 6px;
+  height: 6px;
+  border-radius: 5px;
+  position: absolute;
+  left: 0px;
+  top: 10px;
+  background: #ff5656;
+}
+.notice ul>li span{
+  float: right;
+}

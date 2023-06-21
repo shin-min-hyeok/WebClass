@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>CGV</title>
+    <link rel="stylesheet" href="./css/style.css" />
+  </head>
+
+  <body>
+    <div class="container">
+      <h2>무비차트</h2>
+      <ol class="movieChart">
+        <script>
+          let movieChart = [
+            {
+              lank: 1,
+              imgFileName: "img1.jpg",
+              movieTitle: "가디언즈 오브 갤럭시-Volume 3",
+              reserRate: 40.8,
+            },
+            {
+              lank: 2,
+              imgFileName: "img2.jpg",
+              movieTitle: "분노의 질주-라이드 오어 다이",
+              reserRate: 17.2,
+            },
+            {
+              lank: 3,
+              imgFileName: "img3.jpg",
+              movieTitle: "슈퍼 마리오 브라더스",
+              reserRate: 7.7,
+            },
+            {
+              lank: 4,
+              imgFileName: "img4.jpg",
+              movieTitle: "더 퍼스트 슬램덩크",
+              reserRate: 5.8,
+            },
+            {
+              lank: 5,
+              imgFileName: "img5.jpg",
+              movieTitle: "메리 마이 데드 바디",
+              reserRate: 5.7,
+            },
+          ];
+          for (let i = 0; i < movieChart.length; i++) {
+            document.write(`
+              <li>
+                  <figure>
+                      <img src="./img/${movieChart[i].imgFileName}" alt="${movieChart[i].movieTitle}">
+                      <span>${movieChart[i].lank}</span>
+                      <ul class="hiddenMenu">
+                          <li><a href="#">상세보기</a></li>
+                          <li><a href="#">예매하기</a></li>
+                      </ul>
+                  </figure>
+                  <h3>${movieChart[i].movieTitle}</h3>
+                  <p>예매율 ${movieChart[i].reserRate}%</p>
+              </li>
+              `);
+          }
+        </script>
+        <!-- <li>
+              <figure>
+                  <img src="./img/img1.jpg" alt="가디언즈오브갤럭시-Volume 3">
+                  <span>1</span>
+                  <ul class="hiddenMenu">
+                      <li><a href="#">상세보기</a></li>
+                      <li><a href="#">예매하기</a></li>
+                  </ul>
+              </figure>
+              <h3>가디언즈오브갤럭시-Volume 3</h3>
+              <p>예매율 40.8%</p>
+          </li>
+          <li>
+              <figure>
+                  <img src="./img/img2.jpg" alt="분노의 질주-라이드 오어 다이">
+                  <span>2</span>
+                  <ul class="hiddenMenu">
+                      <li><a href="#">상세보기</a></li>
+                      <li><a href="#">예매하기</a></li>
+                  </ul>
+              </figure>
+              <h3>분노의 질주-라이드 오어 다이</h3>
+              <p>예매율 17.2%</p>
+
+          </li>
+          <li>
+              <figure>
+                  <img src="./img/img3.jpg" alt="슈퍼 마리오 브라더스">
+                  <span>3</span>
+                  <ul class="hiddenMenu">
+                      <li><a href="#">상세보기</a></li>
+                      <li><a href="#">예매하기</a></li>
+                  </ul>
+              </figure>
+              <h3>슈퍼 마리오 브라더스</h3>
+              <p>예매율 7.7%</p>
+          </li>
+          <li>
+              <figure>
+                  <img src="./img/img4.jpg" alt="더 퍼스트 슬램덩크">
+                  <span>4</span>
+                  <ul class="hiddenMenu">
+                      <li><a href="#">상세보기</a></li>
+                      <li><a href="#">예매하기</a></li>
+                  </ul>
+              </figure>
+              <h3>더 퍼스트 슬램덩크</h3>
+              <p>예매율 5.8%</p>
+          </li>
+          <li>
+              <figure>
+                  <img src="./img/img5.jpg" alt="메리 마이 데드 바디">
+                  <span>5</span>
+                  <ul class="hiddenMenu">
+                      <li><a href="#">상세보기</a></li>
+                      <li><a href="#">예매하기</a></li>
+                  </ul>
+              </figure>
+              <h3>메리 마이 데드 바디</h3>
+              <p>예매율 5.7%</p>
+          </li> -->
+      </ol>
+    </div>
+  </body>
+</html>

@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>seInterval()/setTimeout()</title>
+</head>
+<body>
+  <h1>setTimeout(동작,일정시간)</h1>
+  <p>자바스크립트 함수로서 일정시간 후에 특정동작을 실행시켜주는 함수</p>
+  <p>setTimeout()함수는 실행됨과 동시에 일정시간 뒤에 동작할 예약을 멈출 수 있는 타이머를 리턴한다.</p>
+  <p>clearTimeout()함수는 매개변수로 setTimeout()함수가 실행되었을 때 남기는 타이머가 재료로 사용되며, 실행하게 되면 예약된 동작을 멈추는 기능을 한다.</p>
+  <span class="btnStop1" style="border: 1px solid black;">stop</span>
+  <script>
+    let timer1 = setTimeout(function(){
+      // 일정시간 후에 작동될 동작
+    alert("TEST")
+    },2000)
+    document.querySelector(".btnStop1").addEventListener("click",function(){
+      clearTimeout(timer1)
+    })
+  </script>
+
+  <h1>setInterval(동작,일정시간)</h1>
+  <p>일정시간마다 특정동작을 실행해주는 함수</p>
+  <spna class="btnStop2" style="border: 1px solid black;">stop!!</spna>
+  <p class="num">0</p>
+  <script>
+    let second = 0;
+    let timer2 = setInterval(function(){
+      second++
+      document.querySelector(".num").innerHTML = second+"초가 지났군.. 언제오지"
+    },1000)
+    document.querySelector(".btnStop2").addEventListener("click",function(){
+      clearInterval(timer2)
+    }) 
+  </script>
+</body>
+</html>

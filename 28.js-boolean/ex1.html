@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>성적표예제</title>
+  <link rel="stylesheet" href="./css/ex1.css">
+</head>
+
+<body>
+  <h1>퀴즈</h1>
+  <p>
+    사용자에게 이름과 국어 영어 수학 점수를 물어보고, 평균점수를 계산하여
+    평균점수가 90점 이상이라면 A등급,
+    80점 이상이라면 B등급,
+    70점 이상이라면 C등급,
+    70점 미만이라면 D등급,
+    이라는 정보를 body태그에 필기하는 소스코드를 만들어 보시오. <br>
+    답안예시) [정현진]님의 평균점수는 90점이며 A등급입니다.
+  </p>
+  <!-- // alert(50 > 20 ? 30 : 40 > 20 ? 30 > 20 ? 10 : 0) -->
+  <script>
+    let name = prompt("이름을 입력하시오")
+    let scoreKo = Number(prompt("국어점수 입력하시오"))
+    let scoreEn = Number(prompt("영어점수 입력하시오"))
+    let scoreMa = Number(prompt("수학점수 입력하시오"))
+    let scoreAver = (scoreKo + scoreEn + scoreMa) / 3
+    let kem = (scoreAver >= 90 ? "A" : scoreAver >= 80 ? "B" : scoreAver > 70 ? "C" : "D")
+    document.write(`<table class="gradeStyle">
+    <caption>${name}님의 성적표</caption>
+    <tr>
+      <th>국어</th>
+      <td>${scoreKo}점</td>
+    </tr>
+    <tr>
+      <th>영어</th>
+      <td>${scoreEn}점</td>
+    </tr>
+    <tr>
+      <th>수학</th>
+      <td>${scoreMa}점</td>
+    </tr>
+    <tr>
+      <th>총합</th>
+      <td>${scoreKo + scoreEn + scoreMa}점</td>
+    </tr>
+    <tr>
+      <th>평균</th>
+      <td>${scoreAver}점</td>
+    </tr>
+    <tr>
+      <th>등급</th>
+      <td>${kem}</td>
+    </tr>
+  </table>`)
+  </script>
+</body>
+
+</html>

@@ -1,0 +1,31 @@
+*{margin: 0;padding: 0;}
+ul,ol{list-style: none;}
+a{text-decoration: none;color:inherit;}
+
+/* layout */
+.tabMenu{
+  border: 1px solid red;
+  width: 500px;
+  margin: 0 auto;
+}
+.tabTit{
+  display: flex;
+}
+.tabTit>li{
+  flex: 1;
+  height: 50px;
+  text-align: center;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  cursor: pointer;
+}
+.tabTit>li.on{
+  border-bottom: 2px solid navy;
+  font-weight: bold;
+}
+.tabDes{
+  padding: 14px 0;
+}
+.tabDes h3{margin-bottom: 5px;}
+.tabDes p{text-indent: 10px;}

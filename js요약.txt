@@ -1,0 +1,31 @@
+데이터형태(datatype/자료구조)
+string "" '' ``
+number 199
+boolean true/false
+array ["정현진","신민혁"]
+object {key1:value,key2:function(){}}
+function
+
+function 함수명(){}
+let 함수명 = function(){}
+let 함수명 =()=>{}
+
+문법구문
+조건문
+if(){}
+if(){}else{}
+if(){}else if(){}else if(){}else{}
+
+반복문
+반복변수/ 변수증감식/ 반복조건
+while(){}
+for(let i =0 ; i<a ; i++){}
+a만큼 반복 a의 조건이 안맞을시 종료
+
+연상방법(계산방법)
++ -* / %
+
+a++
+a+=1
+a!=b not
+a?b:c 삼항

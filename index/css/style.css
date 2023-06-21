@@ -1,0 +1,210 @@
+*{margin: 0;padding: 0;}
+ul,ol{list-style: none;}
+a{text-decoration: none;color: inherit;}
+h1,h2,h3,h4,h5,h6{font-size: inherit;font-weight: normal;}
+img{max-width: 100%;}
+strong,b{font-weight: normal;}
+i,em,address{font-style: normal;}
+
+.wrap{
+  width: 1200px;
+  margin: 0 auto;
+}
+header{
+  height: 100px;
+}
+.station{
+  width: 100%;
+  height: 300px;
+}
+.contents{
+  height: 200px;
+}
+footer{
+  height: 100px;
+}
+
+/* header */
+header{
+  display: flex;
+  justify-content: space-between;
+}
+.logo{
+  margin-top: 25px;
+}
+.gnb{
+  margin-top: 25px;
+  width: 800px;
+  overflow: hidden;
+  height: 50px;
+  display: flex;
+  text-align: center;
+  transition: all 0.5s ease 0s;
+  position: relative;
+  z-index: 1;
+}
+.gnb:hover{
+  height: 250px;
+}
+.gnb>li{
+  flex: 1;
+}
+.gnb>li a:hover{
+  background: lightcoral;
+  color: #fff;
+}
+.gnb>li>a{
+  display: block;
+  height: 50px;
+  line-height: 50px;
+}
+.gnb>li ul{
+  background: #fff;
+}
+.gnb>li ul>li{
+  padding: 10px 0;
+}
+.gnb>li ul>li:hover{
+  background: lightcoral;
+  color: #fff;
+}
+/* 세로형slider */
+.station{
+  width: 100%; /*1200px*/
+  height: 300px; 
+  overflow: hidden;
+}
+.train{
+  width: 100%;  /* 1200px*/
+  height: 900px; /* 900px*/
+  transition: all 1s ease 0s;
+}
+.train>li{
+  width: 100%;
+  height: 300px;
+}
+.train>li img{
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+/* 가로형 슬라이드 */
+/* .station{
+  width: 100%; 
+  height: 300px; 
+  overflow: hidden;
+}
+.train{
+  width: 300%;  
+  height: 100%; 
+  transition: all 1s ease 0s;
+}
+.train>li{
+  width: 100%;
+  height: 100%;
+}
+.train>li img{
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+} */
+
+.contents{display: flex;}
+.contents>section{
+  flex: 1;
+  position: relative;
+}
+.tabMeun{
+  display: flex;
+  width: 100%;
+  height: 100%;
+  position: relative;
+}
+.tabMeun>dt{
+  height: 50px;
+  padding: 0 20px;
+  line-height: 50px;
+  cursor: pointer;
+}
+.tabMeun>dt.on{
+  border-bottom: 3px solid black;
+}
+.tabMeun>dd{
+  position: absolute;
+  left: 0;
+  top: 50px;
+  width: 100%;
+  height: 150px;
+  padding: 20px 10px;
+  box-sizing: border-box;
+  display: none;
+}
+.tabMeun>dd.on{
+  display: block;
+}
+
+.noticeList>li{
+  display: flex;
+  justify-content: space-between;
+  padding:2px 0;
+}
+.btnPopup{
+  border-bottom: 1px solid black;
+}
+.galleryList{
+  display: flex;
+  justify-content: space-between;
+}
+.contents>section>h2{
+  border: 1px solid red;
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%,-50%);
+  padding: 10px 30px;
+  background: lightcoral;
+  color: #fff;
+}
+footer{
+  display: flex;
+  justify-content: space-between;
+  background-color: aquamarine;
+  color: #fff;
+  align-items: center;
+}
+.snsList{
+  display: flex;
+}
+.snsList>li{
+  margin: 0 3px;
+}
+.popUP{
+  border: 1px solid black;
+  position: fixed;
+  top: 150px;
+  left: 700px;
+  width: 500px;
+  padding: 20px;
+  padding-bottom: 50px;
+  background: #fff;
+  z-index: 100;
+  display: none;
+  transition: all 0.5s ease 0s;
+}
+.popUP.on{
+  display: block;
+}
+.popUP>h2{
+  font-weight: bold;
+  margin-bottom: 10px;
+  font-size: 1.5em;
+}
+.btnPopupClose{
+  position: absolute;
+  right: 10px;
+  bottom: 10px;
+  padding: 5px;
+  border: 1px solid black;
+  border-radius: 5px;
+  cursor: pointer;
+}

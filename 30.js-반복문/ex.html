@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <style>
+    .land {
+      width: 500px;
+      height: 500px;
+      margin: 0 auto;
+      border: 1px solid black;
+      position: relative;
+      overflow: hidden;
+    }
+
+    .land>span {
+      width: 10px;
+      height: 10px;
+      background: black;
+      position: absolute;
+    }
+  </style>
+</head>
+
+<body>
+  <div class="land">
+    <script>
+      for (let i = 0; i < 100; i++) {
+        let x = Math.random() * 500;
+        let y = Math.random() * 500;
+        let rotate = Math.random() * 360;
+        document.write(`<span style="left:${x}px;top:${y}px;transform:rotate(${rotate}deg)"></span>`)
+      }
+    </script>
+  </div>
+</body>
+
+</html>

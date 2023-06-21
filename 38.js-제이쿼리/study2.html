@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>제이쿼리 - 기초 태그선택하기</title>
+  <script src="./js/jquery-3.7.0.min.js"></script>
+  <!-- 제이쿼리 설치파일을 반드시 먼저 연결해야 한다. -->
+  <script src="./js/study2.js"></script>
+  <style>
+    #a{
+      color: green!important;
+    }
+    #a.on{
+      color: red !important;
+      font-weight: bold!important;
+    }
+  </style>
+</head>
+<body>
+  <h1>태그선택</h1>
+  <p>$("css선택자") - $는 jQuery함수의 약자로 괄호안의 css선택자를 찾아서 함수가
+    사용된 자리에 제이쿼리문서객체를 리턴한다.
+  </p>
+  <h2>사용되는 메서드</h2>
+  <h3>$(document).ready(function(){})</h3>
+  <p>이 함수는 문서가 body태그 끝까지 읽혀진 뒤 한번 실행하는 예약함수로써 함수의
+    재료는 실행될 동작을 입력할 수 있는 함수
+  </p>
+  <h3>제이쿼리문서객체.css("css속성명","css속성값")</h3>
+  <p>css()함수는 제이쿼리 전용 메서드이며, 태그의 인라인스타일로 스타일을 입력해주는 
+    메서드이다.
+  </p>
+
+  <h3>attr("태그속성명","속성값")</h3>
+  <p>attr()함수는 매개변수를 2개입력하면 선택한 속성에 속성값을 입력하는 용도로 
+    사용되고, 매개변수를 1개만 입력하면 선택한 태그의 입력한 속성에 저장된 속성값을 그자리에
+    리턴하는 용도로 쓰인다.
+  </p>
+  <a class="naverLink" href="#">네이버로 바로가기</a>
+
+  <h3>text()/html()</h3>
+  <div class="textframe">
+    <p>
+      text()함수/html()함수는 선택한 태그의 내용을 새롭게 교체할 때 사용하는 함수이다. 
+      text()함수는 입력한 문자데이터를 그대로 선택한 태그의 내용으로 입력하며,
+      html()함수는 입력한 문자데이터 중 태그문법을 포함하고있다면 태그를 생성해서 입력한다.
+    </p>
+    <p>text()함수는 매개변수를 입력하지 않았을 때, 선택한 태그가 갖고있는 텍스트내용을 리턴한다.</p>
+  </div>
+
+  <h3>addClass()/removeClass()</h3>
+  <p id="a">선택한 태그의 클래스를 추가하거나 삭제할 수 있다.</p>
+
+  <h3>포함관게를 이용한 태그 선택할 때 사용하는 메서드(함수)</h3>
+  <ul>
+    <li>next() - 선택한 태그기준 다음형제 태그선택</li>
+    <li>prev() - 선택한 태그기준 이전형제 태그선택</li>
+    <li>children() - 선택한 태그기준 자식태그 선택</li>
+    <li>parent() - 선택한 태그기준 부모태그 선택</li>
+  </ul>
+  <ul class="list">
+    <li>list1</li>
+    <li>list2</li>
+    <li>list3</li>
+    <li>list4</li>
+  </ul>
+
+  <h3>eq()</h3>
+  <p>선택한 태그들 중 순번을 사용하여 선택하는 함수</p>
+  <ul class="listNum">
+    <li>1</li>
+    <li>2</li>
+    <li>3</li>
+    <li>4</li>
+    <li>5</li>
+  </ul>
+</body>
+</html>

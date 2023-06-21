@@ -1,0 +1,10 @@
+*{margin: 0;padding: 0;}
+
+.contents>div{
+  height: 1000px;
+  border: 1px solid black;
+}
+body.dark{
+  background: #000;
+  color: #fff;
+}
