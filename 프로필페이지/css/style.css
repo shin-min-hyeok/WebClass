@@ -1,6 +1,7 @@
 * {
   margin: 0;
   padding: 0;
+  box-sizing: border-box;
 }
 a {
   text-decoration: none;
@@ -10,37 +11,19 @@ ul,
 ol {
   list-style: none;
 }
-
+body {
+  background: #ff5500;
+}
 header {
-  width: 100%;
-  align-items: center;
-  justify-content: space-between;
-  height: 100px;
-  background: lightgreen;
   position: relative;
-  text-transform: uppercase;
 }
 .logo {
-  height: 50px;
-  display: flex;
-  justify-content: center;
-}
-.gnb {
-  display: flex;
-  width: 100%;
-  align-self: flex-end;
-  font-size: 1.3rem;
+  text-transform: uppercase;
+  text-shadow: 10px 10px 30px rgba(0, 0, 0, 0.44);
+  font-family: Oxygen;
   font-weight: bold;
   color: #fff;
-  background: lightseagreen;
-  border-radius: 15px;
-}
-.gnb > li {
-  box-sizing: border-box;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  flex: 1;
+  font-size: 11rem;
   height: 50px;
-  border-right: 4px solid #e3e3e3;
+  padding: 40px 0px 0px 40px;
 }
