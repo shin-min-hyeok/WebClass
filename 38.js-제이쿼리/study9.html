@@ -33,13 +33,13 @@
       $(document).ready(function(){
         // 마우스를 움직일 때 마다 실행되는 mousemove함수
         $(document).mousemove(function(event){
-          let dx = event.pageX
+          let dx = event.pageX //페이지기준좌표
           let dy = event.pageY
           $(".xCord").text(dx)
           $(".yCord").text(dy)
           let cx = event.clientX
           let cy = event.clientY
-          $(".xCord2").text(cx)
+          $(".xCord2").text(cx) //화면기준좌표
           $(".yCord2").text(cy)
         })
       })
