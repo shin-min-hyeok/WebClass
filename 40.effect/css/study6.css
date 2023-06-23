@@ -1,0 +1,140 @@
+*{margin: 0;padding: 0;}
+a{text-decoration: none;color: inherit;}
+img{max-width: 100%;}
+html{font-family: 'Playfair Display', serif;}
+
+.intro{
+  width: 100%;
+  height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size:8rem;
+  text-transform: uppercase;
+  line-height:0.8 ;
+}
+.txtbox>p{
+  font-size: 0.3em;
+  font-style: italic;
+  text-transform: capitalize;
+}
+.fixedEffect{
+  height: 8000px;
+}
+.station{
+  height: 800px;
+  width: 100%;
+  overflow: hidden;
+  border: 1px solid #000;
+  border-right: none;
+  border-left: none;
+}
+.title{
+  height: 100px;
+  font-size: 2.5em;
+  line-height: 100px;
+  text-align: center;
+  text-transform: capitalize;
+}
+.train{
+  height: 700px;
+  width: 400%;
+  display: flex;
+  transition: all 1s ease 0s;
+}
+.train>li{
+  flex: 1;
+  position: relative;
+}
+.train>li img{
+  width: 100%;
+  height: 100%;
+  object-fit: contain;
+}
+.train>li .txt{
+  position: absolute;
+  width: 40%;
+  left: 50px;
+  bottom: 50px;
+  font-size: 1.5rem;
+
+}
+.train>li> .txt>*{
+  margin: 1em 0;
+}
+.contents{
+    width: 1200px;
+    margin: 0 auto;
+}
+.contents *{
+    margin: 10px 0;
+}
+html{
+    cursor: none;
+}
+.cursor{
+    position: fixed;
+    left: 0;
+    top: 0;
+    width: 15px;
+    height: 15px;
+    border:3px solid #000;
+    border-right:none ;
+    border-bottom:none ;
+    opacity: 0;
+    transition: opacity 0.5s ease 0s;
+    pointer-events: none;
+    z-index: 100;
+}
+.cursor.on{
+    opacity: 1;
+}
+.cursorSub{
+    z-index: 100;
+    position: fixed;
+    left: 0;
+    top: 0;
+    border:1px solid #000;
+    width: 50px;
+    height: 50px;
+    opacity: 0;
+    pointer-events: none;
+    transition: all 0.5s ease 0s;
+
+}
+.cursorSub.on{
+    opacity: 1;
+}
+.curSubbox > div:nth-of-type(1){transition: all 0.5s ease 0s;transform: scale(1);}
+.curSubbox > div:nth-of-type(2){transition: all 0.5s ease 0.1s;transform: scale(0.9)}
+.curSubbox > div:nth-of-type(3){transition: all 0.5s ease 0.2s;transform: scale(0.8)}
+.curSubbox > div:nth-of-type(4){transition: all 0.5s ease 0.3s;transform: scale(0.7)}
+.curSubbox > div:nth-of-type(5){transition: all 0.5s ease 0.4s;transform: scale(0.6)}
+
+.curSubbox.on>div{
+    transform:scale(1) ;
+    width: 10px;
+    height: 10px;
+    border-radius:50%;  
+}
+.curSubbox.on>div:nth-of-type(1){animation:scrollAni 0.5s ease 0s infinite;}
+.curSubbox.on>div:nth-of-type(2){animation:scrollAni 0.6s ease 0s infinite}
+.curSubbox.on>div:nth-of-type(3){animation:scrollAni 0.7s ease 0s infinite}
+.curSubbox.on>div:nth-of-type(4){animation:scrollAni 0.8s ease 0s infinite}
+.curSubbox.on>div:nth-of-type(5){animation:scrollAni 0.9s ease 0s infinite}
+@keyframes scrollAni{
+    0%{background: #fff;}
+    100%{background: #000;}    
+}
+.curTxt{
+    position: fixed;
+    left: 0;
+    top: 0;
+    width: 100px;
+    z-index: 100;
+    display: none;
+
+}
+.curTxt.on{
+    display: block;
+}
