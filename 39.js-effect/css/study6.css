@@ -1,0 +1,47 @@
+*{
+  margin: 0;
+  padding: 0;
+}
+ul,ol{
+  list-style: none;
+}
+a{text-decoration: none;}
+img{max-width: 100%;}
+
+/* slider layout */
+
+.station{
+  width: 100%;
+  height: 50vh;
+  margin: 0 auto;
+  overflow:hidden;
+  position: relative;
+}
+.train{
+  width: 100%;
+  height: 500%;
+  transition: all 1s ease 0s;
+}
+.train>li{
+  width: 100%;
+  height: 20%;
+}
+.train>li img{
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+.controler {
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
+  width: 90%;
+  display: flex;
+  justify-content: space-between;
+}
+.controler > a {
+  padding: 10px;
+  cursor: pointer;
+  background-color: #fff;
+}

@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>예제</title>
+</head>
+
+<body>
+  <p>
+    퀴즈)
+    다음과 같은 변수가 있다
+    국어점수
+    영어점수
+    수학점수
+    세개의 점수를 매개로하여 평균값을 계산하여 리턴하는 함수를 만들어보십시오.
+  </p>
+
+  <script>
+    function getAver(n1, n2, n3) {
+      return (n1 + n2 + n3) / 3
+    }
+    let Aver = getAver(80, 90, 100)
+    // alert(Aver)
+  </script>
+  <p>
+    평균점수를 재료로 하여 등급을 리턴하는 함수를 만들어보시오.
+    평균점수가 90점이상이라면 A
+    80점이상이라면 B
+    70점이상이라면 C
+    70점미만이라면 D 등급을 리턴하는 함수를 만들어 보시오.
+  </p>
+
+  <script>
+    // function getGrade(aver) {
+    //   return aver >= 90 ? "A" : aver >= 80 ? "B" : aver >= 70 ? "C" : D
+    // }
+    // alert("정현진님의 평균등급은 " + getGrade(72) + "등급입니다.")
+
+
+    function getGrade(aver) {
+      let grade;
+      if (aver >= 90) {
+        grade = "A"
+      } else if (aver >= 80) {
+        grade = "B"
+      } else if (aver >= 70) {
+        grade = "C"
+      } else {
+        grade = "D"
+      }
+      return grade;
+    }
+    alert("정현진님의 평균등급은 " + getGrade(getAver(50, 90, 100)) + "등급입니다.")
+  </script>
+</body>
+
+</html>

@@ -1,0 +1,38 @@
+*{margin: 0;padding: 0;}
+
+.TabMenu{
+  width: 500px;
+  height: 200px;
+  border: 1px solid black;
+  margin: 0 auto;
+  position: relative;
+  display: flex;
+}
+.TabMenu dt {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 50px;
+  width: 100px;
+  cursor: pointer;
+}
+.TabMenu dt.on{
+  border: 2px solid gold;
+  background: lightcyan;
+  font-weight: bold;
+  font-size: 1.1em;
+}
+.TabMenu dd{
+  position: absolute;
+  top: 60px;
+  left: 0;
+  display: none;
+}
+.TabMenu dd.on{
+  display: block;
+}
+
+
+.TabMenu dd{
+  padding: 15px;
+}

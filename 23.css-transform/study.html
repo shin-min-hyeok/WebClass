@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>transform - 변형</title>
+  <link rel="stylesheet" href="./css/style1.css">
+</head>
+
+<body>
+  <h1>transform</h1>
+  <p>transform은 변형이라는 뜻으로 주로 css에서는 animation을 만들 때 사용한다.</p>
+  <p>부분적으로 레이아웃을 위해 사용하기도 한다.</p>
+  <h2>transform:translateX(픽셀 값, % 값)</h2>
+  <P>transform에서 translate는 픽셀 값과 % 갑을 둘다 입력 가능하다. 이 때 % 값은 선택된 태그의 너비나 높이를 기준했을 때의 비율이다.</P>
+  <p>기본적으로 transform속성은 박스형태한테만 적용이 가능하다.</p>
+  <div class="box a">translateX</div>
+  <div class="box b">translateY</div>
+  <div class="box c">translate</div>
+  <section class="parent">
+    <div class="box d">translateZ</div>
+  </section>
+  <div class="box e">scaleX</div>
+  <div class="box f">scaleY</div>
+  <div class="box g">scale</div>
+  <div class="box h">rotate</div>
+  <section class="parent">
+    <div class="box i">rotateX</div>
+    <div class="box j">rotateY</div>
+  </section>
+  <div class="box k">skewX</div>
+  <div class="box l">skewY</div>
+</body>
+
+</html>
