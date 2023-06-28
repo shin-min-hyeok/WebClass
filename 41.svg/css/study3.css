@@ -49,3 +49,12 @@ ul,ol{list-style: none;}
   padding: 20px;
   cursor: pointer;
 }
+.warp{
+  height: 2000px;
+  background: blue;
+
+}
+.box{
+  height: 1000px;
+  background: green;
+}
