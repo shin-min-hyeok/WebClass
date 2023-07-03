@@ -16,7 +16,7 @@ $(document).ready(function(){
   })
 
 
-  $(".slider").mouseover(function(){
+  $("#slider").mouseover(function(){
     $(".cursor").addClass("big")
     let txt = $(".slider").attr("data-txt")
     $(".cursorGuideBox").text(txt)
