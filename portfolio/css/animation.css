@@ -10,3 +10,10 @@
   0%{top: 10px;}
   100%{top: 60px;}
 }
+@keyframes drag {
+  0%{transform: translateX(50px);}
+  25%{transform: translateX(0);}
+  50%{transform: translateX(50px);}
+  75%{transform: translateX(0);}
+  100%{transform: translateX(50px);}
+}

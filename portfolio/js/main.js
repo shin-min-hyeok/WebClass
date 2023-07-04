@@ -1,3 +1,24 @@
+window.onload = function(){
+  let con4station = new Swiper(".con4station",{
+    loop: true, // 반복
+    direction: "horizontal", // 세로방향  가로(horizontal)
+    pagination: {
+      el: ".swiper-pagination",
+      type: "bullets", // 모양
+      clickable: true, // 클릭시 클릭페이지로 이동
+    },
+  })
+  let con5station = new Swiper(".con5station",{
+    loop: true, // 반복
+    direction: "horizontal", // 세로방향  가로(horizontal)
+    pagination: {
+      el: ".swiper-pagination",
+      type: "bullets", // 모양
+      clickable: true, // 클릭시 클릭페이지로 이동
+    },
+  })
+}
+
 $(document).ready(function(){
   // 상-하스크롤시 부드럽게 이동
   $(window).scroll(function () {
@@ -18,8 +39,6 @@ $(document).ready(function(){
     } else {
       delta = E.wheelDelta;
     }
-
-
     if (delta < 0) {
       //마우스 휠을 내렸을 때
       if ($(this).next().length) {
@@ -35,14 +54,6 @@ $(document).ready(function(){
     }
     return false;
   });
-
-    //자세히보기 클릭스 옆으로 이동
-    $(".con4Btn").click(function(e){
-    e.preventDefault()
-    $(this).addClass("on")
-    $(".con4-Area>li").css("transform","translateX(-100%)")
-    })
-
 
     //화살표버튼 클릭시 상단으로 이동
   $(".arrow").click(function(){
@@ -123,22 +134,36 @@ $(document).ready(function(){
           },10)
         })
       }
+      
+    }
+  })
+})
+let count1 = 0;
+$(document).ready(function(){
+  
+  $("#con6").on("wheel DOMMouseScroll", function (event) {
+    // console.log(event)
+    let E = event.originalEvent;
+    let delta = 0;
+    if (E.detail) {
+      delta = E.detail * -40;
+    } else {
+      delta = E.wheelDelta;
     }
 
-
-
-
-
-  })
-
-
-
-
-
-
-
-
-
+    if(delta <0){
+      //마우스휠 내렸을 때
+      count1++;
+      if(count1>10){count1 =15}
+      $(".popup").css("transform","translateX(-"+(-100*count1)+"%)")
+    } else{
+      //마우스 휠올렸을 때
+      count1--;
+      if(count1<0){count1=0}
+      $(".popup").css("transform","translateX(-"+(-100*count1)+"%)")
+    }
+    return false;
+  });
 
 
 

@@ -202,7 +202,7 @@ header.sma{
 }
 #con2{
   background: url(../img/RESUMEIMG.png) no-repeat;
-  
+  background-size: 100%;
 }
 #con2 .con2Title{
   display: flex;
@@ -438,8 +438,6 @@ header.sma{
   width: 300%;
   height: 100vh;
   display: flex;
- 
-
 }
 .con4-Area>li{
   width: 100%;
@@ -477,18 +475,6 @@ header.sma{
   margin-bottom: 30px;
   font-family: 'Noto Sans', sans-serif;
 }
-.con4-1txt .con4Btn{
-  border: 1px solid #fff;
-  padding: 15px 50px;
-  color: #fff;
-  display: inline-block;
-  margin-top: 30px;
-  cursor: pointer;
-}
-.con4Btn.on .con4-1{
-  transform: translateX(-33%);
-}
-
 .con4-2{
   position: relative;
 }
@@ -534,6 +520,21 @@ header.sma{
   height: 100%;
   object-fit: cover;
 }
+.con4Arrow{
+  position: absolute;
+  right: 50px;
+  top: 50%;
+  transform: translateY(-50%);
+  animation: drag 3.5s infinite ease-in-out;
+}
+.con4Arrow img{
+  transform: rotate(90deg);
+}
+.con4Arrow p{
+  color: #fff;
+  text-transform: uppercase;
+  text-align: center;
+}
 /* ------------------------------------------ */
 /*--------------------con5------------------*/
 #con5{
@@ -578,14 +579,6 @@ header.sma{
   font-size: 1.2rem;
   margin-bottom: 30px;
   font-family: 'Noto Sans', sans-serif;
-}
-.con5-1txt span{
-  border: 1px solid #fff;
-  padding: 15px 50px;
-  color: #fff;
-  display: inline-block;
-  margin-top: 30px;
-  cursor: pointer;
 }
 .con5-2{
   position: relative;
@@ -633,6 +626,21 @@ header.sma{
   width: 100%;
   height: 100%;
   object-fit: cover;
+}
+.con5Arrow{
+  position: absolute;
+  right: 50px;
+  top: 50%;
+  transform: translateY(-50%);
+  animation: drag 3.5s infinite ease-in-out;
+}
+.con5Arrow img{
+  transform: rotate(90deg);
+}
+.con5Arrow p{
+  color: #fff;
+  text-transform: uppercase;
+  text-align: center;
 }
 /*-----------------------------------------------*/
 

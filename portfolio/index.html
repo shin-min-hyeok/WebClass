@@ -20,6 +20,10 @@
   <!--자바스크립트 -->
   <script src="./js/jquery-3.7.0.min.js"></script>
   <script src="./js/main.js"></script>
+  <!-- 스와이퍼JS -->
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.css" />
+  <script src="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.js"></script>
+
   <title>PORTFOLIO</title>
 </head>
 
@@ -129,7 +133,7 @@
               <svg class="progress" viewBox="0 0 120 120">
                 <circle cx="60" cy="60" r="50" />
               </svg>
-              <span class="per">99</span>
+              <span class="per">95</span>
             </figure>
             <img src="./img/아이콘img/CSS아이콘.png" alt="CSS아이콘">
           </li>
@@ -138,7 +142,7 @@
               <svg class="progress" viewBox="0 0 120 120">
                 <circle cx="60" cy="60" r="50" />
               </svg>
-              <span class="per">99</span>
+              <span class="per">65</span>
             </figure>
             <img src="./img/아이콘img/자바스크립트아이콘.png" alt="자바스크립트아이콘">
           </li>
@@ -180,9 +184,9 @@
     <!------------------------->
 
     <!--------REDESIGN-------->
-    <section id="con4">
-        <ul class="con4-Area">
-          <li class="con4-1">
+    <section id="con4" class="swiper con4station">
+        <ul class="con4-Area swiper-wrapper">
+          <li class="con4-1 swiper-slide">
             <img src="./img/PC목업2.png" alt="PC목업2">
             <div class="con4-1txt">
               <h2>RE-DESIGN<br>RESPONSIVE</h2>
@@ -195,10 +199,9 @@
               제작한 모든 페이지는 모바일화면에 적절하게 보일 수 있도록<br>
               반응형 MEDIA-QUERY 를 사용하여 제작하였습니다.
               </p>
-              <span class="con4Btn">자세히보기</span>
               </div>
           </li>
-          <li class="con4-2">
+          <li class="con4-2 swiper-slide">
             <img src="./img/PC목업1.png" alt="PC목업1">
             <div class="con4-2txt">
               <ul class="cont4-2txt1">
@@ -225,17 +228,21 @@
               </ul>
             </div>
           </li>
-          <li class="con4-3">
+          <li class="con4-3 swiper-slide">
             <img src="./img/PC목업3.png" alt="PC목업3">
           </li>
+          <div class="con4Arrow">
+            <img src="./img/화살표-8.png" alt="화살표">
+            <p>drag</p>
+          </div>
         </ul>
     </section>
     <!------------------------>
 
     <!----------MOBILE-------->
-    <section id="con5">
-      <ul class="con5-Area">
-        <li class="con5-1">
+    <section id="con5" class="con5station">
+      <ul class="con5-Area swiper-wrapper">
+        <li class="con5-1 swiper-slide">
           <img src="./img/모바일목업1.png" alt="PC목업2">
           <div class="con5-1txt">
             <h2>MOBILE-<br>RESPONSIVE</h2>
@@ -248,10 +255,9 @@
               제작한 모든 페이지를 테블릿/모바일기종 화면에 적절하게 보일 수 있도록<br>
               반응형 MEDIA-QUERY 를 사용하여 제작하였습니다.
             </p>
-            <span>자세히보기</span>
             </div>
         </li>
-        <li class="con5-2">
+        <li class="con5-2 swiper-slide">
           <img src="./img/모바일목업2.png" alt="모바일목업2">
           <div class="con5-2txt">
             <ul class="cont5-2txt1">
@@ -278,9 +284,13 @@
             </ul>
           </div>
         </li>
-        <li class="con5-3">
+        <li class="con5-3 swiper-slide">
           <img src="./img/모바일목업3.png" alt="모바일목업3">
         </li>
+        <div class="con5Arrow">
+          <img src="./img/화살표-8.png" alt="화살표">
+          <p>drag</p>
+        </div>
       </ul>
     </section>
     <!------------------------>
@@ -300,7 +310,6 @@
             </div>
           </li>
           <li class="popupAll">
-            <ul>
               <figure><img src="./img/목업팝업/Christmas1.png" alt="Christmas1"></figure>
               <figure><img src="./img/목업팝업/CouponDesign1.png" alt="CouponDesign1"></figure>
               <figure><img src="./img/목업팝업/블랙프라이데이2.png" alt="HappyNewYear1"></figure>
@@ -309,7 +318,6 @@
               <figure><img src="./img/목업팝업/holloween1.png" alt="holloween1"></figure>
               <figure><img src="./img/목업팝업/블랙프라이데이1.png" alt="블랙프라이데이1"></figure>
               <figure><img src="./img/목업팝업/서울사랑1.png" alt="서울사랑1"></figure>
-            </ul>
           </li>
           <li class="Winter">
             <div class="L">
