@@ -1,27 +1,57 @@
 $(document).ready(function(){
-
-
-  $(window).scroll(function(){
-    let winTop = $(window).scrollTop() //스크롤바 위에서 얼만큰 내려왓는지 계산
-    let fixedTop = $("header").offset().top
-    let distance = winTop-fixedTop
-    if(distance>=150){
-      $("header").css("position","fixed")
-      $("header").css("left","0","top","0")
-      $("header").css("background","#fff")
-      $(".gnb>li>a").css("color","#000")
-      $("header").css("z-index","2000")
-      $("header").css("height","70px")
+  // 상-하스크롤시 부드럽게 이동
+  $(window).scroll(function () {
+    let winst = $(window).scrollTop();
+    if (winst >= $("#con2").offset().top) {
+      $("#con2").addClass("on");
+    } else {
+      $("#con2").removeClass("on");
     }
-  })
+  });
 
+  $("#wrap>section").on("wheel DOMMouseScroll", function (event) {
+
+    let E = event.originalEvent;
+    let delta = 0;
+    if (E.detail) {
+      delta = E.detail * -40;
+    } else {
+      delta = E.wheelDelta;
+    }
+
+
+    if (delta < 0) {
+      //마우스 휠을 내렸을 때
+      if ($(this).next().length) {
+        let posTop = $(this).next().offset().top;
+        $("html,body").stop().animate({ scrollTop: posTop }, 800);
+      }
+    } else {
+      //마우스 휠을 올렸을 때
+      if ($(this).prev().length != 0) {
+        let posTop = $(this).prev().offset().top;
+        $("html,body").stop().animate({ scrollTop: posTop }, 800);
+      }
+    }
+    return false;
+  });
+
+    //자세히보기 클릭스 옆으로 이동
+    $(".con4Btn").click(function(e){
+    e.preventDefault()
+    $(this).addClass("on")
+    $(".con4-Area>li").css("transform","translateX(-100%)")
+    })
+
+
+    //화살표버튼 클릭시 상단으로 이동
   $(".arrow").click(function(){
     moveScroll({
       top:0,
-      speed:2500
+      speed:1000
     })
   })
-
+  //각 GNB>LI클릭시 그의 영역으로 이동
   $(".gnb>li>a").click(function(e){
     e.preventDefault()
     let target = $(this).attr("href")
@@ -31,25 +61,86 @@ $(document).ready(function(){
   function moveScroll(option){
     $("html,body").stop().animate({scrollTop:option.top},option.speed)
   }
-
+    //제목,소제목 svg효과
   $("#introtitle path").each(function(){
     let path = $(this)
     let idx = path.index()
-    let secondTerm = 0.5
+    let secondTerm = 0.2
     let delay = idx*secondTerm
 
     let pathLength = $(this).get(0).getTotalLength()
+
     $(this).css("stroke-dasharray",pathLength)
     $(this).css("stroke-dashoffset",pathLength)
-
     setTimeout(function(){
       path.css("transition",`stroke-dashoffset 1s ease ${delay}s,fill 1s ease ${delay+1}s`)
-    },500)
-
-    
+    },500)   
   })
-
   setTimeout(function(){
     $("#introtitle").addClass("on")
   },1000)
+
+  $("#introtxt path").each(function(){
+    let path = $(this)
+    let idx = path.index()
+    let secondTerm = 0.1
+    let delay = idx*secondTerm
+    
+    let pathLength = $(this).get(0).getTotalLength()
+
+    $(this).css("stroke-dasharray",pathLength)
+    $(this).css("stroke-dashoffset",pathLength)
+    setTimeout(function(){
+      path.css("transition",`stroke-dashoffset 1s ease ${delay}s,fill 1s ease ${delay+1}s`)
+    },500)   
+  })
+  setTimeout(function(){
+    $("#introtxt").addClass("on")
+  },1000)
+
+  // 스크롤하고 svg영역에 닿으면 프로그레스 활성화
+  $(window).scroll(function(){
+    let a = $(window).scrollTop()
+    let b = $(".skills").offset().top
+    let c = $(window).height()*0.5
+    console.log(c)
+    if(a+b+c){
+      if($(".skills").hasClass("on")==false){
+        $(".skills").addClass("on")
+        $(".skills>li").each(function(){
+          let list = $(this)
+          let percent = $(this).find(".per").text()
+          let count = 0
+          let circle = $(this).find("circle")
+
+          let timer = setInterval(function(){
+            count++;
+            list.find(".per").text(count+"%")
+            circle.css("stroke-dashoffset",314-(314*(count/100)))
+            if(count>=percent){
+              clearInterval(timer)
+            }
+          },10)
+        })
+      }
+    }
+
+
+
+
+
+  })
+
+
+
+
+
+
+
+
+
+
+
+
+
 })

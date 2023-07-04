@@ -8,7 +8,7 @@ em,i,address{font-style: normal;}
 
 /* layout */
 #con1{width: 100%;height: 100vh;display: flex;position: relative;overflow: hidden;}
-#con2{width: 100%;height: 100vh;}
+#con2{width: 100%;height: 100vh; position: relative;}
 #con3{width: 100%;height: 100vh;}
 #con4{width: 100%;height: 100vh;}
 #con5{width: 100%;height: 100vh;}
@@ -97,8 +97,11 @@ header.sma{
   width: 1200px;
   height: 100%;
 }
-#introtext.on path{
-  stroke-dashoffset:0!important;
+#introtitle path{
+  stroke:#fff;
+}
+#introtitle.on path{
+  stroke-dashoffset: 0!important;
   fill: #fff;
 }
 .titletxt{
@@ -107,9 +110,17 @@ header.sma{
   left: 40%;
 }
 .titletxt #introtxt{
-  fill: #fff;
+  fill: transparent;
+  stroke: black;
   width: 700px;
   height: 100%;
+}
+#introtxt path{
+  stroke:#fff;
+}
+#introtxt.on path{
+  stroke-dashoffset: 0!important;
+  fill: #fff;
 }
 .decotxt{
   position: absolute;
@@ -129,32 +140,36 @@ header.sma{
 .decotxt h3:nth-of-type(1):after{
   content: "";
   position: absolute;
-  top: 12%;
+  top: 16%;
   left: 15px;
   width: 1px;
-  height: 23vh;
+  height: 20vh;
   background: #fff;
   z-index: 1000;
 }
 /* ---------------------------------------------------- */
 
-/* -------------------MOVINGTEXT---------------------- */
-.movetxt{
+#movetxt{
   width: 100%;
   font-family: 'Playfair Display', serif;
   font-weight: bold;
   text-transform: uppercase;
   font-size: 6rem;
   overflow: hidden;
-  background-color: #FACF67;
+  background-color: #fff;
+  opacity: 0.5;
 }
-.movetxt>ul{
+#movetxt>ul{
   display: flex;
   width: 200%;
   overflow: hidden;
-  opacity: 0.1;
+  opacity: 0.4;
+  color: #ff5500;
+  height: 75px;
+  font-size: 70px;
+  align-items: center;
 }
-.movetxt>ul>li{
+#movetxt>ul>li{
   white-space: nowrap;
   width: 50%;
   border-left: none;
@@ -167,139 +182,180 @@ header.sma{
 .movetxt2{
   animation: move2 10s linear -5s infinite;
 }
-/*--------------------------------------------- */
-#con2{
-  background: #F2E7D6;
-  position: relative;
-  padding-top: 120px;
-  display: flex;
-
+.line1{
+  display: block;
+  width: 79%;
+  height: 2px;
+  background: black;
+  position: absolute;
+  left: 21%;
+  top: 19%;
 }
-#con2>div>h4{
-  font-size: 5rem;
+.line2{
+  display: block;
+  width: 2px;
+  height: 79%;
+  background: black;
+  position: absolute;
+  left: 50%;
+  top: 19%;
+}
+#con2{
+  background: url(../img/RESUMEIMG.png) no-repeat;
+  
+}
+#con2 .con2Title{
+  display: flex;
+  padding: 0 35px
+}
+#con2 >h4{
+  font-size: 50px;
   text-transform: capitalize;
   font-family: 'Playfair Display', serif;
-  font-weight: 500;
-  position: absolute;
-  left: 0;
-  top: 0;
-}
-#con2>div{
-  width: 80%;
-  margin: 0 auto;
-  display: flex;
-  justify-content: space-between;
+  font-weight: 600;
+  text-align: center;
 }
 .con2L{
-  width: 50%;
+  flex: 1;
 }
-.con2L .name h4{
-  font-size: 3rem;
+#con2 .con2L .name{
+  margin-bottom: 50px;
+}
+#con2 .con2L .name>li{
+  display: flex;
+}
+#con2 .con2L .name>h4{
+  font-size: 50px;
   font-family: 'Playfair Display', serif;
   font-weight: 600;
-  color: #0023D0;
   margin-bottom: 30px;
+  color: black;
+  opacity: 0.8;
 }
-.con2L .name h4>b{
+#con2 .nameConact{
+  width: 300px;
+  font-size:  18px;
+  font-family: 'Noto Sans', sans-serif;
+}
+#con2 .nameConact>li{
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 20px;
+}
+#con2 .con2L .name>h4>b{
   text-transform: capitalize;
 }
-.con2L .name img {
-  width: 50px;
-  object-fit: cover;
-  margin-right: 20px;
+#con2 .Education{
+  margin-bottom: 50px;
 }
-.con2L .name>li{
+#con2 .Education h4{
+  font-size: 30px;
+  font-family: 'Playfair Display', serif;
+  font-weight: 600;
+  margin-bottom: 30px;
+}
+#con2 .Experiencetxt{
+  width: 300px;
+  margin-bottom: 20px;
+  font-size:  18px;
+  font-family: 'Noto Sans', sans-serif;
+}
+#con2 .Experiencetxt>li{
   display: flex;
-  align-items: center;
-  margin-bottom: 20px;
-  font-family: 'Noto Sans', sans-serif;
-  font-weight: 700;
-  font-size: 1.2rem;
-}
-.con2L .Education{
+  justify-content: space-between;
   margin-bottom: 20px;
 }
-.con2L .Education h4{
-  font-size: 3rem;
+#con2 .Experience h4{
+  font-size: 30px;
   font-family: 'Playfair Display', serif;
   font-weight: 600;
-  color: #0023D0;
   margin-bottom: 30px;
 }
-.con2L .Education li{
-  font-family: 'Noto Sans', sans-serif;
-  font-weight: 600;
-  font-size: 1.2rem;
+#con2 .Experiencetex{
+  width: 700px;
+}
+#con2 .Experiencetex>li{
+  display: flex;
+  justify-content: space-between;
   margin-bottom: 20px;
-}
-.con2L .Education li >span{
-  margin-right: 20px;
-}
-.con2L .Experience h4{
-  font-size: 3rem;
-  font-family: 'Playfair Display', serif;
-  font-weight: 600;
-  color: #0023D0;
-  margin-bottom: 30px;
-}
-.con2L .Experience li{
+  font-size:  18px;
   font-family: 'Noto Sans', sans-serif;
-  font-weight: 600;
-  font-size: 1.2rem;
-  margin-bottom: 20px;
-}
-.con2L .Experience li >span{
-  margin-right: 20px;
-}
-.con2L .Experience li >b{
-  color: #aaa;
 }
 .con2R{
-  padding-left: 100px;
-  width: 50%;
+  flex: 1;
+  width: 900px;
+  margin: 150px 0px 0px 250px;
 }
-.con2R .skills h4{
-  font-size: 3rem;
-  font-family: 'Playfair Display', serif;
-  font-weight: 600;
-  color: #0023D0;
-  margin-bottom: 30px;
-  text-transform: capitalize;
-}
-.con2R .skills li{
-  margin-bottom: 30px;
-}
-.con2R .skills li img{
-  width: 80px;
-  height: 100%;
-}
-.con2R .tool h4{
-  font-size: 3rem;
-  font-family: 'Playfair Display', serif;
-  font-weight: 600;
-  color: #0023D0;
-  margin-bottom: 30px;
-  text-transform: capitalize;
-}
-.con2R .tool>li {
-  width: 80%;
-  height: 80%;
-  margin: 0 auto;
-}
-.con2R .tool .icon {
+.con2R .skills{
+  width: 960px;
   display: flex;
 }
-.con2R .tool .icon>li{
-  margin-right: 50px;
+.con2R .skills h4{
+  position: absolute;
+  top: 25%;
+  left: 53%;
+  font-size: 35px;
+  font-family: 'Playfair Display', serif;
+  font-weight: 600;
+  text-transform: capitalize;
 }
-.con2R .tool .icon>li:last-of-type{
-  margin-right: 0;
+.con2R .skills>li{
+  display: flex;
+  position: relative;
 }
-.con2R .tool .icon img{
-  width: 80px;
-  height: 100%;
+.con2R .skills>li:nth-of-type(1) .progress{
+  stroke:#ff651e;
+  stroke-width: 2px;
+  fill: transparent;
+  stroke-dasharray: 314;
+  stroke-dashoffset: 314;
+}
+.con2R .skills>li:nth-of-type(2) .progress{
+  stroke:#0065f4;
+  stroke-width: 2px;
+  fill: transparent;
+  stroke-dasharray: 314;
+  stroke-dashoffset: 314;
+}
+.con2R .skills>li:nth-of-type(3) .progress{
+  stroke:#f1bf26;
+  stroke-width: 2px;
+  fill: transparent;
+  stroke-dasharray: 314;
+  stroke-dashoffset: 314;
+}
+.progress{
+  width: 300px;
+  height: 300px;
+  margin-bottom: 50px;
+}
+.con2R .skills>li img{
+  width: 50px;
+  height: 50px;
+  position: absolute;
+  top: 78%;
+  left: 40%;
+}
+.con2R .tool{
+  padding-left: 20px;
+}
+.con2R .tool h4{
+  font-size: 35px;
+  font-family: 'Playfair Display', serif;
+  font-weight: 600;
+  text-transform: capitalize;
+  margin-bottom: 40px;
+}
+.con2R .tool li{
+  padding-left: 50px;
+}
+.con2R .tool li>img{
+  width: 50px;
+  height: 50px;
   object-fit: cover;
-
+}
+.con2R .tool .icon{
+  display: flex;
 }
 /*----------------con3------------------*/
 #con3{
@@ -382,15 +438,19 @@ header.sma{
   width: 300%;
   height: 100vh;
   display: flex;
+ 
 
 }
 .con4-Area>li{
   width: 100%;
   height: 100%;
+  transition: all 1s ease 0s;
 }
+
 .con4-1{
   background: #3fb0b4;
   position: relative;
+
 }
 .con4-1 img{
   width: 50%;
@@ -417,7 +477,7 @@ header.sma{
   margin-bottom: 30px;
   font-family: 'Noto Sans', sans-serif;
 }
-.con4-1txt span{
+.con4-1txt .con4Btn{
   border: 1px solid #fff;
   padding: 15px 50px;
   color: #fff;
@@ -425,6 +485,10 @@ header.sma{
   margin-top: 30px;
   cursor: pointer;
 }
+.con4Btn.on .con4-1{
+  transform: translateX(-33%);
+}
+
 .con4-2{
   position: relative;
 }
@@ -1136,6 +1200,7 @@ header.sma{
   width: 500%;
   height: 100%;
   display: flex;
+  transition: all 1s ease 0s;
 }
 .Banner>li{
   width: 100%;
