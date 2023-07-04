@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>동영상위에 텍스트올리기</title>
+  <style>
+    body {
+      padding: 0;
+      margin: 0;
+      text-decoration: none;
+      list-style: none;
+    }
+
+    .mainbideo {
+      width: 100%;
+      height: 500px;
+      overflow: hidden;
+      margin: 0 auto;
+      position: relative;
+    }
+
+    video {
+      width: 100%;
+    }
+
+    .videoText {
+      position: absolute;
+      top: 10%;
+      width: 100%;
+      margin-top: 100px;
+      text-align: center;
+      margin-top: 200px;
+      font-size: 48px;
+      column-rule: #fff;
+    }
+
+    .videoText>span {
+      color: white;
+      font-size: 12px;
+      background: #ccc;
+      padding: 8px 40px;
+    }
+
+    div.im {
+      background: url(./화면\ 캡처\ 2023-04-28\ 154214.png);
+      background: none;
+    }
+  </style>
+</head>
+
+<body>
+  <div class="mainVideo">
+    <video autoplay muted loop>
+      <source src="./pearlabyss-ex/video/kor_landing_loop.webm" type="video/webm">
+      <source src="./pearlabyss-ex/video/kor_landing_loop.mp4" type="video/mp4">
+    </video>
+    <div class="videoText">
+      <h2><img src="./pearlabyss-ex/img/blackdesert_logo_kr.png" alt="검은사막"></h2>
+      <span><a href="#">자세히보기</a></span>
+    </div>
+  </div>
+  <div>
+    <p class="im">
+    </p>
+  </div>
+</body>
+
+</html>

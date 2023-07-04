@@ -1,0 +1,262 @@
+/* reset */
+* {
+  margin: 0;
+  padding: 0;
+}
+
+a {
+  text-decoration: none;
+  color: inherit;
+}
+
+ul,
+ol {
+  list-style: none;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-size: inherit;
+  font-weight: normal;
+}
+
+strong,
+b {
+  font-weight: normal;
+}
+
+i,
+em,
+address {
+  font-style: normal;
+}
+
+/* common */
+html {
+  font-size: 12px;
+  font-family: font-family: 'Noto Sans KR', sans-serif;
+}
+
+.cw {
+  width: 1000px;
+  margin: 0 auto;
+}
+
+/* layout */
+
+.top {
+  /* border: 1px solid red; */
+  background: url(../img/bg_body.jpg) no-repeat;
+  background-size: cover;
+}
+
+.bottom {
+  /* border: 1px solid red; */
+  background: #2a367e;
+}
+
+/* header */
+header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.lnb {
+  display: flex;
+  justify-content: flex-end;
+  margin-bottom: 30px;
+}
+
+.lnb>li {
+  /* border: 1px solid red; */
+  padding-right: 15px;
+  background: url(../img/bg_sideMenu.gif) no-repeat calc(100% - 5px) 50%;
+  color: #888;
+  font-size: 0.9rem;
+  text-transform: uppercase;
+}
+
+.lnb>li:last-of-type {
+  padding-right: 0;
+  background: none;
+}
+
+.gnb {
+  display: flex;
+}
+
+.gnb>li {
+  /* border: 1px solid red; */
+  padding: 10px 25px;
+  color: #333;
+  font-size: 1.2rem;
+  font-weight: bold;
+}
+
+/* mainBanner */
+.mainBanner {
+  /* border: 1px solid blue; */
+  padding-top: 40px;
+  padding-bottom: 100px;
+  /* 첫번째 자식 태그는 margin-top을 만들어서 여백을 주는 것보다 부모태그한테 padding-top을 지정해주는게 좋다. 그 이유는 자식태그는 content-box에 안에 놓여있고 content-box안에서 바깥쪽으로 부모태그의 padding그리고 border를 밀어내는것이 자식태그의 margin이기 때문이다 만약에 부모태그에 padding과 border가 없다면 자식태그가 밀어내는 여백이 부모태그 바깥으로 흘러버리게되어 부모태그의 높이가 정상적으로 유지되지 않는다. */
+}
+
+.mainBanner>h2 {
+  /* border: 1px solid red; */
+  font-family: 'Times New Roman', Times, serif;
+  font-size: 5rem;
+  color: #2a367e;
+  margin-bottom: 40px;
+}
+
+.mainBanner>dl {
+  /* border: 1px solid red; */
+  width: 400px;
+  height: 120px;
+  position: relative;
+}
+
+.mainBanner>dl>dt {
+  /* border: 1px solid blue; */
+  height: 40px;
+  float: left;
+  display: flex;
+  align-items: center;
+  padding: 0 10px;
+  padding-bottom: -5px;
+}
+
+.mainBanner>dl>dt.on {
+  color: #2a367e;
+  border-bottom: 1px solid#2a367e;
+}
+
+.mainBanner>dl>dt.on+dd {
+  display: block;
+}
+
+.mainBanner>dl>dd {
+  position: absolute;
+  left: 0;
+  top: 50px;
+  /* border: 1px solid red; */
+  font-weight: 500;
+  width: 100%;
+  display: none;
+}
+
+.mainBanner>dl>dd li {
+  display: flex;
+  justify-content: space-between;
+}
+
+/* contents */
+
+.contents {
+  /* border: 1px solid lime; */
+  padding-top: 30px;
+  padding-bottom: 100px;
+  display: flex;
+  color: #fff;
+}
+
+.contents>article {
+  /* border: 1px solid aqua; */
+  margin-right: 70px;
+}
+
+.contents>article:last-of-type {
+  margin-right: 0;
+}
+
+.contents>article>h3 {
+  margin-bottom: 24px;
+}
+
+.q_Menu {
+  /* border: 1px solid lime; */
+  list-style-type: decimal;
+  list-style-position: inside;
+  padding-left: 12px;
+  /* background: url(../img/bg_service.gif) no-repeat 0 0; */
+  /* background: url(../img/bg_service.gif) no-repeat 0 4; */
+  /* line-height: 163%; */
+}
+.bannerTapMenu >dt{
+  cursor: pointer;
+}
+.tapMenu {
+  width: 190px;
+  height: 110px;
+  position: relative;
+  cursor: pointer;
+}
+
+.tapMenu>dt {
+  float: left;
+  height: 24px;
+  display: flex;
+  align-items: center;
+  padding: 0 14px;
+  background: #1c2566;
+  margin-right: 4px;
+}
+
+.tapMenu>dt.on {
+  background: #4152ba;
+}
+
+.tapMenu>dd {
+  position: absolute;
+  left: 0;
+  top: 30px;
+  width: 100%;
+  height: 80px;
+  display: none;
+}
+
+.tapMenu>dt.on+dd {
+  display: block;
+}
+
+.tapMenu>dd>a {
+  display: block;
+  height: 100%;
+}
+
+.tapMenu>dd>a>img {
+  width: 100%;
+  height: 100%;
+  object-fit: contain;
+}
+
+/* footer */
+
+footer {
+  /* border: 1px solid red; */
+  display: flex;
+  justify-content: space-between;
+  border-top: 1px solid #fff;
+  padding-top: 20px;
+}
+
+footer>div {
+  color: #fff;
+  /* border: 1px solid aqua; */
+}
+
+footer>div>label {
+  display: none;
+}
+
+footer>div>select {
+  background: #2a367e;
+  color: #fff;
+  /* border: 1px solid #fff; */
+  padding: 3px 40px 3px 10px;
+  margin-right: 15px;
+}

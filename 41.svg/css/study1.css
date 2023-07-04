@@ -1,0 +1,43 @@
+*{margin: 0;padding: 0;}
+ul,ol{list-style: none;}
+
+ul svg{
+  border: 1px solid  red;
+  width: 500px;
+  transform: rotate(-90deg);
+}
+.a{
+  fill: lightcoral;
+  fill-opacity: 0.5;
+  stroke: red;             /* 선*/
+  stroke-width: 2;           /* 선의 두깨*/
+  stroke-dasharray: 314;     /* 선의 점선처리 */
+  stroke-dashoffset: 314;    /* 선의 시작점 */
+  transition: all 1s ease 0s;
+}
+.a:hover{
+  fill: lightseagreen;
+  fill-opacity: 1;
+  stroke: lightgreen;
+  stroke-width: 3;
+  stroke-dashoffset: calc((1 - 0.8)*314);
+}
+.list{
+  width: 1500px;
+  margin: 0 auto; 
+  display: flex;
+}
+.list>li{
+  flex: 1;
+}
+.c1{
+  fill:#fff;stroke:#000;stroke-miterlimit:10;
+  transition: all 3s ease 0s;
+  /* stroke-dasharray: 15000;
+  stroke-dashoffset: 15000; */
+}
+.c1:hover{
+  stroke: red;
+  stroke-width: 3;
+  stroke-dashoffset: 0 !important;
+}

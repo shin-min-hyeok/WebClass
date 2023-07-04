@@ -1,0 +1,148 @@
+*{margin: 0;padding: 0;}
+a{text-decoration: none;color: inherit;}
+ul,ol{list-style: none;}
+img{max-width: 100%;}
+
+/* layout */
+body{
+  background: lightpink;
+}
+header{
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  padding: 20px;
+  padding-bottom: 0;
+}
+.snsMenu{
+  display: flex;
+}
+.snsMenu>li{
+  font-size: 3.5rem;
+  margin-right: 15px;
+  color: #fff;
+  transition: transform 0.5s ease 0s,color 1s ease 0s;
+}
+.snsMenu>li:hover{
+  transform: scale(1.3);
+  color: lightseagreen;
+}
+.snsMenu>li:last-of-type{
+  margin-right: 0;
+}
+.logo{
+  box-shadow: 7px 7px 10px rgba(0, 0, 0, 0.789);
+  line-height: 0;
+}
+
+.stationMenu{
+  display: flex;
+  padding-left: 20px;
+  margin-bottom: 60px;
+}
+.stationMenu>li{
+  color: #fff;
+  margin-right: 20px;
+  font-size: 1.3rem;
+  text-transform: capitalize;
+  transition: all 0.5s ease 0s;
+}
+.stationMenu>li:hover{
+  color: lightgray;
+}
+.stationMenu>li:last-of-type{
+  margin-right: 0;
+}
+.station{
+  width: 100%;
+  height: 500px;
+  overflow: hidden;
+}
+.train{
+  width: 4600px; /*리스트를 클릭했을 때 원래크기보다 600픽셀이 더 늘어날 것을 예상*/
+  height: 500px;
+  transition: all 1s ease 0s;
+  display: flex;
+}
+.train>li{
+  width: 180px;
+  height: 400px;
+  margin-right: 20px;
+  background: #fff;
+  border-radius: 5px;
+  overflow: hidden;
+  position: relative;
+  opacity: 0.7;
+  transition: all 0.3s ease 0s;
+}
+.train>li:hover{
+  opacity: 1;
+}
+.train>li .title{
+  width: 100%;
+  position: absolute;
+  left: 0;
+  bottom: 60px;
+  background: #000;
+  color: #fff;
+  padding: 14px 0px;
+  text-transform: capitalize;
+  padding-left: 10px;
+  font-size: 20px;
+  transition: all 0.5s ease 0s;
+}
+.train>li p{
+  display: none;
+}
+.btnClose{
+  display: none;
+}
+
+.small{
+  width: 100%;
+}
+/* list에 on클래스가 추가됬을 때의 스타일 */
+.train>li.on{
+  width: 780px;
+  height: 500px;
+  opacity: 1;
+}
+.train>li.on .small{
+  width: 100%;
+  height: 100%;
+  object-fit: contain;
+}
+.train>li.on .small .title{
+  padding: 20px 0;
+  padding-left: 20px;
+  bottom: 28px;
+  opacity: 0.5;
+}
+.train>li.on .btnClose{
+  display: block;
+  position: absolute;
+  right: 33px;
+  top: 145px;
+  padding: 20px;
+  cursor: pointer;
+}
+.train>li.on .title{
+  font-size: 35px;
+  padding: 20px 0;
+  padding-left:20px;
+  bottom:280px;
+  opacity: 0.5;
+}
+
+.train>li.on>p{
+  position: absolute;
+  right: 20px;
+  bottom: 20px;
+  background-color: #000;
+  color:#fff;
+  padding: 14px;
+  display: block;
+}
+.big{
+  display: none;
+}

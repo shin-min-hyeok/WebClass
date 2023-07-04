@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>성적표</title>
+</head>
+
+<body>
+  <h1>성적표 예제</h1>
+  <p>퀴즈) 사용자에게 이름과 국어, 영어, 수학, 점수를 물어보고 평균 점수를 구해서 알림창에 나타내보시오.</p>
+  <p>답안예시 [정현진님의 평균점수는 90점입니다]</p>
+  <script>
+    let name = prompt("이름을 입력하시오")
+    let scoreKo = Number(prompt("국어점수 입력"))
+    let scoreEn = Number(prompt("영어점수 입력"))
+    let scoreMa = Number(prompt("수학점수 입력"))
+    let scoreAver = (scoreKo + scoreEn + scoreMa) / 3
+    // alert("[" + name + "님의 평균점수는 " + scoreAver + "점입니다]")
+    alert(`[${name}님의 평균점수는 ${scoreAver}점입니다]`)
+    document.write(`[${name}님의 평균점수는 ${scoreAver}점입니다]`)
+  </script>
+</body>
+
+</html>

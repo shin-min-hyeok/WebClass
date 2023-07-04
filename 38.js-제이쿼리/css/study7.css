@@ -1,0 +1,12 @@
+*{margin: 0;padding: 0;}
+.list{
+  width: 400px;
+}
+.list>li{
+  padding: 20px 0;
+  font-size: 2rem;
+  font-weight: bold;
+}
+.list>li.on{
+  border-bottom: 1px solid black;
+}
