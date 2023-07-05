@@ -17,18 +17,30 @@ window.onload = function(){
       clickable: true, // 클릭시 클릭페이지로 이동
     },
   })
+  let con7Station = new Swiper(".con7Station", {
+    direction: "vertical",
+    slidesPerView: 1,
+    spaceBetween: 30,
+    mousewheel: true,
+    pagination: {
+      el: ".swiper-pagination",
+      clickable: true,
+    },
+  });
 }
 
 $(document).ready(function(){
+
   // 상-하스크롤시 부드럽게 이동
   $(window).scroll(function () {
     let winst = $(window).scrollTop();
-    if (winst >= $("#con2").offset().top) {
-      $("#con2").addClass("on");
+    if (winst >= $("#con2,.designplan").offset().top) {
+      $("#con2,.designplan").addClass("on");
     } else {
-      $("#con2").removeClass("on");
+      $("#con2,.designplan").removeClass("on");
     }
   });
+
 
   $("#wrap>section").on("wheel DOMMouseScroll", function (event) {
 
@@ -62,6 +74,16 @@ $(document).ready(function(){
       speed:1000
     })
   })
+  $(".link_none").click(function(e){
+    e.preventDefault(); //a태그의 기본 기능 제거
+  })
+  $(".designplanBtn").click(function(){
+    $(".designplanBtn").addClass("on")
+    $(".designplan").css("display","block")
+  })
+  
+
+  
   //각 GNB>LI클릭시 그의 영역으로 이동
   $(".gnb>li>a").click(function(e){
     e.preventDefault()
@@ -113,8 +135,7 @@ $(document).ready(function(){
   $(window).scroll(function(){
     let a = $(window).scrollTop()
     let b = $(".skills").offset().top
-    let c = $(window).height()*0.5
-    console.log(c)
+    let c = $(window).height()*0.7
     if(a+b+c){
       if($(".skills").hasClass("on")==false){
         $(".skills").addClass("on")
@@ -128,6 +149,7 @@ $(document).ready(function(){
             count++;
             list.find(".per").text(count+"%")
             circle.css("stroke-dashoffset",314-(314*(count/100)))
+            circle.css("transition","all 2s linear 0s")
             if(count>=percent){
               clearInterval(timer)
             }
@@ -137,35 +159,4 @@ $(document).ready(function(){
       
     }
   })
-})
-let count1 = 0;
-$(document).ready(function(){
-  
-  $("#con6").on("wheel DOMMouseScroll", function (event) {
-    // console.log(event)
-    let E = event.originalEvent;
-    let delta = 0;
-    if (E.detail) {
-      delta = E.detail * -40;
-    } else {
-      delta = E.wheelDelta;
-    }
-
-    if(delta <0){
-      //마우스휠 내렸을 때
-      count1++;
-      if(count1>10){count1 =15}
-      $(".popup").css("transform","translateX(-"+(-100*count1)+"%)")
-    } else{
-      //마우스 휠올렸을 때
-      count1--;
-      if(count1<0){count1=0}
-      $(".popup").css("transform","translateX(-"+(-100*count1)+"%)")
-    }
-    return false;
-  });
-
-
-
-
 })

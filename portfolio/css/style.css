@@ -5,28 +5,25 @@ ul,ol{list-style: none;}
 h1,h2,h3,h4,h5,h6{font-size: inherit;font-weight:400;}
 em,i,address{font-style: normal;}
 
-
 /* layout */
 #con1{width: 100%;height: 100vh;display: flex;position: relative;overflow: hidden;}
 #con2{width: 100%;height: 100vh; position: relative;}
-#con3{width: 100%;height: 100vh;}
-#con4{width: 100%;height: 100vh;}
-#con5{width: 100%;height: 100vh;}
-#con6{width: 100%;height: 100vh;}
-#con7{width: 100%;height: 100vh;}
-#con8{width: 100%;height: 100vh;}
+#con3{width: 100%;height: 100vh; position: relative;}
+#con4{width: 100%;height: 100vh; position: relative;}
+#con5{width: 100%;height: 100vh; position: relative;}
+#con6{width: 100%;height: 100vh; position: relative;}
+#con7{width: 100%;height: 100vh; position: relative;}
+#con8{width: 100%;height: 100vh; position: relative;}
 /* ----------------con1--------------------- */
 .arrow{
-  width: 100%;
-  height: 100%;
   position: fixed;
-  top: 93%;
+  bottom: 30px;
   left: 50%;
-  transform: translateX(-3%);
-  z-index: 1500;
+  transform: translateX(-50%);
+  z-index: 1000;
+  animation: Arrow 1s ease infinite alternate;
   cursor: pointer;
 }
-
 .line{
   position: absolute;
   top: 140px;
@@ -206,7 +203,7 @@ header.sma{
 }
 #con2 .con2Title{
   display: flex;
-  padding: 0 35px
+  padding: 0 0 0 20px
 }
 #con2 >h4{
   font-size: 50px;
@@ -284,11 +281,12 @@ header.sma{
 .con2R{
   flex: 1;
   width: 900px;
-  margin: 150px 0px 0px 250px;
+  margin: 150px 0px 0px 0px
 }
 .con2R .skills{
-  width: 960px;
+  width: 100%;
   display: flex;
+  justify-content: space-between;
 }
 .con2R .skills h4{
   position: absolute;
@@ -333,8 +331,17 @@ header.sma{
   width: 50px;
   height: 50px;
   position: absolute;
-  top: 78%;
-  left: 40%;
+  top: 35%;
+  left: 42%;
+}
+.con2R .per{
+  display: block;
+  position: absolute;
+  top: 60%;
+  left: 50%;
+  transform: translate(-50%,-50%);
+  font-weight: bold;
+  font-size: 20px;
 }
 .con2R .tool{
   padding-left: 20px;
@@ -468,6 +475,7 @@ header.sma{
   font-weight: 600;
   line-height: 130px;
   margin-bottom: 50px;
+
 }
 .con4-1txt p{
   color: #fff;
@@ -479,43 +487,149 @@ header.sma{
   position: relative;
 }
 .con4-2 img{
-  width: 100%;
+  width: 50%;
   height: 100%;
 }
 .con4-2txt{
-  background: #fbe8c885;
-  border-radius: 20px;
-  width: 400px;
-  height: 350px;
+  background: #ffffff;
+  width: 50%;
+  height: 100%;
   position: absolute;
-  right: 100px;
-  top: 15%;
-  padding: 40px 20px;
+  right: 0;
+  top: 0;
+  padding: 150px 50px;
 }
-.con4-2txt>ul{
-  display: flex;
-  justify-content: space-between;
-}
-.con4-2txt>ul>li{
+.con4-2txt .cont4-2txt1 h2{
   font-weight: bold;
+  font-size: 2.2rem;
+  font-family: 'TmoneyRoundWindExtraBold';
+  margin-bottom: 30px;
+}
+.con4-2txt .cont4-2txt1 p{
+  font-size: 17px;
+  color: black;
+  margin-bottom: 40px;
+  font-weight: 600;
+}
+.designplan{
+  position: absolute;
+  top: 5%;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 1000px;
+  height: 800px;
+  z-index: 2000;
+  overflow-y: scroll;
+  display: none;
+  transition: all 1s linear 0s;
+}
+.designplanBtn.on .designplan{
+  display: block;
+}
+.designplan>h2 img{
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+.planSiteBtn{
+  position: absolute;
+  top:-5%;
+  left: 50%;
+  transform: translateX(-50%);
+  border: 1px solid #172a88;
+  width: 200px;
+  height: 60px;
+  border-radius: 10px;
+  text-align: center;
+  background: #172a88;
+  color: #fff;
+}
+.planSiteBtn> a{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  height: 100%;
+}
+.cont4-2txt2{
+  position: relative;
+}
+.con4-2txt .cont4-2txt2{
+  margin-bottom: 40px;
+}
+.con4-2txt .cont4-2txt2 h2{
+  font-weight: bold;
+  font-size: 2rem;
+  text-transform: capitalize;
+  font-family: 'Noto Sans', sans-serif;
   margin-bottom: 20px;
 }
-.con4-2txt>ul>li:last-of-type{
-  font-family: 'Noto Sans', sans-serif;
+.con4-2txt .cont4-2txt2 .palette{
+  display: flex;
+}         
+.con4-2txt .cont4-2txt2 div{
+  display: block;
+  width: 100px;
+  height: 30px;
+  background: black;
+  margin-right: 50px;
 }
-.con4-2txt p{
-  font-size: 1rem;
+.con4-2txt .cont4-2txt2 div:nth-of-type(1){
+  background: #0c2647;
+  box-shadow: 2px 2px 12px black;
+}
+.con4-2txt .cont4-2txt2 div:nth-of-type(2){
+  background: #ffffff;
+  box-shadow: 2px 2px 12px black;
+}
+.con4-2txt .cont4-2txt3{
+  margin-bottom: 60px;
+}
+.con4-2txt .cont4-2txt3 h2{
   font-weight: bold;
-  margin-bottom: 30px;
-} 
-.cont4-2txt4>li{
-  border: 1px solid #000;
-  padding: 10px 10px;
+  font-size: 2rem;
+  text-transform: capitalize;
+  font-family: 'Noto Sans', sans-serif;
+  margin-bottom: 20px;
+}
+.con4-2txt .cont4-2txt3 p{
+  font-size: 1.2rem;
+  color: black;
+}
+.con4-2txt .cont4-2txt4{
+  display: flex;
+  text-align: center;
+}
+.con4-2txt .cont4-2txt4>li{
+  margin-right: 70px;
+  border: 1px solid #172a88;
+  width: 200px;
+  height: 60px;
   border-radius: 10px;
-  font-size: 15px;
-  cursor: pointer;
+  transition: all 0.8s ease 0s;
+}
+.con4-2txt .cont4-2txt4>li:hover{
+  transform: scale(1.1);
+  background: #172a88;
+  color: #fff;
+}
+
+.con4-2txt .cont4-2txt4>li>a{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  height: 60px;
+  line-height: 20px;
+  font-family: 'Noto Sans', sans-serif;
+  font-weight: bold;
 }
 .con4-3 img{
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+.con4-4 img{
   width: 100%;
   height: 100%;
   object-fit: cover;
@@ -653,6 +767,50 @@ header.sma{
   overflow: hidden;
   position: relative;
 }
+/* SCROLL BAR */
+.scrollArea{
+  border: 1px solid #fff;
+  border-radius: 50%;
+  position: absolute;
+  right: 50px;
+  top: 50%;
+  transform: translateY(-50%);
+  width: 60px;
+  height:80px;
+}
+.scrollArea .oval{
+  border: 1px solid #fff;
+  border-radius: 50%;
+  position: absolute;
+  right: 14px;
+  top: 50%;
+  transform: translateY(-50%);
+  width: 30px;
+  height: 70px;
+}
+.scrollArea .dot{
+  background-color: #172a88;
+  border-radius: 50%;
+  position: absolute;
+  right: 24px;
+  top: 50%;
+  transform: translateY(-50%);
+  width: 10px;
+  height: 10px;
+  animation: wheelAni 1s ease infinite alternate;
+}
+.scrollArea P{
+  position: absolute;
+  right: 55px;
+  top: 100%;
+  width: 10px;
+  height: 10px;
+  font-size: 1.5rem;
+  color: #fff;
+  font-weight: bold;
+  text-transform: capitalize;
+}
+/*-------------*/
 .popup{
   width: 1000%;
   height: 100%;
@@ -690,12 +848,6 @@ header.sma{
   left: 50%;
   transform: translate(-50%,-50%);
   top: 60%;
-}
-.con6-1txt span{
-  border: 1px solid #fff;
-  padding: 15px 60px;
-  color: #fff;
-  cursor: pointer;
 }
 .popupAll{
   background: #efe7d4;
@@ -1200,7 +1352,7 @@ header.sma{
 #con7{
   width: 100%;
   height: 100vh;
-  /* overflow: hidden; */
+  overflow: hidden;
   background: #fdd57eb9;
   position: relative;
 }
@@ -1238,12 +1390,6 @@ header.sma{
   left: 50%;
   transform: translate(-50%,-50%);
   top: 60%;
-}
-.con7-1txt span{
-  border: 1px solid #fff;
-  padding: 15px 60px;
-  color: #fff;
-  cursor: pointer;
 }
 .DrJart{
   background: #fdd57e;
@@ -1518,3 +1664,55 @@ header.sma{
 .GiftF .B-R .BannerColor4>ul:nth-of-type(4)>li:after{
   background: #739fc2;
 }
+
+/*--------con8-----------*/
+  #con8{
+    background: url(../img/RESUMEIMG.png) no-repeat;
+    background-image: 100%;
+  }
+  .infoTitle{
+    text-align: center;
+    position: absolute;
+    top: 20%;
+    left: 50%;
+    transform: translateX(-50%);
+    z-index: 500;
+    font-size: 30px;
+    font-family: 'Noto Sans', sans-serif;
+    font-weight: bold;
+  }
+  .infoBox{
+    width: 1000px;
+    height: 600px;
+    border-radius: 150px;
+    background:rgba(135, 206, 250, 0.678);
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+  }
+  .infoBox h2 img{
+    width: 300px;
+    height: 300px;
+    object-fit: cover;
+  }
+  .infoBox li{
+    display: flex;
+    align-items: center;
+    margin-bottom: 40px;
+    font-weight: bold;
+    font-size: 25px;
+  }
+  .infoBox li img{
+    width: 40px;
+    height: 40px;
+    object-fit: cover;
+    margin-right: 20px;
+  }
+
+
+
+/*------------------------*/
