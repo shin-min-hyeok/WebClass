@@ -17,13 +17,25 @@ window.onload = function(){
       clickable: true, // 클릭시 클릭페이지로 이동
     },
   })
+  let con7Station = new Swiper(".con7Station",{
+    loop: true, // 반복
+    direction: "horizontal", // 세로방향  가로(horizontal)
+    pagination: {
+      el: ".swiper-pagination",
+      type: "bullets", // 모양
+      clickable: true, // 클릭시 클릭페이지로 이동
+    },
+  })
 }
-
 $(document).ready(function(){
 
-  $(".designplan").on("wheel DOMMouseScroll", function (event){
-    return false;
-  })
+
+
+
+
+  // $(".designplan").on("wheel DOMMouseScroll", function (event){
+  //   return false;
+  // })
 
 
   // 상-하스크롤시 부드럽게 이동
@@ -35,7 +47,6 @@ $(document).ready(function(){
       $("#con2").removeClass("on");
     }
   });
-
 
   $("#wrap>section").on("wheel DOMMouseScroll", function (event) {
 
@@ -51,7 +62,7 @@ $(document).ready(function(){
       return;
     }
     
-    // if($(this).attr("id")=="con6"){}
+    if($(this).attr("id")=="con6"){}
 
     if (delta < 0) {
       //마우스 휠을 내렸을 때
@@ -82,6 +93,11 @@ $(document).ready(function(){
   $(".designplanBtn").click(function(){
     $(".designplanBtn").addClass("on")
     $(".designplan").css("opacity","1")
+  })
+
+  $(".planBtn").click(function(){
+    $(".designplanBtn").removeClass("on")
+    $(".designplan").css("opacity","0")
   })
   
 
@@ -165,3 +181,4 @@ $(document).ready(function(){
 
 
 })
+

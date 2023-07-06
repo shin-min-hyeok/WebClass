@@ -372,28 +372,28 @@ header.sma{
 }
 #con3 .con3txt{
   color: #fff;
-  width: 80%;
+  width: 1320px;
   margin: 0 auto;
   text-align: center;
-  padding-top: 100px;
+  padding-top: 220px;
   margin-bottom: 250px;
 }
 #con3 .con3txt h5 {
   font-size: 25px;
-  letter-spacing: 18px;
+  letter-spacing: 14px;
   position: absolute;
   left: 50%;
-  top: 13%;
+  top: 26%;
   transform: translateX(-50%);
   width: 80%;
   font-family: 'Noto Sans', sans-serif;
   font: 500;
 }
 #con3 .con3txt p{
-  font-size: 25px;
+  font-size: 20px;
 }
 #con3 .con3txt h2{
-  font-size: 200px;
+  font-size: 180px;
   font-family: 'Playfair Display', serif;
   font-weight: 600;
 }
@@ -568,48 +568,7 @@ header.sma{
   width: 90%;
   margin: 300px auto;
 }
-.designplan{
-  position: absolute;
-  top: 5%;
-  left: 50%;
-  transform: translateX(-50%);
-  width: 1000px;
-  height: 800px;
-  z-index: 2000;
-  overflow-y: auto;
-  opacity: 0;
-  pointer-events: none;
-  transition: all 1s linear 0s;
-}
-.designplanBtn.on .designplan{
-  opacity: 1;
-  pointer-events: auto;
-}
-.designplan>h2 img{
-  width: 100%;
-  height: 100%;
-  object-fit: cover;
-}
-.planSiteBtn{
-  position: absolute;
-  top:-5%;
-  left: 50%;
-  transform: translateX(-50%);
-  border: 1px solid #172a88;
-  width: 200px;
-  height: 60px;
-  border-radius: 10px;
-  text-align: center;
-  background: #172a88;
-  color: #fff;
-}
-.planSiteBtn> a{
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  width: 100%;
-  height: 100%;
-}
+
 .cont4-2txt2{
   position: relative;
 }
@@ -709,6 +668,59 @@ header.sma{
   text-transform: uppercase;
   text-align: center;
 }
+.designplan{
+  position: absolute;
+  top: 5%;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 1000px;
+  height: 800px;
+  z-index: 2000;
+  overflow-y: auto;
+  opacity: 0;
+  pointer-events: none;
+  transition: all 1s linear 0s;
+}
+.designplanBtn.on .designplan{
+  opacity: 1;
+  pointer-events: auto;
+}
+.designplan>h2 img{
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+.planSiteBtn{
+  position: absolute;
+  top:-5%;
+  left: 50%;
+  transform: translateX(-50%);
+  border: 1px solid #172a88;
+  width: 200px;
+  height: 60px;
+  border-radius: 10px;
+  text-align: center;
+  background: #172a88;
+  color: #fff;
+}
+.planSiteBtn> a{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  height: 100%;
+}
+.planBtn {
+  display: block;
+  position: absolute;
+  right: 30px;
+  top: 30px;
+  cursor: pointer;
+}
+.planBtn.on .designplan {
+  opacity: 0;
+}
+
 /* ------------------------------------------ */
 /*--------------------con5------------------*/
 #con5{
@@ -1490,10 +1502,12 @@ header.sma{
   color: black ;
   font-size: 35px;
   font-family: 'Noto Sans', sans-serif;
+  font-weight: bold;
   margin-bottom: 30px;
 }
 .DrJart .B-L p{
-  color: #fff;
+  color: black;
+  font-family: 'Noto Sans', sans-serif;
   font-size: 20px;;
   margin-bottom: 30px;
 }
@@ -1515,7 +1529,7 @@ header.sma{
   margin-right: 40px;
   font-family: 'Noto Sans', sans-serif;
   font-weight: 500;
-  color: #fff;
+  color: black;
   position: relative;
 }
 .DrJart .B-R .BannerColor1>ul>li:after{
@@ -1563,7 +1577,7 @@ header.sma{
   margin-bottom: 30px;
 }
 .Nike .B-L p{
-  color: #fff;
+  color: black;
   font-size: 20px;;
   margin-bottom: 30px;
 }
@@ -1585,7 +1599,7 @@ header.sma{
   margin-right: 40px;
   font-family: 'Noto Sans', sans-serif;
   font-weight: 500;
-  color: #fff;
+  color: black;
   position: relative;
 }
 .Nike .B-R .BannerColor2>ul>li:after{
@@ -1629,7 +1643,7 @@ header.sma{
   margin-bottom: 30px;
 }
 .EarlyBird .B-L p{
-  color: #fff;
+  color: black;
   font-size: 20px;;
   margin-bottom: 30px;
 }
@@ -1651,7 +1665,7 @@ header.sma{
   margin-right: 40px;
   font-family: 'Noto Sans', sans-serif;
   font-weight: 500;
-  color: #fff;
+  color: black;
   position: relative;
 }
 .EarlyBird .B-R .BannerColor3>ul>li:after{
@@ -1698,7 +1712,7 @@ header.sma{
   margin-bottom: 30px;
 }
 .GiftF .B-L p{
-  color: #fff;
+  color: black;
   font-size: 20px;;
   margin-bottom: 30px;
 }
@@ -1720,7 +1734,7 @@ header.sma{
   margin-right: 40px;
   font-family: 'Noto Sans', sans-serif;
   font-weight: 500;
-  color: #fff;
+  color: black;
   position: relative;
 }
 .GiftF .B-R .BannerColor4>ul>li:after{
