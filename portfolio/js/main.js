@@ -79,7 +79,7 @@ $(document).ready(function(){
   })
   $(".designplanBtn").click(function(){
     $(".designplanBtn").addClass("on")
-    $(".designplan").css("display","block")
+    $(".designplan").css("opacity","1")
   })
   
 

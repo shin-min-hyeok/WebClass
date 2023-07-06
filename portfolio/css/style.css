@@ -519,12 +519,14 @@ header.sma{
   width: 1000px;
   height: 800px;
   z-index: 2000;
-  overflow-y: scroll;
-  display: none;
-  transition: all 1s linear 0s;
+  overflow: auto;
+  opacity: 0;
+  pointer-events: none;
+  transition: all 0.5s linear 0s;
 }
 .designplanBtn.on .designplan{
-  display: block;
+  opacity: 1;
+  pointer-events: none;
 }
 .designplan>h2 img{
   width: 100%;
