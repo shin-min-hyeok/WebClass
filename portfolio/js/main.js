@@ -145,33 +145,33 @@ $(document).ready(function(){
   },1000)
 
   // 스크롤하고 svg영역에 닿으면 프로그레스 활성화
-  $(window).scroll(function(){
-    let a = $(window).scrollTop()
-    let b = $(".skills").offset().top
-    let c = $(window).height()*0.7
-    if(a+b+c){
-      if($(".skills").hasClass("on")==false){
-        $(".skills").addClass("on")
-        $(".skills>li").each(function(){
-          let list = $(this)
-          let percent = $(this).find(".per").text()
-          let count = 0
-          let circle = $(this).find("circle")
+  // $(window).scroll(function(){
+  //   let a = $(window).scrollTop()
+  //   let b = $(".skills").offset().top
+  //   let c = $(window).height()*0.7
+  //   if(a+b+c){
+  //     if($(".skills").hasClass("on")==false){
+  //       $(".skills").addClass("on")
+  //       $(".skills>li").each(function(){
+  //         let list = $(this)
+  //         let percent = $(this).find(".per").text()
+  //         let count = 0
+  //         let circle = $(this).find("circle")
 
-          let timer = setInterval(function(){
-            count++;
-            list.find(".per").text(count+"%")
-            circle.css("stroke-dashoffset",314-(314*(count/100)))
-            circle.css("transition","all 2s linear 0s")
-            if(count>=percent){
-              clearInterval(timer)
-            }
-          },10)
-        })
-      }
+  //         let timer = setInterval(function(){
+  //           count++;
+  //           list.find(".per").text(count+"%")
+  //           circle.css("stroke-dashoffset",314-(314*(count/100)))
+  //           circle.css("transition","all 2s linear 0s")
+  //           if(count>=percent){
+  //             clearInterval(timer)
+  //           }
+  //         },10)
+  //       })
+  //     }
       
-    }
-  })
+  //   }
+  // })
 
 
 
