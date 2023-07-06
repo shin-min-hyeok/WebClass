@@ -17,27 +17,22 @@ window.onload = function(){
       clickable: true, // 클릭시 클릭페이지로 이동
     },
   })
-  let con7Station = new Swiper(".con7Station", {
-    direction: "vertical",
-    slidesPerView: 1,
-    spaceBetween: 30,
-    mousewheel: true,
-    pagination: {
-      el: ".swiper-pagination",
-      clickable: true,
-    },
-  });
 }
 
 $(document).ready(function(){
 
+  $(".designplan").on("wheel DOMMouseScroll", function (event){
+    return false;
+  })
+
+
   // 상-하스크롤시 부드럽게 이동
   $(window).scroll(function () {
     let winst = $(window).scrollTop();
-    if (winst >= $("#con2,.designplan").offset().top) {
-      $("#con2,.designplan").addClass("on");
+    if (winst >= $("#con2").offset().top) {
+      $("#con2").addClass("on");
     } else {
-      $("#con2,.designplan").removeClass("on");
+      $("#con2").removeClass("on");
     }
   });
 
@@ -51,17 +46,24 @@ $(document).ready(function(){
     } else {
       delta = E.wheelDelta;
     }
+
+    if($(this).attr("id")=="con4" && $(this).children(".designplan").hasClass("on")==true){
+      return;
+    }
+    
+    // if($(this).attr("id")=="con6"){}
+
     if (delta < 0) {
       //마우스 휠을 내렸을 때
       if ($(this).next().length) {
         let posTop = $(this).next().offset().top;
-        $("html,body").stop().animate({ scrollTop: posTop }, 800);
+        $("html,body").stop().animate({ scrollTop: posTop }, 1000);
       }
     } else {
       //마우스 휠을 올렸을 때
       if ($(this).prev().length != 0) {
         let posTop = $(this).prev().offset().top;
-        $("html,body").stop().animate({ scrollTop: posTop }, 800);
+        $("html,body").stop().animate({ scrollTop: posTop }, 1000);
       }
     }
     return false;
@@ -79,7 +81,7 @@ $(document).ready(function(){
   })
   $(".designplanBtn").click(function(){
     $(".designplanBtn").addClass("on")
-    $(".designplan").css("display","block")
+    $(".designplan").css("opacity","1")
   })
   
 
@@ -159,4 +161,7 @@ $(document).ready(function(){
       
     }
   })
+
+
+
 })
