@@ -1,13 +1,22 @@
 window.onload = function(){
-  let con4station = new Swiper(".con4station",{
-    loop: true, // 반복
-    direction: "horizontal", // 세로방향  가로(horizontal)
-    pagination: {
-      el: ".swiper-pagination",
-      type: "bullets", // 모양
-      clickable: true, // 클릭시 클릭페이지로 이동
+  let con4Station = new Swiper(".con4Station", {
+    grabCursor: true,
+    // autoplay:true,
+    effect: "creative",
+    creativeEffect: {
+      prev: {
+        shadow: true,
+        translate: [0, 0, -800],
+        rotate: [180, 0, 0],
+      },
+      next: {
+        shadow: true,
+        translate: [0, 0, -800],
+        rotate: [-180, 0, 0],
+      },
     },
-  })
+  });
+
   let con5station = new Swiper(".con5station",{
     loop: true, // 반복
     direction: "horizontal", // 세로방향  가로(horizontal)
@@ -17,15 +26,31 @@ window.onload = function(){
       clickable: true, // 클릭시 클릭페이지로 이동
     },
   })
-  let con7Station = new Swiper(".con7Station",{
-    loop: true, // 반복
-    direction: "horizontal", // 세로방향  가로(horizontal)
+  var con7station = new Swiper(".con7station", {
     pagination: {
       el: ".swiper-pagination",
-      type: "bullets", // 모양
-      clickable: true, // 클릭시 클릭페이지로 이동
+      type: "progressbar",
     },
-  })
+    navigation: {
+      nextEl: ".swiper-button-next",
+      prevEl: ".swiper-button-prev",
+    },
+  });
+  var con6Station = new Swiper(".con6Station", {
+    grabCursor: true,
+    loop:true,
+    effect: "fade",
+    effect: "creative",
+    creativeEffect: {
+      prev: {
+        shadow: true,
+        translate: [0, 0, -400],
+      },
+      next: {
+        translate: ["100%", 0, 0],
+      },
+    },
+  });
 
   $.fn.boom = function(e) {
     var colors = [
@@ -97,7 +122,111 @@ window.onload = function(){
     });
   
   });
+// 마우스커서 이벤트
+  let c = document.querySelector(".c");
 
+window.addEventListener("mousemove", (e) => {
+
+  requestAnimationFrame(() => {
+    c.style.top = e.pageY + "px";
+    c.style.left = e.pageX + "px";
+
+    let d = document.createElement("div");
+    d.classList.add('co');
+    d.style.top = e.pageY + "px";
+    d.style.left = e.pageX + "px";
+    d.style.setProperty(`--hue`, Math.floor(Math.random() * 360));
+
+    setTimeout(() => {
+      d.style.opacity = 0;
+      d.style.transform = 'scale(12)';
+      setTimeout(() => c.removeChild(d), 1100);
+    }, 500)
+
+    c.appendChild(d);
+  })
+});
+window.addEventListener("DOMContentLoaded",() => {
+  const dp = new DecayingPreloader(".pl");
+});
+
+class DecayingPreloader {
+  particles = [];
+  totalParticles = 120;
+  replayTimeout = null;
+
+  constructor(el) {
+    this.el = document.querySelector(el);
+    this.particleGroup = this.el?.querySelector("[data-particles]");
+    this.worm = this.el?.querySelector("[data-worm]");
+
+    this.init();
+  }
+  init() {
+    this.spawnParticles(this.totalParticles);
+    this.worm?.addEventListener("animationend",this.replayParticles.bind(this));
+  }
+  createParticle(x,y,r,delay) {
+    const particle = new DecayParticle(x,y,r,delay);
+    this.particleGroup?.appendChild(particle.g);
+    // animation params
+    particle.gAnimation = particle.g.animate(
+      [
+        { transform: `translate(${particle.x}px,0)` },
+        { transform: `translate(${particle.x + particle.dx}px,0)` },
+      ],
+      { delay: particle.delay, duration: particle.duration, easing: "linear" }
+    );
+    particle.cAnimation = particle.c.animate(
+      [
+        { opacity: 1, transform: `translate(0,${particle.y}px) scale(1)` },
+        { opacity: 1, transform: `translate(0,${particle.y + particle.dy}px) scale(0)` },
+      ],
+      { delay: particle.delay, duration: particle.duration, easing: "ease-in" }
+    );
+    // finally create the particle
+    this.particles.push(particle);
+  }
+  replayParticles() {
+    const movingClass = "pl__worm--moving";
+    const timeout = 800;
+    // retrigger the worm animation
+    this.worm.classList.remove(movingClass);
+    clearTimeout(this.replayTimeout);
+
+    this.replayTimeout = setTimeout(() => {
+      this.worm.classList.add(movingClass);
+      // restart the particles
+      this.particles.forEach(particle => {
+        particle.gAnimation.finish();
+        particle.gAnimation.play();
+        particle.cAnimation.finish();
+        particle.cAnimation.play();
+      });
+    },timeout);
+  }
+  spawnParticles(count = 1) {
+    const centerXY = 64;
+    const radius = 56;
+    const loops = 4;
+    const maxDelayPerLoop = 2000;
+    const particlesPerLoop = Math.round(this.totalParticles / loops);
+    const angleOffset = -2;
+    const particleRadius = 7;
+
+    for (let c = 0; c < count; ++c) {
+      // place along the ring
+      const percent = Utils.easeInOutCubic(c % particlesPerLoop / particlesPerLoop);
+      const angle = 360 * percent + angleOffset;
+      const x = centerXY + radius * Math.sin(Utils.degToRad(angle));
+      const y = centerXY - radius * Math.cos(Utils.degToRad(angle));
+      const loopsCompleted = Math.floor(c / particlesPerLoop);
+      const delay = maxDelayPerLoop * percent + maxDelayPerLoop * loopsCompleted;
+
+      this.createParticle(x,y,particleRadius,delay);
+    }
+  }
+}
 
 
 
@@ -165,7 +294,7 @@ $(document).ready(function(){
       delta = E.wheelDelta;
     }
 
-    if($(this).attr("id")=="con4" && $(this).children(".designplan").hasClass("on")==true){
+    if($(this).attr("id")=="con7" && $(this).children(".designplan").hasClass("on")==true){
       return;
     }
     
@@ -191,16 +320,27 @@ $(document).ready(function(){
   $(".arrow").click(function(){
     moveScroll({
       top:0,
-      speed:1000
+      speed:1500
     })
   })
+  //-------------------------------
+
+  // 탭이벤트
+  // ---------------------
+
+  // 팝업창 이벤트
   $(".link_none").click(function(e){
     e.preventDefault(); //a태그의 기본 기능 제거
   })
-  $(".designplanBtn").click(function(){
-    $(".designplanBtn").addClass("on")
-    $(".designplan").css("display","block")
+
+  $(".RedesignBtn").click(function(){
+    $(".designplan").addClass("on")
   })
+
+  $(".planBtn>i").click(function(){
+    $(".designplan").removeClass("on")
+  })
+//------------------------ 
   
 
   
@@ -209,7 +349,7 @@ $(document).ready(function(){
     e.preventDefault()
     let target = $(this).attr("href")
     let target_top = $(target).offset().top
-    moveScroll({top:target_top,speed:1000})
+    moveScroll({top:target_top,speed:2000})
   })
   function moveScroll(option){
     $("html,body").stop().animate({scrollTop:option.top},option.speed)
@@ -251,42 +391,48 @@ $(document).ready(function(){
     $("#introtxt").addClass("on")
   },1000)
 
-  // 스크롤하고 svg영역에 닿으면 프로그레스 활성화
-  // $(window).scroll(function(){
-  //   let a = $(window).scrollTop()
-  //   let b = $(".skills").offset().top
-  //   let c = $(window).height()*0.7
-  //   if(a+b+c){
-  //     if($(".skills").hasClass("on")==false){
-  //       $(".skills").addClass("on")
-  //       $(".skills>li").each(function(){
-  //         let list = $(this)
-  //         let percent = $(this).find(".per").text()
-  //         let count = 0
-  //         let circle = $(this).find("circle")
+  //스크롤 슬라이드 구현//
 
-  //         let timer = setInterval(function(){
-  //           count++;
-  //           list.find(".per").text(count+"%")
-  //           circle.css("stroke-dashoffset",314-(314*(count/100)))
-  //           circle.css("transition","all 2s linear 0s")
-  //           if(count>=percent){
-  //             clearInterval(timer)
-  //           }
-  //         },10)
-  //       })
+  //   let winHeight = $(window).height() //브라우저 높이
+  //   let fixedDiv = $(".fixedEffect") // 태그를 선택하여 변수에 저장
+  //   let fixedDivTop =fixedDiv.offset().top
+  //   //fixedEffect 클래스 태그가 전체문서를 기준으로 했을 때 위에서 부터 떨어져있는 거리를 픽셀로계산
+  //   let movingStation = $(".movingStation")
+  //   let movingStationHeight = movingStation.height()
+
+  //   $(window).scroll(function(){
+  //     let wstop = $(window).scrollTop()
+  //     let scrollDistance = wstop-fixedDivTop
+  
+  //     if(scrollDistance<0){
+  //     movingStation.css("position","relative")
+  //     movingStation.css("top","0")
   //     }
-      
-  //   }
+  
+  //     if(scrollDistance>=0 && scrollDistance<=7300){
+  //       // 애니메이션 진행 구간
+  
+  //     let count = Math.floor(scrollDistance/1800)
+  //     let percent = (scrollDistance/1800)-count
+  //     console.log(count,percent)
+  //     movingStation.css("position","fixed")
+  //     movingStation.css("top","0")
+  //     moveSlieder(count)
+  //       scaleImg(count,percent) //grayscale도넣을수잇음.
+  //     }
+  //     if(scrollDistance > 7300){
+  //         movingStation.css("position","relative")
+  //         movingStation.css("top","7300px")
+  //     }
   // })
-
-  $(".tapMenu").click(function(){
-    $("tapMenu>li").removeClass("on")
-    $(this).addClass("on")
-    $(this).eq().css("color","#fff")
-    
-  })
-
-
+  //   function moveSlieder(idx){
+  //       $(".popup").css("transform","translateX("+(-25*idx)+"%)")
+  //   }
+  //   function opacitySlider(idx,per){
+  //       $(".popup>li").eq(idx).children(".txt").css("opacity",per)
+  //   }
+  //   function scaleImg(idx,per){
+  //       $(".popup>li").eq(idx).children("img").css("transform","scale("+(1+per)+")")
+  //   }    
 })
 
