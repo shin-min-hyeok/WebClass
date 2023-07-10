@@ -101,15 +101,6 @@ body,html{
   transition: 1s;
 }
 /* ----------------con1--------------------- */
-.arrow {
-  position: fixed;
-  bottom: 30px;
-  left: 50%;
-  transform: translateX(-50%);
-  z-index: 3000;
-  animation: Arrow 1s ease infinite alternate;
-  cursor: pointer;
-}
 .line1{
   position: absolute;
   top: 0;
@@ -2012,5 +2003,14 @@ animation-duration: 0.65s;
 @keyframes likeAnimation {
 0%   { transform: scale(50); }
 100% { transform: scale(1); }
+}
+.arrow {
+  position: absolute;
+  bottom: 30px;
+  left: 50%;
+  transform: translateX(-50%);
+  z-index: 3000;
+  animation: Arrow 1s ease infinite alternate;
+  cursor: pointer;
 }
 /*------------------------*/
