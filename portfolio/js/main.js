@@ -52,6 +52,13 @@ window.onload = function(){
     },
   });
 
+  $(function(){
+    $(document).one('click', '.like-review', function(e) {
+      $(this).html('<i class="fa fa-heart" aria-hidden="true"></i> You liked this');
+      $(this).children('.fa-heart').addClass('animate-like');
+    });
+  });
+
   $.fn.boom = function(e) {
     var colors = [
       '#ffb3f6',
@@ -113,7 +120,6 @@ window.onload = function(){
       }
       group = [];
     }, 2000);
-  
   } 
   
   $(function() {
@@ -227,20 +233,15 @@ class DecayingPreloader {
     }
   }
 }
-
-
-
 }
 
-
-
 $(document).ready(function(){
-  
+
   
   $(window).scroll(function(){
     let a = $(window).scrollTop()
     let b = $(".languageslist").offset().top
-    let c = $(window).height()*0.5
+    let c = $(window).height()*0.7
 
     if(a+c>=b){
         if($(".languageslist").hasClass("on")==false){
@@ -263,16 +264,7 @@ $(document).ready(function(){
             })
         }
     }
-
 })
-
-
-
-
-  // $(".designplan").on("wheel DOMMouseScroll", function (event){
-  //   return false;
-  // })
-
 
   // 상-하스크롤시 부드럽게 이동
   $(window).scroll(function () {
@@ -293,12 +285,12 @@ $(document).ready(function(){
     } else {
       delta = E.wheelDelta;
     }
-
+    //리디자인기획 창이 뜰시 이미지에서 스크롤
     if($(this).attr("id")=="con7" && $(this).children(".designplan").hasClass("on")==true){
       return;
     }
-    
-    if($(this).attr("id")=="con6"){}
+    //-------------------------------------
+    // ---------------------------
 
     if (delta < 0) {
       //마우스 휠을 내렸을 때
@@ -324,10 +316,6 @@ $(document).ready(function(){
     })
   })
   //-------------------------------
-
-  // 탭이벤트
-  // ---------------------
-
   // 팝업창 이벤트
   $(".link_none").click(function(e){
     e.preventDefault(); //a태그의 기본 기능 제거
@@ -341,15 +329,13 @@ $(document).ready(function(){
     $(".designplan").removeClass("on")
   })
 //------------------------ 
-  
 
-  
   //각 GNB>LI클릭시 그의 영역으로 이동
   $(".gnb>li>a").click(function(e){
     e.preventDefault()
     let target = $(this).attr("href")
     let target_top = $(target).offset().top
-    moveScroll({top:target_top,speed:2000})
+    moveScroll({top:target_top,speed:2500})
   })
   function moveScroll(option){
     $("html,body").stop().animate({scrollTop:option.top},option.speed)
@@ -434,5 +420,7 @@ $(document).ready(function(){
   //   function scaleImg(idx,per){
   //       $(".popup>li").eq(idx).children("img").css("transform","scale("+(1+per)+")")
   //   }    
+
+  
 })
 
