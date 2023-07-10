@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>함수의 응용</title>
+</head>
+
+<body>
+  <h1 onclick="alert('test')">값으로서의 함수</h1>
+  <p>변수를 만들고 변수안에 동작을 표현하는 익명함수를 저장하는 형태로도 만들수
+    있다.
+  </p>
+  <p>let a =function(){}</p>
+  <p>function키워드를 통해서 만드는 기본적인 문법 function a(){} 같은 경우에는
+    정의하는부분이 언제나 최상단으로 끌어올려지게 된다(호이스팅)
+  </p>
+  <p>그래서 함수를 실행하는 부분을 함수가 정의된 위치에 상관없이 자유롭게 사용 할 수
+    있다.
+  </p>
+  <p>하지만 변수에 저장되는 익명함수표현법으로 함수를 만들 수 있는 표현식을 알아두면
+    여러가지 자바스크립트 응용이 가능하다.
+  </p>
+  <script>
+    // a();
+    // function a(){
+    //   alert("A함수 실행함")
+    // }
+
+    let a = function () {
+      return "A"
+    }
+    a()
+
+    let b = () => {
+      return "B"
+    }
+
+    let sumNumber = (n1, n2) => {
+      return n1 + n2
+    }
+    console.log(sumNumber(10, 20))
+    console.log(a() + b())
+    // 화살표함수는 기존의 익명함수표현법 function(){} 에서 function키워드를 생략하고
+    // ()=>{} 매개변수의 괄호와 실행소스 코드의 중괄호 사이에 화살표를 표현하는 방법 
+  </script>
+  <h2>객체 안에서의 메서드 표현</h2>
+  <p>사물을 표현하는데 있어서 사물이 갖고있는 동작을 표현</p>
+  <script>
+    let person = {
+      name: "정현진",
+      age: 38,
+      sayHello: function () {
+        alert("안녕하세요")
+      },
+      sayGoodbye: () => {
+        alert("안녕하가세요")
+      }
+    }
+    person.sayHello()
+    person.sayGoodbye()
+    // document.write()
+    // console.log()
+    // math.ceil()  //올림
+    // math.round() //반올림
+    // math.floor() //내림
+    // math.random() //랜덤
+  </script>
+  <h2>콜백함수 표현</h2>
+  <p>callback함수 표현방법</p>
+  <script>
+    function sumArrayElement(array) {
+      // array= [1,2,3]
+      // 원소들의 총합을 계산한 후 리턴하는 소스코드
+      // return array[0]+array[1]+array[2]+array[3]+array[4]   
+      let result = 0;
+      for (let i = 0; i < array.length; i++) {
+        result += array[i]
+      }
+      return result
+    }
+    // console.log(sumArrayElement([1,2,3]))
+
+    function c(obj) {
+      let result;
+      result = (obj.ko + obj.en + obj.math) / 3
+      return result
+    }
+    // console.log(c({ko:100,en:80,math:70}))
+
+    function d(callback) {
+      // callback = function(){}
+      alert("d함수 실행")
+      callback()
+    }
+    d(function () { alert("나는 콜백함수") })
+    let ggg = [1, 2, 3, true, { name: "kk" }, function () { alert("TEST") }]
+    let gg = ggg[5]
+    gg()
+  </script>
+</body>
+
+</html>

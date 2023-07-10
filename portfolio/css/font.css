@@ -1,0 +1,23 @@
+@font-face {
+  font-family: 'Oxygen';
+  src: url("../Font/Oxygen-Bold.ttf");
+}
+
+@font-face {
+  font-family: 'netmarble';
+  src: url("../Font/Netmarble/netmarbleB.ttf");
+}
+@font-face {
+  font-family: 'koryung';
+  src: url("../Font/font/koryung.ttf");
+}
+
+@font-face {
+  font-family: 'SBBOLD';
+  src: url("../Font/font/SBBOLD.ttf")
+}
+
+@font-face {
+  font-family: "SB어그로L";
+  src: url("../Font/font/SB어그로L.ttf")
+}
