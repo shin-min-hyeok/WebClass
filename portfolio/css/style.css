@@ -69,37 +69,6 @@ address {
   height: 100vh;
   position: relative;
 }
-body,html{
-  cursor: none;
-}
-/* 마우스커서 */
-.c {
-  width: 20px;
-  height: 20px;
-  position: absolute;
-  z-index: 10;
-  pointer-events: none;
-}
-
-.ci {
-  width: 60px;
-  height: 60px;
-  border: 2px solid hsla(150 70% 70% / .6);
-  border-radius: 100px;
-  box-shadow: inset 0 0 25px hsla(150 70% 70% / .7);
-  transform: translate(-50%, -50%);
-  position: relative;
-  z-index: 20;
-}
-
-.co {
-  width: 10px;
-  height: 10px;
-  border-radius: 100px;
-  background: hsla(var(--hue) 70% 70% / .7);
-  position: fixed;
-  transition: 1s;
-}
 /* ----------------con1--------------------- */
 .line1{
   position: absolute;
@@ -330,8 +299,8 @@ header.sma {
   width: 200px;
   height: 100px;
   position: absolute;
-  top: 42%;
-  left: 73%;
+  top: 35%;
+  left: 68%;
   transform: translate(-50%, -50%);
   z-index: 10;
 }
@@ -639,7 +608,7 @@ header.sma {
 .hoverimg{
   position: absolute;
   z-index: 100;
-  bottom: 90px;
+  bottom: 220px;
   left: 200px;
 }
 .hoverimg img{
@@ -1298,7 +1267,7 @@ header.sma {
 }
 .DrJart .serchtxt {
   position: absolute;
-  top: 60px;
+  top: 100px;
   left: 13%;
   font-size: 30px;
   font-family: "SBBOLD";
@@ -1306,13 +1275,13 @@ header.sma {
 .DrJart .T > figure img {
   width: 100%;
   height: 650px;
-  padding-top: 150px;
+  padding-top: 200px;
 }
 .DrJart .B {
-  width: 1500px;
+  width: 2000px;
   height: 100%;
   margin: 0 auto;
-  padding-top: 25px;
+  padding-top: 100px;
   display: flex;
 }
 .DrJart .B-L {
@@ -1320,15 +1289,15 @@ header.sma {
   margin-right: 100px;
 }
 .DrJart .B-L h4 {
-  margin-bottom: 27px;
+  margin-bottom: 50px;
   color: rgb(255, 255, 255);
-  font-size: 30px;
+  font-size: 40px;
   font-family: SB어그로L;
 }
 .DrJart .B-L p {
-  margin-bottom: 50px;
+  margin-bottom: 80px;
   font-family: "SB어그로L";
-  font-size: 15px;
+  font-size: 20px;
   color: #fff;
 }
 .DrJart .B-R {
@@ -1337,8 +1306,9 @@ header.sma {
 .DrJart .B-R h4 {
   margin-bottom: 80px;
   color: #fff;
-  font-size: 30px;
+  font-size: 40px;
   font-family: "SB어그로L";
+  text-transform: capitalize;
 }
 .DrJart .B-R .BannerColor1 {
   display: flex;
@@ -1378,7 +1348,7 @@ header.sma {
 }
 .Nike .serchtxt {
   position: absolute;
-  top: 60px;
+  top: 100px;
   left: 13%;
   font-size: 30px;
   font-family: "SBBOLD";
@@ -1386,14 +1356,13 @@ header.sma {
 .Nike .T > figure img {
   width: 100%;
   height: 650px;
-  padding-top: 150px;
+  padding-top: 200px;
 }
 .Nike .B {
-  width: 1500px;
+  width: 2000px;
   height: 100%;
   margin: 0 auto;
-  padding-top: 50px;
-
+  padding-top: 100px;
   display: flex;
 }
 .Nike .B-L {
@@ -1401,25 +1370,26 @@ header.sma {
   margin-right: 100px;
 }
 .Nike .B-L h4 {
-  margin-bottom: 25px;
-  color: #fff;
-  font-size: 30px;
-  font-family: "SB어그로L";
+  margin-bottom: 50px;
+  color: rgb(255, 255, 255);
+  font-size: 40px;
+  font-family: SB어그로L;
 }
 .Nike .B-L p {
-  margin-bottom: 30px;
+  margin-bottom: 80px;
   font-family: "SB어그로L";
-  font-size: 15px;
+  font-size: 20px;
   color: #fff;
 }
 .Nike .B-R {
   flex: 1;
 }
 .Nike .B-R h4 {
-  margin-bottom: 55px;
+  margin-bottom: 80px;
   color: #fff;
-  font-size: 30px;
+  font-size: 40px;
   font-family: "SB어그로L";
+  text-transform: capitalize;
 }
 .Nike .B-R .BannerColor2 {
   display: flex;
@@ -1429,7 +1399,7 @@ header.sma {
   height: 60px;
   background: #fff;
   border-radius: 50%;
-  margin-bottom: 10px;
+  margin-bottom: 20px;
   margin-left: 60px;
   box-shadow: 2px 2px 15px black;
 }
@@ -1456,7 +1426,7 @@ header.sma {
 }
 .EarlyBird .serchtxt {
   position: absolute;
-  top: 60px;
+  top: 100px;
   left: 13%;
   font-size: 30px;
   font-family: "SBBOLD";
@@ -1464,13 +1434,13 @@ header.sma {
 .EarlyBird .T > figure img {
   width: 100%;
   height: 650px;
-  padding-top: 150px;
+  padding-top: 200px;
 }
 .EarlyBird .B {
-  width: 1500px;
+  width: 2000px;
   height: 100%;
   margin: 0 auto;
-  padding-top: 30px;
+  padding-top: 100px;
   display: flex;
 }
 .EarlyBird .B-L {
@@ -1478,25 +1448,26 @@ header.sma {
   margin-right: 100px;
 }
 .EarlyBird .B-L h4 {
-  margin-bottom: 30px;
-  color: #fff;
-  font-size: 30px;
-  font-family: "SB어그로L";
+  margin-bottom: 50px;
+  color: rgb(255, 255, 255);
+  font-size: 40px;
+  font-family: SB어그로L;
 }
 .EarlyBird .B-L p {
-  margin-bottom: 50px;
+  margin-bottom: 80px;
   font-family: "SB어그로L";
-  font-size: 15px;
+  font-size: 20px;
   color: #fff;
 }
 .EarlyBird .B-R {
   flex: 1;
 }
 .EarlyBird .B-R h4 {
-  margin-bottom: 60px;
+  margin-bottom: 80px;
   color: #fff;
-  font-size: 30px;
+  font-size: 40px;
   font-family: "SB어그로L";
+  text-transform: capitalize;
 }
 .EarlyBird .B-R .BannerColor3 {
   display: flex;
@@ -1535,7 +1506,7 @@ header.sma {
 }
 .GiftF .serchtxt {
   position: absolute;
-  top: 60px;
+  top: 100px;
   left: 13%;
   font-size: 30px;
   font-family: "SBBOLD";
@@ -1543,13 +1514,13 @@ header.sma {
 .GiftF .T > figure img {
   width: 100%;
   height: 650px;
-  padding-top: 150px;
+  padding-top: 200px;
 }
 .GiftF .B {
-  width: 1500px;
+  width: 2000px;
   height: 100%;
   margin: 0 auto;
-  padding-top: 25px;
+  padding-top: 100px;
   display: flex;
 }
 .GiftF .B-L {
@@ -1557,25 +1528,26 @@ header.sma {
   margin-right: 100px;
 }
 .GiftF .B-L h4 {
-  margin-bottom: 30px;
-  color: #fff;
-  font-size: 30px;
-  font-family: "SB어그로L";
+  margin-bottom: 50px;
+  color: rgb(255, 255, 255);
+  font-size: 40px;
+  font-family: SB어그로L;
 }
 .GiftF .B-L p {
-  margin-bottom: 30px;
+  margin-bottom: 80px;
   font-family: "SB어그로L";
-  font-size: 15px;
+  font-size: 20px;
   color: #fff;
 }
 .GiftF .B-R {
   flex: 1;
 }
 .GiftF .B-R h4 {
-  margin-bottom: 40px;
+  margin-bottom: 80px;
   color: #fff;
-  font-size: 30px;
+  font-size: 40px;
   font-family: "SB어그로L";
+  text-transform: capitalize;
 }
 .GiftF .B-R .BannerColor4 {
   display: flex;
@@ -1606,7 +1578,7 @@ header.sma {
 }
 .dragline2{
   position: absolute;
-  top: 50%;
+  top: 55%;
   left: 0;
   transform: translateY(-50%);
   display: flex;
@@ -1617,7 +1589,7 @@ header.sma {
   padding: 8px 40px 8px 20px;
   text-transform: uppercase;
   font-family: "SB어그로L";
-  font-size: 20px;
+  font-size: 25px;
   color: #fff;
 }
 .liledrag1-1Area{
@@ -1663,11 +1635,6 @@ header.sma {
   position: relative;
   z-index: 5;
 }
-.con7-1 img {
-  width: 50%;
-  height: 100;
-  object-fit: cover;
-}
 .con7-1txt {
   width: 1320px;
   position: absolute;
@@ -1675,17 +1642,17 @@ header.sma {
   left: 25%;
 }
 .con7-1txt > h2 {
-  font-size: 150px;
+  font-size: 200px;
   color: #fff;
   font-family: "Playfair Display", serif;
   font-weight: 600;
-  line-height: 130px;
-  margin-bottom: 50px;
+  line-height: 150px;
+  margin-bottom: 80px;
 }
 .con7-1txt p {
   color: #fff;
-  font-size: 1.2rem;
-  margin-bottom: 30px;
+  font-size: 1.3rem;
+  margin-bottom: 50px;
   font-family: "SB어그로L";
 }
 .con7-2 {
@@ -1697,23 +1664,23 @@ header.sma {
   object-fit: cover;
 }
 .con7-2txt {
-      background: rgb(255, 255, 255);
+    background: rgb(255, 255, 255);
     width: 50%;
     height: 100%;
     position: absolute;
     right: 0px;
     top: 0px;
-    padding: 150px 0px 0px 130px;
+    padding: 300px 0px 0px 150px;
 }
 .con7-2txt .cont7-2txt1 h2 {
   font-weight: bold;
-  font-size: 36px;
+  font-size: 45px;
   font-family: 'SBBOLD';
   margin-bottom: 45px;
   text-transform: uppercase;
 }
 .con7-2txt .cont7-2txt1 p {
-  font-size: 17px;
+  font-size: 20px;
   color: black;
   margin-bottom: 50px;
   font-family: "SB어그로L";
@@ -1726,7 +1693,7 @@ header.sma {
 }
 .con7-2txt .cont7-2txt2 h2 {
   font-weight: bold;
-  font-size: 2rem;
+  font-size: 2.2rem;
   text-transform: capitalize;
   font-family: 'SBBOLD';
   margin-bottom: 50px;
@@ -1762,7 +1729,7 @@ header.sma {
 }
 .con7-2txt .cont7-2txt3 h2 {
   font-weight: bold;
-  font-size: 2rem;
+  font-size: 2.2rem;
   text-transform: capitalize;
   font-family: 'SBBOLD';
   margin-bottom: 20px;
@@ -1810,19 +1777,20 @@ header.sma {
   width: 100%;
   right: 0;
   top: 0;
-  width: 35%;
+  width: 100%;
   height: 100%;
   background: #000000bf;
   color: #fff;
 }
 .con7-3 .blackCover h3 {
-  font-size: 120px;
-  line-height: 90px;
+  font-size: 150px;
+  line-height: 120px;
   margin-bottom: 80px;
   font-family: "Playfair Display", serif;
   font-weight: bold;
 }
 .con7-3 .blackCover p {
+  font-size: 20px;
   font-family: "SB어그로L";
   margin-bottom: 20px;
 }
@@ -1849,12 +1817,13 @@ header.sma {
 .con7-4 .blackCover h3 {
   font-family: "Playfair Display", serif;
   font-weight: bold;
-  font-size: 115px;
-  line-height: 90px;
+  font-size: 150px;
+  line-height: 120px;
   margin-bottom: 80px;
 }
 .con7-4 .blackCover p {
   font-family: "SB어그로L";
+  font-size: 20px;
   margin-bottom: 20px;
 }
 .con7-4 .blackCover > div {
@@ -1893,7 +1862,7 @@ header.sma {
   left: 50%;
   transform: translateX(-50%);
   width: 1000px;
-  height: 900px;
+  height: 1200px;
   z-index: 2000;
   overflow: auto;
   opacity: 0;
@@ -1931,10 +1900,10 @@ header.sma {
   color: #fff;
 }
 #con8 > div h2 {
-  font-size: 150px;
+  font-size: 180px;
   font-family: "Playfair Display", serif;
   text-transform: uppercase;
-  line-height: 115px;
+  line-height: 135px;
   text-align: center;
   position: relative;
 }
@@ -1948,9 +1917,9 @@ header.sma {
 #con8 > div p:after {
   content: "";
   width: 1px;
-  height: 40px;
+  height: 30px;
   position: absolute;
-  bottom: 45%;
+  bottom: 40%;
   left: 50%;
   background: #fff;
   z-index: 100;
