@@ -47,7 +47,7 @@ window.onload = function () {
     },
     breakpoints: {
       280: {
-        slidesPerView: 2,
+        slidesPerView: 1,
       },
       768: {
         slidesPerView: 3,
@@ -78,8 +78,8 @@ $(document).ready(function () {
   });
   //  모바일 메뉴 클릭 이벤트
 
-  $(".moMenuList>li").click(function (e) {
-    e.preventDefault();
+  $(".moMenuList>li").click(function () {
+    // e.preventDefault();
     if ($(this).hasClass("on") == true) {
       $(this).css("height", "50px");
       $(this).removeClass("on");
@@ -92,7 +92,7 @@ $(document).ready(function () {
     }
   });
   $(".moMenuList ul").click(function () {
-    return false;
+    // return false;
   });
   // 모바일 아코디언 이벤트
 
